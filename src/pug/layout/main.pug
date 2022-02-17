@@ -1,0 +1,11 @@
+doctype html
+html(lang='ru')
+  head
+    title #{title} //переменная для названия страниц
+
+  body(class=pageClass) //можно задать переменную для класса боди
+    include ../includes/header
+    h1 Toxin
+    include ../includes/footer
+    
+    block script
