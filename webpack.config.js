@@ -29,7 +29,7 @@ module.exports = {
       },
         {
         test: /\.(sass|scss)$/,
-        include: path.resolve(__dirname, 'src/scss'),
+        // include: path.resolve(__dirname, 'src/scss'),
         use: ExtractTextPlugin.extract({
           use: [{
               loader: "css-loader",

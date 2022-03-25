@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+.container {
+  width: 100%;
+  border: 2px solid red;
+  position: relative;
+  height: 70px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #FFFFFF;
+  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05); }
+  .container .logo {
+    position: absolute;
+    width: 105.69px;
+    height: 70px;
+    border: 2px solid red; }
+  .container .nav {
+    border: 2px solid red;
+    width: 446px;
+    right: 0; }
+    .container .nav .nav-list .nav-list__item {
+      list-style: none;
+      display: inline;
+      position: absolute;
+      font-family: Montrserrat;
+      font-size: 14px;
+      line-height: 17px;
+      color: rgba(31, 32, 65, 0.5); }
+      .container .nav .nav-list .nav-list__item a {
+        text-decoration: none; }
+  .container .login__button {
+    padding: 5px;
+    color: #BC9CFF; }
+  .container .registation__button {
+    padding: 5px;
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%); }
+
+/* https://askdev.ru/q/kak-skompilirovat-ili-preobrazovat-sass-scss-v-css-s-pomoschyu-node-sass-no-ruby-46089/? как скомпилировать scss */
