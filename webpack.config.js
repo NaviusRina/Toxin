@@ -1,68 +1,22 @@
-const path = require('path');
-const ExtractTextPlugin = require("mini-css-extract-plugin");
-const PAGES_DIR = `${PATHS.src}/src/pug/pages/`
-const PAGES = fs.readdirSync(PAGES_DIR).filter(fileName => fileName.endsWith('.pug'))
+const path = require('path')
+const HTMLWebpackPlugin = require('html-webpack-plugin')
+const {CleanWebpackPlugin} = require('clean-webpack-plugin')
 
 module.exports = {
-  entry: [
-    './src/js/script.js',
-    './src/scss/style.scss'
-  ],
+  mode: 'development',
+  entry: {
+    main: './src/js/script.js'
+    /*можно добавить еще одну точку входа, то есть еще один путь*/
+  },
   output: {
-    filename: './src/js/bundle.js'
+    filename: '[name].[contenthash].js',//таким образом юудут создаваться отдельные файлы бандл на каждый путь из entry
+    path: path.resolve(__dirname, 'dist')
   },
-  devtool: "source-map",
-  module: {
-    rules: [{
-        test: /\.pug$/,
-        loader: 'pug-loader',
-      },
-      {
-        test: /\.js$/,
-        include: path.resolve(__dirname, 'js'),
-        use: {
-          loader: 'babel-loader',
-          options: {
-            presets: 'env'
-          }
-        }
-      },
-        {
-        test: /\.(sass|scss)$/,
-        // include: path.resolve(__dirname, 'src/scss'),
-        use: ExtractTextPlugin.extract({
-          use: [{
-              loader: "css-loader",
-              options: {
-                sourceMap: true,
-                minimize: true,
-                url: false
-              }
-            },
-            {
-              loader: "sass-loader",
-              options: {
-                sourceMap: true
-              }
-            }
-          ]
-        })
-      },
-        {
-         test: /\.pug$/,
-         loader: 'pug-loader'
-       },
-    ]
-  },
-  plugins: [
-    new ExtractTextPlugin({
-      filename: './src/scss/style.bundle.css',
-      allChunks: true,
+  plugins: [//плагины, как, например, хтмл
+    new HTMLWebpackPlugin({
+      // title: 'Toxin',//установит tittle в файле индекс в папке дист? но он не нужен, если есть темплейт
+      template: './src/index.html'//подключит содержимое файла индекс из папки срси к содержимому индекса из папки дист
     }),
-    new HtmlWebpackPlugin({
-          template: `${PAGES_DIR}/src/pug/pages/index.pug`, // либо написать template: `${PAGES_DIR}/${page}`,
-          filename: './src/index.html', // либо написать filename: `./${page.replace(/\.pug/,'.html')}`
-          inject: true
-        }),
+    new CleanWebpackPlugin()//очистка папки дист от лишнего кеша
   ]
-};
+}

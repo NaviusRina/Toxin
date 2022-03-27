@@ -25,6 +25,8 @@
     "babel-core": "^6.26.3",
     "babel-loader": "^8.2.3",
     "babel-preset-env": "^1.7.0",
+    "clean-webpack-plugin": "^4.0.0",
+    "html-webpack-plugin": "^5.5.0",
     "pug": "^2.0.4",
     "pug-loader": "^2.4.0",
     "sass": "^1.49.8",
