@@ -3,9 +3,10 @@ const HTMLWebpackPlugin = require('html-webpack-plugin')
 const {CleanWebpackPlugin} = require('clean-webpack-plugin')
 
 module.exports = {
+  context: path.resolve(__dirname, 'src'),
   mode: 'development',
   entry: {
-    main: './src/js/script.js'
+    main: './js/script.js'
     /*можно добавить еще одну точку входа, то есть еще один путь*/
   },
   output: {
@@ -15,8 +16,16 @@ module.exports = {
   plugins: [//плагины, как, например, хтмл
     new HTMLWebpackPlugin({
       // title: 'Toxin',//установит tittle в файле индекс в папке дист? но он не нужен, если есть темплейт
-      template: './src/index.html'//подключит содержимое файла индекс из папки срси к содержимому индекса из папки дист
+      template: './index.html'//подключит содержимое файла индекс из папки срси к содержимому индекса из папки дист
     }),
     new CleanWebpackPlugin()//очистка папки дист от лишнего кеша
+  ],
+  module: [
+    rules: [
+      {
+        test: /\.css$/,//когда вебпак встречает файл сисс, необходимо использовать определенный тип лодера(юз)
+        use: ['style-loader', 'css-loader']
+      }
+    ]
   ]
 }
