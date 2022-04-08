@@ -33,9 +33,10 @@ body
         each item in navArray
           li.nav-list__item
             a(href=item.url)= item.title
-    div.login
-      button.login__button
-        p ВОЙТИ
-    div.registation
-      button.registation__button
-        p ЗАРЕГИСТРИРОВАТЬСЯ
+    div.user-button
+      div.login
+        button.login__button
+          p ВОЙТИ
+      div.registation
+        button.registation__button
+          p ЗАРЕГИСТРИРОВАТЬСЯ

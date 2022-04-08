@@ -1,3 +1,6 @@
+@import "../../../../scss/font.css";
+
+
 * {
   margin: 0;
   padding: 0;
@@ -5,6 +8,10 @@
 
 // $red: red;
 // font-family: Montrserrat; сделать переменную
+%Montrserrat {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+}
 
 .container {
   width: 100%;
@@ -26,14 +33,16 @@
     width: 446px;
     right: 0;
     .nav-list {
+      display: flex;
+      justify-content: space-around;
       .nav-list__item {
         list-style: none;
         display: inline-block;//??
-        font-family: Montrserrat;
         font-style: normal;
         font-size: 14px;
         line-height: 17px;
         font-weight: 400;
+        @extend %Montrserrat;
         a {
           color: rgba(31, 32, 65, 0.5);
           text-decoration: none;
@@ -41,24 +50,30 @@
       }
     }
   }
-  .login__button {
-    padding: 5px;
-    color: #BC9CFF;
-    background: #FFFFFF;
-    box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
-    font-family: Montrserrat;
-    font-weight: 700;
-    font-size: 12px;
-    line-height: 15px;
-    border-radius: 5px;
-  }
-  .registation__button {
-    padding: 5px;
-    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
-    font-family: Montrserrat;
-    font-weight: 700;
-    font-size: 12px;
-    line-height: 15px;
-    border-radius: 5px;
+  .user-button {
+    display: flex;
+    justify-content: space-around;
+    .login__button {
+      padding: 5px;
+      color: #BC9CFF;
+      background: #FFFFFF;
+      box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+      @extend %Montrserrat;
+      font-weight: bold;
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 15px;
+      border-radius: 10px;
+    }
+    .registation__button {
+      padding: 5px;
+      color: #FFFFFF;
+      background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+      @extend %Montrserrat;
+      font-weight: bold;
+      font-size: 12px;
+      line-height: 15px;
+      border-radius: 10px;
+    }
   }
 }
