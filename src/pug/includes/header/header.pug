@@ -1,10 +1,13 @@
 meta(charset="UTF-8")
+link(href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet")
+//- ../../../../material-design-icons.scss
 style
   include header.css
 body
   div.container
     div.logo
-      img.logo__image
+      img(src="../../../images/Group.svg" class="logo__image" alt='Toxin')
+      img(src="../../../images/TOXIN.svg" class="logo__name" alt='Toxin')
     nav.nav
       - 
         var navArray = [
@@ -14,8 +17,10 @@ body
           },
           {
               title: 'Услуги',
-              url: '/'
+              url: '/',
+              icon: 'expand_more'
           },
+          //- &#xE5CF;
           {
               title: 'Вакансии',
               url: '/'
@@ -26,13 +31,17 @@ body
           },
           {
               title: 'Соглашения',
-              url: '/'
+              url: '/',
+              icon: 'expand_more'
           }
         ]
       ul.nav-list
         each item in navArray
           li.nav-list__item
-            a(href=item.url)= item.title
+            a(href=item.url)= item.title 
+            span.material-icons= item.icon 
+                 
+
     div.user-button
       div.login
         button.login__button

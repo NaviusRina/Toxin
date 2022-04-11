@@ -15,7 +15,7 @@
 
 .container {
   width: 100%;
-  border: 2px solid red;
+  // border: 2px solid red;
   position: relative;
   height: 70px;
   display: flex;
@@ -23,18 +23,29 @@
   align-items: center;
   background-color: #FFFFFF;
   box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+  box-sizing: border-box;
+  padding: 0 140px;
   .logo {
-    // width: 105.69px;
-    height: 70px;
-    border: 2px solid red;
+    // height: 70px;
+    // border: 2px solid red;
+    margin: 15px;
+      .logo__image {
+        width: 40px;
+        margin-right: 12px;
+      }
+      .logo__name {
+        width: 53.19px;
+        align-items: center;
+      }
     }
   .nav {
-    border: 2px solid red;
-    width: 446px;
-    right: 0;
+    // border: 2px solid red;
+    width: 447px;
+    // right: 0;
     .nav-list {
       display: flex;
       justify-content: space-around;
+      align-items: center;
       .nav-list__item {
         list-style: none;
         display: inline-block;//??
@@ -43,37 +54,54 @@
         line-height: 17px;
         font-weight: 400;
         @extend %Montrserrat;
+        .material-icons {
+          font-family: 'Material Icons';
+          font-weight: normal;
+          font-style: normal;
+          font-size: 24px;
+          display: inline;
+          line-height: 1;
+          text-transform: none;
+          letter-spacing: normal;
+          word-wrap: normal;
+          white-space: nowrap;
+          direction: ltr;
+          color: rgba(31, 32, 65, 0.5);
+        }
         a {
           color: rgba(31, 32, 65, 0.5);
           text-decoration: none;
         }
       }
+
     }
   }
   .user-button {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    // border: 2px solid red;
     .login__button {
-      padding: 5px;
+      padding: 10px 20px;
       color: #BC9CFF;
       background: #FFFFFF;
       box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
       @extend %Montrserrat;
       font-weight: bold;
-      font-weight: 700;
       font-size: 12px;
       line-height: 15px;
-      border-radius: 10px;
+      border-radius: 22px;
+      border: 2px solid -webkit-linear-gradient(#BC9CFF 0%, #8BA4F9 100%);
     }
     .registation__button {
-      padding: 5px;
+      padding: 10px 20px;
       color: #FFFFFF;
       background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
       @extend %Montrserrat;
       font-weight: bold;
       font-size: 12px;
       line-height: 15px;
-      border-radius: 10px;
+      border-radius: 22px;
+      margin-left: 20px;
     }
   }
 }

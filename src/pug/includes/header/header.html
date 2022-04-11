@@ -1,4 +1,4 @@
-<meta charset="UTF-8"/><style>@import url(../../../../scss/font.css);
+<meta charset="UTF-8"/><link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/><style>@import url(../../../../scss/font.css);
 * {
   margin: 0;
   padding: 0; }
@@ -9,24 +9,29 @@
 
 .container {
   width: 100%;
-  border: 2px solid red;
   position: relative;
   height: 70px;
   display: flex;
   justify-content: space-around;
   align-items: center;
   background-color: #FFFFFF;
-  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05); }
+  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+  box-sizing: border-box;
+  padding: 0 140px; }
   .container .logo {
-    height: 70px;
-    border: 2px solid red; }
+    margin: 15px; }
+    .container .logo .logo__image {
+      width: 40px;
+      margin-right: 12px; }
+    .container .logo .logo__name {
+      width: 53.19px;
+      align-items: center; }
   .container .nav {
-    border: 2px solid red;
-    width: 446px;
-    right: 0; }
+    width: 447px; }
     .container .nav .nav-list {
       display: flex;
-      justify-content: space-around; }
+      justify-content: space-around;
+      align-items: center; }
       .container .nav .nav-list .nav-list__item {
         list-style: none;
         display: inline-block;
@@ -34,31 +39,42 @@
         font-size: 14px;
         line-height: 17px;
         font-weight: 400; }
-        .container .nav .nav-list .nav-list__item .chevron-down {
+        .container .nav .nav-list .nav-list__item .material-icons {
           font-family: 'Material Icons';
-          font-style: normal; }
+          font-weight: normal;
+          font-style: normal;
+          font-size: 24px;
+          display: inline;
+          line-height: 1;
+          text-transform: none;
+          letter-spacing: normal;
+          word-wrap: normal;
+          white-space: nowrap;
+          direction: ltr;
+          color: rgba(31, 32, 65, 0.5); }
         .container .nav .nav-list .nav-list__item a {
           color: rgba(31, 32, 65, 0.5);
           text-decoration: none; }
   .container .user-button {
     display: flex;
-    justify-content: space-around; }
+    justify-content: space-between; }
     .container .user-button .login__button {
-      padding: 5px;
+      padding: 10px 20px;
       color: #BC9CFF;
       background: #FFFFFF;
       box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
       font-weight: bold;
-      font-weight: 700;
       font-size: 12px;
       line-height: 15px;
-      border-radius: 10px; }
+      border-radius: 22px;
+      border: 2px solid -webkit-linear-gradient(#BC9CFF 0%, #8BA4F9 100%); }
     .container .user-button .registation__button {
-      padding: 5px;
+      padding: 10px 20px;
       color: #FFFFFF;
       background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
       font-weight: bold;
       font-size: 12px;
       line-height: 15px;
-      border-radius: 10px; }
-</style><body><div class="container"><div class="logo"><img class="logo__image"/></div><nav class="nav"><ul class="nav-list"><li class="nav-list__item"><a href="/">О нас</a></li><li class="nav-list__item"><a href="/">Услуги</a></li><li class="nav-list__item"><a href="/">Вакансии</a></li><li class="nav-list__item"><a href="/">Новости</a></li><li class="nav-list__item"><a href="/">Соглашения</a></li></ul></nav><div class="user-button"><div class="login"><button class="login__button"><p>ВОЙТИ</p></button></div><div class="registation"><button class="registation__button"><p>ЗАРЕГИСТРИРОВАТЬСЯ</p></button></div></div></div></body>
+      border-radius: 22px;
+      margin-left: 20px; }
+</style><body><div class="container"><div class="logo"><img class="logo__image" src="../../../images/Group.svg" alt="Toxin"/><img class="logo__name" src="../../../images/TOXIN.svg" alt="Toxin"/></div><nav class="nav"><ul class="nav-list"><li class="nav-list__item"><a href="/">О нас</a><span class="material-icons"></span></li><li class="nav-list__item"><a href="/">Услуги</a><span class="material-icons">expand_more</span></li><li class="nav-list__item"><a href="/">Вакансии</a><span class="material-icons"></span></li><li class="nav-list__item"><a href="/">Новости</a><span class="material-icons"></span></li><li class="nav-list__item"><a href="/">Соглашения</a><span class="material-icons">expand_more</span></li></ul></nav><div class="user-button"><div class="login"><button class="login__button"><p>ВОЙТИ</p></button></div><div class="registation"><button class="registation__button"><p>ЗАРЕГИСТРИРОВАТЬСЯ</p></button></div></div></div></body>

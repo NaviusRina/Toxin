@@ -1,0 +1,110 @@
+@import "../../../../scss/font.css";
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+// $red: red;
+// font-family: Montrserrat; сделать переменную
+%Montrserrat {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+}
+%FooterListStyle {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+%FooterListItemStyle {
+  list-style: none;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 400;
+  @extend %Montrserrat;
+}
+%linkStyle {
+  color: rgba(31, 32, 65, 0.5);
+  text-decoration: none;
+}
+
+.footer-container {
+  width: 100%;
+  border: 2px solid red;
+  position: relative;
+  height: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: #FFFFFF;
+  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+  box-sizing: border-box;
+  padding: 0 140px;
+  .top-footer {
+    display: flex;
+    justify-content: space-between;
+    .footer__description {
+      border: 2px solid red;
+      margin: 15px;
+        .logo__image {
+          width: 40px;
+          margin-right: 12px;
+        }
+        .logo__name {
+          width: 53.19px;
+          align-items: center;
+        }
+        .description {
+          @extend %Montrserrat;
+        }
+      }
+    .footer__nav {
+      border: 2px solid red;
+      .footer__nav-list {
+        @extend %FooterListStyle;
+        .footer__nav-list__item {
+          @extend %FooterListItemStyle;
+          a {
+            @extend %linkStyle;
+          }
+        }
+
+      }
+    }
+    .footer__about-us {
+      border: 2px solid red;
+      width: 447px;
+      .footer__about-us-list {
+        @extend %FooterListStyle;
+        .footer__about-us-list__item {
+          @extend %FooterListItemStyle;
+          a {
+            @extend %linkStyle;
+          }
+        }
+      }
+    }
+    .footer__support {
+      border: 2px solid red;
+      width: 447px;
+      .footer__support-list {
+        @extend %FooterListStyle;
+        .footer__support-list__item {
+          @extend %FooterListItemStyle;
+          a {
+            @extend %linkStyle;
+          }
+        }
+      }
+    }
+    .footer__subscription {
+      border: 2px solid red;
+      width: 447px;
+    }
+  }
+  .bottom-footer {
+    border: 2px solid red;
+  }
+}

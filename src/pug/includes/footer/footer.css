@@ -1,0 +1,62 @@
+@import url(../../../../scss/font.css);
+* {
+  margin: 0;
+  padding: 0; }
+
+.footer-container .top-footer .footer__nav .footer__nav-list .footer__nav-list__item, .footer-container .top-footer .footer__about-us .footer__about-us-list .footer__about-us-list__item, .footer-container .top-footer .footer__support .footer__support-list .footer__support-list__item, .footer-container .top-footer .footer__description .description {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal; }
+
+.footer-container .top-footer .footer__nav .footer__nav-list, .footer-container .top-footer .footer__about-us .footer__about-us-list, .footer-container .top-footer .footer__support .footer__support-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around; }
+
+.footer-container .top-footer .footer__nav .footer__nav-list .footer__nav-list__item, .footer-container .top-footer .footer__about-us .footer__about-us-list .footer__about-us-list__item, .footer-container .top-footer .footer__support .footer__support-list .footer__support-list__item {
+  list-style: none;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 400; }
+
+.footer-container .top-footer .footer__nav .footer__nav-list .footer__nav-list__item a, .footer-container .top-footer .footer__about-us .footer__about-us-list .footer__about-us-list__item a, .footer-container .top-footer .footer__support .footer__support-list .footer__support-list__item a {
+  color: rgba(31, 32, 65, 0.5);
+  text-decoration: none; }
+
+.footer-container {
+  width: 100%;
+  border: 2px solid red;
+  position: relative;
+  height: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: #FFFFFF;
+  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+  box-sizing: border-box;
+  padding: 0 140px; }
+  .footer-container .top-footer {
+    display: flex;
+    justify-content: space-between; }
+    .footer-container .top-footer .footer__description {
+      border: 2px solid red;
+      margin: 15px; }
+      .footer-container .top-footer .footer__description .logo__image {
+        width: 40px;
+        margin-right: 12px; }
+      .footer-container .top-footer .footer__description .logo__name {
+        width: 53.19px;
+        align-items: center; }
+    .footer-container .top-footer .footer__nav {
+      border: 2px solid red; }
+    .footer-container .top-footer .footer__about-us {
+      border: 2px solid red;
+      width: 447px; }
+    .footer-container .top-footer .footer__support {
+      border: 2px solid red;
+      width: 447px; }
+    .footer-container .top-footer .footer__subscription {
+      border: 2px solid red;
+      width: 447px; }
+  .footer-container .bottom-footer {
+    border: 2px solid red; }
