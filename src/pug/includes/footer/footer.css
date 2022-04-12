@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0; }
 
-.footer-container .top-footer .footer__nav .footer__nav-list .footer__nav-list__item, .footer-container .top-footer .footer__about-us .footer__about-us-list .footer__about-us-list__item, .footer-container .top-footer .footer__support .footer__support-list .footer__support-list__item, .footer-container .top-footer .footer__description .description {
+.footer-container .top-footer .footer__nav .footer__nav-list .footer__nav-list__item, .footer-container .top-footer .footer__about-us .footer__about-us-list .footer__about-us-list__item, .footer-container .top-footer .footer__support .footer__support-list .footer__support-list__item, .footer-container p {
   font-family: 'Montserrat', sans-serif;
   font-style: normal; }
 
@@ -17,7 +17,8 @@
   font-style: normal;
   font-size: 14px;
   line-height: 17px;
-  font-weight: 400; }
+  font-weight: 400;
+  margin-top: 20px; }
 
 .footer-container .top-footer .footer__nav .footer__nav-list .footer__nav-list__item a, .footer-container .top-footer .footer__about-us .footer__about-us-list .footer__about-us-list__item a, .footer-container .top-footer .footer__support .footer__support-list .footer__support-list__item a {
   color: rgba(31, 32, 65, 0.5);
@@ -27,20 +28,37 @@
   width: 100%;
   border: 2px solid red;
   position: relative;
-  height: 70px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
   background-color: #FFFFFF;
   box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
-  box-sizing: border-box;
-  padding: 0 140px; }
+  padding: 0 140px;
+  box-sizing: border-box; }
+  .footer-container p {
+    color: rgba(31, 32, 65, 0.75);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left; }
   .footer-container .top-footer {
     display: flex;
-    justify-content: space-between; }
+    justify-content: space-between;
+    height: 372px;
+    width: 100%;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 0px rgba(31, 32, 65, 0.1);
+    box-sizing: border-box;
+    padding: 100px 0; }
+    .footer-container .top-footer h3 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 12px;
+      font-weight: 700;
+      line-height: 15px;
+      letter-spacing: 0em;
+      text-align: left;
+      color: #1F2041; }
     .footer-container .top-footer .footer__description {
       border: 2px solid red;
-      margin: 15px; }
+      width: 260px; }
       .footer-container .top-footer .footer__description .logo__image {
         width: 40px;
         margin-right: 12px; }
@@ -50,13 +68,38 @@
     .footer-container .top-footer .footer__nav {
       border: 2px solid red; }
     .footer-container .top-footer .footer__about-us {
-      border: 2px solid red;
-      width: 447px; }
+      border: 2px solid red; }
     .footer-container .top-footer .footer__support {
-      border: 2px solid red;
-      width: 447px; }
+      border: 2px solid red; }
     .footer-container .top-footer .footer__subscription {
       border: 2px solid red;
-      width: 447px; }
+      width: 260px; }
+      .footer-container .top-footer .footer__subscription .mail-input {
+        height: 44px;
+        width: 260px;
+        left: 1040px;
+        top: 568px;
+        border-radius: 4px; }
   .footer-container .bottom-footer {
-    border: 2px solid red; }
+    border: 2px solid red;
+    height: 70px;
+    width: 100%;
+    background: #FFFFFF;
+    box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+    box-sizing: border-box;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between; }
+    .footer-container .bottom-footer .fa-brands {
+      font-family: Font Awesome 5 Brands;
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 23px;
+      letter-spacing: 0em;
+      text-align: center;
+      margin-left: 20px;
+      background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent; }
