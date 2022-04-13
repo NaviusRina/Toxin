@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0; }
 
-.footer-container .top-footer .footer__nav .footer__nav-list .footer__nav-list__item, .footer-container .top-footer .footer__about-us .footer__about-us-list .footer__about-us-list__item, .footer-container .top-footer .footer__support .footer__support-list .footer__support-list__item, .footer-container p {
+.footer-container .top-footer .footer__nav .footer__nav-list .footer__nav-list__item, .footer-container .top-footer .footer__about-us .footer__about-us-list .footer__about-us-list__item, .footer-container .top-footer .footer__support .footer__support-list .footer__support-list__item, .footer-container p, .footer-container .top-footer .footer__subscription .mail-input {
   font-family: 'Montserrat', sans-serif;
   font-style: normal; }
 
@@ -18,7 +18,7 @@
   font-size: 14px;
   line-height: 17px;
   font-weight: 400;
-  margin-top: 20px; }
+  margin-bottom: 20px; }
 
 .footer-container .top-footer .footer__nav .footer__nav-list .footer__nav-list__item a, .footer-container .top-footer .footer__about-us .footer__about-us-list .footer__about-us-list__item a, .footer-container .top-footer .footer__support .footer__support-list .footer__support-list__item a {
   color: rgba(31, 32, 65, 0.5);
@@ -27,11 +27,13 @@
 .footer-container {
   width: 100%;
   border: 2px solid red;
-  position: relative;
+  position: absolute;
   background-color: #FFFFFF;
   box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
   padding: 0 140px;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  left: 0;
+  bottom: 0; }
   .footer-container p {
     color: rgba(31, 32, 65, 0.75);
     font-size: 14px;
@@ -55,16 +57,19 @@
       line-height: 15px;
       letter-spacing: 0em;
       text-align: left;
-      color: #1F2041; }
+      color: #1F2041;
+      margin-bottom: 21px; }
     .footer-container .top-footer .footer__description {
       border: 2px solid red;
       width: 260px; }
       .footer-container .top-footer .footer__description .logo__image {
         width: 40px;
-        margin-right: 12px; }
+        margin-right: 12px;
+        margin-bottom: 20px; }
       .footer-container .top-footer .footer__description .logo__name {
+        position: relative;
         width: 53.19px;
-        align-items: center; }
+        top: 0; }
     .footer-container .top-footer .footer__nav {
       border: 2px solid red; }
     .footer-container .top-footer .footer__about-us {
@@ -77,9 +82,22 @@
       .footer-container .top-footer .footer__subscription .mail-input {
         height: 44px;
         width: 260px;
-        left: 1040px;
-        top: 568px;
-        border-radius: 4px; }
+        border-radius: 4px;
+        margin-top: 20px;
+        color: rgba(31, 32, 65, 0.25); }
+      .footer-container .top-footer .footer__subscription .material-icons-outlined {
+        font-family: 'Material Icons';
+        font-weight: normal;
+        font-style: normal;
+        font-size: 24px;
+        display: inline;
+        line-height: 1;
+        text-transform: none;
+        letter-spacing: normal;
+        word-wrap: normal;
+        white-space: nowrap;
+        direction: ltr;
+        color: rgba(31, 32, 65, 0.5); }
   .footer-container .bottom-footer {
     border: 2px solid red;
     height: 70px;
@@ -103,4 +121,4 @@
       -webkit-text-fill-color: transparent;
       background-clip: text;
       text-fill-color: transparent; }
-</style><body><div class="footer-container"><div class="top-footer"><div class="footer__description"><img class="logo__image" src="../../../images/Group.svg" alt="Toxin"/><img class="logo__name" src="../../../images/TOXIN.svg" alt="Toxin"/><p>Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»</p></div><nav class="footer__nav"><h3>НАВИГАЦИЯ</h3><ul class="footer__nav-list"><li class="footer__nav-list__item"><a href="/">О нас</a></li><li class="footer__nav-list__item"><a href="/">Новости</a></li><li class="footer__nav-list__item"><a href="/">Служба поддержки</a></li><li class="footer__nav-list__item"><a href="/">Услуги</a></li></ul></nav><div class="footer__about-us"><h3> О НАС</h3><ul class="footer__about-us-list"><li class="footer__about-us-list__item"><a href="/">О сервисе</a></li><li class="footer__about-us-list__item"><a href="/">Наша команда</a></li><li class="footer__about-us-list__item"><a href="/">Вакансии</a></li><li class="footer__about-us-list__item"><a href="/">Инвесторы</a></li></ul></div><div class="footer__support"><h3>СЛУЖБА ПОДДЕРЖКИ<ul class="footer__support-list"><li class="footer__support-list__item"><a href="/">Соглашение</a></li><li class="footer__support-list__item"><a href="/">Сообщества</a></li><li class="footer__support-list__item"><a href="/">Связь с нами</a></li></ul></h3></div><div class="footer__subscription"><h3>ПОДПИСКА</h3><p>Получайте специальные предложения и новости сервиса</p><input class="mail-input"/></div></div><div class="bottom-footer"><p>Copyright © 2018 Toxin отель. Все права защищены.</p><div class="copyright-bar"><i class="fa-brands fa-twitter"></i><i class="fa-brands fa-facebook-square"></i><i class="fa-brands fa-instagram"></i></div></div></div></body>
+</style><body><div class="footer-container"><div class="top-footer"><div class="footer__description"><img class="logo__image" src="../../../images/Group.svg" alt="Toxin"/><img class="logo__name" src="../../../images/TOXIN.svg" alt="Toxin"/><p>Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»</p></div><nav class="footer__nav"><h3>НАВИГАЦИЯ</h3><ul class="footer__nav-list"><li class="footer__nav-list__item"><a href="/">О нас</a></li><li class="footer__nav-list__item"><a href="/">Новости</a></li><li class="footer__nav-list__item"><a href="/">Служба поддержки</a></li><li class="footer__nav-list__item"><a href="/">Услуги</a></li></ul></nav><div class="footer__about-us"><h3> О НАС</h3><ul class="footer__about-us-list"><li class="footer__about-us-list__item"><a href="/">О сервисе</a></li><li class="footer__about-us-list__item"><a href="/">Наша команда</a></li><li class="footer__about-us-list__item"><a href="/">Вакансии</a></li><li class="footer__about-us-list__item"><a href="/">Инвесторы</a></li></ul></div><div class="footer__support"><h3>СЛУЖБА ПОДДЕРЖКИ<ul class="footer__support-list"><li class="footer__support-list__item"><a href="/">Соглашение</a></li><li class="footer__support-list__item"><a href="/">Сообщества</a></li><li class="footer__support-list__item"><a href="/">Связь с нами</a></li></ul></h3></div><div class="footer__subscription"><h3>ПОДПИСКА</h3><p>Получайте специальные предложения и новости сервиса</p><input class="mail-input" type="email" value="Email"/><span class="material-icons-outlined"> arrow_forward</span></div></div><div class="bottom-footer"><p>Copyright © 2018 Toxin отель. Все права защищены.</p><div class="copyright-bar"><i class="fa-brands fa-twitter"></i><i class="fa-brands fa-facebook-square"></i><i class="fa-brands fa-instagram"></i></div></div></div></body>
