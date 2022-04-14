@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0; }
 
-.footer-container .top-footer .footer__nav .footer__nav-list .footer__nav-list__item, .footer-container .top-footer .footer__about-us .footer__about-us-list .footer__about-us-list__item, .footer-container .top-footer .footer__support .footer__support-list .footer__support-list__item, .footer-container p, .footer-container .top-footer .footer__subscription .mail-input {
+.footer-container .top-footer .footer__nav .footer__nav-list .footer__nav-list__item, .footer-container .top-footer .footer__about-us .footer__about-us-list .footer__about-us-list__item, .footer-container .top-footer .footer__support .footer__support-list .footer__support-list__item, .footer-container p, .footer-container .top-footer .footer__subscription .subscription .subscription__mail-input {
   font-family: 'Montserrat', sans-serif;
   font-style: normal; }
 
@@ -26,7 +26,6 @@
 
 .footer-container {
   width: 100%;
-  border: 2px solid red;
   position: absolute;
   background-color: #FFFFFF;
   box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
@@ -52,15 +51,15 @@
     padding: 100px 0; }
     .footer-container .top-footer h3 {
       font-family: 'Montserrat', sans-serif;
+      font-style: normal;
       font-size: 12px;
-      font-weight: 700;
+      font-weight: bold;
       line-height: 15px;
       letter-spacing: 0em;
       text-align: left;
       color: #1F2041;
       margin-bottom: 21px; }
     .footer-container .top-footer .footer__description {
-      border: 2px solid red;
       width: 260px; }
       .footer-container .top-footer .footer__description .logo__image {
         width: 40px;
@@ -69,37 +68,34 @@
       .footer-container .top-footer .footer__description .logo__name {
         position: relative;
         width: 53.19px;
-        top: 0; }
-    .footer-container .top-footer .footer__nav {
-      border: 2px solid red; }
-    .footer-container .top-footer .footer__about-us {
-      border: 2px solid red; }
-    .footer-container .top-footer .footer__support {
-      border: 2px solid red; }
+        margin-bottom: 30px; }
     .footer-container .top-footer .footer__subscription {
-      border: 2px solid red;
+      position: relative;
       width: 260px; }
-      .footer-container .top-footer .footer__subscription .mail-input {
-        height: 44px;
-        width: 260px;
-        border-radius: 4px;
-        margin-top: 20px;
-        color: rgba(31, 32, 65, 0.25); }
-      .footer-container .top-footer .footer__subscription .material-icons-outlined {
-        font-family: 'Material Icons';
-        font-weight: normal;
-        font-style: normal;
-        font-size: 24px;
-        display: inline;
-        line-height: 1;
-        text-transform: none;
-        letter-spacing: normal;
-        word-wrap: normal;
-        white-space: nowrap;
-        direction: ltr;
-        color: rgba(31, 32, 65, 0.5); }
+      .footer-container .top-footer .footer__subscription .subscription {
+        margin-top: 20px; }
+        .footer-container .top-footer .footer__subscription .subscription .subscription__mail-input {
+          height: 44px;
+          width: 260px;
+          border-radius: 4px;
+          color: rgba(31, 32, 65, 0.25);
+          padding-left: 15px; }
+        .footer-container .top-footer .footer__subscription .subscription .material-icons-outlined {
+          position: absolute;
+          right: 0;
+          width: 44px;
+          height: 44px;
+          padding: 10px;
+          box-sizing: border-box;
+          font-family: 'Material Icons';
+          font-weight: normal;
+          font-style: normal;
+          font-size: 24px;
+          line-height: 1;
+          text-transform: none;
+          letter-spacing: normal;
+          color: rgba(31, 32, 65, 0.5); }
   .footer-container .bottom-footer {
-    border: 2px solid red;
     height: 70px;
     width: 100%;
     background: #FFFFFF;

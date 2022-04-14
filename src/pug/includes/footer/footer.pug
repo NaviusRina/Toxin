@@ -65,32 +65,33 @@ body
       div.footer__support
         h3
           | СЛУЖБА ПОДДЕРЖКИ
-          - 
-            var footerSupportArray = [
-              {
-                  title: 'Соглашение',
-                  url: '/'
-              },
-              {
-                  title: 'Сообщества',
-                  url: '/'
-              },
-              {
-                  title: 'Связь с нами',
-                  url: '/'
-              }
-            ]
-          ul.footer__support-list
-            each item in footerSupportArray
-              li.footer__support-list__item
-                a(href=item.url)= item.title 
+        - 
+          var footerSupportArray = [
+            {
+                title: 'Соглашение',
+                url: '/'
+            },
+            {
+                title: 'Сообщества',
+                url: '/'
+            },
+            {
+                title: 'Связь с нами',
+                url: '/'
+            }
+          ]
+        ul.footer__support-list
+          each item in footerSupportArray
+            li.footer__support-list__item
+              a(href=item.url)= item.title 
       div.footer__subscription
         h3
           | ПОДПИСКА
         p Получайте специальные предложения и новости сервиса
-        input.mail-input(type="email" value="Email")
-        span.material-icons-outlined  
-          | arrow_forward
+        div.subscription
+          input.subscription__mail-input(type="email" placeholder="Email")
+          span.material-icons-outlined  
+            | arrow_forward
     div.bottom-footer
       p Copyright © 2018 Toxin отель. Все права защищены.
       div.copyright-bar

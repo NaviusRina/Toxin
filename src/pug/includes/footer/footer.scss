@@ -6,8 +6,6 @@
   padding: 0;
 }
 
-// $red: red;
-// font-family: Montrserrat; сделать переменную
 %Montrserrat {
   font-family: 'Montserrat', sans-serif;
   font-style: normal;
@@ -33,7 +31,6 @@
 
 .footer-container {
   width: 100%;
-  border: 2px solid red;
   position: absolute;
   background-color: #FFFFFF;
   box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
@@ -61,8 +58,9 @@
     padding: 100px 0;
     h3 {
       font-family: 'Montserrat', sans-serif;
+      font-style: normal;
       font-size: 12px;
-      font-weight: 700;
+      font-weight: bold;
       line-height: 15px;
       letter-spacing: 0em;
       text-align: left;
@@ -70,7 +68,6 @@
       margin-bottom: 21px;
     }
     .footer__description {
-      border: 2px solid red;
       width: 260px;
         .logo__image {
           width: 40px;
@@ -80,12 +77,11 @@
         .logo__name {
           position: relative;
           width: 53.19px;
-          top: 0;
+          margin-bottom: 30px;
         }
 
       }
     .footer__nav {
-      border: 2px solid red;
       .footer__nav-list {
         @extend %FooterListStyle;
         .footer__nav-list__item {
@@ -98,7 +94,6 @@
       }
     }
     .footer__about-us {
-      border: 2px solid red;
       .footer__about-us-list {
         @extend %FooterListStyle;
         .footer__about-us-list__item {
@@ -110,7 +105,6 @@
       }
     }
     .footer__support {
-      border: 2px solid red;
       .footer__support-list {
         @extend %FooterListStyle;
         .footer__support-list__item {
@@ -122,34 +116,38 @@
       }
     }
     .footer__subscription {
-      border: 2px solid red;
+      position: relative;
       width: 260px;
-      .mail-input {
-        height: 44px;
-        width: 260px;
-        border-radius: 4px;
-        margin-top: 20px;
-        color: rgba(31, 32, 65, 0.25);
-        @extend %Montrserrat;
-      }
-      .material-icons-outlined {
-        font-family: 'Material Icons';
-        font-weight: normal;
-        font-style: normal;
-        font-size: 24px;
-        display: inline;
-        line-height: 1;
-        text-transform: none;
-        letter-spacing: normal;
-        word-wrap: normal;
-        white-space: nowrap;
-        direction: ltr;
-        color: rgba(31, 32, 65, 0.5);
-      }
+        .subscription {
+          margin-top: 20px;
+          .subscription__mail-input {
+            height: 44px;
+            width: 260px;
+            border-radius: 4px;
+            color: rgba(31, 32, 65, 0.25);
+            @extend %Montrserrat;
+            padding-left: 15px;
+          }
+          .material-icons-outlined {
+            position: absolute;
+            right: 0;
+            width: 44px;
+            height: 44px;
+            padding: 10px;
+            box-sizing: border-box;
+            font-family: 'Material Icons';
+            font-weight: normal;
+            font-style: normal;
+            font-size: 24px;
+            line-height: 1;
+            text-transform: none;
+            letter-spacing: normal;
+            color: rgba(31, 32, 65, 0.5);
+          }
+        }
     }
   }
   .bottom-footer {
-    border: 2px solid red;
     height: 70px;
     width: 100%;
     background: #FFFFFF;
@@ -171,7 +169,6 @@
       -webkit-text-fill-color: transparent;
       background-clip: text;
       text-fill-color: transparent;
-
     }
   }
 }
