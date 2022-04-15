@@ -11,6 +11,7 @@
 %Montrserrat {
   font-family: 'Montserrat', sans-serif;
   font-style: normal;
+  letter-spacing: 1px;
 }
 
 .container {
@@ -32,10 +33,11 @@
       .logo__image {
         width: 40px;
         margin-right: 12px;
+        height: 70px;
       }
       .logo__name {
         width: 53.19px;
-        align-items: center;
+        height: 70px;
       }
     }
   .nav {
@@ -48,25 +50,22 @@
       align-items: center;
       .nav-list__item {
         list-style: none;
-        display: inline-block;//??
         font-style: normal;
         font-size: 14px;
         line-height: 17px;
         font-weight: 400;
         @extend %Montrserrat;
         .material-icons {
+          position: absolute;
+          bottom: 23px;
           font-family: 'Material Icons';
           font-weight: normal;
           font-style: normal;
           font-size: 24px;
-          display: inline;
           line-height: 1;
           text-transform: none;
-          letter-spacing: normal;
-          word-wrap: normal;
-          white-space: nowrap;
-          direction: ltr;
           color: rgba(31, 32, 65, 0.5);
+          cursor: pointer;
         }
         a {
           color: rgba(31, 32, 65, 0.5);
@@ -82,26 +81,30 @@
     // border: 2px solid red;
     .login__button {
       padding: 10px 20px;
-      color: #BC9CFF;
       background: #FFFFFF;
       box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
-      @extend %Montrserrat;
-      font-weight: bold;
-      font-size: 12px;
-      line-height: 15px;
       border-radius: 22px;
       border: 2px solid -webkit-linear-gradient(#BC9CFF 0%, #8BA4F9 100%);
+      p {
+        color: #BC9CFF;
+        @extend %Montrserrat;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 15px;
+      }
     }
     .registation__button {
       padding: 10px 20px;
-      color: #FFFFFF;
       background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
-      @extend %Montrserrat;
-      font-weight: bold;
-      font-size: 12px;
-      line-height: 15px;
       border-radius: 22px;
       margin-left: 20px;
+      p {
+        color: #FFFFFF;
+        @extend %Montrserrat;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 15px;
+      }
     }
   }
 }
