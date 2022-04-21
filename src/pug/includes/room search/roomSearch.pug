@@ -2,22 +2,24 @@ meta(charset="UTF-8")
 link(href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet")
 script(src="https://kit.fontawesome.com/3ef9158f0f.js" crossorigin="anonymous")
 style
-  include footer.css
+  include roomSearch.css
 body
   div.roomSearch-container
     h1 Найдём номера под ваши пожелания
-    div
-      label ПРИБЫТИЕ
-      input
-      div.material-icons
-      label ВЫЕЗД
-      input
-      div.material-icons
-    div
-      label ГОСТИ
-      input
-      div.material-icons
-    div
-      button ПОДОБРАТЬ НОМЕР
-        div.material-icons
+    div.checkinto-date
+      div.checkinto-date__arrival
+        h3 ПРИБЫТИЕ
+        input(type="date" placeholder="")
+        div.material-icons expand_more
+      div.checkinto-date__departure
+        h3 ВЫЕЗД
+        input(type="date" placeholder="")
+        div.material-icons expand_more
+    div.guests-amount
+      h3 ГОСТИ
+      input.guests-amount__input(type="" placeholder="")
+      div.material-icons expand_more
+    button.room-search 
+      h3 ПОДОБРАТЬ НОМЕР
+      div.material-icons arrow_forward
     
