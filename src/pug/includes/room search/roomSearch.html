@@ -15,7 +15,9 @@
   background: #FFFFFF;
   border: 1px solid rgba(31, 32, 65, 0.25);
   box-sizing: border-box;
-  border-radius: 4px; }
+  border-radius: 4px;
+  padding-left: 15px;
+  padding-right: 44px; }
 
 .roomSearch-container .checkinto-date .checkinto-date__arrival .material-icons, .roomSearch-container .checkinto-date .checkinto-date__departure .material-icons, .roomSearch-container .guests-amount .material-icons, .roomSearch-container .room-search .material-icons {
   font-family: 'Material Icons';
@@ -71,6 +73,7 @@
         bottom: 0;
         right: 0; }
   .roomSearch-container .guests-amount {
+    position: relative;
     width: 320px;
     height: 44px; }
     .roomSearch-container .guests-amount .guests-amount__input {
@@ -78,7 +81,7 @@
       height: inherit; }
     .roomSearch-container .guests-amount .material-icons {
       color: rgba(31, 32, 65, 0.5);
-      bottom: 0;
+      top: 20px;
       right: 0; }
   .roomSearch-container .room-search {
     width: 320px;
@@ -86,12 +89,12 @@
     background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
     border-radius: 22px;
     position: relative;
-    padding-top: 14px;
     margin-top: 31px; }
     .roomSearch-container .room-search h3 {
-      color: #FFFFFF; }
+      color: #FFFFFF;
+      margin: 0 auto; }
     .roomSearch-container .room-search .material-icons {
       color: #FFFFFF;
       top: 0;
       right: 0; }
-</style><body><div class="roomSearch-container"><h1>Найдём номера под ваши пожелания</h1><div class="checkinto-date"><div class="checkinto-date__arrival"><h3>ПРИБЫТИЕ</h3><input type="date" placeholder=""/><div class="material-icons">expand_more</div></div><div class="checkinto-date__departure"><h3>ВЫЕЗД</h3><input type="date" placeholder=""/><div class="material-icons">expand_more</div></div></div><div class="guests-amount"><h3>ГОСТИ</h3><input class="guests-amount__input" type="" placeholder=""/><div class="material-icons">expand_more</div></div><button class="room-search"> <h3>ПОДОБРАТЬ НОМЕР</h3><div class="material-icons">arrow_forward</div></button></div></body>
+</style><body><div class="roomSearch-container"><h1>Найдём номера под ваши пожелания</h1><div class="checkinto-date"><div class="checkinto-date__arrival"><h3>ПРИБЫТИЕ</h3><input placeholder="ДД.ММ.ГГГ"/><div class="material-icons">expand_more</div></div><div class="checkinto-date__departure"><h3>ВЫЕЗД</h3><input placeholder="ДД.ММ.ГГГ"/><div class="material-icons">expand_more</div></div></div><div class="guests-amount"><h3>ГОСТИ</h3><input class="guests-amount__input" type="" placeholder="Сколько гостей"/><div class="material-icons">expand_more</div></div><button class="room-search"> <h3>ПОДОБРАТЬ НОМЕР</h3><div class="material-icons">arrow_forward</div></button></div></body>

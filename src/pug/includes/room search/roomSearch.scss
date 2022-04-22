@@ -19,6 +19,8 @@
   border: 1px solid rgba(31, 32, 65, 0.25);
   box-sizing: border-box;
   border-radius: 4px;
+  padding-left: 15px;
+  padding-right: 44px;
 }
 %MaterialIcons {
   font-family: 'Material Icons';
@@ -93,6 +95,7 @@
     }
   }
   .guests-amount {
+    position: relative;
     width: 320px;
     height: 44px;
     .guests-amount__input {
@@ -103,7 +106,7 @@
     .material-icons {
       @extend %MaterialIcons;
       color: rgba(31, 32, 65, 0.5);
-      bottom: 0;
+      top: 20px;
       right: 0;
     }
   }
@@ -116,6 +119,7 @@
     margin-top: 31px;
     h3 {
       color: #FFFFFF;
+      margin: 0 auto;
     }
     .material-icons {
       @extend %MaterialIcons;

@@ -5,23 +5,29 @@ style
   include bookAroom.css
 body
   div.bookAroom-container
-    div
+    div.room-number
       h1 №888 люкс
       p 9990 в сутки
-    div
-      label ПРИБЫТИЕ
-      input
-      label ВЫЕЗД
-      input
-    div
-      label ГОСТИ
-      input
+    div.checkinto-date
+      div.checkinto-date__arrival
+        h3 ПРИБЫТИЕ
+        input(placeholder="19.08.2019")
+        div.material-icons expand_more
+      div.checkinto-date__departure
+        h3 ВЫЕЗД
+        input(placeholder="23.08.2019")
+        div.material-icons expand_more
+    div.guests-amount
+      h3 ГОСТИ
+      input.guests-amount__input(type="" placeholder="Сколько гостей")
+      div.material-icons expand_more
     div 
       p 
       p
       p
     h2 Итого 38081
-    div
-      button ЗАБРОНИРОВАТЬ
+    button.room-search 
+      h3 ПОДОБРАТЬ НОМЕР
+      div.material-icons arrow_forward
     
                  
