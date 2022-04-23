@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0; }
 
-.bookAroom-container h1, .bookAroom-container h3 {
+.bookAroom-container h1, .bookAroom-container h2, .bookAroom-container h3, .bookAroom-container p {
   font-family: 'Montserrat', sans-serif;
   font-style: normal; }
 
@@ -19,7 +19,7 @@
   padding-left: 15px;
   padding-right: 44px; }
 
-.bookAroom-container .checkinto-date .checkinto-date__arrival .material-icons, .bookAroom-container .checkinto-date .checkinto-date__departure .material-icons, .bookAroom-container .guests-amount .material-icons, .bookAroom-container .room-search .material-icons {
+.bookAroom-container .checkinto-date .checkinto-date__arrival .material-icons, .bookAroom-container .checkinto-date .checkinto-date__departure .material-icons, .bookAroom-container .guests-amount .material-icons, .bookAroom-container .room-book .material-icons {
   font-family: 'Material Icons';
   font-style: normal;
   font-weight: 400;
@@ -34,7 +34,7 @@
 
 .bookAroom-container {
   width: 380px;
-  height: 374px;
+  height: 512px;
   background: #FFFFFF;
   border: 1px solid rgba(0, 0, 0, 0.12);
   box-sizing: border-box;
@@ -49,12 +49,31 @@
     font-weight: bold;
     line-height: 29px;
     color: #1F2041; }
+  .bookAroom-container h2 {
+    font-size: 19px;
+    font-weight: bold;
+    line-height: 23px;
+    color: #1F2041; }
   .bookAroom-container h3 {
     font-size: 12px;
     font-weight: bold;
     line-height: 15px;
     color: #1F2041;
     margin-bottom: 5px; }
+  .bookAroom-container p {
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 24px;
+    color: #1F2041;
+    margin-top: 10px;
+    color: rgba(31, 32, 65, 0.75); }
+  .bookAroom-container .room-info {
+    display: flex;
+    justify-content: space-between; }
+    .bookAroom-container .room-info h1 {
+      display: inline-block; }
+    .bookAroom-container .room-info p {
+      display: inline-block; }
   .bookAroom-container .checkinto-date {
     display: flex;
     justify-content: space-between; }
@@ -83,18 +102,17 @@
       color: rgba(31, 32, 65, 0.5);
       top: 20px;
       right: 0; }
-  .bookAroom-container .room-search {
+  .bookAroom-container .room-book {
     width: 320px;
     height: 44px;
     background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
     border-radius: 22px;
-    position: relative;
-    margin-top: 31px; }
-    .bookAroom-container .room-search h3 {
+    position: relative; }
+    .bookAroom-container .room-book h3 {
       color: #FFFFFF;
       margin: 0 auto; }
-    .bookAroom-container .room-search .material-icons {
+    .bookAroom-container .room-book .material-icons {
       color: #FFFFFF;
       top: 0;
       right: 0; }
-</style><body><div class="bookAroom-container"><div class="room-number"><h1>№888 люкс</h1><p>9990 в сутки</p></div><div class="checkinto-date"><div class="checkinto-date__arrival"><h3>ПРИБЫТИЕ</h3><input placeholder="19.08.2019"/><div class="material-icons">expand_more</div></div><div class="checkinto-date__departure"><h3>ВЫЕЗД</h3><input placeholder="23.08.2019"/><div class="material-icons">expand_more</div></div></div><div class="guests-amount"><h3>ГОСТИ</h3><input class="guests-amount__input" type="" placeholder="Сколько гостей"/><div class="material-icons">expand_more</div></div><div> <p> </p><p></p><p></p></div><h2>Итого 38081</h2><button class="room-search"> <h3>ПОДОБРАТЬ НОМЕР</h3><div class="material-icons">arrow_forward</div></button></div></body>
+</style><body><div class="bookAroom-container"><div class="room-info"><h1 class="room-info__number">№888 люкс</h1><p class="room-info__price">9990 в сутки</p></div><div class="checkinto-date"><div class="checkinto-date__arrival"><h3>ПРИБЫТИЕ</h3><input placeholder="19.08.2019"/><div class="material-icons">expand_more</div></div><div class="checkinto-date__departure"><h3>ВЫЕЗД</h3><input placeholder="23.08.2019"/><div class="material-icons">expand_more</div></div></div><div class="guests-amount"><h3>ГОСТИ</h3><input class="guests-amount__input" type="" placeholder="3 гостя"/><div class="material-icons">expand_more</div></div><div class="price__list"><p>9990p x 4 суток 39960р </p><p>Сбор за услуги: скидка 2179р 0р</p><p>Сбор за дополнителные услуги 300р</p></div><h2 class="price__result">Итого 38081</h2><button class="room-book"> <h3>ЗАБРОНИРОВАТЬ</h3><div class="material-icons">arrow_forward</div></button></div></body>

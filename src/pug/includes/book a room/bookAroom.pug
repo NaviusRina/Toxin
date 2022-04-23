@@ -5,9 +5,9 @@ style
   include bookAroom.css
 body
   div.bookAroom-container
-    div.room-number
-      h1 №888 люкс
-      p 9990 в сутки
+    div.room-info
+      h1.room-info__number №888 люкс
+      p.room-info__price 9990 в сутки
     div.checkinto-date
       div.checkinto-date__arrival
         h3 ПРИБЫТИЕ
@@ -19,15 +19,15 @@ body
         div.material-icons expand_more
     div.guests-amount
       h3 ГОСТИ
-      input.guests-amount__input(type="" placeholder="Сколько гостей")
+      input.guests-amount__input(type="" placeholder="3 гостя")
       div.material-icons expand_more
-    div 
-      p 
-      p
-      p
-    h2 Итого 38081
-    button.room-search 
-      h3 ПОДОБРАТЬ НОМЕР
+    div.price__list
+      p 9990p x 4 суток 39960р 
+      p Сбор за услуги: скидка 2179р 0р
+      p Сбор за дополнителные услуги 300р
+    h2.price__result Итого 38081
+    button.room-book 
+      h3 ЗАБРОНИРОВАТЬ
       div.material-icons arrow_forward
     
                  

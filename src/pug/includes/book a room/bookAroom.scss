@@ -54,6 +54,13 @@
     line-height: 29px;
     color: #1F2041;
   }
+  h2 {
+    @extend %Montrserrat;
+    font-size: 19px;
+    font-weight: bold;
+    line-height: 23px;
+    color: #1F2041;
+  }
   h3 {
     @extend %Montrserrat;
     font-size: 12px;
@@ -61,6 +68,25 @@
     line-height: 15px;
     color: #1F2041;
     margin-bottom: 5px;
+  }
+  p {
+    @extend %Montrserrat;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 24px;
+    color: #1F2041;
+    margin-top: 10px;
+    color: rgba(31, 32, 65, 0.75);
+  }
+  .room-info {
+    display: flex;
+    justify-content: space-between;
+    h1 {
+      display: inline-block;
+    }
+    p {
+      display: inline-block;
+    }
   }
   .checkinto-date {
     display: flex;
@@ -110,13 +136,18 @@
       right: 0;
     }
   }
-  .room-search {
+  .price__list {
+
+  }
+  .price__result {
+
+  }
+  .room-book  {
     width: 320px;
     height: 44px;
     background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
     border-radius: 22px;
     position: relative;
-    margin-top: 31px;
     h3 {
       color: #FFFFFF;
       margin: 0 auto;
