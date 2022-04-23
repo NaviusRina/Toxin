@@ -35,6 +35,9 @@
   height: 44px;
   position: absolute;
 }
+input::-webkit-input-placeholder {//???
+  @extend %Montrserrat;
+}
 .bookAroom-container {
   width: 380px;
   height: 512px;
