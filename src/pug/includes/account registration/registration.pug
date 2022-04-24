@@ -4,24 +4,29 @@ script(src="https://kit.fontawesome.com/3ef9158f0f.js" crossorigin="anonymous")
 style
   include registration.css
 body
-  div.registration-container
-    div
-      h1 Регистрация аккаунта
-    div
-        input
-        input
-        input(type="checkbox")
-    div
+div.registration-container
+  h1 РЕГИСТРАЦИЯ АККАУНТА
+  div.user-information
+    div.user-name
+      input(placeholder="Имя")
+    div.user-surname
+      input(placeholder="Фамилия")
+    div.user-sex
+      input(type="radio" value="Мужчина")
+      input(type="radio" value="Женщина")
+    div.user-birth-date
       h3 ДАТА РОЖДЕНИЯ
-      input
-    div
-      h3 ДАННЫЕ ДЛЯ ВХОДА В СЕРВИС
-      input
-      input
-      input
-    div
-      button ПЕРЕЙТИ К ОПЛАТЕ
-    div
-      p
-      button ВОЙТИ
+      input(placeholder="ДД.ММ.ГГГГ")
+  div.sign-in-data
+    h3 ДАННЫЕ ДЛЯ ВХОДА В СЕРВИС
+    input(placeholder="Email")
+    input(placeholder="Пароль")
+    input(type="checkbox" value="Получать спецпредложения")
+  button.long-lilac-button
+    h3 ПЕРЕЙТИ К ОПЛАТЕ
+    div.material-icons arrow_forward
+  div.sign-in-account
+    p Уже есть аккаунт на Toxin
+    button.small-white-button
+      h3 ВОЙТИ
                  
