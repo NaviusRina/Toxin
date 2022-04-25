@@ -30,7 +30,7 @@ module.exports = {
     new CleanWebpackPlugin(),//очистка папки дист от лишнего кеша
     new CopyWebpackPlugin([
       {
-        fron: path.resolve(__dirname, 'src/images/favicon.ico'),
+        from: path.resolve(__dirname, 'src/images/favicon.ico'),
         to: path.resolve(__dirname, 'dist')
       }
     ])

@@ -3,6 +3,7 @@ link(href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesh
 script(src="https://kit.fontawesome.com/3ef9158f0f.js" crossorigin="anonymous")
 style
   include bookAroom.css
+  include ../includes.css
 body
   div.bookAroom-container
     div.room-info
@@ -11,15 +12,15 @@ body
     div.checkinto-date
       div.checkinto-date__arrival
         h3 ПРИБЫТИЕ
-        input(placeholder="19.08.2019")
+        input.small-input(placeholder="19.08.2019")
         div.material-icons expand_more
       div.checkinto-date__departure
         h3 ВЫЕЗД
-        input(placeholder="23.08.2019")
+        input.small-input(placeholder="23.08.2019")
         div.material-icons expand_more
     div.guests-amount
       h3 ГОСТИ
-      input.guests-amount__input(type="" placeholder="3 гостя")
+      input.long-input(type="" placeholder="3 гостя")
       div.material-icons expand_more
     div.price__list
       p 9990p x 4 суток 39960р 

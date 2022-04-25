@@ -3,12 +3,13 @@ link(href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesh
 script(src="https://kit.fontawesome.com/3ef9158f0f.js" crossorigin="anonymous")
 style
   include signIn.css
+  include ../includes.css
 body
   div.signIn-container
     h1 ВОЙТИ
     div.sign-in-data
-      input(placeholder="Email")
-      input(placeholder="Пароль")
+      input.long-input(placeholder="Email")
+      input.long-input(placeholder="Пароль")
     button.long-lilac-button
       h3 ВОЙТИ
       div.material-icons arrow_forward

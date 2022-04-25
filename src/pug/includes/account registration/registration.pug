@@ -3,24 +3,25 @@ link(href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesh
 script(src="https://kit.fontawesome.com/3ef9158f0f.js" crossorigin="anonymous")
 style
   include registration.css
+  include ../includes.css
 body
 div.registration-container
   h1 РЕГИСТРАЦИЯ АККАУНТА
   div.user-information
     div.user-name
-      input(placeholder="Имя")
+      input.long-input(placeholder="Имя")
     div.user-surname
-      input(placeholder="Фамилия")
+      input.long-input(placeholder="Фамилия")
     div.user-sex
       input(type="radio" value="Мужчина")
       input(type="radio" value="Женщина")
     div.user-birth-date
       h3 ДАТА РОЖДЕНИЯ
-      input(placeholder="ДД.ММ.ГГГГ")
+      input.long-input(placeholder="ДД.ММ.ГГГГ")
   div.sign-in-data
     h3 ДАННЫЕ ДЛЯ ВХОДА В СЕРВИС
-    input(placeholder="Email")
-    input(placeholder="Пароль")
+    input.long-input(placeholder="Email")
+    input.long-input(placeholder="Пароль")
     input(type="checkbox" value="Получать спецпредложения")
   button.long-lilac-button
     h3 ПЕРЕЙТИ К ОПЛАТЕ

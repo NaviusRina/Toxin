@@ -3,21 +3,9 @@
   margin: 0;
   padding: 0; }
 
-.roomSearch-container h1, .roomSearch-container h3 {
+h1, h2, h3, p {
   font-family: 'Montserrat', sans-serif;
   font-style: normal; }
-
-.roomSearch-container .checkinto-date .checkinto-date__arrival input, .roomSearch-container .checkinto-date .checkinto-date__departure input {
-  width: 150px;
-  height: 44px; }
-
-.roomSearch-container .checkinto-date .checkinto-date__arrival input, .roomSearch-container .checkinto-date .checkinto-date__departure input, .roomSearch-container .guests-amount .guests-amount__input {
-  background: #FFFFFF;
-  border: 1px solid rgba(31, 32, 65, 0.25);
-  box-sizing: border-box;
-  border-radius: 4px;
-  padding-left: 15px;
-  padding-right: 44px; }
 
 .roomSearch-container .checkinto-date .checkinto-date__arrival .material-icons, .roomSearch-container .checkinto-date .checkinto-date__departure .material-icons, .roomSearch-container .guests-amount .material-icons, .roomSearch-container .room-search .material-icons {
   font-family: 'Material Icons';
@@ -32,6 +20,45 @@
   height: 44px;
   position: absolute; }
 
+.long-input, .small-input, .roomSearch-container .guests-amount .guests-amount__input {
+  background: #FFFFFF;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding-left: 15px;
+  padding-right: 44px; }
+
+.small-input {
+  width: 150px;
+  height: 44px; }
+
+h1 {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 29px;
+  color: #1F2041; }
+
+h2 {
+  font-size: 19px;
+  font-weight: bold;
+  line-height: 23px;
+  color: #1F2041; }
+
+h3 {
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 15px;
+  color: #1F2041;
+  margin-bottom: 5px; }
+
+p {
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 24px;
+  color: #1F2041;
+  margin-top: 10px;
+  color: rgba(31, 32, 65, 0.75); }
+
 .roomSearch-container {
   width: 380px;
   height: 374px;
@@ -44,17 +71,6 @@
   flex-direction: column;
   justify-content: space-around;
   padding: 40px 30px 30px; }
-  .roomSearch-container h1 {
-    font-size: 24px;
-    font-weight: bold;
-    line-height: 29px;
-    color: #1F2041; }
-  .roomSearch-container h3 {
-    font-size: 12px;
-    font-weight: bold;
-    line-height: 15px;
-    color: #1F2041;
-    margin-bottom: 5px; }
   .roomSearch-container .checkinto-date {
     display: flex;
     justify-content: space-between; }

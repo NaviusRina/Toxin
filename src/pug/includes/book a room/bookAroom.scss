@@ -1,40 +1,6 @@
 @import "../../../../scss/font.css";
 
 
-* {
-  margin: 0;
-  padding: 0;
-}
-
-%Montrserrat {
-  font-family: 'Montserrat', sans-serif;
-  font-style: normal;
-}
-%InputDatesize {
-  width: 150px;
-  height: 44px;
-}
-%InputStyle {
-  background: #FFFFFF;
-  border: 1px solid rgba(31, 32, 65, 0.25);
-  box-sizing: border-box;
-  border-radius: 4px;
-  padding-left: 15px;
-  padding-right: 44px;
-}
-%MaterialIcons {
-  font-family: 'Material Icons';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 24px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 44px;
-  height: 44px;
-  position: absolute;
-}
 input::-webkit-input-placeholder {//???
   @extend %Montrserrat;
 }
@@ -50,37 +16,6 @@ input::-webkit-input-placeholder {//???
   flex-direction: column;
   justify-content: space-around;
   padding: 40px 30px 30px;
-  h1 {
-    @extend %Montrserrat;
-    font-size: 24px;
-    font-weight: bold;
-    line-height: 29px;
-    color: #1F2041;
-  }
-  h2 {
-    @extend %Montrserrat;
-    font-size: 19px;
-    font-weight: bold;
-    line-height: 23px;
-    color: #1F2041;
-  }
-  h3 {
-    @extend %Montrserrat;
-    font-size: 12px;
-    font-weight: bold;
-    line-height: 15px;
-    color: #1F2041;
-    margin-bottom: 5px;
-  }
-  p {
-    @extend %Montrserrat;
-    font-size: 14px;
-    font-weight: normal;
-    line-height: 24px;
-    color: #1F2041;
-    margin-top: 10px;
-    color: rgba(31, 32, 65, 0.75);
-  }
   .room-info {
     display: flex;
     justify-content: space-between;

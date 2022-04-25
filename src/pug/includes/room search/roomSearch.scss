@@ -1,40 +1,7 @@
 @import "../../../../scss/font.css";
+@import "../includes.scss";
 
 
-* {
-  margin: 0;
-  padding: 0;
-}
-
-%Montrserrat {
-  font-family: 'Montserrat', sans-serif;
-  font-style: normal;
-}
-%InputDatesize {
-  width: 150px;
-  height: 44px;
-}
-%InputStyle {
-  background: #FFFFFF;
-  border: 1px solid rgba(31, 32, 65, 0.25);
-  box-sizing: border-box;
-  border-radius: 4px;
-  padding-left: 15px;
-  padding-right: 44px;
-}
-%MaterialIcons {
-  font-family: 'Material Icons';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 24px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 44px;
-  height: 44px;
-  position: absolute;
-}
 .roomSearch-container {
   width: 380px;
   height: 374px;
@@ -47,31 +14,12 @@
   flex-direction: column;
   justify-content: space-around;
   padding: 40px 30px 30px;
-  h1 {
-    @extend %Montrserrat;
-    font-size: 24px;
-    font-weight: bold;
-    line-height: 29px;
-    color: #1F2041;
-  }
-  h3 {
-    @extend %Montrserrat;
-    font-size: 12px;
-    font-weight: bold;
-    line-height: 15px;
-    color: #1F2041;
-    margin-bottom: 5px;
-  }
   .checkinto-date {
     display: flex;
     justify-content: space-between;
     .checkinto-date__arrival {
       display: inline-block;
       position: relative;
-      input {
-        @extend %InputDatesize;
-        @extend %InputStyle;
-      }
       .material-icons {
         @extend %MaterialIcons;
         color: rgba(31, 32, 65, 0.5);
@@ -82,10 +30,6 @@
     .checkinto-date__departure {
       display: inline-block;
       position: relative;
-      input {
-        @extend %InputDatesize;
-        @extend %InputStyle;
-      }
       .material-icons {
         @extend %MaterialIcons;
         color: rgba(31, 32, 65, 0.5);
