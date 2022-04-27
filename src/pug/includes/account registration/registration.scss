@@ -1,1 +1,47 @@
 @import "../../../../scss/font.css";
+@import "../includes.scss";
+
+.registration-container {
+  width: 380px;
+  height: 646px;
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 40px 30px 30px;
+  .user-information {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    input {
+      margin-bottom: 10px;
+    }
+    .user-sex {
+    }
+  }
+  .sign-in-data {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    input {
+      margin-bottom: 10px;
+    }
+  }
+  .long-lilac-button {
+    .material-icons {
+      @extend %MaterialIcons;
+      color: #FFFFFF;
+      top: 0;
+      right: 0;
+    }
+  }
+  .sign-in-account {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}

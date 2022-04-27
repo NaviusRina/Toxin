@@ -55,16 +55,6 @@
     }
   }
   .room-search {
-    width: 320px;
-    height: 44px;
-    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
-    border-radius: 22px;
-    position: relative;
-    margin-top: 31px;
-    h3 {
-      color: #FFFFFF;
-      margin: 0 auto;
-    }
     .material-icons {
       @extend %MaterialIcons;
       color: #FFFFFF;
