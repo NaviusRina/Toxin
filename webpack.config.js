@@ -28,12 +28,15 @@ module.exports = {
       template: './index.html'//подключит содержимое файла индекс из папки срси к содержимому индекса из папки дист
     }),
     new CleanWebpackPlugin(),//очистка папки дист от лишнего кеша
-    new CopyWebpackPlugin([
-      {
-        from: path.resolve(__dirname, 'src/images/favicon.ico'),
-        to: path.resolve(__dirname, 'dist')
-      }
-    ])
+    new CopyWebpackPlugin({
+      patterns: [
+          {
+              from: path.resolve(__dirname, './images/favicon.ico'),
+              to: path.resolve(__dirname, 'dist'),
+              noErrorOnMissing: true
+          }
+      ]
+ })
   ],
   module: {
     rules: [
