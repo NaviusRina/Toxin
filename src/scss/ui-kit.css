@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+.dropdown {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  position: absolute; }
+
+.text-field {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal; }
+
+.text-field, .dropdown {
+  background: #FFFFFF;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 15px 0;
+  height: 44px; }
+
+.text-field {
+  width: 320px; }
+  .text-field:hover {
+    color: rgba(31, 32, 65, 0.75);
+    border: 1px solid rgba(31, 32, 65, 0.5); }
+
+.dropdown {
+  padding-left: 15px;
+  padding-right: 44px;
+  width: 320px; }
