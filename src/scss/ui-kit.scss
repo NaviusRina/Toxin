@@ -74,15 +74,24 @@ $green: #6FCF97;
   @extend %InputStyle;
   width: 320px;
   &:hover {
-    color: rgba(31, 32, 65, 0.75);
+    color: $darkShade75;
     border: 1px solid $darkShade50;
   }
 }
 .dropdown {
-  // @extend %Montrserrat;
-  @extend %MaterialIcons;
+  @extend %Montrserrat;
   @extend %InputStyle;
   padding-left: 15px;
   padding-right: 44px;
   width: 320px;
+}
+.masked-text-field {
+  @extend %Montrserrat;
+  @extend %InputStyle;
+  width: 320px;
+}
+.date-dropdown {
+  @extend %Montrserrat;
+  @extend %InputStyle;
+  width: 150px;
 }

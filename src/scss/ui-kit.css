@@ -2,20 +2,7 @@
   margin: 0;
   padding: 0; }
 
-.dropdown {
-  font-family: 'Material Icons';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 24px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 44px;
-  height: 44px;
-  position: absolute; }
-
-.text-field {
+.text-field, .dropdown {
   font-family: 'Montserrat', sans-serif;
   font-style: normal; }
 
@@ -24,7 +11,7 @@
   border: 1px solid rgba(31, 32, 65, 0.25);
   box-sizing: border-box;
   border-radius: 4px;
-  padding: 15px 0;
+  padding: 0 15px;
   height: 44px; }
 
 .text-field {
