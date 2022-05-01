@@ -3,21 +3,21 @@ const HTMLWebpackPlugin = require('html-webpack-plugin')
 const {CleanWebpackPlugin} = require('clean-webpack-plugin')
 const CopyWebpackPlugin = require('copy-webpack-plugin')//подключение статических файлов, например ico
 
-const PATHS = {
-  src: path.join(__dirname, './src'),
-  dist: path.join(__dirname, './dist'),
-  assets: 'assets/'
-}
+// const PATHS = {
+//   src: path.join(__dirname, './src'),
+//   dist: path.join(__dirname, './dist'),
+//   assets: 'assets/'
+// }
 
-const PAGES_DIR = `${PATHS.src}/pug/includes`
-const PAGES = fs.readdirSync(PAGES_DIR).filter(fileName => fileName.endsWith('.pug'))
+// const PAGES_DIR = `${PATHS.src}/pug/includes`
+// const PAGES = fs.readdirSync(PAGES_DIR).filter(fileName => fileName.endsWith('.pug'))
 
 module.exports = {
   context: path.resolve(__dirname, 'src'),
   mode: 'development',
-  externals: {
-    paths: PATHS
-  },
+  // externals: {
+  //   paths: PATHS
+  // },
   entry: {
     main: './index.js'
     /*можно добавить еще одну точку входа, то есть еще один путь*/
@@ -37,7 +37,7 @@ module.exports = {
   plugins: [//плагины, как, например, хтмл
     new HTMLWebpackPlugin({
       // title: 'Toxin',//установит tittle в файле индекс в папке дист? но он не нужен, если есть темплейт
-      template: `${PATHS.src}/index.html`//подключит содержимое файла индекс из папки срси к содержимому индекса из папки дист
+      template: './index.html'//подключит содержимое файла индекс из папки срси к содержимому индекса из папки дист
     }),
     new CleanWebpackPlugin(),//очистка папки дист от лишнего кеша
     new CopyWebpackPlugin({
@@ -49,11 +49,10 @@ module.exports = {
           }
         ]
       })
-      // ...
-      PAGES.map(page => new HTMLWebpackPlugin)([ //чтобы автоматически компилировал файлы паг в хтмл?
-        template: `${PAGES_DIR}/${page}`,
-        filename: `./${page.replace(/\.pug/,'.html')}`
-      ])
+      // ...PAGES.map(page => new HTMLWebpackPlugin({ //чтобы автоматически компилировал файлы паг в хтмл?
+      //   template: `${PAGES_DIR}/${page}`,
+      //   filename: `./${page.replace(/\.pug/,'.html')}`
+      // }))
   ],
   module: {
     rules: [
@@ -72,14 +71,19 @@ module.exports = {
       {
         test: /\.(ttf|woff)$/,
         use: ['file-loader']
-      }
+      },
       {
         test: /\.pug$/,//когда вебпак встречает файл pug, необходимо использовать определенный тип лодера(юз)
         use: ['pug-loader']
-      }
+      },
       {
         test: /\.js$/,
         use: ["source-map-loader"]
+      },
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        use: ['babel-loader']
       }
     ]
   }

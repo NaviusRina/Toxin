@@ -22,8 +22,10 @@
   },
   "homepage": "https://github.com/NaviusRina/Toxin#readme",
   "devDependencies": {
+    "@babel/core": "^7.17.10",
+    "@babel/preset-env": "^7.17.10",
     "babel-core": "^6.26.3",
-    "babel-loader": "^8.2.3",
+    "babel-loader": "^8.2.5",
     "babel-preset-env": "^1.7.0",
     "clean-webpack-plugin": "^4.0.0",
     "copy-webpack-plugin": "^10.2.4",
@@ -38,9 +40,10 @@
     "sass-loader": "^12.6.0",
     "source-map-loader": "^3.0.1",
     "style-loader": "^3.3.1",
-    "webpack": "^5.69.1",
+    "webpack": "^5.72.0",
     "webpack-cli": "^4.9.2",
-    "webpack-dev-server": "^4.7.4"
+    "webpack-dev-server": "^4.7.4",
+    "webpack-merge": "^5.8.0"
   },
   "dependencies": {
     "@mdi/font": "^6.6.96",
