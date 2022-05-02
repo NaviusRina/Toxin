@@ -36,3 +36,23 @@ h3 {
 
 .date-dropdown {
   width: 150px; }
+
+.button {
+  width: 320px;
+  height: 44px;
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  border-radius: 22px;
+  position: relative; }
+  .button h3 {
+    color: #FFFFFF;
+    margin: 0 auto; }
+
+.small-button {
+  width: 99px;
+  height: 44px;
+  border: 2px solid linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  border-radius: 22px;
+  position: relative; }
+  .small-button h3 {
+    color: #BC9CFF;
+    margin: 0 auto; }

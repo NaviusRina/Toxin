@@ -31,28 +31,28 @@ $green: #6FCF97;
 }
 
 //tittle
-%h1 {
+h1 {
   @extend %Montrserrat;
   font-weight: 700;
   font-size: 24px;
   line-height: 29px;
   color: $darkShade100;
 }
-%h2 {
+h2 {
   @extend %Montrserrat;
   font-size: 19px;
   font-weight: bold;
   line-height: 23px;
   color: $darkShade100;
 }
-%h3 {
+h3 {
   @extend %Montrserrat;
   font-size: 12px;
   font-weight: bold;
   line-height: 15px;
   color: $darkShade100;
 }
-%p {
+p {
   @extend %Montrserrat;
   font-weight: 400;
   font-size: 14px;

@@ -1,0 +1,15 @@
+@import "../../../../scss/ui-kit.scss";
+
+
+.checkbox {
+  display: flex;
+  flex-direction: row;
+  .checkbox__button {
+    width: 20px;
+    height: 20px;
+    background: #FFFFFF;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    box-sizing: border-box;
+    border-radius: 4px;
+  }
+}

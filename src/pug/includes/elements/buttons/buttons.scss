@@ -1,1 +1,28 @@
-@import "../../../../../scss/ui-kit.scss";
+@import "../../../../scss/ui-kit.scss";
+
+.button {
+  width: 320px;
+  height: 44px;
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  border-radius: 22px;
+  position: relative;
+  h3 {
+    color: #FFFFFF;
+    margin: 0 auto;
+  }
+  .material-icons {
+    // @extend %MaterialIcons;
+  }
+}
+.small-button {
+  width: 99px;
+  height: 44px;
+  border: 2px solid linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  border-radius: 22px;
+  position: relative;
+  background-color: #FFFFFF;
+  h3 {
+    color: #BC9CFF;
+    margin: 0 auto;
+  }
+}
