@@ -3,15 +3,8 @@ const HTMLWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const {CleanWebpackPlugin} = require('clean-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');//подключение статических файлов, например ico
+var HtmlWebpackPugPlugin = require('html-webpack-pug-plugin');
 
-// const PATHS = {
-//   src: path.join(__dirname, './src'),
-//   dist: path.join(__dirname, './dist'),
-//   assets: 'assets/'
-// }
-
-// const PAGES_DIR = `${PATHS.src}/pug/includes`
-// const PAGES = fs.readdirSync(PAGES_DIR).filter(fileName => fileName.endsWith('.pug'))
 
 module.exports = {
   context: path.resolve(__dirname, 'src'),
@@ -25,7 +18,8 @@ module.exports = {
   },
   output: {
     filename: '[name].[contenthash].js',//таким образом юудут создаваться отдельные файлы бандл на каждый путь из entry
-    path: path.resolve(__dirname, 'dist')
+    path: path.resolve(__dirname, 'dist'),
+    clean: true,
   },
   optimization: {//оптимизация. даст импорт библиотеки во все файлы жс?
     splitChunks: {
@@ -36,13 +30,15 @@ module.exports = {
     port: 4200
   },
   plugins: [//плагины, как, например, хтмл
-    new HTMLWebpackPlugin({
-      // title: 'Toxin',//установит tittle в файле индекс в папке дист? но он не нужен, если есть темплейт
-      template: './src/index.html'//подключит содержимое файла индекс из папки срси к содержимому индекса из папки дист
-    }),
     new MiniCssExtractPlugin(
 
     ),
+    new HTMLWebpackPlugin({
+      // title: 'Toxin',//установит tittle в файле индекс в папке дист? но он не нужен, если есть темплейт
+      filename: 'index.html',
+      template: './index.pug'//подключит содержимое файла индекс из папки срси к содержимому индекса из папки дист
+    }),
+    new HtmlWebpackPugPlugin(),
     new CleanWebpackPlugin(),//очистка папки дист от лишнего кеша
     new CopyWebpackPlugin({
       patterns: [
@@ -53,21 +49,40 @@ module.exports = {
           }
         ]
       })
-      // ...PAGES.map(page => new HTMLWebpackPlugin({ //чтобы автоматически компилировал файлы паг в хтмл?
-      //   template: `${PAGES_DIR}/${page}`,
-      //   filename: `./${page.replace(/\.pug/,'.html')}`
-      // }))
   ],
   module: {
     rules: [
       {
-        test: /\.(sa|sc|c)ss$/,//когда вебпак встречает файл сисс, необходимо использовать определенный тип лодера(юз)
+        test: /\.html$/,
+        use: ['file-loader']
+      },
+      {
+        test: /\.(sa|sc|c)ss$/,
         use: [
           MiniCssExtractPlugin.loader,
-          'style-loader',
-          'css-loader',
-          'sass-loader',
+          "css-loader",
+          {
+            loader: "postcss-loader",
+            options: {
+              postcssOptions: {
+                plugins: [
+                  [
+                    "postcss-preset-env",
+                    {
+                    // Options
+                    },
+                  ],
+                ],
+              },
+            },
+          },
+          "sass-loader",
         ],
+      },
+      {
+        test: /\.pug$/,//когда вебпак встречает файл pug, необходимо использовать определенный тип лодера(юз)
+        use: ['pug-loader', 'pug-html-loader']
+        // use: ['file-loader?name=[path][name].html', 'pug-html-loader?pretty&exports=false']
       },
       {
         test: /\.(png|jpg|svg|gis)$/,//для файлов графики
@@ -76,16 +91,6 @@ module.exports = {
       {
         test: /\.(ttf|woff)$/,
         use: ['file-loader']
-      },
-      {
-        test: /\.html$/,
-        use: {
-          loader: 'file-loader',
-        },
-      },
-      {
-        test: /\.pug$/,//когда вебпак встречает файл pug, необходимо использовать определенный тип лодера(юз)
-        use: ['pug-loader']
       },
       {
         test: /\.js$/,

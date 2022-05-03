@@ -1,12 +1,15 @@
 @import "../../../../scss/ui-kit.scss";
+@import "../../../../scss/font.css";
 
 .bullet-elem {
+  p {
+    color: rgba(31, 32, 65, 0.25);
+  }
   display: flex;
   flex-direction: row;
   .bullet-elem__ellipse {
     position: absolute;
-    width: 10.43px;
-    height: 10px;
-    background: rgba(31, 32, 65, 0.25);
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    border-radius: 50%;
   }
 }

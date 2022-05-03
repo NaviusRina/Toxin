@@ -1,4 +1,4 @@
-@import "../../../../scss/font.css";
+@import "../../../scss/ui-kit.scss";
 
 
 input::-webkit-input-placeholder {//???
@@ -32,10 +32,7 @@ input::-webkit-input-placeholder {//???
     .checkinto-date__arrival {
       display: inline-block;
       position: relative;
-      input {
-        @extend %InputDatesize;
-        @extend %InputStyle;
-      }
+
       .material-icons {
         @extend %MaterialIcons;
         color: rgba(31, 32, 65, 0.5);
@@ -46,10 +43,6 @@ input::-webkit-input-placeholder {//???
     .checkinto-date__departure {
       display: inline-block;
       position: relative;
-      input {
-        @extend %InputDatesize;
-        @extend %InputStyle;
-      }
       .material-icons {
         @extend %MaterialIcons;
         color: rgba(31, 32, 65, 0.5);
@@ -63,7 +56,6 @@ input::-webkit-input-placeholder {//???
     width: 320px;
     height: 44px;
     .guests-amount__input {
-      @extend %InputStyle;
       width: inherit;
       height: inherit;
     }
