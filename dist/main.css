@@ -513,81 +513,11 @@ p {
 /*!**********************************************************************************************************************************************************************************************************************!*\
   !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!../node_modules/sass-loader/dist/cjs.js!./pug/includes/elements/bullet list/bullet-list.scss ***!
   \**********************************************************************************************************************************************************************************************************************/
-* {
-  margin: 0;
-  padding: 0;
-}
-
-.date-dropdown, .masked-text-field, .dropdown, .text-field, p, h3, h2, h1 {
-  font-family: "Montserrat", sans-serif;
-  font-style: normal;
-}
-
-h1 {
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 29px;
-  color: #1F2041;
-}
-
-h2 {
-  font-size: 19px;
-  font-weight: bold;
-  line-height: 23px;
-  color: #1F2041;
-}
-
-h3 {
-  font-size: 12px;
-  font-weight: bold;
-  line-height: 15px;
-  color: #1F2041;
-}
-
-p {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
-  color: rgba(31, 32, 65, 0.75);
-}
-
-.date-dropdown, .masked-text-field, .dropdown, .text-field {
-  background: #FFFFFF;
-  border: 1px solid rgba(31, 32, 65, 0.25);
-  box-sizing: border-box;
-  border-radius: 4px;
-  padding: 0 15px;
-  height: 44px;
-}
-
-.text-field {
-  width: 320px;
-}
-.text-field:hover {
-  color: rgba(31, 32, 65, 0.75);
-  border: 1px solid rgba(31, 32, 65, 0.5);
-}
-
-.dropdown {
-  padding-left: 15px;
-  padding-right: 44px;
-  width: 320px;
-}
-
-.masked-text-field {
-  width: 320px;
-}
-
-.date-dropdown {
-  width: 150px;
-}
-
 .bullet-elem {
+  position: relative;
+  width: 270px;
   display: flex;
   flex-direction: row;
-}
-.bullet-elem p {
-  color: rgba(31, 32, 65, 0.25);
 }
 .bullet-elem .bullet-elem__ellipse {
   position: absolute;

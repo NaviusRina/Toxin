@@ -1,24 +1,31 @@
-<meta charset="UTF-8"/><link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/><script src="https://kit.fontawesome.com/3ef9158f0f.js" crossorigin="anonymous"></script><style>@import "../../../../scss/ui-kit.scss";
-@import "../../../../scss/font.css";
-
-.bullet-elem {
-  p {
-    color: rgba(31, 32, 65, 0.25);
-  }
-  display: flex;
-  flex-direction: row;
-  .bullet-elem__ellipse {
-    position: absolute;
-    border: 1px solid rgba(31, 32, 65, 0.25);
-    border-radius: 50%;
-  }
+<meta charset="UTF-8"/><link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/><script src="https://kit.fontawesome.com/3ef9158f0f.js" crossorigin="anonymous"></script><style>/*!******************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js!./scss/font.css ***!
+  \******************************************************************/
+@font-face{
+  font-family: 'Montserrat', sans-serif;
+  src: url(5fb2a2a4cd91c7927a26.ttf) format('truetype');
 }
+
+/*!***********************************************************************************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!../node_modules/sass-loader/dist/cjs.js!./scss/style.scss ***!
+  \***********************************************************************************************************************************************************************************/
+* {
+  margin: 0 auto;
+}
+
+p {
+  color: green;
+}
+/*!***********************************************************************************************************************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!../node_modules/sass-loader/dist/cjs.js!./pug/includes/account registration/registration.scss ***!
+  \***********************************************************************************************************************************************************************************************************************/
 * {
   margin: 0;
   padding: 0;
 }
-%MaterialIcons {
-  font-family: 'Material Icons';
+
+.registration-container .long-lilac-button .material-icons {
+  font-family: "Material Icons";
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
@@ -30,84 +37,1671 @@
   height: 44px;
   position: absolute;
 }
-//colors
-$darkShade100: #1F2041;
-$darkShade75: rgba(31, 32, 65, 0.75);
-$darkShade50: rgba(31, 32, 65, 0.5);
-$darkShade25: rgba(31, 32, 65, 0.25);
-$darkShade5: rgba(31, 32, 65, 0.05);
-$purple: #BC9CFF;
-$green: #6FCF97;
 
-//font
-%Montrserrat {
-  font-family: 'Montserrat', sans-serif;
+.date-dropdown, .masked-text-field, .dropdown, .text-field, p, h3, h2, h1 {
+  font-family: "Montserrat", sans-serif;
   font-style: normal;
 }
 
-//tittle
 h1 {
-  @extend %Montrserrat;
   font-weight: 700;
   font-size: 24px;
   line-height: 29px;
-  color: $darkShade100;
+  color: #1F2041;
 }
+
 h2 {
-  @extend %Montrserrat;
   font-size: 19px;
   font-weight: bold;
   line-height: 23px;
-  color: $darkShade100;
+  color: #1F2041;
 }
+
 h3 {
-  @extend %Montrserrat;
   font-size: 12px;
   font-weight: bold;
   line-height: 15px;
-  color: $darkShade100;
+  color: #1F2041;
 }
+
 p {
-  @extend %Montrserrat;
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
-  color: $darkShade75;
+  color: rgba(31, 32, 65, 0.75);
 }
 
-//Input
-%InputStyle {
+.date-dropdown, .masked-text-field, .dropdown, .text-field {
   background: #FFFFFF;
-  border: 1px solid $darkShade25;
+  border: 1px solid rgba(31, 32, 65, 0.25);
   box-sizing: border-box;
   border-radius: 4px;
   padding: 0 15px;
   height: 44px;
 }
+
 .text-field {
-  @extend %Montrserrat; //?????
-  @extend %InputStyle;
   width: 320px;
-  &:hover {
-    color: $darkShade75;
-    border: 1px solid $darkShade50;
-  }
 }
+.text-field:hover {
+  color: rgba(31, 32, 65, 0.75);
+  border: 1px solid rgba(31, 32, 65, 0.5);
+}
+
 .dropdown {
-  @extend %Montrserrat;
-  @extend %InputStyle;
   padding-left: 15px;
   padding-right: 44px;
   width: 320px;
 }
+
 .masked-text-field {
-  @extend %Montrserrat;
-  @extend %InputStyle;
   width: 320px;
 }
+
 .date-dropdown {
-  @extend %Montrserrat;
-  @extend %InputStyle;
+  width: 150px;
+}
+
+.registration-container {
+  width: 380px;
+  height: 646px;
+  background: red;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 40px 30px 30px;
+}
+.registration-container .user-information {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.registration-container .user-information input {
+  margin-bottom: 10px;
+}
+.registration-container .sign-in-data {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.registration-container .sign-in-data input {
+  margin-bottom: 10px;
+}
+.registration-container .long-lilac-button .material-icons {
+  color: #FFFFFF;
+  top: 0;
+  right: 0;
+}
+.registration-container .sign-in-account {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+/*!***********************************************************************************************************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!../node_modules/sass-loader/dist/cjs.js!./pug/includes/book a room/bookAroom.scss ***!
+  \***********************************************************************************************************************************************************************************************************/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.bookAroom-container .room-book .material-icons, .bookAroom-container .guests-amount .material-icons, .bookAroom-container .checkinto-date .checkinto-date__departure .material-icons, .bookAroom-container .checkinto-date .checkinto-date__arrival .material-icons {
+  font-family: "Material Icons";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  position: absolute;
+}
+
+input::-webkit-input-placeholder, .date-dropdown, .masked-text-field, .dropdown, .text-field, p, h3, h2, h1 {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  color: #1F2041;
+}
+
+h2 {
+  font-size: 19px;
+  font-weight: bold;
+  line-height: 23px;
+  color: #1F2041;
+}
+
+h3 {
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 15px;
+  color: #1F2041;
+}
+
+p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+}
+
+.date-dropdown, .masked-text-field, .dropdown, .text-field {
+  background: #FFFFFF;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 0 15px;
+  height: 44px;
+}
+
+.text-field {
+  width: 320px;
+}
+.text-field:hover {
+  color: rgba(31, 32, 65, 0.75);
+  border: 1px solid rgba(31, 32, 65, 0.5);
+}
+
+.dropdown {
+  padding-left: 15px;
+  padding-right: 44px;
+  width: 320px;
+}
+
+.masked-text-field {
+  width: 320px;
+}
+
+.date-dropdown {
+  width: 150px;
+}
+
+.bookAroom-container {
+  width: 380px;
+  height: 512px;
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 40px 30px 30px;
+}
+.bookAroom-container .room-info {
+  display: flex;
+  justify-content: space-between;
+}
+.bookAroom-container .room-info h1 {
+  display: inline-block;
+}
+.bookAroom-container .room-info p {
+  display: inline-block;
+}
+.bookAroom-container .checkinto-date {
+  display: flex;
+  justify-content: space-between;
+}
+.bookAroom-container .checkinto-date .checkinto-date__arrival {
+  display: inline-block;
+  position: relative;
+}
+.bookAroom-container .checkinto-date .checkinto-date__arrival .material-icons {
+  color: rgba(31, 32, 65, 0.5);
+  bottom: 0;
+  right: 0;
+}
+.bookAroom-container .checkinto-date .checkinto-date__departure {
+  display: inline-block;
+  position: relative;
+}
+.bookAroom-container .checkinto-date .checkinto-date__departure .material-icons {
+  color: rgba(31, 32, 65, 0.5);
+  bottom: 0;
+  right: 0;
+}
+.bookAroom-container .guests-amount {
+  position: relative;
+  width: 320px;
+  height: 44px;
+}
+.bookAroom-container .guests-amount .guests-amount__input {
+  width: inherit;
+  height: inherit;
+}
+.bookAroom-container .guests-amount .material-icons {
+  color: rgba(31, 32, 65, 0.5);
+  top: 20px;
+  right: 0;
+}
+.bookAroom-container .room-book {
+  width: 320px;
+  height: 44px;
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  border-radius: 22px;
+  position: relative;
+}
+.bookAroom-container .room-book h3 {
+  color: #FFFFFF;
+  margin: 0 auto;
+}
+.bookAroom-container .room-book .material-icons {
+  color: #FFFFFF;
+  top: 0;
+  right: 0;
+}
+/*!*******************************************************************************************************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!../node_modules/sass-loader/dist/cjs.js!./pug/includes/calendar/calendar.scss ***!
+  \*******************************************************************************************************************************************************************************************************/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.footer-container .top-footer .footer__subscription .subscription .subscription__mail-input, .footer-container p, .footer-container .top-footer .footer__support .footer__support-list .footer__support-list__item, .footer-container .top-footer .footer__about-us .footer__about-us-list .footer__about-us-list__item, .footer-container .top-footer .footer__nav .footer__nav-list .footer__nav-list__item, .date-dropdown, .masked-text-field, .dropdown, .text-field, p, h3, h2, h1 {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  color: #1F2041;
+}
+
+h2 {
+  font-size: 19px;
+  font-weight: bold;
+  line-height: 23px;
+  color: #1F2041;
+}
+
+h3 {
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 15px;
+  color: #1F2041;
+}
+
+p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+}
+
+.date-dropdown, .masked-text-field, .dropdown, .text-field {
+  background: #FFFFFF;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 0 15px;
+  height: 44px;
+}
+
+.text-field {
+  width: 320px;
+}
+.text-field:hover {
+  color: rgba(31, 32, 65, 0.75);
+  border: 1px solid rgba(31, 32, 65, 0.5);
+}
+
+.dropdown {
+  padding-left: 15px;
+  padding-right: 44px;
+  width: 320px;
+}
+
+.masked-text-field {
+  width: 320px;
+}
+
+.date-dropdown {
+  width: 150px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.footer-container .top-footer .footer__subscription .subscription .subscription__mail-input, .footer-container p, .footer-container .top-footer .footer__support .footer__support-list .footer__support-list__item, .footer-container .top-footer .footer__about-us .footer__about-us-list .footer__about-us-list__item, .footer-container .top-footer .footer__nav .footer__nav-list .footer__nav-list__item, h1, h2, h3, p, .text-field, .dropdown, .masked-text-field, .date-dropdown {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+}
+
+.footer-container .top-footer .footer__support .footer__support-list, .footer-container .top-footer .footer__about-us .footer__about-us-list, .footer-container .top-footer .footer__nav .footer__nav-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.footer-container .top-footer .footer__support .footer__support-list .footer__support-list__item, .footer-container .top-footer .footer__about-us .footer__about-us-list .footer__about-us-list__item, .footer-container .top-footer .footer__nav .footer__nav-list .footer__nav-list__item {
+  list-style: none;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.footer-container .top-footer .footer__support .footer__support-list .footer__support-list__item a, .footer-container .top-footer .footer__about-us .footer__about-us-list .footer__about-us-list__item a, .footer-container .top-footer .footer__nav .footer__nav-list .footer__nav-list__item a {
+  color: rgba(31, 32, 65, 0.5);
+  text-decoration: none;
+}
+
+.footer-container {
+  width: 100%;
+  position: absolute;
+  background-color: #FFFFFF;
+  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+  padding: 0 140px;
+  box-sizing: border-box;
+  left: 0;
+  bottom: 0;
+}
+.footer-container p {
+  color: rgba(31, 32, 65, 0.75);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.footer-container .top-footer {
+  display: flex;
+  justify-content: space-between;
+  height: 372px;
+  width: 100%;
+  background: #FFFFFF;
+  box-shadow: 0px 1px 0px rgba(31, 32, 65, 0.1);
+  box-sizing: border-box;
+  padding: 100px 0;
+}
+.footer-container .top-footer h3 {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 15px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #1F2041;
+  margin-bottom: 21px;
+}
+.footer-container .top-footer .footer__description {
+  width: 260px;
+}
+.footer-container .top-footer .footer__description .logo__image {
+  width: 40px;
+  margin-right: 12px;
+  margin-bottom: 20px;
+}
+.footer-container .top-footer .footer__description .logo__name {
+  position: relative;
+  width: 53.19px;
+  margin-bottom: 30px;
+}
+.footer-container .top-footer .footer__subscription {
+  position: relative;
+  width: 260px;
+}
+.footer-container .top-footer .footer__subscription .subscription {
+  margin-top: 20px;
+}
+.footer-container .top-footer .footer__subscription .subscription .subscription__mail-input {
+  height: 44px;
+  width: 260px;
+  border-radius: 4px;
+  color: rgba(31, 32, 65, 0.25);
+  padding-left: 15px;
+}
+.footer-container .top-footer .footer__subscription .subscription .material-icons-outlined {
+  position: absolute;
+  right: 0;
+  width: 44px;
+  height: 44px;
+  padding: 10px;
+  box-sizing: border-box;
+  font-family: "Material Icons";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  color: rgba(31, 32, 65, 0.5);
+}
+.footer-container .bottom-footer {
+  height: 70px;
+  width: 100%;
+  background: #FFFFFF;
+  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+  box-sizing: border-box;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.footer-container .bottom-footer .fa-brands {
+  font-family: Font Awesome 5 Brands;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 23px;
+  letter-spacing: 0em;
+  text-align: center;
+  margin-left: 20px;
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+/*!**********************************************************************************************************************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!../node_modules/sass-loader/dist/cjs.js!./pug/includes/elements/bullet list/bullet-list.scss ***!
+  \**********************************************************************************************************************************************************************************************************************/
+.bullet-elem {
+  position: relative;
+  width: 270px;
+  display: flex;
+  flex-direction: row;
+}
+.bullet-elem .bullet-elem__ellipse {
+  position: absolute;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  border-radius: 50%;
+}
+/*!**************************************************************************************************************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!../node_modules/sass-loader/dist/cjs.js!./pug/includes/elements/buttons/buttons.scss ***!
+  \**************************************************************************************************************************************************************************************************************/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.date-dropdown, .masked-text-field, .dropdown, .text-field, p, h3, h2, h1 {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  color: #1F2041;
+}
+
+h2 {
+  font-size: 19px;
+  font-weight: bold;
+  line-height: 23px;
+  color: #1F2041;
+}
+
+h3 {
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 15px;
+  color: #1F2041;
+}
+
+p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+}
+
+.date-dropdown, .masked-text-field, .dropdown, .text-field {
+  background: #FFFFFF;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 0 15px;
+  height: 44px;
+}
+
+.text-field {
+  width: 320px;
+}
+.text-field:hover {
+  color: rgba(31, 32, 65, 0.75);
+  border: 1px solid rgba(31, 32, 65, 0.5);
+}
+
+.dropdown {
+  padding-left: 15px;
+  padding-right: 44px;
+  width: 320px;
+}
+
+.masked-text-field {
+  width: 320px;
+}
+
+.date-dropdown {
+  width: 150px;
+}
+
+.button {
+  width: 320px;
+  height: 44px;
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  border-radius: 22px;
+  position: relative;
+}
+.button h3 {
+  color: green;
+  margin: 0 auto;
+}
+.small-button {
+  width: 99px;
+  height: 44px;
+  border: 2px solid linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  border-radius: 22px;
+  position: relative;
+  background-color: #FFFFFF;
+}
+.small-button h3 {
+  color: #BC9CFF;
+  margin: 0 auto;
+}
+/*!********************************************************************************************************************************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!../node_modules/sass-loader/dist/cjs.js!./pug/includes/elements/checkbox buttons/checkbox-buttons.scss ***!
+  \********************************************************************************************************************************************************************************************************************************/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.date-dropdown, .masked-text-field, .dropdown, .text-field, p, h3, h2, h1 {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  color: #1F2041;
+}
+
+h2 {
+  font-size: 19px;
+  font-weight: bold;
+  line-height: 23px;
+  color: #1F2041;
+}
+
+h3 {
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 15px;
+  color: #1F2041;
+}
+
+p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+}
+
+.date-dropdown, .masked-text-field, .dropdown, .text-field {
+  background: #FFFFFF;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 0 15px;
+  height: 44px;
+}
+
+.text-field {
+  width: 320px;
+}
+.text-field:hover {
+  color: rgba(31, 32, 65, 0.75);
+  border: 1px solid rgba(31, 32, 65, 0.5);
+}
+
+.dropdown {
+  padding-left: 15px;
+  padding-right: 44px;
+  width: 320px;
+}
+
+.masked-text-field {
+  width: 320px;
+}
+
+.date-dropdown {
+  width: 150px;
+}
+
+.checkbox {
+  display: flex;
+  flex-direction: row;
+}
+.checkbox .checkbox__button {
+  width: 20px;
+  height: 20px;
+  background: #FFFFFF;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+/*!**************************************************************************************************************************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!../node_modules/sass-loader/dist/cjs.js!./pug/includes/elements/date dropdown/date-dropdown.scss ***!
+  \**************************************************************************************************************************************************************************************************************************/
+
+/*!**********************************************************************************************************************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!../node_modules/sass-loader/dist/cjs.js!./pug/includes/elements/description/description.scss ***!
+  \**********************************************************************************************************************************************************************************************************************/
+
+/*!****************************************************************************************************************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!../node_modules/sass-loader/dist/cjs.js!./pug/includes/elements/dropdown/dropdown.scss ***!
+  \****************************************************************************************************************************************************************************************************************/
+
+/*!************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!../node_modules/sass-loader/dist/cjs.js!./pug/includes/elements/expandable checkbox list/expandable-checkbox-list.scss ***!
+  \************************************************************************************************************************************************************************************************************************************************/
+
+/*!****************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!../node_modules/sass-loader/dist/cjs.js!./pug/includes/elements/filter date dropdown/filter-date-dropdown.scss ***!
+  \****************************************************************************************************************************************************************************************************************************************/
+
+/*!**********************************************************************************************************************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!../node_modules/sass-loader/dist/cjs.js!./pug/includes/elements/like button/like-button.scss ***!
+  \**********************************************************************************************************************************************************************************************************************/
+
+/*!********************************************************************************************************************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!../node_modules/sass-loader/dist/cjs.js!./pug/includes/elements/pagination/pagination.scss ***!
+  \********************************************************************************************************************************************************************************************************************/
+
+/*!**************************************************************************************************************************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!../node_modules/sass-loader/dist/cjs.js!./pug/includes/elements/radio buttons/radio-buttons.scss ***!
+  \**************************************************************************************************************************************************************************************************************************/
+
+/*!************************************************************************************************************************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!../node_modules/sass-loader/dist/cjs.js!./pug/includes/elements/range slider/range-slider.scss ***!
+  \************************************************************************************************************************************************************************************************************************/
+
+/*!**********************************************************************************************************************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!../node_modules/sass-loader/dist/cjs.js!./pug/includes/elements/rate button/rate-button.scss ***!
+  \**********************************************************************************************************************************************************************************************************************/
+
+/*!************************************************************************************************************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!../node_modules/sass-loader/dist/cjs.js!./pug/includes/elements/review/review.scss ***!
+  \************************************************************************************************************************************************************************************************************/
+
+/*!******************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!../node_modules/sass-loader/dist/cjs.js!./pug/includes/elements/rich checkbox buttons/rich-checkbox-buttons.scss ***!
+  \******************************************************************************************************************************************************************************************************************************************/
+
+/*!**********************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!../node_modules/sass-loader/dist/cjs.js!./pug/includes/elements/subscription text field/subscription-text-field.scss ***!
+  \**********************************************************************************************************************************************************************************************************************************************/
+
+/*!********************************************************************************************************************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!../node_modules/sass-loader/dist/cjs.js!./pug/includes/elements/text field/text-field.scss ***!
+  \********************************************************************************************************************************************************************************************************************/
+
+/*!************************************************************************************************************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!../node_modules/sass-loader/dist/cjs.js!./pug/includes/elements/toggle/toggle.scss ***!
+  \************************************************************************************************************************************************************************************************************/
+
+/*!***************************************************************************************************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!../node_modules/sass-loader/dist/cjs.js!./pug/includes/footer/footer.scss ***!
+  \***************************************************************************************************************************************************************************************************/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.footer-container .top-footer .footer__subscription .subscription .subscription__mail-input, .footer-container p, .footer-container .top-footer .footer__support .footer__support-list .footer__support-list__item, .footer-container .top-footer .footer__about-us .footer__about-us-list .footer__about-us-list__item, .footer-container .top-footer .footer__nav .footer__nav-list .footer__nav-list__item, .date-dropdown, .masked-text-field, .dropdown, .text-field, p, h3, h2, h1 {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  color: #1F2041;
+}
+
+h2 {
+  font-size: 19px;
+  font-weight: bold;
+  line-height: 23px;
+  color: #1F2041;
+}
+
+h3 {
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 15px;
+  color: #1F2041;
+}
+
+p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+}
+
+.date-dropdown, .masked-text-field, .dropdown, .text-field {
+  background: #FFFFFF;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 0 15px;
+  height: 44px;
+}
+
+.text-field {
+  width: 320px;
+}
+.text-field:hover {
+  color: rgba(31, 32, 65, 0.75);
+  border: 1px solid rgba(31, 32, 65, 0.5);
+}
+
+.dropdown {
+  padding-left: 15px;
+  padding-right: 44px;
+  width: 320px;
+}
+
+.masked-text-field {
+  width: 320px;
+}
+
+.date-dropdown {
+  width: 150px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.footer-container .top-footer .footer__subscription .subscription .subscription__mail-input, .footer-container p, .footer-container .top-footer .footer__support .footer__support-list .footer__support-list__item, .footer-container .top-footer .footer__about-us .footer__about-us-list .footer__about-us-list__item, .footer-container .top-footer .footer__nav .footer__nav-list .footer__nav-list__item, h1, h2, h3, p, .text-field, .dropdown, .masked-text-field, .date-dropdown {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+}
+
+.footer-container .top-footer .footer__support .footer__support-list, .footer-container .top-footer .footer__about-us .footer__about-us-list, .footer-container .top-footer .footer__nav .footer__nav-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.footer-container .top-footer .footer__support .footer__support-list .footer__support-list__item, .footer-container .top-footer .footer__about-us .footer__about-us-list .footer__about-us-list__item, .footer-container .top-footer .footer__nav .footer__nav-list .footer__nav-list__item {
+  list-style: none;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.footer-container .top-footer .footer__support .footer__support-list .footer__support-list__item a, .footer-container .top-footer .footer__about-us .footer__about-us-list .footer__about-us-list__item a, .footer-container .top-footer .footer__nav .footer__nav-list .footer__nav-list__item a {
+  color: rgba(31, 32, 65, 0.5);
+  text-decoration: none;
+}
+
+.footer-container {
+  width: 100%;
+  position: absolute;
+  background-color: #FFFFFF;
+  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+  padding: 0 140px;
+  box-sizing: border-box;
+  left: 0;
+  bottom: 0;
+}
+.footer-container p {
+  color: rgba(31, 32, 65, 0.75);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.footer-container .top-footer {
+  display: flex;
+  justify-content: space-between;
+  height: 372px;
+  width: 100%;
+  background: #FFFFFF;
+  box-shadow: 0px 1px 0px rgba(31, 32, 65, 0.1);
+  box-sizing: border-box;
+  padding: 100px 0;
+}
+.footer-container .top-footer h3 {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 15px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #1F2041;
+  margin-bottom: 21px;
+}
+.footer-container .top-footer .footer__description {
+  width: 260px;
+}
+.footer-container .top-footer .footer__description .logo__image {
+  width: 40px;
+  margin-right: 12px;
+  margin-bottom: 20px;
+}
+.footer-container .top-footer .footer__description .logo__name {
+  position: relative;
+  width: 53.19px;
+  margin-bottom: 30px;
+}
+.footer-container .top-footer .footer__subscription {
+  position: relative;
+  width: 260px;
+}
+.footer-container .top-footer .footer__subscription .subscription {
+  margin-top: 20px;
+}
+.footer-container .top-footer .footer__subscription .subscription .subscription__mail-input {
+  height: 44px;
+  width: 260px;
+  border-radius: 4px;
+  color: rgba(31, 32, 65, 0.25);
+  padding-left: 15px;
+}
+.footer-container .top-footer .footer__subscription .subscription .material-icons-outlined {
+  position: absolute;
+  right: 0;
+  width: 44px;
+  height: 44px;
+  padding: 10px;
+  box-sizing: border-box;
+  font-family: "Material Icons";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  color: rgba(31, 32, 65, 0.5);
+}
+.footer-container .bottom-footer {
+  height: 70px;
+  width: 100%;
+  background: #FFFFFF;
+  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+  box-sizing: border-box;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.footer-container .bottom-footer .fa-brands {
+  font-family: Font Awesome 5 Brands;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 23px;
+  letter-spacing: 0em;
+  text-align: center;
+  margin-left: 20px;
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+/*!***************************************************************************************************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!../node_modules/sass-loader/dist/cjs.js!./pug/includes/header/header.scss ***!
+  \***************************************************************************************************************************************************************************************************/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container .user-button .registation__button p, .container .user-button .login__button p, .container .nav .nav-list .nav-list__item, .date-dropdown, .masked-text-field, .dropdown, .text-field, p, h3, h2, h1 {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  color: #1F2041;
+}
+
+h2 {
+  font-size: 19px;
+  font-weight: bold;
+  line-height: 23px;
+  color: #1F2041;
+}
+
+h3 {
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 15px;
+  color: #1F2041;
+}
+
+p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+}
+
+.date-dropdown, .masked-text-field, .dropdown, .text-field {
+  background: #FFFFFF;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 0 15px;
+  height: 44px;
+}
+
+.text-field {
+  width: 320px;
+}
+.text-field:hover {
+  color: rgba(31, 32, 65, 0.75);
+  border: 1px solid rgba(31, 32, 65, 0.5);
+}
+
+.dropdown {
+  padding-left: 15px;
+  padding-right: 44px;
+  width: 320px;
+}
+
+.masked-text-field {
+  width: 320px;
+}
+
+.date-dropdown {
+  width: 150px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container .user-button .registation__button p, .container .user-button .login__button p, .container .nav .nav-list .nav-list__item, h1, h2, h3, p, .text-field, .dropdown, .masked-text-field, .date-dropdown {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  letter-spacing: 1px;
+}
+
+.container {
+  width: 100%;
+  position: relative;
+  height: 70px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #FFFFFF;
+  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+  box-sizing: border-box;
+  padding: 0 140px;
+}
+.container .logo {
+  margin: 15px;
+}
+.container .logo .logo__image {
+  width: 40px;
+  margin-right: 12px;
+  height: 70px;
+}
+.container .logo .logo__name {
+  width: 53.19px;
+  height: 70px;
+}
+.container .nav {
+  width: 447px;
+}
+.container .nav .nav-list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.container .nav .nav-list .nav-list__item {
+  list-style: none;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 400;
+}
+.container .nav .nav-list .nav-list__item .material-icons {
+  position: absolute;
+  bottom: 23px;
+  font-family: "Material Icons";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  text-transform: none;
+  color: rgba(31, 32, 65, 0.5);
+  cursor: pointer;
+}
+.container .nav .nav-list .nav-list__item a {
+  color: rgba(31, 32, 65, 0.5);
+  text-decoration: none;
+}
+.container .user-button {
+  display: flex;
+  justify-content: space-between;
+}
+.container .user-button .login__button {
+  padding: 10px 20px;
+  background: #FFFFFF;
+  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+  border-radius: 22px;
+  border: 2px solid -webkit-linear-gradient(#BC9CFF 0%, #8BA4F9 100%);
+}
+.container .user-button .login__button p {
+  color: #BC9CFF;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+}
+.container .user-button .registation__button {
+  padding: 10px 20px;
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  border-radius: 22px;
+  margin-left: 20px;
+}
+.container .user-button .registation__button p {
+  color: #FFFFFF;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+}
+/*!********************************************************************************************************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!../node_modules/sass-loader/dist/cjs.js!./pug/includes/room card/roomCard.scss ***!
+  \********************************************************************************************************************************************************************************************************/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.footer-container .top-footer .footer__subscription .subscription .subscription__mail-input, .footer-container p, .footer-container .top-footer .footer__support .footer__support-list .footer__support-list__item, .footer-container .top-footer .footer__about-us .footer__about-us-list .footer__about-us-list__item, .footer-container .top-footer .footer__nav .footer__nav-list .footer__nav-list__item, .date-dropdown, .masked-text-field, .dropdown, .text-field, p, h3, h2, h1 {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  color: #1F2041;
+}
+
+h2 {
+  font-size: 19px;
+  font-weight: bold;
+  line-height: 23px;
+  color: #1F2041;
+}
+
+h3 {
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 15px;
+  color: #1F2041;
+}
+
+p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+}
+
+.date-dropdown, .masked-text-field, .dropdown, .text-field {
+  background: #FFFFFF;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 0 15px;
+  height: 44px;
+}
+
+.text-field {
+  width: 320px;
+}
+.text-field:hover {
+  color: rgba(31, 32, 65, 0.75);
+  border: 1px solid rgba(31, 32, 65, 0.5);
+}
+
+.dropdown {
+  padding-left: 15px;
+  padding-right: 44px;
+  width: 320px;
+}
+
+.masked-text-field {
+  width: 320px;
+}
+
+.date-dropdown {
+  width: 150px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.footer-container .top-footer .footer__subscription .subscription .subscription__mail-input, .footer-container p, .footer-container .top-footer .footer__support .footer__support-list .footer__support-list__item, .footer-container .top-footer .footer__about-us .footer__about-us-list .footer__about-us-list__item, .footer-container .top-footer .footer__nav .footer__nav-list .footer__nav-list__item, h1, h2, h3, p, .text-field, .dropdown, .masked-text-field, .date-dropdown {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+}
+
+.footer-container .top-footer .footer__support .footer__support-list, .footer-container .top-footer .footer__about-us .footer__about-us-list, .footer-container .top-footer .footer__nav .footer__nav-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.footer-container .top-footer .footer__support .footer__support-list .footer__support-list__item, .footer-container .top-footer .footer__about-us .footer__about-us-list .footer__about-us-list__item, .footer-container .top-footer .footer__nav .footer__nav-list .footer__nav-list__item {
+  list-style: none;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.footer-container .top-footer .footer__support .footer__support-list .footer__support-list__item a, .footer-container .top-footer .footer__about-us .footer__about-us-list .footer__about-us-list__item a, .footer-container .top-footer .footer__nav .footer__nav-list .footer__nav-list__item a {
+  color: rgba(31, 32, 65, 0.5);
+  text-decoration: none;
+}
+
+.footer-container {
+  width: 100%;
+  position: absolute;
+  background-color: #FFFFFF;
+  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+  padding: 0 140px;
+  box-sizing: border-box;
+  left: 0;
+  bottom: 0;
+}
+.footer-container p {
+  color: rgba(31, 32, 65, 0.75);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.footer-container .top-footer {
+  display: flex;
+  justify-content: space-between;
+  height: 372px;
+  width: 100%;
+  background: #FFFFFF;
+  box-shadow: 0px 1px 0px rgba(31, 32, 65, 0.1);
+  box-sizing: border-box;
+  padding: 100px 0;
+}
+.footer-container .top-footer h3 {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 15px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #1F2041;
+  margin-bottom: 21px;
+}
+.footer-container .top-footer .footer__description {
+  width: 260px;
+}
+.footer-container .top-footer .footer__description .logo__image {
+  width: 40px;
+  margin-right: 12px;
+  margin-bottom: 20px;
+}
+.footer-container .top-footer .footer__description .logo__name {
+  position: relative;
+  width: 53.19px;
+  margin-bottom: 30px;
+}
+.footer-container .top-footer .footer__subscription {
+  position: relative;
+  width: 260px;
+}
+.footer-container .top-footer .footer__subscription .subscription {
+  margin-top: 20px;
+}
+.footer-container .top-footer .footer__subscription .subscription .subscription__mail-input {
+  height: 44px;
+  width: 260px;
+  border-radius: 4px;
+  color: rgba(31, 32, 65, 0.25);
+  padding-left: 15px;
+}
+.footer-container .top-footer .footer__subscription .subscription .material-icons-outlined {
+  position: absolute;
+  right: 0;
+  width: 44px;
+  height: 44px;
+  padding: 10px;
+  box-sizing: border-box;
+  font-family: "Material Icons";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  color: rgba(31, 32, 65, 0.5);
+}
+.footer-container .bottom-footer {
+  height: 70px;
+  width: 100%;
+  background: #FFFFFF;
+  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+  box-sizing: border-box;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.footer-container .bottom-footer .fa-brands {
+  font-family: Font Awesome 5 Brands;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 23px;
+  letter-spacing: 0em;
+  text-align: center;
+  margin-left: 20px;
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+/*!************************************************************************************************************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!../node_modules/sass-loader/dist/cjs.js!./pug/includes/room search/roomSearch.scss ***!
+  \************************************************************************************************************************************************************************************************************/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.roomSearch-container .room-search .material-icons, .roomSearch-container .guests-amount .material-icons, .roomSearch-container .checkinto-date .checkinto-date__departure .material-icons, .roomSearch-container .checkinto-date .checkinto-date__arrival .material-icons {
+  font-family: "Material Icons";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  position: absolute;
+}
+
+.date-dropdown, .masked-text-field, .dropdown, .text-field, p, h3, h2, h1 {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  color: #1F2041;
+}
+
+h2 {
+  font-size: 19px;
+  font-weight: bold;
+  line-height: 23px;
+  color: #1F2041;
+}
+
+h3 {
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 15px;
+  color: #1F2041;
+}
+
+p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+}
+
+.roomSearch-container .guests-amount .guests-amount__input, .date-dropdown, .masked-text-field, .dropdown, .text-field {
+  background: #FFFFFF;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 0 15px;
+  height: 44px;
+}
+
+.text-field {
+  width: 320px;
+}
+.text-field:hover {
+  color: rgba(31, 32, 65, 0.75);
+  border: 1px solid rgba(31, 32, 65, 0.5);
+}
+
+.dropdown {
+  padding-left: 15px;
+  padding-right: 44px;
+  width: 320px;
+}
+
+.masked-text-field {
+  width: 320px;
+}
+
+.date-dropdown {
+  width: 150px;
+}
+
+.roomSearch-container {
+  width: 380px;
+  height: 374px;
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 40px 30px 30px;
+}
+.roomSearch-container .checkinto-date {
+  display: flex;
+  justify-content: space-between;
+}
+.roomSearch-container .checkinto-date .checkinto-date__arrival {
+  display: inline-block;
+  position: relative;
+}
+.roomSearch-container .checkinto-date .checkinto-date__arrival .material-icons {
+  color: rgba(31, 32, 65, 0.5);
+  bottom: 0;
+  right: 0;
+}
+.roomSearch-container .checkinto-date .checkinto-date__departure {
+  display: inline-block;
+  position: relative;
+}
+.roomSearch-container .checkinto-date .checkinto-date__departure .material-icons {
+  color: rgba(31, 32, 65, 0.5);
+  bottom: 0;
+  right: 0;
+}
+.roomSearch-container .guests-amount {
+  position: relative;
+  width: 320px;
+  height: 44px;
+}
+.roomSearch-container .guests-amount .guests-amount__input {
+  width: inherit;
+  height: inherit;
+}
+.roomSearch-container .guests-amount .material-icons {
+  color: rgba(31, 32, 65, 0.5);
+  top: 20px;
+  right: 0;
+}
+.roomSearch-container .room-search .material-icons {
+  color: #FFFFFF;
+  top: 0;
+  right: 0;
+}
+/*!****************************************************************************************************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!../node_modules/sass-loader/dist/cjs.js!./pug/includes/sign in/signIn.scss ***!
+  \****************************************************************************************************************************************************************************************************/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.signIn-container .room-search .material-icons, .signIn-container .guests-amount .material-icons, .signIn-container .checkinto-date .checkinto-date__departure .material-icons, .signIn-container .checkinto-date .checkinto-date__arrival .material-icons {
+  font-family: "Material Icons";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  position: absolute;
+}
+
+.date-dropdown, .masked-text-field, .dropdown, .text-field, p, h3, h2, h1 {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  color: #1F2041;
+}
+
+h2 {
+  font-size: 19px;
+  font-weight: bold;
+  line-height: 23px;
+  color: #1F2041;
+}
+
+h3 {
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 15px;
+  color: #1F2041;
+}
+
+p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+}
+
+.signIn-container .guests-amount .guests-amount__input, .date-dropdown, .masked-text-field, .dropdown, .text-field {
+  background: #FFFFFF;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 0 15px;
+  height: 44px;
+}
+
+.text-field {
+  width: 320px;
+}
+.text-field:hover {
+  color: rgba(31, 32, 65, 0.75);
+  border: 1px solid rgba(31, 32, 65, 0.5);
+}
+
+.dropdown {
+  padding-left: 15px;
+  padding-right: 44px;
+  width: 320px;
+}
+
+.masked-text-field {
+  width: 320px;
+}
+
+.date-dropdown {
+  width: 150px;
+}
+
+.signIn-container {
+  width: 380px;
+  height: 374px;
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 40px 30px 30px;
+}
+.signIn-container .checkinto-date {
+  display: flex;
+  justify-content: space-between;
+}
+.signIn-container .checkinto-date .checkinto-date__arrival {
+  display: inline-block;
+  position: relative;
+}
+.signIn-container .checkinto-date .checkinto-date__arrival .material-icons {
+  color: rgba(31, 32, 65, 0.5);
+  bottom: 0;
+  right: 0;
+}
+.signIn-container .checkinto-date .checkinto-date__departure {
+  display: inline-block;
+  position: relative;
+}
+.signIn-container .checkinto-date .checkinto-date__departure .material-icons {
+  color: rgba(31, 32, 65, 0.5);
+  bottom: 0;
+  right: 0;
+}
+.signIn-container .guests-amount {
+  position: relative;
+  width: 320px;
+  height: 44px;
+}
+.signIn-container .guests-amount .guests-amount__input {
+  width: inherit;
+  height: inherit;
+}
+.signIn-container .guests-amount .material-icons {
+  color: rgba(31, 32, 65, 0.5);
+  top: 20px;
+  right: 0;
+}
+.signIn-container .room-search .material-icons {
+  color: #FFFFFF;
+  top: 0;
+  right: 0;
+}
+/*!*********************************************************************************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!../node_modules/sass-loader/dist/cjs.js!./scss/font.css ***!
+  \*********************************************************************************************************************************************************************************/
+@font-face {
+  font-family: "Montserrat", sans-serif;
+  src: url(5fb2a2a4cd91c7927a26.ttf) format("truetype");
+}
+/*!************************************************************************************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!../node_modules/sass-loader/dist/cjs.js!./scss/ui-kit.scss ***!
+  \************************************************************************************************************************************************************************************/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.date-dropdown, .masked-text-field, .dropdown, .text-field, p, h3, h2, h1 {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  color: #1F2041;
+}
+
+h2 {
+  font-size: 19px;
+  font-weight: bold;
+  line-height: 23px;
+  color: #1F2041;
+}
+
+h3 {
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 15px;
+  color: #1F2041;
+}
+
+p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+}
+
+.date-dropdown, .masked-text-field, .dropdown, .text-field {
+  background: #FFFFFF;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 0 15px;
+  height: 44px;
+}
+
+.text-field {
+  width: 320px;
+}
+.text-field:hover {
+  color: rgba(31, 32, 65, 0.75);
+  border: 1px solid rgba(31, 32, 65, 0.5);
+}
+
+.dropdown {
+  padding-left: 15px;
+  padding-right: 44px;
+  width: 320px;
+}
+
+.masked-text-field {
+  width: 320px;
+}
+
+.date-dropdown {
   width: 150px;
 }
 </style><body><div class="bullet-elem"><span class="bullet-elem__ellipse"></span><p>Нельзя с питомцами</p></div><div class="bullet-elem"><span class="bullet-elem__ellipse"></span><p>Без вечеринок и мероприятий</p></div><div class="bullet-elem"><span class="bullet-elem__ellipse"></span><p>Время прибытия — после 13:00, а выезд до 12:00</p></div></body>
