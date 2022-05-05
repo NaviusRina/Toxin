@@ -1,0 +1,27 @@
+@import "../../../../scss/ui-kit.scss";
+
+.desccription {
+  position: relative;
+  width: 291px;
+  height: 158px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  .desccription__tittle {
+    width: inherit;
+    display: flex;
+    justify-content: space-between;
+    .desccription__tittle__icon {
+      width: 48px;
+      height: 48px;
+    }
+    .desccription-text {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      .desccription-text-head {
+        font-weight: 700;
+      }
+    }
+  }
+}
