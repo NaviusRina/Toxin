@@ -1,0 +1,16 @@
+@import "../../../../scss/ui-kit.scss";
+
+.rate {
+  .material-icons {
+    width: 24px;
+    height: 24px;
+    font-size: 24px;
+    line-height: 20px;
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
+
+}

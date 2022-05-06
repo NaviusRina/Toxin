@@ -1,0 +1,10 @@
+@import "../../../../scss/ui-kit.scss";
+
+.range-slider {
+  box-sizing: border-box;
+  position: absolute;
+  width: 266px;
+  height: 6px;
+  border: 1px solid $darkShade25;
+  border-radius: 3px;
+}

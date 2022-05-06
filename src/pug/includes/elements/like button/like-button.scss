@@ -1,0 +1,36 @@
+@import "../../../../scss/ui-kit.scss";
+
+.like-button {
+  box-sizing: border-box;
+  position: absolute;
+  width: 40px;
+  height: 20px;
+  border: 1px solid $darkShade25;
+  border-radius: 10px;
+  &:active {
+    border: 1px solid $purple;
+  }
+  .material-icons {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    font-size: 10px;
+    line-height: 9px;
+    color: $darkShade25;
+    &:active {
+      background: linear-gradient(180deg, $purple 0%, #8BA4F9 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+    }
+  }
+  .like-number {
+    font-size: 10px;
+    line-height: 12px;
+    color: $darkShade25;
+    &:active {
+      color: 1px solid $purple;
+    }
+  }
+}
