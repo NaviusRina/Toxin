@@ -1,0 +1,15 @@
+@import "../../../../scss/ui-kit.scss";
+
+.rich-checkbox {
+  width: 266px;
+  .rich-section {
+    .rich-section__button {
+      box-sizing: border-box;
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      border: 1px solid $darkShade25;
+      border-radius: 4px;
+    }
+  }
+}

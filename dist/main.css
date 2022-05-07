@@ -16,298 +16,26 @@
 p {
   color: green;
 }
-/*!***********************************************************************************************************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!../node_modules/sass-loader/dist/cjs.js!./pug/includes/account registration/registration.scss ***!
-  \***********************************************************************************************************************************************************************************************************************/
-* {
-  margin: 0;
-  padding: 0;
-}
-
-.registration-container .long-lilac-button .material-icons {
-  font-family: "Material Icons";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 24px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 44px;
-  height: 44px;
-  position: absolute;
-}
-
-.date-dropdown, .masked-text-field, .dropdown, .text-field, p, h3, h2, h1 {
-  font-family: "Montserrat", sans-serif;
-  font-style: normal;
-}
-
-h1 {
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 29px;
-  color: #1F2041;
-}
-
-h2 {
-  font-size: 19px;
-  font-weight: bold;
-  line-height: 23px;
-  color: #1F2041;
-}
-
-h3 {
-  font-size: 12px;
-  font-weight: bold;
-  line-height: 15px;
-  color: #1F2041;
-}
-
-p {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
-  color: rgba(31, 32, 65, 0.75);
-}
-
-.date-dropdown, .masked-text-field, .dropdown, .text-field {
-  background: #FFFFFF;
-  border: 1px solid rgba(31, 32, 65, 0.25);
-  box-sizing: border-box;
-  border-radius: 4px;
-  padding: 0 15px;
-  height: 44px;
-}
-
-.text-field {
-  width: 320px;
-}
-.text-field:hover {
-  color: rgba(31, 32, 65, 0.75);
-  border: 1px solid rgba(31, 32, 65, 0.5);
-}
-
-.dropdown {
-  padding-left: 15px;
-  padding-right: 44px;
-  width: 320px;
-}
-
-.masked-text-field {
-  width: 320px;
-}
-
-.date-dropdown {
-  width: 150px;
-}
-
-.registration-container {
-  width: 380px;
-  height: 646px;
-  background: red;
-  border: 1px solid rgba(0, 0, 0, 0.12);
-  box-sizing: border-box;
-  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  padding: 40px 30px 30px;
-}
-.registration-container .user-information {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-.registration-container .user-information input {
-  margin-bottom: 10px;
-}
-.registration-container .sign-in-data {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-.registration-container .sign-in-data input {
-  margin-bottom: 10px;
-}
-.registration-container .long-lilac-button .material-icons {
-  color: #FFFFFF;
-  top: 0;
-  right: 0;
-}
-.registration-container .sign-in-account {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-/*!***********************************************************************************************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!../node_modules/sass-loader/dist/cjs.js!./pug/includes/book a room/bookAroom.scss ***!
-  \***********************************************************************************************************************************************************************************************************/
-* {
-  margin: 0;
-  padding: 0;
-}
-
-.bookAroom-container .room-book .material-icons, .bookAroom-container .guests-amount .material-icons, .bookAroom-container .checkinto-date .checkinto-date__departure .material-icons, .bookAroom-container .checkinto-date .checkinto-date__arrival .material-icons {
-  font-family: "Material Icons";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 24px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 44px;
-  height: 44px;
-  position: absolute;
-}
-
-input::-webkit-input-placeholder, .date-dropdown, .masked-text-field, .dropdown, .text-field, p, h3, h2, h1 {
-  font-family: "Montserrat", sans-serif;
-  font-style: normal;
-}
-
-h1 {
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 29px;
-  color: #1F2041;
-}
-
-h2 {
-  font-size: 19px;
-  font-weight: bold;
-  line-height: 23px;
-  color: #1F2041;
-}
-
-h3 {
-  font-size: 12px;
-  font-weight: bold;
-  line-height: 15px;
-  color: #1F2041;
-}
-
-p {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
-  color: rgba(31, 32, 65, 0.75);
-}
-
-.date-dropdown, .masked-text-field, .dropdown, .text-field {
-  background: #FFFFFF;
-  border: 1px solid rgba(31, 32, 65, 0.25);
-  box-sizing: border-box;
-  border-radius: 4px;
-  padding: 0 15px;
-  height: 44px;
-}
-
-.text-field {
-  width: 320px;
-}
-.text-field:hover {
-  color: rgba(31, 32, 65, 0.75);
-  border: 1px solid rgba(31, 32, 65, 0.5);
-}
-
-.dropdown {
-  padding-left: 15px;
-  padding-right: 44px;
-  width: 320px;
-}
-
-.masked-text-field {
-  width: 320px;
-}
-
-.date-dropdown {
-  width: 150px;
-}
-
-.bookAroom-container {
-  width: 380px;
-  height: 512px;
-  background: #FFFFFF;
-  border: 1px solid rgba(0, 0, 0, 0.12);
-  box-sizing: border-box;
-  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  padding: 40px 30px 30px;
-}
-.bookAroom-container .room-info {
-  display: flex;
-  justify-content: space-between;
-}
-.bookAroom-container .room-info h1 {
-  display: inline-block;
-}
-.bookAroom-container .room-info p {
-  display: inline-block;
-}
-.bookAroom-container .checkinto-date {
-  display: flex;
-  justify-content: space-between;
-}
-.bookAroom-container .checkinto-date .checkinto-date__arrival {
-  display: inline-block;
-  position: relative;
-}
-.bookAroom-container .checkinto-date .checkinto-date__arrival .material-icons {
-  color: rgba(31, 32, 65, 0.5);
-  bottom: 0;
-  right: 0;
-}
-.bookAroom-container .checkinto-date .checkinto-date__departure {
-  display: inline-block;
-  position: relative;
-}
-.bookAroom-container .checkinto-date .checkinto-date__departure .material-icons {
-  color: rgba(31, 32, 65, 0.5);
-  bottom: 0;
-  right: 0;
-}
-.bookAroom-container .guests-amount {
-  position: relative;
-  width: 320px;
-  height: 44px;
-}
-.bookAroom-container .guests-amount .guests-amount__input {
-  width: inherit;
-  height: inherit;
-}
-.bookAroom-container .guests-amount .material-icons {
-  color: rgba(31, 32, 65, 0.5);
-  top: 20px;
-  right: 0;
-}
-.bookAroom-container .room-book {
-  width: 320px;
-  height: 44px;
-  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
-  border-radius: 22px;
-  position: relative;
-}
-.bookAroom-container .room-book h3 {
-  color: #FFFFFF;
-  margin: 0 auto;
-}
-.bookAroom-container .room-book .material-icons {
-  color: #FFFFFF;
-  top: 0;
-  right: 0;
-}
 /*!*******************************************************************************************************************************************************************************************************!*\
   !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!../node_modules/sass-loader/dist/cjs.js!./pug/includes/calendar/calendar.scss ***!
   \*******************************************************************************************************************************************************************************************************/
 * {
   margin: 0;
   padding: 0;
+}
+
+.matetial-icons {
+  font-family: "Material Icons";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  position: absolute;
 }
 
 .footer-container .top-footer .footer__subscription .subscription .subscription__mail-input, .footer-container p, .footer-container .top-footer .footer__support .footer__support-list .footer__support-list__item, .footer-container .top-footer .footer__about-us .footer__about-us-list .footer__about-us-list__item, .footer-container .top-footer .footer__nav .footer__nav-list .footer__nav-list__item, .date-dropdown, .masked-text-field, .dropdown, .text-field, p, h3, h2, h1 {
@@ -356,6 +84,10 @@ p {
   width: 320px;
 }
 .text-field:hover {
+  color: rgba(31, 32, 65, 0.75);
+  border: 1px solid rgba(31, 32, 65, 0.5);
+}
+.text-field:focus {
   color: rgba(31, 32, 65, 0.75);
   border: 1px solid rgba(31, 32, 65, 0.5);
 }
@@ -521,6 +253,8 @@ p {
 }
 .bullet-elem .bullet-elem__ellipse {
   position: absolute;
+  top: 0;
+  right: 0;
   border: 1px solid rgba(31, 32, 65, 0.25);
   border-radius: 50%;
 }
@@ -530,6 +264,20 @@ p {
 * {
   margin: 0;
   padding: 0;
+}
+
+.matetial-icons {
+  font-family: "Material Icons";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  position: absolute;
 }
 
 .date-dropdown, .masked-text-field, .dropdown, .text-field, p, h3, h2, h1 {
@@ -581,6 +329,10 @@ p {
   color: rgba(31, 32, 65, 0.75);
   border: 1px solid rgba(31, 32, 65, 0.5);
 }
+.text-field:focus {
+  color: rgba(31, 32, 65, 0.75);
+  border: 1px solid rgba(31, 32, 65, 0.5);
+}
 
 .dropdown {
   padding-left: 15px;
@@ -604,7 +356,7 @@ p {
   position: relative;
 }
 .button h3 {
-  color: green;
+  color: #FFFFFF;
   margin: 0 auto;
 }
 .small-button {
@@ -625,6 +377,20 @@ p {
 * {
   margin: 0;
   padding: 0;
+}
+
+.matetial-icons {
+  font-family: "Material Icons";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  position: absolute;
 }
 
 .date-dropdown, .masked-text-field, .dropdown, .text-field, p, h3, h2, h1 {
@@ -673,6 +439,10 @@ p {
   width: 320px;
 }
 .text-field:hover {
+  color: rgba(31, 32, 65, 0.75);
+  border: 1px solid rgba(31, 32, 65, 0.5);
+}
+.text-field:focus {
   color: rgba(31, 32, 65, 0.75);
   border: 1px solid rgba(31, 32, 65, 0.5);
 }
@@ -703,72 +473,1286 @@ p {
   box-sizing: border-box;
   border-radius: 4px;
 }
-/*!**************************************************************************************************************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!../node_modules/sass-loader/dist/cjs.js!./pug/includes/elements/date dropdown/date-dropdown.scss ***!
-  \**************************************************************************************************************************************************************************************************************************/
-
 /*!**********************************************************************************************************************************************************************************************************************!*\
   !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!../node_modules/sass-loader/dist/cjs.js!./pug/includes/elements/description/description.scss ***!
   \**********************************************************************************************************************************************************************************************************************/
+* {
+  margin: 0;
+  padding: 0;
+}
 
+.matetial-icons {
+  font-family: "Material Icons";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  position: absolute;
+}
+
+.date-dropdown, .masked-text-field, .dropdown, .text-field, p, h3, h2, h1 {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  color: #1F2041;
+}
+
+h2 {
+  font-size: 19px;
+  font-weight: bold;
+  line-height: 23px;
+  color: #1F2041;
+}
+
+h3 {
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 15px;
+  color: #1F2041;
+}
+
+p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+}
+
+.date-dropdown, .masked-text-field, .dropdown, .text-field {
+  background: #FFFFFF;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 0 15px;
+  height: 44px;
+}
+
+.text-field {
+  width: 320px;
+}
+.text-field:hover {
+  color: rgba(31, 32, 65, 0.75);
+  border: 1px solid rgba(31, 32, 65, 0.5);
+}
+.text-field:focus {
+  color: rgba(31, 32, 65, 0.75);
+  border: 1px solid rgba(31, 32, 65, 0.5);
+}
+
+.dropdown {
+  padding-left: 15px;
+  padding-right: 44px;
+  width: 320px;
+}
+
+.masked-text-field {
+  width: 320px;
+}
+
+.date-dropdown {
+  width: 150px;
+}
+
+.desccription {
+  position: relative;
+  width: 291px;
+  height: 158px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.desccription .desccription__tittle {
+  width: inherit;
+  display: flex;
+  justify-content: space-between;
+}
+.desccription .desccription__tittle .desccription__tittle__icon {
+  width: 48px;
+  height: 48px;
+}
+.desccription .desccription__tittle .desccription-text {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.desccription .desccription__tittle .desccription-text .desccription-text-head {
+  font-weight: 700;
+}
 /*!****************************************************************************************************************************************************************************************************************!*\
   !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!../node_modules/sass-loader/dist/cjs.js!./pug/includes/elements/dropdown/dropdown.scss ***!
   \****************************************************************************************************************************************************************************************************************/
+* {
+  margin: 0;
+  padding: 0;
+}
 
+.matetial-icons {
+  font-family: "Material Icons";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  position: absolute;
+}
+
+.date-dropdown, .masked-text-field, .dropdown, .text-field, p, h3, h2, h1 {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  color: #1F2041;
+}
+
+h2 {
+  font-size: 19px;
+  font-weight: bold;
+  line-height: 23px;
+  color: #1F2041;
+}
+
+h3 {
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 15px;
+  color: #1F2041;
+}
+
+p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+}
+
+.date-dropdown, .masked-text-field, .dropdown, .text-field {
+  background: #FFFFFF;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 0 15px;
+  height: 44px;
+}
+
+.text-field {
+  width: 320px;
+}
+.text-field:hover {
+  color: rgba(31, 32, 65, 0.75);
+  border: 1px solid rgba(31, 32, 65, 0.5);
+}
+.text-field:focus {
+  color: rgba(31, 32, 65, 0.75);
+  border: 1px solid rgba(31, 32, 65, 0.5);
+}
+
+.dropdown {
+  padding-left: 15px;
+  padding-right: 44px;
+  width: 320px;
+}
+
+.masked-text-field {
+  width: 320px;
+}
+
+.date-dropdown {
+  width: 150px;
+}
+
+.dropdown-field {
+  width: 320px;
+  height: 44px;
+}
 /*!************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!../node_modules/sass-loader/dist/cjs.js!./pug/includes/elements/expandable checkbox list/expandable-checkbox-list.scss ***!
   \************************************************************************************************************************************************************************************************************************************************/
+* {
+  margin: 0;
+  padding: 0;
+}
 
+.matetial-icons {
+  font-family: "Material Icons";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  position: absolute;
+}
+
+.date-dropdown, .masked-text-field, .dropdown, .text-field, p, h3, h2, h1 {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  color: #1F2041;
+}
+
+h2 {
+  font-size: 19px;
+  font-weight: bold;
+  line-height: 23px;
+  color: #1F2041;
+}
+
+h3 {
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 15px;
+  color: #1F2041;
+}
+
+p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+}
+
+.date-dropdown, .masked-text-field, .dropdown, .text-field {
+  background: #FFFFFF;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 0 15px;
+  height: 44px;
+}
+
+.text-field {
+  width: 320px;
+}
+.text-field:hover {
+  color: rgba(31, 32, 65, 0.75);
+  border: 1px solid rgba(31, 32, 65, 0.5);
+}
+.text-field:focus {
+  color: rgba(31, 32, 65, 0.75);
+  border: 1px solid rgba(31, 32, 65, 0.5);
+}
+
+.dropdown {
+  padding-left: 15px;
+  padding-right: 44px;
+  width: 320px;
+}
+
+.masked-text-field {
+  width: 320px;
+}
+
+.date-dropdown {
+  width: 150px;
+}
 /*!****************************************************************************************************************************************************************************************************************************************!*\
   !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!../node_modules/sass-loader/dist/cjs.js!./pug/includes/elements/filter date dropdown/filter-date-dropdown.scss ***!
   \****************************************************************************************************************************************************************************************************************************************/
+* {
+  margin: 0;
+  padding: 0;
+}
 
+.matetial-icons {
+  font-family: "Material Icons";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  position: absolute;
+}
+
+.date-dropdown, .masked-text-field, .dropdown, .text-field, p, h3, h2, h1 {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  color: #1F2041;
+}
+
+h2 {
+  font-size: 19px;
+  font-weight: bold;
+  line-height: 23px;
+  color: #1F2041;
+}
+
+h3 {
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 15px;
+  color: #1F2041;
+}
+
+p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+}
+
+.date-dropdown, .masked-text-field, .dropdown, .text-field {
+  background: #FFFFFF;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 0 15px;
+  height: 44px;
+}
+
+.text-field {
+  width: 320px;
+}
+.text-field:hover {
+  color: rgba(31, 32, 65, 0.75);
+  border: 1px solid rgba(31, 32, 65, 0.5);
+}
+.text-field:focus {
+  color: rgba(31, 32, 65, 0.75);
+  border: 1px solid rgba(31, 32, 65, 0.5);
+}
+
+.dropdown {
+  padding-left: 15px;
+  padding-right: 44px;
+  width: 320px;
+}
+
+.masked-text-field {
+  width: 320px;
+}
+
+.date-dropdown {
+  width: 150px;
+}
 /*!**********************************************************************************************************************************************************************************************************************!*\
   !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!../node_modules/sass-loader/dist/cjs.js!./pug/includes/elements/like button/like-button.scss ***!
   \**********************************************************************************************************************************************************************************************************************/
+* {
+  margin: 0;
+  padding: 0;
+}
 
+.matetial-icons {
+  font-family: "Material Icons";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  position: absolute;
+}
+
+.date-dropdown, .masked-text-field, .dropdown, .text-field, p, h3, h2, h1 {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  color: #1F2041;
+}
+
+h2 {
+  font-size: 19px;
+  font-weight: bold;
+  line-height: 23px;
+  color: #1F2041;
+}
+
+h3 {
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 15px;
+  color: #1F2041;
+}
+
+p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+}
+
+.date-dropdown, .masked-text-field, .dropdown, .text-field {
+  background: #FFFFFF;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 0 15px;
+  height: 44px;
+}
+
+.text-field {
+  width: 320px;
+}
+.text-field:hover {
+  color: rgba(31, 32, 65, 0.75);
+  border: 1px solid rgba(31, 32, 65, 0.5);
+}
+.text-field:focus {
+  color: rgba(31, 32, 65, 0.75);
+  border: 1px solid rgba(31, 32, 65, 0.5);
+}
+
+.dropdown {
+  padding-left: 15px;
+  padding-right: 44px;
+  width: 320px;
+}
+
+.masked-text-field {
+  width: 320px;
+}
+
+.date-dropdown {
+  width: 150px;
+}
+
+.like-button {
+  box-sizing: border-box;
+  position: absolute;
+  width: 40px;
+  height: 20px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  border-radius: 10px;
+}
+.like-button:active {
+  border: 1px solid #BC9CFF;
+}
+.like-button .material-icons {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  font-size: 10px;
+  line-height: 9px;
+  color: rgba(31, 32, 65, 0.25);
+}
+.like-button .material-icons:active {
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+.like-button .like-number {
+  font-size: 10px;
+  line-height: 12px;
+  color: rgba(31, 32, 65, 0.25);
+}
+.like-button .like-number:active {
+  color: 1px solid #BC9CFF;
+}
 /*!********************************************************************************************************************************************************************************************************************!*\
   !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!../node_modules/sass-loader/dist/cjs.js!./pug/includes/elements/pagination/pagination.scss ***!
   \********************************************************************************************************************************************************************************************************************/
+* {
+  margin: 0;
+  padding: 0;
+}
 
+.matetial-icons {
+  font-family: "Material Icons";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  position: absolute;
+}
+
+.date-dropdown, .masked-text-field, .dropdown, .text-field, p, h3, h2, h1 {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  color: #1F2041;
+}
+
+h2 {
+  font-size: 19px;
+  font-weight: bold;
+  line-height: 23px;
+  color: #1F2041;
+}
+
+h3 {
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 15px;
+  color: #1F2041;
+}
+
+p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+}
+
+.date-dropdown, .masked-text-field, .dropdown, .text-field {
+  background: #FFFFFF;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 0 15px;
+  height: 44px;
+}
+
+.text-field {
+  width: 320px;
+}
+.text-field:hover {
+  color: rgba(31, 32, 65, 0.75);
+  border: 1px solid rgba(31, 32, 65, 0.5);
+}
+.text-field:focus {
+  color: rgba(31, 32, 65, 0.75);
+  border: 1px solid rgba(31, 32, 65, 0.5);
+}
+
+.dropdown {
+  padding-left: 15px;
+  padding-right: 44px;
+  width: 320px;
+}
+
+.masked-text-field {
+  width: 320px;
+}
+
+.date-dropdown {
+  width: 150px;
+}
+
+.pagination {
+  width: 241px;
+}
 /*!**************************************************************************************************************************************************************************************************************************!*\
   !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!../node_modules/sass-loader/dist/cjs.js!./pug/includes/elements/radio buttons/radio-buttons.scss ***!
   \**************************************************************************************************************************************************************************************************************************/
+* {
+  margin: 0;
+  padding: 0;
+}
 
+.matetial-icons {
+  font-family: "Material Icons";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  position: absolute;
+}
+
+.date-dropdown, .masked-text-field, .dropdown, .text-field, p, h3, h2, h1 {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  color: #1F2041;
+}
+
+h2 {
+  font-size: 19px;
+  font-weight: bold;
+  line-height: 23px;
+  color: #1F2041;
+}
+
+h3 {
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 15px;
+  color: #1F2041;
+}
+
+p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+}
+
+.date-dropdown, .masked-text-field, .dropdown, .text-field {
+  background: #FFFFFF;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 0 15px;
+  height: 44px;
+}
+
+.text-field {
+  width: 320px;
+}
+.text-field:hover {
+  color: rgba(31, 32, 65, 0.75);
+  border: 1px solid rgba(31, 32, 65, 0.5);
+}
+.text-field:focus {
+  color: rgba(31, 32, 65, 0.75);
+  border: 1px solid rgba(31, 32, 65, 0.5);
+}
+
+.dropdown {
+  padding-left: 15px;
+  padding-right: 44px;
+  width: 320px;
+}
+
+.masked-text-field {
+  width: 320px;
+}
+
+.date-dropdown {
+  width: 150px;
+}
 /*!************************************************************************************************************************************************************************************************************************!*\
   !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!../node_modules/sass-loader/dist/cjs.js!./pug/includes/elements/range slider/range-slider.scss ***!
   \************************************************************************************************************************************************************************************************************************/
+* {
+  margin: 0;
+  padding: 0;
+}
 
+.matetial-icons {
+  font-family: "Material Icons";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  position: absolute;
+}
+
+.date-dropdown, .masked-text-field, .dropdown, .text-field, p, h3, h2, h1 {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  color: #1F2041;
+}
+
+h2 {
+  font-size: 19px;
+  font-weight: bold;
+  line-height: 23px;
+  color: #1F2041;
+}
+
+h3 {
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 15px;
+  color: #1F2041;
+}
+
+p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+}
+
+.date-dropdown, .masked-text-field, .dropdown, .text-field {
+  background: #FFFFFF;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 0 15px;
+  height: 44px;
+}
+
+.text-field {
+  width: 320px;
+}
+.text-field:hover {
+  color: rgba(31, 32, 65, 0.75);
+  border: 1px solid rgba(31, 32, 65, 0.5);
+}
+.text-field:focus {
+  color: rgba(31, 32, 65, 0.75);
+  border: 1px solid rgba(31, 32, 65, 0.5);
+}
+
+.dropdown {
+  padding-left: 15px;
+  padding-right: 44px;
+  width: 320px;
+}
+
+.masked-text-field {
+  width: 320px;
+}
+
+.date-dropdown {
+  width: 150px;
+}
+
+.range-slider {
+  box-sizing: border-box;
+  position: absolute;
+  width: 266px;
+  height: 6px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  border-radius: 3px;
+}
 /*!**********************************************************************************************************************************************************************************************************************!*\
   !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!../node_modules/sass-loader/dist/cjs.js!./pug/includes/elements/rate button/rate-button.scss ***!
   \**********************************************************************************************************************************************************************************************************************/
+* {
+  margin: 0;
+  padding: 0;
+}
 
-/*!************************************************************************************************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!../node_modules/sass-loader/dist/cjs.js!./pug/includes/elements/review/review.scss ***!
-  \************************************************************************************************************************************************************************************************************/
+.matetial-icons {
+  font-family: "Material Icons";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  position: absolute;
+}
 
+.date-dropdown, .masked-text-field, .dropdown, .text-field, p, h3, h2, h1 {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  color: #1F2041;
+}
+
+h2 {
+  font-size: 19px;
+  font-weight: bold;
+  line-height: 23px;
+  color: #1F2041;
+}
+
+h3 {
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 15px;
+  color: #1F2041;
+}
+
+p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+}
+
+.date-dropdown, .masked-text-field, .dropdown, .text-field {
+  background: #FFFFFF;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 0 15px;
+  height: 44px;
+}
+
+.text-field {
+  width: 320px;
+}
+.text-field:hover {
+  color: rgba(31, 32, 65, 0.75);
+  border: 1px solid rgba(31, 32, 65, 0.5);
+}
+.text-field:focus {
+  color: rgba(31, 32, 65, 0.75);
+  border: 1px solid rgba(31, 32, 65, 0.5);
+}
+
+.dropdown {
+  padding-left: 15px;
+  padding-right: 44px;
+  width: 320px;
+}
+
+.masked-text-field {
+  width: 320px;
+}
+
+.date-dropdown {
+  width: 150px;
+}
+
+.rate .material-icons {
+  width: 24px;
+  height: 24px;
+  font-size: 24px;
+  line-height: 20px;
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
 /*!******************************************************************************************************************************************************************************************************************************************!*\
   !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!../node_modules/sass-loader/dist/cjs.js!./pug/includes/elements/rich checkbox buttons/rich-checkbox-buttons.scss ***!
   \******************************************************************************************************************************************************************************************************************************************/
+* {
+  margin: 0;
+  padding: 0;
+}
 
+.matetial-icons {
+  font-family: "Material Icons";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  position: absolute;
+}
+
+.date-dropdown, .masked-text-field, .dropdown, .text-field, p, h3, h2, h1 {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  color: #1F2041;
+}
+
+h2 {
+  font-size: 19px;
+  font-weight: bold;
+  line-height: 23px;
+  color: #1F2041;
+}
+
+h3 {
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 15px;
+  color: #1F2041;
+}
+
+p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+}
+
+.date-dropdown, .masked-text-field, .dropdown, .text-field {
+  background: #FFFFFF;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 0 15px;
+  height: 44px;
+}
+
+.text-field {
+  width: 320px;
+}
+.text-field:hover {
+  color: rgba(31, 32, 65, 0.75);
+  border: 1px solid rgba(31, 32, 65, 0.5);
+}
+.text-field:focus {
+  color: rgba(31, 32, 65, 0.75);
+  border: 1px solid rgba(31, 32, 65, 0.5);
+}
+
+.dropdown {
+  padding-left: 15px;
+  padding-right: 44px;
+  width: 320px;
+}
+
+.masked-text-field {
+  width: 320px;
+}
+
+.date-dropdown {
+  width: 150px;
+}
+
+.rich-checkbox {
+  width: 266px;
+}
+.rich-checkbox .rich-section .rich-section__button {
+  box-sizing: border-box;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  border-radius: 4px;
+}
 /*!**********************************************************************************************************************************************************************************************************************************************!*\
   !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!../node_modules/sass-loader/dist/cjs.js!./pug/includes/elements/subscription text field/subscription-text-field.scss ***!
   \**********************************************************************************************************************************************************************************************************************************************/
+* {
+  margin: 0;
+  padding: 0;
+}
 
+.matetial-icons {
+  font-family: "Material Icons";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  position: absolute;
+}
+
+.date-dropdown, .masked-text-field, .dropdown, .text-field, p, h3, h2, h1 {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  color: #1F2041;
+}
+
+h2 {
+  font-size: 19px;
+  font-weight: bold;
+  line-height: 23px;
+  color: #1F2041;
+}
+
+h3 {
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 15px;
+  color: #1F2041;
+}
+
+p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+}
+
+.date-dropdown, .masked-text-field, .dropdown, .text-field {
+  background: #FFFFFF;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 0 15px;
+  height: 44px;
+}
+
+.text-field {
+  width: 320px;
+}
+.text-field:hover {
+  color: rgba(31, 32, 65, 0.75);
+  border: 1px solid rgba(31, 32, 65, 0.5);
+}
+.text-field:focus {
+  color: rgba(31, 32, 65, 0.75);
+  border: 1px solid rgba(31, 32, 65, 0.5);
+}
+
+.dropdown {
+  padding-left: 15px;
+  padding-right: 44px;
+  width: 320px;
+}
+
+.masked-text-field {
+  width: 320px;
+}
+
+.date-dropdown {
+  width: 150px;
+}
 /*!********************************************************************************************************************************************************************************************************************!*\
   !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!../node_modules/sass-loader/dist/cjs.js!./pug/includes/elements/text field/text-field.scss ***!
   \********************************************************************************************************************************************************************************************************************/
+* {
+  margin: 0;
+  padding: 0;
+}
 
+.matetial-icons {
+  font-family: "Material Icons";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  position: absolute;
+}
+
+.date-dropdown, .masked-text-field, .dropdown, .text-field, p, h3, h2, h1 {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  color: #1F2041;
+}
+
+h2 {
+  font-size: 19px;
+  font-weight: bold;
+  line-height: 23px;
+  color: #1F2041;
+}
+
+h3 {
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 15px;
+  color: #1F2041;
+}
+
+p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+}
+
+.date-dropdown, .masked-text-field, .dropdown, .text-field {
+  background: #FFFFFF;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 0 15px;
+  height: 44px;
+}
+
+.text-field {
+  width: 320px;
+}
+.text-field:hover {
+  color: rgba(31, 32, 65, 0.75);
+  border: 1px solid rgba(31, 32, 65, 0.5);
+}
+.text-field:focus {
+  color: rgba(31, 32, 65, 0.75);
+  border: 1px solid rgba(31, 32, 65, 0.5);
+}
+
+.dropdown {
+  padding-left: 15px;
+  padding-right: 44px;
+  width: 320px;
+}
+
+.masked-text-field {
+  width: 320px;
+}
+
+.date-dropdown {
+  width: 150px;
+}
 /*!************************************************************************************************************************************************************************************************************!*\
   !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!../node_modules/sass-loader/dist/cjs.js!./pug/includes/elements/toggle/toggle.scss ***!
   \************************************************************************************************************************************************************************************************************/
+* {
+  margin: 0;
+  padding: 0;
+}
 
+.matetial-icons {
+  font-family: "Material Icons";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  position: absolute;
+}
+
+.date-dropdown, .masked-text-field, .dropdown, .text-field, p, h3, h2, h1 {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  color: #1F2041;
+}
+
+h2 {
+  font-size: 19px;
+  font-weight: bold;
+  line-height: 23px;
+  color: #1F2041;
+}
+
+h3 {
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 15px;
+  color: #1F2041;
+}
+
+p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+}
+
+.date-dropdown, .masked-text-field, .dropdown, .text-field {
+  background: #FFFFFF;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 0 15px;
+  height: 44px;
+}
+
+.text-field {
+  width: 320px;
+}
+.text-field:hover {
+  color: rgba(31, 32, 65, 0.75);
+  border: 1px solid rgba(31, 32, 65, 0.5);
+}
+.text-field:focus {
+  color: rgba(31, 32, 65, 0.75);
+  border: 1px solid rgba(31, 32, 65, 0.5);
+}
+
+.dropdown {
+  padding-left: 15px;
+  padding-right: 44px;
+  width: 320px;
+}
+
+.masked-text-field {
+  width: 320px;
+}
+
+.date-dropdown {
+  width: 150px;
+}
 /*!***************************************************************************************************************************************************************************************************!*\
   !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!../node_modules/sass-loader/dist/cjs.js!./pug/includes/footer/footer.scss ***!
   \***************************************************************************************************************************************************************************************************/
 * {
   margin: 0;
   padding: 0;
+}
+
+.matetial-icons {
+  font-family: "Material Icons";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  position: absolute;
 }
 
 .footer-container .top-footer .footer__subscription .subscription .subscription__mail-input, .footer-container p, .footer-container .top-footer .footer__support .footer__support-list .footer__support-list__item, .footer-container .top-footer .footer__about-us .footer__about-us-list .footer__about-us-list__item, .footer-container .top-footer .footer__nav .footer__nav-list .footer__nav-list__item, .date-dropdown, .masked-text-field, .dropdown, .text-field, p, h3, h2, h1 {
@@ -817,6 +1801,10 @@ p {
   width: 320px;
 }
 .text-field:hover {
+  color: rgba(31, 32, 65, 0.75);
+  border: 1px solid rgba(31, 32, 65, 0.5);
+}
+.text-field:focus {
   color: rgba(31, 32, 65, 0.75);
   border: 1px solid rgba(31, 32, 65, 0.5);
 }
@@ -979,6 +1967,20 @@ p {
   padding: 0;
 }
 
+.matetial-icons {
+  font-family: "Material Icons";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  position: absolute;
+}
+
 .container .user-button .registation__button p, .container .user-button .login__button p, .container .nav .nav-list .nav-list__item, .date-dropdown, .masked-text-field, .dropdown, .text-field, p, h3, h2, h1 {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
@@ -1025,6 +2027,10 @@ p {
   width: 320px;
 }
 .text-field:hover {
+  color: rgba(31, 32, 65, 0.75);
+  border: 1px solid rgba(31, 32, 65, 0.5);
+}
+.text-field:focus {
   color: rgba(31, 32, 65, 0.75);
   border: 1px solid rgba(31, 32, 65, 0.5);
 }
@@ -1146,6 +2152,20 @@ p {
   padding: 0;
 }
 
+.matetial-icons {
+  font-family: "Material Icons";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  position: absolute;
+}
+
 .footer-container .top-footer .footer__subscription .subscription .subscription__mail-input, .footer-container p, .footer-container .top-footer .footer__support .footer__support-list .footer__support-list__item, .footer-container .top-footer .footer__about-us .footer__about-us-list .footer__about-us-list__item, .footer-container .top-footer .footer__nav .footer__nav-list .footer__nav-list__item, .date-dropdown, .masked-text-field, .dropdown, .text-field, p, h3, h2, h1 {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
@@ -1192,6 +2212,10 @@ p {
   width: 320px;
 }
 .text-field:hover {
+  color: rgba(31, 32, 65, 0.75);
+  border: 1px solid rgba(31, 32, 65, 0.5);
+}
+.text-field:focus {
   color: rgba(31, 32, 65, 0.75);
   border: 1px solid rgba(31, 32, 65, 0.5);
 }
@@ -1346,286 +2370,6 @@ p {
   background-clip: text;
   text-fill-color: transparent;
 }
-/*!************************************************************************************************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!../node_modules/sass-loader/dist/cjs.js!./pug/includes/room search/roomSearch.scss ***!
-  \************************************************************************************************************************************************************************************************************/
-* {
-  margin: 0;
-  padding: 0;
-}
-
-.roomSearch-container .room-search .material-icons, .roomSearch-container .guests-amount .material-icons, .roomSearch-container .checkinto-date .checkinto-date__departure .material-icons, .roomSearch-container .checkinto-date .checkinto-date__arrival .material-icons {
-  font-family: "Material Icons";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 24px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 44px;
-  height: 44px;
-  position: absolute;
-}
-
-.date-dropdown, .masked-text-field, .dropdown, .text-field, p, h3, h2, h1 {
-  font-family: "Montserrat", sans-serif;
-  font-style: normal;
-}
-
-h1 {
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 29px;
-  color: #1F2041;
-}
-
-h2 {
-  font-size: 19px;
-  font-weight: bold;
-  line-height: 23px;
-  color: #1F2041;
-}
-
-h3 {
-  font-size: 12px;
-  font-weight: bold;
-  line-height: 15px;
-  color: #1F2041;
-}
-
-p {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
-  color: rgba(31, 32, 65, 0.75);
-}
-
-.roomSearch-container .guests-amount .guests-amount__input, .date-dropdown, .masked-text-field, .dropdown, .text-field {
-  background: #FFFFFF;
-  border: 1px solid rgba(31, 32, 65, 0.25);
-  box-sizing: border-box;
-  border-radius: 4px;
-  padding: 0 15px;
-  height: 44px;
-}
-
-.text-field {
-  width: 320px;
-}
-.text-field:hover {
-  color: rgba(31, 32, 65, 0.75);
-  border: 1px solid rgba(31, 32, 65, 0.5);
-}
-
-.dropdown {
-  padding-left: 15px;
-  padding-right: 44px;
-  width: 320px;
-}
-
-.masked-text-field {
-  width: 320px;
-}
-
-.date-dropdown {
-  width: 150px;
-}
-
-.roomSearch-container {
-  width: 380px;
-  height: 374px;
-  background: #FFFFFF;
-  border: 1px solid rgba(0, 0, 0, 0.12);
-  box-sizing: border-box;
-  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  padding: 40px 30px 30px;
-}
-.roomSearch-container .checkinto-date {
-  display: flex;
-  justify-content: space-between;
-}
-.roomSearch-container .checkinto-date .checkinto-date__arrival {
-  display: inline-block;
-  position: relative;
-}
-.roomSearch-container .checkinto-date .checkinto-date__arrival .material-icons {
-  color: rgba(31, 32, 65, 0.5);
-  bottom: 0;
-  right: 0;
-}
-.roomSearch-container .checkinto-date .checkinto-date__departure {
-  display: inline-block;
-  position: relative;
-}
-.roomSearch-container .checkinto-date .checkinto-date__departure .material-icons {
-  color: rgba(31, 32, 65, 0.5);
-  bottom: 0;
-  right: 0;
-}
-.roomSearch-container .guests-amount {
-  position: relative;
-  width: 320px;
-  height: 44px;
-}
-.roomSearch-container .guests-amount .guests-amount__input {
-  width: inherit;
-  height: inherit;
-}
-.roomSearch-container .guests-amount .material-icons {
-  color: rgba(31, 32, 65, 0.5);
-  top: 20px;
-  right: 0;
-}
-.roomSearch-container .room-search .material-icons {
-  color: #FFFFFF;
-  top: 0;
-  right: 0;
-}
-/*!****************************************************************************************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!../node_modules/sass-loader/dist/cjs.js!./pug/includes/sign in/signIn.scss ***!
-  \****************************************************************************************************************************************************************************************************/
-* {
-  margin: 0;
-  padding: 0;
-}
-
-.signIn-container .room-search .material-icons, .signIn-container .guests-amount .material-icons, .signIn-container .checkinto-date .checkinto-date__departure .material-icons, .signIn-container .checkinto-date .checkinto-date__arrival .material-icons {
-  font-family: "Material Icons";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 24px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 44px;
-  height: 44px;
-  position: absolute;
-}
-
-.date-dropdown, .masked-text-field, .dropdown, .text-field, p, h3, h2, h1 {
-  font-family: "Montserrat", sans-serif;
-  font-style: normal;
-}
-
-h1 {
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 29px;
-  color: #1F2041;
-}
-
-h2 {
-  font-size: 19px;
-  font-weight: bold;
-  line-height: 23px;
-  color: #1F2041;
-}
-
-h3 {
-  font-size: 12px;
-  font-weight: bold;
-  line-height: 15px;
-  color: #1F2041;
-}
-
-p {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
-  color: rgba(31, 32, 65, 0.75);
-}
-
-.signIn-container .guests-amount .guests-amount__input, .date-dropdown, .masked-text-field, .dropdown, .text-field {
-  background: #FFFFFF;
-  border: 1px solid rgba(31, 32, 65, 0.25);
-  box-sizing: border-box;
-  border-radius: 4px;
-  padding: 0 15px;
-  height: 44px;
-}
-
-.text-field {
-  width: 320px;
-}
-.text-field:hover {
-  color: rgba(31, 32, 65, 0.75);
-  border: 1px solid rgba(31, 32, 65, 0.5);
-}
-
-.dropdown {
-  padding-left: 15px;
-  padding-right: 44px;
-  width: 320px;
-}
-
-.masked-text-field {
-  width: 320px;
-}
-
-.date-dropdown {
-  width: 150px;
-}
-
-.signIn-container {
-  width: 380px;
-  height: 374px;
-  background: #FFFFFF;
-  border: 1px solid rgba(0, 0, 0, 0.12);
-  box-sizing: border-box;
-  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  padding: 40px 30px 30px;
-}
-.signIn-container .checkinto-date {
-  display: flex;
-  justify-content: space-between;
-}
-.signIn-container .checkinto-date .checkinto-date__arrival {
-  display: inline-block;
-  position: relative;
-}
-.signIn-container .checkinto-date .checkinto-date__arrival .material-icons {
-  color: rgba(31, 32, 65, 0.5);
-  bottom: 0;
-  right: 0;
-}
-.signIn-container .checkinto-date .checkinto-date__departure {
-  display: inline-block;
-  position: relative;
-}
-.signIn-container .checkinto-date .checkinto-date__departure .material-icons {
-  color: rgba(31, 32, 65, 0.5);
-  bottom: 0;
-  right: 0;
-}
-.signIn-container .guests-amount {
-  position: relative;
-  width: 320px;
-  height: 44px;
-}
-.signIn-container .guests-amount .guests-amount__input {
-  width: inherit;
-  height: inherit;
-}
-.signIn-container .guests-amount .material-icons {
-  color: rgba(31, 32, 65, 0.5);
-  top: 20px;
-  right: 0;
-}
-.signIn-container .room-search .material-icons {
-  color: #FFFFFF;
-  top: 0;
-  right: 0;
-}
 /*!*********************************************************************************************************************************************************************************!*\
   !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!../node_modules/sass-loader/dist/cjs.js!./scss/font.css ***!
   \*********************************************************************************************************************************************************************************/
@@ -1639,6 +2383,20 @@ p {
 * {
   margin: 0;
   padding: 0;
+}
+
+.matetial-icons {
+  font-family: "Material Icons";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  position: absolute;
 }
 
 .date-dropdown, .masked-text-field, .dropdown, .text-field, p, h3, h2, h1 {
@@ -1687,6 +2445,10 @@ p {
   width: 320px;
 }
 .text-field:hover {
+  color: rgba(31, 32, 65, 0.75);
+  border: 1px solid rgba(31, 32, 65, 0.5);
+}
+.text-field:focus {
   color: rgba(31, 32, 65, 0.75);
   border: 1px solid rgba(31, 32, 65, 0.5);
 }

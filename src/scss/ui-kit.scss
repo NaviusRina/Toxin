@@ -77,6 +77,10 @@ p {
     color: $darkShade75;
     border: 1px solid $darkShade50;
   }
+  &:focus {
+    color: $darkShade75;
+    border: 1px solid $darkShade50;
+  }
 }
 .dropdown {
   @extend %Montrserrat;
