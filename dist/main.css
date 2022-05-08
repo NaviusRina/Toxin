@@ -16,9 +16,9 @@
 p {
   color: green;
 }
-/*!*******************************************************************************************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!../node_modules/sass-loader/dist/cjs.js!./pug/includes/calendar/calendar.scss ***!
-  \*******************************************************************************************************************************************************************************************************/
+/*!***********************************************************************************************************************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!../node_modules/sass-loader/dist/cjs.js!./pug/includes/account registration/registration.scss ***!
+  \***********************************************************************************************************************************************************************************************************************/
 * {
   margin: 0;
   padding: 0;
@@ -38,7 +38,7 @@ p {
   position: absolute;
 }
 
-.footer-container .top-footer .footer__subscription .subscription .subscription__mail-input, .footer-container p, .footer-container .top-footer .footer__support .footer__support-list .footer__support-list__item, .footer-container .top-footer .footer__about-us .footer__about-us-list .footer__about-us-list__item, .footer-container .top-footer .footer__nav .footer__nav-list .footer__nav-list__item, .date-dropdown, .masked-text-field, .dropdown, .text-field, p, h3, h2, h1 {
+.date-dropdown, .masked-text-field, .dropdown, .text-field, p, h3, h2, h1 {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
 }
@@ -106,141 +106,297 @@ p {
   width: 150px;
 }
 
+.registration-container {
+  width: 380px;
+  height: 646px;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 40px 30px 30px;
+}
+.registration-container .user-information {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.registration-container .user-information input {
+  margin-bottom: 10px;
+}
+.registration-container .sign-in-data {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.registration-container .sign-in-data input {
+  margin-bottom: 10px;
+}
+.registration-container .long-lilac-button .material-icons {
+  color: #FFFFFF;
+  top: 0;
+  right: 0;
+}
+.registration-container .sign-in-account {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+/*!***********************************************************************************************************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!../node_modules/sass-loader/dist/cjs.js!./pug/includes/book a room/bookAroom.scss ***!
+  \***********************************************************************************************************************************************************************************************************/
 * {
   margin: 0;
   padding: 0;
 }
 
-.footer-container .top-footer .footer__subscription .subscription .subscription__mail-input, .footer-container p, .footer-container .top-footer .footer__support .footer__support-list .footer__support-list__item, .footer-container .top-footer .footer__about-us .footer__about-us-list .footer__about-us-list__item, .footer-container .top-footer .footer__nav .footer__nav-list .footer__nav-list__item, h1, h2, h3, p, .text-field, .dropdown, .masked-text-field, .date-dropdown {
-  font-family: "Montserrat", sans-serif;
+.matetial-icons {
+  font-family: "Material Icons";
   font-style: normal;
-}
-
-.footer-container .top-footer .footer__support .footer__support-list, .footer-container .top-footer .footer__about-us .footer__about-us-list, .footer-container .top-footer .footer__nav .footer__nav-list {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-}
-
-.footer-container .top-footer .footer__support .footer__support-list .footer__support-list__item, .footer-container .top-footer .footer__about-us .footer__about-us-list .footer__about-us-list__item, .footer-container .top-footer .footer__nav .footer__nav-list .footer__nav-list__item {
-  list-style: none;
-  font-style: normal;
-  font-size: 14px;
-  line-height: 17px;
   font-weight: 400;
-  margin-bottom: 20px;
-}
-
-.footer-container .top-footer .footer__support .footer__support-list .footer__support-list__item a, .footer-container .top-footer .footer__about-us .footer__about-us-list .footer__about-us-list__item a, .footer-container .top-footer .footer__nav .footer__nav-list .footer__nav-list__item a {
-  color: rgba(31, 32, 65, 0.5);
-  text-decoration: none;
-}
-
-.footer-container {
-  width: 100%;
-  position: absolute;
-  background-color: #FFFFFF;
-  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
-  padding: 0 140px;
-  box-sizing: border-box;
-  left: 0;
-  bottom: 0;
-}
-.footer-container p {
-  color: rgba(31, 32, 65, 0.75);
-  font-size: 14px;
-  font-weight: 400;
+  font-size: 24px;
   line-height: 24px;
-  letter-spacing: 0em;
-  text-align: left;
-}
-.footer-container .top-footer {
   display: flex;
-  justify-content: space-between;
-  height: 372px;
-  width: 100%;
-  background: #FFFFFF;
-  box-shadow: 0px 1px 0px rgba(31, 32, 65, 0.1);
-  box-sizing: border-box;
-  padding: 100px 0;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  position: absolute;
 }
-.footer-container .top-footer h3 {
+
+.date-dropdown, .masked-text-field, .dropdown, .text-field, p, h3, h2, h1 {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  color: #1F2041;
+}
+
+h2 {
+  font-size: 19px;
+  font-weight: bold;
+  line-height: 23px;
+  color: #1F2041;
+}
+
+h3 {
   font-size: 12px;
   font-weight: bold;
   line-height: 15px;
-  letter-spacing: 0em;
-  text-align: left;
   color: #1F2041;
-  margin-bottom: 21px;
 }
-.footer-container .top-footer .footer__description {
-  width: 260px;
+
+p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
 }
-.footer-container .top-footer .footer__description .logo__image {
-  width: 40px;
-  margin-right: 12px;
-  margin-bottom: 20px;
-}
-.footer-container .top-footer .footer__description .logo__name {
-  position: relative;
-  width: 53.19px;
-  margin-bottom: 30px;
-}
-.footer-container .top-footer .footer__subscription {
-  position: relative;
-  width: 260px;
-}
-.footer-container .top-footer .footer__subscription .subscription {
-  margin-top: 20px;
-}
-.footer-container .top-footer .footer__subscription .subscription .subscription__mail-input {
-  height: 44px;
-  width: 260px;
-  border-radius: 4px;
-  color: rgba(31, 32, 65, 0.25);
-  padding-left: 15px;
-}
-.footer-container .top-footer .footer__subscription .subscription .material-icons-outlined {
-  position: absolute;
-  right: 0;
-  width: 44px;
-  height: 44px;
-  padding: 10px;
-  box-sizing: border-box;
-  font-family: "Material Icons";
-  font-weight: normal;
-  font-style: normal;
-  font-size: 24px;
-  line-height: 1;
-  text-transform: none;
-  letter-spacing: normal;
-  color: rgba(31, 32, 65, 0.5);
-}
-.footer-container .bottom-footer {
-  height: 70px;
-  width: 100%;
+
+.date-dropdown, .masked-text-field, .dropdown, .text-field {
   background: #FFFFFF;
-  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+  border: 1px solid rgba(31, 32, 65, 0.25);
   box-sizing: border-box;
-  padding: 20px 0;
+  border-radius: 4px;
+  padding: 0 15px;
+  height: 44px;
+}
+
+.text-field {
+  width: 320px;
+}
+.text-field:hover {
+  color: rgba(31, 32, 65, 0.75);
+  border: 1px solid rgba(31, 32, 65, 0.5);
+}
+.text-field:focus {
+  color: rgba(31, 32, 65, 0.75);
+  border: 1px solid rgba(31, 32, 65, 0.5);
+}
+
+.dropdown {
+  padding-left: 15px;
+  padding-right: 44px;
+  width: 320px;
+}
+
+.masked-text-field {
+  width: 320px;
+}
+
+.date-dropdown {
+  width: 150px;
+}
+
+.bookAroom-container {
+  width: 380px;
+  height: 512px;
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 40px 30px 30px;
+}
+.bookAroom-container .room-info {
   display: flex;
   justify-content: space-between;
 }
-.footer-container .bottom-footer .fa-brands {
-  font-family: Font Awesome 5 Brands;
-  font-size: 24px;
-  font-weight: 400;
-  line-height: 23px;
-  letter-spacing: 0em;
-  text-align: center;
-  margin-left: 20px;
+.bookAroom-container .room-info h1 {
+  display: inline-block;
+}
+.bookAroom-container .room-info p {
+  display: inline-block;
+}
+.bookAroom-container .checkinto-date {
+  display: flex;
+  justify-content: space-between;
+}
+.bookAroom-container .checkinto-date .checkinto-date__arrival {
+  display: inline-block;
+  position: relative;
+}
+.bookAroom-container .checkinto-date .checkinto-date__arrival .material-icons {
+  color: rgba(31, 32, 65, 0.5);
+  bottom: 0;
+  right: 0;
+}
+.bookAroom-container .checkinto-date .checkinto-date__departure {
+  display: inline-block;
+  position: relative;
+}
+.bookAroom-container .checkinto-date .checkinto-date__departure .material-icons {
+  color: rgba(31, 32, 65, 0.5);
+  bottom: 0;
+  right: 0;
+}
+.bookAroom-container .guests-amount {
+  position: relative;
+  width: 320px;
+  height: 44px;
+}
+.bookAroom-container .guests-amount .guests-amount__input {
+  width: inherit;
+  height: inherit;
+}
+.bookAroom-container .guests-amount .material-icons {
+  color: rgba(31, 32, 65, 0.5);
+  top: 20px;
+  right: 0;
+}
+.bookAroom-container .room-book {
+  width: 320px;
+  height: 44px;
   background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  text-fill-color: transparent;
+  border-radius: 22px;
+  position: relative;
+}
+.bookAroom-container .room-book h3 {
+  color: #FFFFFF;
+  margin: 0 auto;
+}
+.bookAroom-container .room-book .material-icons {
+  color: #FFFFFF;
+  top: 0;
+  right: 0;
+}
+/*!*******************************************************************************************************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!../node_modules/sass-loader/dist/cjs.js!./pug/includes/calendar/calendar.scss ***!
+  \*******************************************************************************************************************************************************************************************************/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.matetial-icons {
+  font-family: "Material Icons";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  position: absolute;
+}
+
+.date-dropdown, .masked-text-field, .dropdown, .text-field, p, h3, h2, h1 {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  color: #1F2041;
+}
+
+h2 {
+  font-size: 19px;
+  font-weight: bold;
+  line-height: 23px;
+  color: #1F2041;
+}
+
+h3 {
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 15px;
+  color: #1F2041;
+}
+
+p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+}
+
+.date-dropdown, .masked-text-field, .dropdown, .text-field {
+  background: #FFFFFF;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 0 15px;
+  height: 44px;
+}
+
+.text-field {
+  width: 320px;
+}
+.text-field:hover {
+  color: rgba(31, 32, 65, 0.75);
+  border: 1px solid rgba(31, 32, 65, 0.5);
+}
+.text-field:focus {
+  color: rgba(31, 32, 65, 0.75);
+  border: 1px solid rgba(31, 32, 65, 0.5);
+}
+
+.dropdown {
+  padding-left: 15px;
+  padding-right: 44px;
+  width: 320px;
+}
+
+.masked-text-field {
+  width: 320px;
+}
+
+.date-dropdown {
+  width: 150px;
 }
 /*!**********************************************************************************************************************************************************************************************************************!*\
   !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!../node_modules/sass-loader/dist/cjs.js!./pug/includes/elements/bullet list/bullet-list.scss ***!
@@ -1365,6 +1521,116 @@ p {
   background-clip: text;
   text-fill-color: transparent;
 }
+/*!************************************************************************************************************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!../node_modules/sass-loader/dist/cjs.js!./pug/includes/elements/review/review.scss ***!
+  \************************************************************************************************************************************************************************************************************/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.matetial-icons {
+  font-family: "Material Icons";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  position: absolute;
+}
+
+.date-dropdown, .masked-text-field, .dropdown, .text-field, p, h3, h2, h1 {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  color: #1F2041;
+}
+
+h2 {
+  font-size: 19px;
+  font-weight: bold;
+  line-height: 23px;
+  color: #1F2041;
+}
+
+h3 {
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 15px;
+  color: #1F2041;
+}
+
+p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+}
+
+.date-dropdown, .masked-text-field, .dropdown, .text-field {
+  background: #FFFFFF;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 0 15px;
+  height: 44px;
+}
+
+.text-field {
+  width: 320px;
+}
+.text-field:hover {
+  color: rgba(31, 32, 65, 0.75);
+  border: 1px solid rgba(31, 32, 65, 0.5);
+}
+.text-field:focus {
+  color: rgba(31, 32, 65, 0.75);
+  border: 1px solid rgba(31, 32, 65, 0.5);
+}
+
+.dropdown {
+  padding-left: 15px;
+  padding-right: 44px;
+  width: 320px;
+}
+
+.masked-text-field {
+  width: 320px;
+}
+
+.date-dropdown {
+  width: 150px;
+}
+
+.review {
+  width: 711px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+}
+.review div .review__user-avatar {
+  width: 48px;
+  border: 2px solid #FFFFFF;
+  filter: drop-shadow(0px 10px 20px rgba(31, 32, 65, 0.1));
+  border-radius: 32px;
+  margin-bottom: 12px;
+}
+.review div .user-info {
+  height: 48px;
+  margin-bottom: 10px;
+}
+.review div .user-info .user-info__name {
+  font-weight: 700;
+}
 /*!******************************************************************************************************************************************************************************************************************************************!*\
   !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!../node_modules/sass-loader/dist/cjs.js!./pug/includes/elements/rich checkbox buttons/rich-checkbox-buttons.scss ***!
   \******************************************************************************************************************************************************************************************************************************************/
@@ -2369,6 +2635,294 @@ p {
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-fill-color: transparent;
+}
+/*!************************************************************************************************************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!../node_modules/sass-loader/dist/cjs.js!./pug/includes/room search/roomSearch.scss ***!
+  \************************************************************************************************************************************************************************************************************/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.matetial-icons {
+  font-family: "Material Icons";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  position: absolute;
+}
+
+.date-dropdown, .masked-text-field, .dropdown, .text-field, p, h3, h2, h1 {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  color: #1F2041;
+}
+
+h2 {
+  font-size: 19px;
+  font-weight: bold;
+  line-height: 23px;
+  color: #1F2041;
+}
+
+h3 {
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 15px;
+  color: #1F2041;
+}
+
+p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+}
+
+.roomSearch-container .guests-amount .guests-amount__input, .date-dropdown, .masked-text-field, .dropdown, .text-field {
+  background: #FFFFFF;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 0 15px;
+  height: 44px;
+}
+
+.text-field {
+  width: 320px;
+}
+.text-field:hover {
+  color: rgba(31, 32, 65, 0.75);
+  border: 1px solid rgba(31, 32, 65, 0.5);
+}
+.text-field:focus {
+  color: rgba(31, 32, 65, 0.75);
+  border: 1px solid rgba(31, 32, 65, 0.5);
+}
+
+.dropdown {
+  padding-left: 15px;
+  padding-right: 44px;
+  width: 320px;
+}
+
+.masked-text-field {
+  width: 320px;
+}
+
+.date-dropdown {
+  width: 150px;
+}
+
+.roomSearch-container {
+  width: 380px;
+  height: 374px;
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 40px 30px 30px;
+}
+.roomSearch-container .checkinto-date {
+  display: flex;
+  justify-content: space-between;
+}
+.roomSearch-container .checkinto-date .checkinto-date__arrival {
+  display: inline-block;
+  position: relative;
+}
+.roomSearch-container .checkinto-date .checkinto-date__arrival .material-icons {
+  color: rgba(31, 32, 65, 0.5);
+  bottom: 0;
+  right: 0;
+}
+.roomSearch-container .checkinto-date .checkinto-date__departure {
+  display: inline-block;
+  position: relative;
+}
+.roomSearch-container .checkinto-date .checkinto-date__departure .material-icons {
+  color: rgba(31, 32, 65, 0.5);
+  bottom: 0;
+  right: 0;
+}
+.roomSearch-container .guests-amount {
+  position: relative;
+  width: 320px;
+  height: 44px;
+}
+.roomSearch-container .guests-amount .guests-amount__input {
+  width: inherit;
+  height: inherit;
+}
+.roomSearch-container .guests-amount .material-icons {
+  color: rgba(31, 32, 65, 0.5);
+  top: 20px;
+  right: 0;
+}
+.roomSearch-container .room-search .material-icons {
+  color: #FFFFFF;
+  top: 0;
+  right: 0;
+}
+/*!****************************************************************************************************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!../node_modules/sass-loader/dist/cjs.js!./pug/includes/sign in/signIn.scss ***!
+  \****************************************************************************************************************************************************************************************************/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.matetial-icons {
+  font-family: "Material Icons";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  position: absolute;
+}
+
+.date-dropdown, .masked-text-field, .dropdown, .text-field, p, h3, h2, h1 {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  color: #1F2041;
+}
+
+h2 {
+  font-size: 19px;
+  font-weight: bold;
+  line-height: 23px;
+  color: #1F2041;
+}
+
+h3 {
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 15px;
+  color: #1F2041;
+}
+
+p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+}
+
+.signIn-container .guests-amount .guests-amount__input, .date-dropdown, .masked-text-field, .dropdown, .text-field {
+  background: #FFFFFF;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 0 15px;
+  height: 44px;
+}
+
+.text-field {
+  width: 320px;
+}
+.text-field:hover {
+  color: rgba(31, 32, 65, 0.75);
+  border: 1px solid rgba(31, 32, 65, 0.5);
+}
+.text-field:focus {
+  color: rgba(31, 32, 65, 0.75);
+  border: 1px solid rgba(31, 32, 65, 0.5);
+}
+
+.dropdown {
+  padding-left: 15px;
+  padding-right: 44px;
+  width: 320px;
+}
+
+.masked-text-field {
+  width: 320px;
+}
+
+.date-dropdown {
+  width: 150px;
+}
+
+.signIn-container {
+  width: 380px;
+  height: 374px;
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 40px 30px 30px;
+}
+.signIn-container .checkinto-date {
+  display: flex;
+  justify-content: space-between;
+}
+.signIn-container .checkinto-date .checkinto-date__arrival {
+  display: inline-block;
+  position: relative;
+}
+.signIn-container .checkinto-date .checkinto-date__arrival .material-icons {
+  color: rgba(31, 32, 65, 0.5);
+  bottom: 0;
+  right: 0;
+}
+.signIn-container .checkinto-date .checkinto-date__departure {
+  display: inline-block;
+  position: relative;
+}
+.signIn-container .checkinto-date .checkinto-date__departure .material-icons {
+  color: rgba(31, 32, 65, 0.5);
+  bottom: 0;
+  right: 0;
+}
+.signIn-container .guests-amount {
+  position: relative;
+  width: 320px;
+  height: 44px;
+}
+.signIn-container .guests-amount .guests-amount__input {
+  width: inherit;
+  height: inherit;
+}
+.signIn-container .guests-amount .material-icons {
+  color: rgba(31, 32, 65, 0.5);
+  top: 20px;
+  right: 0;
+}
+.signIn-container .room-search .material-icons {
+  color: #FFFFFF;
+  top: 0;
+  right: 0;
 }
 /*!*********************************************************************************************************************************************************************************!*\
   !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!../node_modules/sass-loader/dist/cjs.js!./scss/font.css ***!

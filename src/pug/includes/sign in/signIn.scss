@@ -20,7 +20,6 @@
       display: inline-block;
       position: relative;
       .material-icons {
-        @extend %MaterialIcons;
         color: rgba(31, 32, 65, 0.5);
         bottom: 0;
         right: 0;
@@ -30,7 +29,6 @@
       display: inline-block;
       position: relative;
       .material-icons {
-        @extend %MaterialIcons;
         color: rgba(31, 32, 65, 0.5);
         bottom: 0;
         right: 0;
@@ -47,7 +45,6 @@
       height: inherit;
     }
     .material-icons {
-      @extend %MaterialIcons;
       color: rgba(31, 32, 65, 0.5);
       top: 20px;
       right: 0;
@@ -55,7 +52,6 @@
   }
   .room-search {
     .material-icons {
-      @extend %MaterialIcons;
       color: #FFFFFF;
       top: 0;
       right: 0;
