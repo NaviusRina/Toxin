@@ -1,5 +1,4 @@
-doctype html
-html(lang='ru')
+meta(charset="UTF-8")
   head
     meta(charset="UTF-8")
     title #{title} 
@@ -8,9 +7,9 @@ html(lang='ru')
 
   body(class=pageClass) 
     // можно задать переменную для класса боди
-    include ../includes/header/header
+    include ./../../includes/header/header
     block main
-    include ../includes/footer/footer
+    include ./../../includes/footer/footer
     
     block script
       script(src=pageScript)
