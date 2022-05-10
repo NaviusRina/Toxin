@@ -9,9 +9,6 @@ var HtmlWebpackPugPlugin = require('html-webpack-pug-plugin');
 module.exports = {
   context: path.resolve(__dirname, 'src'),
   mode: 'development',
-  // externals: {
-  //   paths: PATHS
-  // },
   entry: {
     main: './js/index.js'
     /*можно добавить еще одну точку входа, то есть еще один путь*/
@@ -29,6 +26,9 @@ module.exports = {
   devServer: {//отслеживание результатов в реальном времени? работает с командой npm start
     port: 4200
   },
+  stats: {
+    children: true
+  },
   plugins: [//плагины, как, например, хтмл
     new MiniCssExtractPlugin(
 
@@ -40,7 +40,7 @@ module.exports = {
     }),
     new HTMLWebpackPlugin({
       filename: 'elements.html',
-      template: './elements.pug'
+      template: './elements.pug',
     }),//????????????????????
     new HtmlWebpackPugPlugin(),
     new CleanWebpackPlugin(),//очистка папки дист от лишнего кеша
@@ -57,7 +57,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.html$/,
+        test: /\.html$/i,
         use: ['file-loader']
       },
       {
