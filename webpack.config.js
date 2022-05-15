@@ -38,10 +38,10 @@ module.exports = {
       filename: 'index.html',
       template: './index.pug'//подключит содержимое файла индекс из папки срси к содержимому индекса из папки дист
     }),
-    new HTMLWebpackPlugin({
-      filename: 'elements.html',
-      template: './elements.pug',
-    }),//????????????????????
+    // new HTMLWebpackPlugin({
+    //   filename: 'elements.html',
+    //   template: './elements.pug',
+    // }),
     new HtmlWebpackPugPlugin(),
     new CleanWebpackPlugin(),//очистка папки дист от лишнего кеша
     new CopyWebpackPlugin({

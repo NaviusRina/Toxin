@@ -4,24 +4,45 @@ html(lang="ru")
     meta(charset="UTF-8")
     tittle
     style 
+      include ../dist/main.css
     //- это структура файла шаблона
-
+  
   body
-    include ./pug/includes/elements/bullet list/bullet-list
-    include ./pug/includes/elements/buttons/buttons
-    include ./pug/includes/elements/checkbox buttons/checkbox-buttons
-    include ./pug/includes/elements/date dropdown/date-dropdown
-    include ./pug/includes/elements/description/description
-    include ./pug/includes/elements/dropdown/dropdown
-    include ./pug/includes/elements/expandable checkbox list/expandable-checkbox-list
-    include ./pug/includes/elements/filter date dropdown/filter-date-dropdown
-    include ./pug/includes/elements/like button/like-button
-    include ./pug/includes/elements/pagination/pagination
-    include ./pug/includes/elements/radio buttons/radio-buttons
-    include ./pug/includes/elements/range slider/range-slider
-    include ./pug/includes/elements/rate button/rate-button
-    include ./pug/includes/elements/review/review
-    include ./pug/includes/elements/rich checkbox buttons/rich-checkbox-buttons
-    include ./pug/includes/elements/subscription text field/subscription-text-field
-    include ./pug/includes/elements/text field/text-field
-    include ./pug/includes/elements/toggle/toggle
+    div.flex-elem
+      div.flex-elem__elem
+        include pug/includes/elements/bullet list/bullet-list
+      div.flex-elem__elem
+        include pug/includes/elements/buttons/buttons
+      div.flex-elem__elem
+        include pug/includes/elements/checkbox buttons/checkbox-buttons
+      div.flex-elem__elem
+        include pug/includes/elements/date dropdown/date-dropdown
+      div.flex-elem__elem
+        include pug/includes/elements/description/description
+      div.flex-elem__elem
+        include pug/includes/elements/dropdown/dropdown
+      div.flex-elem__elem
+        include pug/includes/elements/expandable checkbox list/expandable-checkbox-list
+      div.flex-elem__elem
+        include pug/includes/elements/filter date dropdown/filter-date-dropdown
+      div.flex-elem__elem
+        include pug/includes/elements/like button/like-button
+      div.flex-elem__elem
+        include pug/includes/elements/pagination/pagination
+      div.flex-elem__elem
+        include pug/includes/elements/radio buttons/radio-buttons
+      div.flex-elem__elem
+        include pug/includes/elements/range slider/range-slider
+      div.flex-elem__elem
+        include pug/includes/elements/rate button/rate-button
+      div.flex-elem__elem
+        include pug/includes/elements/review/review
+      div.flex-elem__elem
+        include pug/includes/elements/rich checkbox buttons/rich-checkbox-buttons
+      div.flex-elem__elem
+        include pug/includes/elements/subscription text field/subscription-text-field
+      div.flex-elem__elem
+        include pug/includes/elements/text field/text-field
+      div.flex-elem__elem
+        include pug/includes/elements/toggle/toggle
+          

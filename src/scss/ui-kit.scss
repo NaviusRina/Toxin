@@ -3,6 +3,16 @@
   margin: 0;
   padding: 0;
 }
+.flex-elem {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  flex-wrap: wrap;
+  .flex-elem__elem {
+    border: 1px solid red;
+  }
+}
+
 .matetial-icons {
   font-family: 'Material Icons';
   font-style: normal;
