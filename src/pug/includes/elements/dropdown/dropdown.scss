@@ -3,4 +3,9 @@
 .dropdown-field {
   width: 320px;
   height: 44px;
+  .material-icons {
+    color: $darkShade50;
+    bottom: 0;
+    right: 0;
+  }
 }
