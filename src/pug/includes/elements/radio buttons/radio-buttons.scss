@@ -1,5 +1,32 @@
 @import "../../../../scss/ui-kit.scss";
 
 .radio-buttons {
-  
+  width: 220px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  .radio-buttons__elem {
+    input {
+      display: none;
+      &:checked + label:before{
+        background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+      }
+    }
+    label {
+      display: inline-block;
+      cursor: pointer;
+      position: relative;
+      margin-left: 34px;
+      &:before {
+        content: '';
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        border: 1px solid $purple;
+        border-radius: 50%;
+        margin-right: 14px;
+      }
+    }
+  }
 }

@@ -12,16 +12,26 @@
     display: flex;
     justify-content: space-between;
     .desccription__tittle__icon {
-      width: 48px;
-      height: 48px;
+      .tittle__icon {
+        width: 48px;
+        height: 48px;
+      }
     }
     .desccription-text {
       display: flex;
       justify-content: space-between;
       flex-direction: column;
-      .desccription-text-head {
+      .desccription-text__head {
         font-weight: 700;
       }
+    }
+    span {
+      position: absolute;
+      width: 280px;
+      height: 1px;
+      left: 140px;
+      top: 1632px;
+      background: rgba(31, 32, 65, 0.1);
     }
   }
 }

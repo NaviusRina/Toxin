@@ -6,7 +6,8 @@
   flex-direction: row;
   .checkbox__button {
     position: absolute;
-    z-index: -1;
+    width: 20px;
+    height: 20px;
     opacity: 0;
     &:before {
       content: '';
@@ -22,5 +23,8 @@
         // background-image: url();вставить
       }
     }
+  }
+  p {
+    color: $darkShade50;
   }
 }

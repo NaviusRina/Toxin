@@ -1,13 +1,19 @@
 @import "../../../../scss/ui-kit.scss";
 .bullet-elem {
-  width: 270px;
+  width: 292px;
+  height: 24px;
   display: flex;
   flex-direction: row;
+  margin-top: 10px;
   .bullet-elem__ellipse {
     display: inline-block;
-    width: 15px;
-    height: 15px;
+    width: 10px;
+    height: 10px;
     background-color: $darkShade25;
     border-radius: 50%;
+    margin: 0 5px 10px 5px;
+  }
+  p {
+    word-wrap: break-word;
   }
 }
