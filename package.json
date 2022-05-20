@@ -50,6 +50,7 @@
   "dependencies": {
     "@mdi/font": "^6.6.96",
     "@mdi/js": "^6.6.96",
+    "air-datepicker": "^3.2.0",
     "html-webpack-pug-plugin": "^4.0.0",
     "jquery": "^3.6.0",
     "material-icons": "^1.10.8",
