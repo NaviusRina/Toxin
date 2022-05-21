@@ -1,4 +1,7 @@
-import AirDatepicker from 'air-datepicker'
-import 'air-datepicker/air-datepicker.css'
+import AirDatepicker from "air-datepicker";
 
-new AirDatepicker('#el' [, options]);
+new AirDatepicker('#input');
+// , {
+  // range: true, //для выбора диапазона
+  // multipleDatesSeparator: ' - '//для разделения дат тире
+// });
