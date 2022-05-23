@@ -3,7 +3,8 @@ const HTMLWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const {CleanWebpackPlugin} = require('clean-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');//подключение статических файлов, например ico
-var HtmlWebpackPugPlugin = require('html-webpack-pug-plugin');
+const AirDatepicker = require('air-datepicker');
+const HtmlWebpackPugPlugin = require('html-webpack-pug-plugin');
 
 
 module.exports = {
