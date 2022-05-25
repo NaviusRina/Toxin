@@ -89,7 +89,7 @@ p {
     border: 1px solid $darkShade50;
   }
 }
-.dropdown {
+.dropdown__input {
   @extend %Montrserrat;
   @extend %InputStyle;
   padding-left: 15px;
@@ -101,7 +101,7 @@ p {
   @extend %InputStyle;
   width: 320px;
 }
-.date-dropdown {
+.date-dropdown__input {
   @extend %Montrserrat;
   @extend %InputStyle;
   width: 150px;

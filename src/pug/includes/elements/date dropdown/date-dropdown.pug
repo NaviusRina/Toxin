@@ -6,7 +6,8 @@ html
       //- include ./../../air-datepicker/air-datepicker.css
     
   body
-    input(id="airdatepicker" class="date-dropdown" type="text")
-    span.matetial-icons expand_more
+    div.date-dropdown
+      input(id="airdatepicker" class="date-dropdown__input" type="text")
+      span.matetial-icons expand_more
     script
       include datedropdown.js

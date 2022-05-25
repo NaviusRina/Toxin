@@ -1,9 +1,6 @@
 @import "../../../../scss/ui-kit.scss";
+
 .bullet-elem {
-  width: 292px;
-  height: 24px;
-  display: flex;
-  flex-direction: row;
   margin-top: 10px;
   .bullet-elem__ellipse {
     display: inline-block;
@@ -11,9 +8,10 @@
     height: 10px;
     background-color: $darkShade25;
     border-radius: 50%;
-    margin: 0 5px 10px 5px;
+    margin: 5px 10px 0 0;
   }
   p {
+    display: inline-block;
     word-wrap: break-word;
   }
 }

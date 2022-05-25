@@ -1,1 +1,13 @@
 @import "../../../../scss/ui-kit.scss";
+
+.dropdown {
+  position: relative;
+  .matetial-icons {
+    height: 44px;
+    width: 44px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: $darkShade50;
+  }
+}

@@ -7,6 +7,8 @@
   height: 20px;
   border: 1px solid $darkShade25;
   border-radius: 10px;
+  position: relative;
+  background-color: #FFFFFF;
   &:active {
     border: 1px solid $purple;
   }
@@ -17,6 +19,9 @@
     font-size: 10px;
     line-height: 9px;
     color: $darkShade25;
+    left: 0;
+    top: 0;
+
     &:active {
       background: linear-gradient(180deg, $purple 0%, #8BA4F9 100%);
       -webkit-background-clip: text;
