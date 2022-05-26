@@ -1,5 +1,7 @@
 html
   body
     div.dropdown-field 
-      input.dropdown(placeholder="Сколько гостей")
-      span.material-icons expand_more
+      input(id="airdatepicker" class="dropdown__input" type="text" placeholder="Сколько гостей")
+      span.matetial-icons expand_more
+    script
+      include dropdown.js

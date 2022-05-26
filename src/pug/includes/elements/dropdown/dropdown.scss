@@ -4,10 +4,15 @@
   width: 320px;
   height: 44px;
   position: relative;
-  .material-icons {
+  .matetial-icons {
+    height: 44px;
+    width: 44px;
     position: absolute;
-    color: $darkShade50;
-    bottom: 0;
     right: 0;
+    top: 0;
+    color: $darkShade50;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }

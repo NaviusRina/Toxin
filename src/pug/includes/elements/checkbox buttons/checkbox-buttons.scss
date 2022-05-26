@@ -1,31 +1,32 @@
 @import "../../../../scss/ui-kit.scss";
 
 
-.checkbox-list {
-  margin-bottom: 10px;
-  .checkbox-list__elem {
-    position: relative;
-    .checkbox__button {
-      position: absolute;
+
+.checkbox-list__elem {
+  margin-top: 10px;
+  .checkbox__button {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    opacity: 0;
+
+  }
+  label {
+    &:before {
+      content: '';
+      display: inline-block;
       width: 20px;
       height: 20px;
-      margin-right: 10px;
-      // opacity: 0;
-      // &:before {
-      //   content: '';
-      //   display: inline-block;
-      //   width: 20px;
-      //   height: 20px;
-      //   border: 1px solid $darkShade25;
-      //   box-sizing: border-box;
-      //   border-radius: 4px;
-      //   &:checked {
-      //     border-color: $purple;
-      //     // background-image: url();вставить
-      //   }
-      // }
+      border: 1px solid $darkShade25;
+      box-sizing: border-box;
+      border-radius: 4px;
+      &:checked {
+        border-color: $purple;
+        // background-image: url();вставить
+      }
     }
     p {
+      display: inline-block;
       color: $darkShade50;
       position: absolute;
     }
