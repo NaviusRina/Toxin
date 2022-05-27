@@ -1,15 +1,38 @@
 @import "../../../../scss/ui-kit.scss";
 
-.rich-checkbox {
-  width: 266px;
-  .rich-section {
-    .rich-section__button {
-      box-sizing: border-box;
-      position: absolute;
+.rich-section {
+  margin-top: 10px;
+  .rich-section__button {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    opacity: 0;
+    z-index: -1;
+    &:checked + label:before {
+      border-color: $purple;
+      // background-image: url();вставить
+    }
+  }
+  label {
+    &:before {
+      content: '';
+      display: inline-block;
       width: 20px;
       height: 20px;
       border: 1px solid $darkShade25;
+      box-sizing: border-box;
       border-radius: 4px;
+
+    }
+    p {
+      display: inline-block;
+      color: $darkShade50;
+      position: absolute;
+      margin-left: 10px;
+    }
+    .rich-text__head {
+      font-weight: 700;
+      margin-bottom: 10px;
     }
   }
 }

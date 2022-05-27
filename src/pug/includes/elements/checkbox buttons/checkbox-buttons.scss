@@ -1,7 +1,6 @@
 @import "../../../../scss/ui-kit.scss";
 
 
-
 .checkbox-list__elem {
   margin-top: 10px;
   .checkbox__button {
@@ -9,7 +8,11 @@
     height: 20px;
     margin-right: 10px;
     opacity: 0;
-
+    z-index: -1;
+    &:checked + label:before {
+      border-color: $purple;
+      // background-image: url();вставить
+    }
   }
   label {
     &:before {
@@ -20,15 +23,13 @@
       border: 1px solid $darkShade25;
       box-sizing: border-box;
       border-radius: 4px;
-      &:checked {
-        border-color: $purple;
-        // background-image: url();вставить
-      }
+
     }
     p {
       display: inline-block;
       color: $darkShade50;
       position: absolute;
+      margin-left: 10px;
     }
   }
 }
