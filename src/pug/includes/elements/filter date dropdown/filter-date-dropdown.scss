@@ -2,7 +2,9 @@
 
 .dropdown {
   position: relative;
-  width: 266px;
+  .dropdown__input {
+    width: 266px;
+  }
   .matetial-icons {
     height: 44px;
     width: 44px;
