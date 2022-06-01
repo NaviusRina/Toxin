@@ -1,13 +1,13 @@
 html
   head
-    //- script(src="./../../air-datepicker/air-datepicker.js")
-      
-    //- style
-      //- include ./../../air-datepicker/air-datepicker.css
-    
+    style
+      include ./../airdatepicker/air-datepicker.css
   body
     div.date-dropdown
-      input(id="date-dropdown" class="date-dropdown__input" type="text")
+      input(id="date-dropdown" class="date-dropdown__input" type="text" placeholder="ДД.ММ.ГГГГ")
       span.matetial-icons expand_more
     script
-      new AirDatepicker('#date-dropdown');
+      include ./../airdatepicker/air-datepicker.js
+    script
+      include datedropdown.js
+      

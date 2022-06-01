@@ -3,32 +3,59 @@
 .rich-section {
   margin-top: 10px;
   .rich-section__button {
-    width: 20px;
-    height: 20px;
-    margin-right: 10px;
+    position: absolute;
     opacity: 0;
     z-index: -1;
-    &:checked + label:before {
-      border-color: $purple;
-      // background-image: url();вставить
+    + label {
+      display: inline-flex;
+      align-items: center;
+      user-select: none;
+      position: relative;
+      &:before {
+        content: "";
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        border: 1px solid $darkShade25;
+        box-sizing: border-box;
+        border-radius: 4px;
+        margin-right: 10px;
+      }
+      &:after {
+        background-color: transparent;
+        content: "";
+        display: block;
+        position: absolute;
+        left: 5px;
+        top: 5px;
+        width: 6px;
+        height: 8px;
+        opacity: 0;
+        border-bottom: 3px solid #BC9CFF;
+        border-right: 3px solid #8BA4F9;
+        // border-image: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+        transform: rotate(45deg);
+        transition: border-color 0.3s ease;
+      }
+    }
+    &:checked {
+      + label {
+        &:before {
+          border-color: $purple;
+          background-image: url("../../../../images/Vector.svg");
+          background-size: 6px;
+        }
+        &:after {
+          content: "";
+          opacity: 1;
+        }
+      }
     }
   }
   label {
-    &:before {
-      content: '';
-      display: inline-block;
-      width: 20px;
-      height: 20px;
-      border: 1px solid $darkShade25;
-      box-sizing: border-box;
-      border-radius: 4px;
-
-    }
     p {
       display: inline-block;
       color: $darkShade50;
-      position: absolute;
-      margin-left: 10px;
     }
     .rich-text__head {
       font-weight: 700;

@@ -7,9 +7,6 @@
     position: absolute;
     opacity: 0;
     z-index: -1;
-    // width: 20px;
-    // height: 20px;
-    // margin-right: 10px;
     + label {
       display: inline-flex;
       align-items: center;
@@ -32,14 +29,12 @@
         position: absolute;
         left: 5px;
         top: 5px;
-        // margin-left: 0;
-        // margin-top: 0;
         width: 6px;
         height: 8px;
         opacity: 0;
         border-bottom: 3px solid #BC9CFF;
         border-right: 3px solid #8BA4F9;
-        border-image: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+        // border-image: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
         transform: rotate(45deg);
         transition: border-color 0.3s ease;
       }
@@ -50,27 +45,15 @@
           border-color: $purple;
           background-image: url("../../../../images/Vector.svg");
           background-size: 6px;
-          // img {
-          //   display: inline-block;
-          //   position: absolute;
-          //   width: 6px;
-          // }
         }
         &:after {
           content: "";
           opacity: 1;
-          //border-bottom: 3px solid $checkbox-checked; change checked checkedbox color
-          //border-right: 3px solid $checkbox-checked; change checked checkedbox color
         }
       }
     }
   }
   label {
-    // img {
-    //   position: absolute;
-    //   opacity: 0;
-    //   z-index: -1;
-    // }
     p {
       display: inline-block;
       color: $darkShade50;

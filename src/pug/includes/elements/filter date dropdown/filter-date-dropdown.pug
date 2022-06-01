@@ -1,8 +1,13 @@
 html
+  head
+    style
+      include ./../airdatepicker/air-datepicker.css
   body
     div.dropdown
-      input(id="airdatepicker" class="dropdown__input" type="text")
+      input(id="filter-date-dropdown" class="dropdown__input" type="text")
       span.matetial-icons expand_more
+    script
+      include ./../airdatepicker/air-datepicker.js
     script
       include filter-date-dropdown.js
     
