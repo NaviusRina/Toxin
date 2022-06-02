@@ -1,14 +1,14 @@
 @import "../../../../scss/ui-kit.scss";
 
 .rich-section {
-  margin-top: 10px;
+  margin-bottom: 10px;
   .rich-section__button {
     position: absolute;
     opacity: 0;
     z-index: -1;
     + label {
       display: inline-flex;
-      align-items: center;
+      align-items: flex-start;
       user-select: none;
       position: relative;
       &:before {
@@ -27,7 +27,7 @@
         display: block;
         position: absolute;
         left: 5px;
-        top: 5px;
+        top: 4px;
         width: 6px;
         height: 8px;
         opacity: 0;
@@ -53,13 +53,19 @@
     }
   }
   label {
-    p {
-      display: inline-block;
-      color: $darkShade50;
+    div {
+      p {
+        // display: inline-block;
+        color: $darkShade50;
+        font-size: 12px;
+      }
+      .rich-text__head {
+        color: $darkShade75;
+        font-weight: 700;
+        margin-bottom: 5px;
+        font-size: 14px;
+      }
     }
-    .rich-text__head {
-      font-weight: 700;
-      margin-bottom: 10px;
-    }
+
   }
 }

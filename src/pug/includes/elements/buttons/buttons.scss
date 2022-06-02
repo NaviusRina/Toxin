@@ -12,6 +12,7 @@
   background: linear-gradient(180deg, $purple 0%, #8BA4F9 100%);
   border-radius: 22px;
   position: relative;
+  border: none;
   h3 {
     color: #FFFFFF;
     margin: 0 auto;
@@ -35,6 +36,8 @@
 .small-lilac-button {
   @extend %SmallButton;
   background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  border: none;
+
   h3 {
     color: #FFFFFF;
     margin: 0 auto;
@@ -45,15 +48,34 @@
 }
 .small-white-button {
   @extend %SmallButton;
-  border: 2px solid linear-gradient(180deg, $purple 0%, #8BA4F9 100%);
+  border: 2px solid transparent;
+  // border-image: linear-gradient(180deg, $purple, #8BA4F9);
   background-color: #FFFFFF;
+  // -moz-border-image: -moz-linear-gradient(180deg, $purple, #8BA4F9);
+  // -webkit-border-image: -webkit-linear-gradient(180deg, $purple, #8BA4F9);
+  border-image-slice: 1;
+  width: 97px;
+  height: 42px;
+  &:before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: -3px;
+  right: -3px;
+  bottom: -3px;
+  left: -3px;
+  border-radius: 22px;
+  background: linear-gradient(180deg, $purple, #8BA4F9);
+
+  }
+  &:hover:before {
+    opacity: 0.5;
+  }
   h3 {
     color: $purple;
     margin: 0 auto;
   }
-  &:hover {
-    opacity: 0.5;
-  }
+
 }
 .small-text-button {
   background-color: rgba(255, 255, 255, 0);
