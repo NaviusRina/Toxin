@@ -2,21 +2,23 @@
 
 .radio-buttons {
   width: 220px;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
   .radio-buttons__elem {
+    display: inline-block;
+    margin-right: 20px;
     input {
       display: none;
       &:checked + label:before {
-        
+        width: 12px;
+        height: 1px;
         background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
       }
     }
     label {
       display: inline-block;
       cursor: pointer;
+
       position: relative;
+      user-select: none;
       &:before {
         content: '';
         display: inline-block;

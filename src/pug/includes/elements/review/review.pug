@@ -1,11 +1,12 @@
 html
   body
-    div.review
-      div
-        div.review__user-avatar
-        include ./../like button/like-button.pug
-      div
-        div.user-info
+    div.review-user
+      div.review-user-info
+        div.user-info__avatar
+          img(src="images/image.png" class="review__user-avatar__img" alt='emoticon')
+        div
           p.user-info__name Мурад Сарафанов
           p.user-info__attendance 5 дней назад
-        p.user-review Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.
+      div.review-user-appraisal
+        include ./../like button/like-button.pug
+        p.user-appraisal__review Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.
