@@ -1,16 +1,76 @@
 @import "../../../../scss/ui-kit.scss";
 
 .rate {
-  .material-icons {
-    width: 24px;
-    height: 24px;
-    font-size: 24px;
-    line-height: 20px;
-    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-fill-color: transparent;
+  position: relative;
+  width: 144px;
+  .rating {
+    unicode-bidi: bidi-override;
+    direction: rtl;
+    & > input {
+      display: none;
+      & + label {
+        display: inline-block;
+        overflow: hidden;
+        width: 24px;
+        height: 24px;
+        white-space: nowrap;
+        cursor: pointer;
+        &:before {
+          content: "star_outline";
+          color: transparent;
+  	      -webkit-background-clip: text;
+        	background-clip: text;
+        	background-image: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+          font-family: 'Material Icons';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 24px;
+          line-height: 24px;
+          display: inline-block;
+          position: absolute;
+        }
+      }
+      &:checked ~ label:before,
+        & + label:hover ~ label:before,
+        & + label:hover:before {
+        content: "star";
+        color: transparent;
+	      -webkit-background-clip: text;
+      	background-clip: text;
+      	background-image: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+        font-family: 'Material Icons';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 24px;
+        display: inline-block;
+        position: absolute;
+      }
+    }
+    & > .rate__clear + label {
+      width: 24px;
+      opacity: 0;
+    }
+    & > .rate__clear + label:before {
+      width: 24px;
+    }
+
+    &:hover > input + label:before {
+      content: "star_outline";
+      color: transparent;
+      -webkit-background-clip: text;
+      background-clip: text;
+      background-image: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    }
+    &:hover > input + label:hover ~ label:before,
+    &:hover > input + label:hover:before {
+      content: "star";
+      color: transparent;
+      -webkit-background-clip: text;
+      background-clip: text;
+      background-image: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    }
+
   }
 
 }

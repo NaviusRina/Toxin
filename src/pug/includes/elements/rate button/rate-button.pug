@@ -1,5 +1,31 @@
 html
   body
-    div.rate
-      each item in [1, 2, 3, 4, 5]
-        span.material-icons star_outline
+    form.rate
+      //- each item in [1, 2, 3, 4, 5] потом переделать на цикл
+      div.rating
+        
+          input(type="radio" id="rate-5" name="rate__star" value="5")
+          label(for="rate-5")
+            //- span.material-icons star_outline
+            //- span(class="material-icons material-icons__star") star
+          input(type="radio" id="rate-4" name="rate__star" value="4")
+          label(for="rate-4")
+            //- span.material-icons star_outline
+            //- span(class="material-icons material-icons__star") star
+          input(type="radio" id="rate-3" name="rate__star" value="3")
+          label(for="rate-3")
+            //- span.material-icons star_outline
+            //- span(class="material-icons material-icons__star") star
+          input(type="radio" id="rate-2" name="rate__star" value="2")
+          label(for="rate-2")
+            //- span.material-icons star_outline
+            //- span(class="material-icons material-icons__star") star
+          input(type="radio" id="rate-1" name="rate__star" value="1")
+          label(for="rate-1")
+            //- span.material-icons star_outline
+            //- span(class="material-icons material-icons__star") star
+          input(type="radio" id="rate-0" name="rate__star" value="0" class="rate__clear")
+          label(for="rate-0")
+            //- span.material-icons star_outline
+            //- span(class="material-icons material-icons__star") star
+        
