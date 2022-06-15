@@ -1,7 +1,22 @@
 html
+  head
+    link(rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css")
+    link(rel="stylesheet" href="/resources/demos/style.css")
+    script(src="https://code.jquery.com/jquery-3.6.0.js")
+    script(src="https://code.jquery.com/ui/1.13.1/jquery-ui.js")
+    
   body
+    //- div.range
+    //-   div.range-value
+    //-     div.range-value__min
+    //-       p.range-value__min__number
+    //-       p &#8381
+    //-     p -
+    //-     div.range-value__max
+    //-       p.range-value__max__number
+    //-       p &#8381
+    //-   div(class="range__slider" data-value-0="#first" data-value-1="#second" data-range="#third")
     div.range
-      input (type="text" class="range__input-min")
-      p -
-      input (type="text" class="range__input-max")
-      div.range__slider
+      p
+        input(type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;")
+      div#slider-range

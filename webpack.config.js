@@ -5,6 +5,7 @@ const {CleanWebpackPlugin} = require('clean-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');//подключение статических файлов, например ico
 const AirDatepicker = require('air-datepicker');
 const HtmlWebpackPugPlugin = require('html-webpack-pug-plugin');
+const $ = require('jquery');
 
 
 module.exports = {
