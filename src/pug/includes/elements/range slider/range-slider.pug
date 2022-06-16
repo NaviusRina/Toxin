@@ -1,7 +1,6 @@
 html
   head
     link(rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css")
-    link(rel="stylesheet" href="/resources/demos/style.css")
     script(src="https://code.jquery.com/jquery-3.6.0.js")
     script(src="https://code.jquery.com/ui/1.13.1/jquery-ui.js")
     
@@ -16,7 +15,9 @@ html
     //-       p.range-value__max__number
     //-       p &#8381
     //-   div(class="range__slider" data-value-0="#first" data-value-1="#second" data-range="#third")
-    div.range
-      p
-        input(type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;")
-      div#slider-range
+    //- div.range
+    p
+      input(type="text" id="amount")
+    div#slider-range
+    script 
+      include range-slider.js
