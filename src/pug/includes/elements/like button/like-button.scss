@@ -9,16 +9,17 @@
   border-radius: 10px;
   position: relative;
   background-color: #FFFFFF;
+  .like {
+    display: none;
+  }
   &:active {
     border: 1px solid $purple;
-    + .material-icons {
+    + .like {
+      display: inline-block;
       color: pink;
-      text-shadow: 2px 1px pink;
-      text-shadow: none;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-      text-fill-color: transparent;
+    }
+    .unlike {
+      display: none;
     }
     + .like-number {
       color: 1px solid $purple;
@@ -30,18 +31,15 @@
     height: 20px;
     font-size: 10px;
     line-height: 9px;
-    // color: $darkShade25;
-    color: #FFFFFF;
-    text-shadow: 1px 0 1px $darkShade25,
-    0 1px 1px $darkShade25,
-    -1px 0 1px $darkShade25,
-    0 -1px 1px $darkShade25;
-    // text-shadow: 2px 1px $darkShade25;
     left: 0;
     top: 0;
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+  .unlike {
+    color: $darkShade25;
+    color: #fff;
   }
   .like-number {
     font-size: 10px;
