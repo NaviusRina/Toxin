@@ -1,6 +1,6 @@
 @import "../../../../scss/ui-kit.scss";
 
-.like-button {
+#like-button {
   box-sizing: border-box;
   position: relative;
   width: 40px;
@@ -9,21 +9,26 @@
   border-radius: 10px;
   position: relative;
   background-color: #FFFFFF;
+  transition: color 150ms ease-in-out, background-color 150ms ease-in-out, transform 150ms ease-in-out;
+  outline: 0;
   .like {
     display: none;
     opacity: 0;
   }
   &:active {
+    transform: scale(0.95);
+  }
+  &.selected {
     border: 1px solid $purple;
-   .like {
+    .like {
       display: flex;
       color: $purple;
       opacity: 1;
     }
-    .unlike {
+     .unlike {
       display: none;
     }
-   .like-number {
+    .like-number {
       color: 1px solid $purple;
     }
   }
