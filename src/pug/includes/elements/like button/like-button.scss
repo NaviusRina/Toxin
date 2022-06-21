@@ -29,7 +29,7 @@
       display: none;
     }
     .like-number {
-      color: 1px solid $purple;
+      color: $purple;
     }
   }
   .material-icons {
@@ -49,6 +49,7 @@
     color: $darkShade25;
   }
   .like-number {
+    @extend %Montrserrat;
     position: absolute;
     font-size: 10px;
     line-height: 12px;
@@ -56,12 +57,9 @@
     width: 20px;
     height: 20px;
     right: 0;
+    top: 0;
     display: flex;
     align-items: center;
-    justify-content: center;
-    // &:active {
-    //   color: 1px solid $purple;
-    //
-    // }
+    justify-content: flex-start;
   }
 }

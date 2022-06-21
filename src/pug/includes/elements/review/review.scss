@@ -1,36 +1,36 @@
 @import "../../../../scss/ui-kit.scss";
 
 .review-user {
-  width: 711px;
+  // width: 711px;
   box-sizing: border-box;
+  display: flex;
   .review-user-info {
-    display: flex;
-    justify-content: flex-start;
-
+    position: relative;
+    width: 88px;
     .user-info__avatar {
-      border: 2px solid #FFFFFF;
       filter: drop-shadow(0px 10px 20px rgba(31, 32, 65, 0.1));
-      border-radius: 32px;
-      margin-right: 10px;
     }
+    #like-button {
+      // margin-left: 24px;
+      position: absolute;
+      top: 70px;
+      left: 24px;
+    }
+  }
+  .review-user-appraisal {
+    margin-top: 10px;
+    width: 655px;
     div {
+      margin-bottom: 15px;
       .user-info__name {
         font-weight: 700;
       }
       .user-info__attendance {
       }
     }
-
-  }
-
-  .review-user-appraisal {
-    display: flex;
-    justify-content: flex-start;
-    .like-button {
-      margin: 0 24px;
-    }
     .user-appraisal__review {
       display: inline-block;
     }
+
   }
 }
