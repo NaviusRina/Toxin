@@ -1,0 +1,32 @@
+html
+  body
+    div.dropdown-field 
+      input(class="dropdown__input" type="text")
+      span.matetial-icons expand_more
+    div.dropdown-box
+      ul.dropdown-box__list
+        li.dropdown-box__list__elem
+          h3 СПАЛЬНИ
+          div.guest-number
+            button.guest-number__delete -
+            h3.guest-number__amount
+            button.guest-number__add +
+        li.dropdown-box__list__elem
+          h3 КРОВАТИ
+          div.guest-number
+            button.guest-number__delete -
+            h3.guest-number__amount
+            button.guest-number__add +
+        li.dropdown-box__list__elem
+          h3 ВАННЫЕ КОМНАТЫ
+          div.guest-number
+            button.guest-number__delete -
+            h3.guest-number__amount
+            button.guest-number__add +
+      div.dropdown-box__buttons
+        button
+          h3 ОЧИСТИТЬ
+        button
+          h3 ПРИМЕНИТЬ
+    script
+      include dropdown-room.js

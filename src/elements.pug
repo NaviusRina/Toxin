@@ -4,6 +4,14 @@ html(lang="ru")
     meta(charset="UTF-8")
     link(href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet")
     script(src="https://kit.fontawesome.com/3ef9158f0f.js" crossorigin="anonymous")
+    
+    
+    
+    //- link(rel="preconnect" href="https://fonts.googleapis.com")
+    //- link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
+    //- link(href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" )
+
+
     tittle
     style 
       include ./../dist/main.css
@@ -30,13 +38,15 @@ html(lang="ru")
       div.flex-elem__elem
         include pug/includes/elements/dropdown/dropdown
       div.flex-elem__elem
+        include pug/includes/elements/dropdown-room/dropdown-room
+      div.flex-elem__elem
         include pug/includes/elements/expandable checkbox list/expandable-checkbox-list
       div.flex-elem__elem
         include pug/includes/elements/filter date dropdown/filter-date-dropdown
       //- div.flex-elem__elem
         //- include pug/includes/elements/like button/like-button
-      div.flex-elem__elem
-        include pug/includes/elements/pagination/pagination
+      //- div.flex-elem__elem
+        //- include pug/includes/elements/pagination/pagination
       //- div.flex-elem__elem
         //- include pug/includes/elements/radio buttons/radio-buttons
       //- div.flex-elem__elem

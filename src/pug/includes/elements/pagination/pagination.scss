@@ -3,9 +3,45 @@
 .pagination {
   width: 241px;
   .pagination-pages {
-
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    .pagination-page__number {
+      list-style: none;
+      margin-bottom: 10px;
+      a {
+        text-decoration: none;
+      }
+      p {
+        color: $darkShade50;
+      }
+      .active-number {
+        color: #FFFFFF;
+      }
+      .material-icons {
+        color: #FFFFFF;
+      }
+    }
+    .active {
+      width: 40px;
+      height: 40px;
+      background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+      border-radius: 22px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .next-active {
+      width: 40px;
+      height: 40px;
+      background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+      border-radius: 22px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
   }
-  .pagination__amount {
 
-  }
 }
