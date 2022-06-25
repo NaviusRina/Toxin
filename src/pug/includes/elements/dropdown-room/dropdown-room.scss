@@ -11,11 +11,12 @@
   border-radius: 22px;
 }
 
-.dropdown-field {
-
+.dropdown-room-field {
+  width: 266px;
+  height: 44px;
   position: relative;
   .dropdown__input {
-    width: 266px;
+    width: inherit;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
   }
