@@ -8,25 +8,25 @@ html
         li.dropdown-box__list__elem
           h3 ВЗРОСЛЫЕ
           div.guest-number
-            button.guest-number__delete -
-            h3.guest-number__amount 0
-            button.guest-number__add +
+            button.guest-number__delete.qnd1 -
+            h3.guest-number__amount.qnam1 0
+            button.guest-number__add.qna1 +
         li.dropdown-box__list__elem
           h3 ДЕТИ
           div.guest-number
-            button.guest-number__delete -
-            h3.guest-number__amount 0
-            button.guest-number__add +
+            button.guest-number__delete.qnd2 -
+            h3.guest-number__amount.qnam2 0
+            button.guest-number__add.qna2 +
         li.dropdown-box__list__elem
           h3 МЛАДЕНЦЫ
           div.guest-number
-            button.guest-number__delete -
-            h3.guest-number__amount 0
-            button.guest-number__add +
+            button.guest-number__delete.qnd3 -
+            h3.guest-number__amount.qnam3 0
+            button.guest-number__add.qna3 +
       div.dropdown-box__buttons
-        button
-          h3 ОЧИСТИТЬ
-        button
+        include ../buttons/small-text-button.pug
+          h3.dropdown-box__clear ОЧИСТИТЬ
+        include ../buttons/small-text-button.pug
           h3 ПРИМЕНИТЬ
     script
       include dropdown.js

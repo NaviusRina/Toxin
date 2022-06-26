@@ -74,6 +74,7 @@
           color: $darkShade50;
         }
         .guest-number__amount {
+          margin-right: 40px;
         }
       }
     }
@@ -82,13 +83,5 @@
     display: flex;
     justify-content: space-between;
     margin-top: 7px;
-    button {
-      background-color: rgba(255, 255, 255, 0);
-      border: none;
-
-      h3 {
-        color: #BC9CFF;
-      }
-    }
   }
 }
