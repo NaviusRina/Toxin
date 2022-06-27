@@ -37,7 +37,7 @@
   @extend %SmallButton;
   background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
   border: none;
-
+  cursor: pointer;
   h3 {
     color: #FFFFFF;
     margin: 0 auto;
@@ -66,7 +66,7 @@
   left: -3px;
   border-radius: 22px;
   background: linear-gradient(180deg, $purple, #8BA4F9);
-
+  cursor: pointer;
   }
   &:hover:before {
     opacity: 0.5;
@@ -87,4 +87,5 @@
       color: $darkShade50;
     }
   }
+  cursor: pointer;
 }

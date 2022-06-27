@@ -5,6 +5,7 @@
 }
 .expandable-checkbox-list {
   margin-bottom: 10px;
+
   .expandable-checkbox__button {
     position: absolute;
     opacity: 0;
@@ -14,6 +15,7 @@
       align-items: center;
       user-select: none;
       position: relative;
+      cursor: pointer;
       &:before {
         content: "";
         display: inline-block;
