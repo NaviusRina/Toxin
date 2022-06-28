@@ -29,9 +29,10 @@ guestNumberAdd1.addEventListener('click', function() {
 
 
 guestNumberDelete1.addEventListener('click', function() {
-  if(guestNumberAmount1.textContent == 0) {
+  if(guestNumberAmount1.textContent == 1) {
     guestNumberAmount1.textContent = 0;
     guestNumberDelete1.style.cssText = `color:rgba(31, 32, 65, 0.25);border: 1px solid rgba(31, 32, 65, 0.25)`;
+    dropdownBoxClear.style.opacity = 0;
   }
   else {
     guestNumberAmount1.textContent = parseInt(guestNumberAmount1.textContent) - 1;
@@ -50,9 +51,10 @@ guestNumberAdd2.addEventListener('click', function() {
   });
 
 guestNumberDelete2.addEventListener('click', function() {
-    if(guestNumberAmount2.textContent == 0) {
+    if(guestNumberAmount2.textContent == 1) {
       guestNumberAmount2.textContent = 0;
       guestNumberDelete2.style.cssText = `color:rgba(31, 32, 65, 0.25);border: 1px solid rgba(31, 32, 65, 0.25)`;
+      dropdownBoxClear.style.opacity = 0;
     }
     else {
       guestNumberAmount2.textContent = guestNumberAmount2.textContent - 1;
@@ -72,9 +74,10 @@ guestNumberAdd3.addEventListener('click', function() {
 
 
 guestNumberDelete3.addEventListener('click', function() {
-  if(guestNumberAmount3.textContent == 0) {
+  if(guestNumberAmount3.textContent == 1) {
     guestNumberAmount3.textContent = 0;
     guestNumberDelete3.style.cssText = `color:rgba(31, 32, 65, 0.25);border: 1px solid rgba(31, 32, 65, 0.25)`;
+    dropdownBoxClear.style.opacity = 0;
   }
   else {
     guestNumberAmount3.textContent = guestNumberAmount3.textContent - 1;

@@ -1,77 +1,100 @@
 @import "../../../../scss/ui-kit.scss";
 
-.material-icons {
-  color: $darkShade50;
-}
-.expandable-checkbox-list {
-  margin-bottom: 10px;
 
-  .expandable-checkbox__button {
-    position: absolute;
-    opacity: 0;
-    z-index: -1;
-    + label {
-      display: inline-flex;
-      align-items: center;
-      user-select: none;
-      position: relative;
-      cursor: pointer;
-      &:before {
-        content: "";
-        display: inline-block;
-        width: 20px;
-        height: 20px;
-        border: 1px solid $darkShade25;
-        box-sizing: border-box;
-        border-radius: 4px;
-        margin-right: 10px;
-      }
-      img {
-        background-color: transparent;
-        display: block;
-        position: absolute;
-        left: 5px;
-        top: 8px;
-        opacity: 0;
-      }
-      // &:after {
-      //   background-color: transparent;
-      //   content: url('../../../../images/Vector.svg');
-      //   display: block;
-      //   position: absolute;
-      //   left: 6px;
-      //   top: 5px;
-      //   width: 6px;
-      //   height: 8px;
-      //   opacity: 0;
-      //   // border-bottom: 3px solid #BC9CFF;
-      //   // border-right: 3px solid #8BA4F9;
-      //   // background-image: url('../../../../images/Vector.svg');
-      //   transform: rotate(45deg);
-      //   transition: border-color 0.3s ease;
-      // }
-    }
-    &:checked {
+
+.expandable-checkbox-list {
+  transform: scaleY(0);
+  .expandable-checkbox__item {
+    margin-bottom: 10px;
+    .expandable-checkbox__button {
+      position: absolute;
+      opacity: 0;
+      z-index: -1;
       + label {
+        display: inline-flex;
+        align-items: center;
+        user-select: none;
+        position: relative;
+        cursor: pointer;
         &:before {
-          border-color: $purple;
-          background-size: 6px;
+          content: "";
+          display: inline-block;
+          width: 20px;
+          height: 20px;
+          border: 1px solid $darkShade25;
+          box-sizing: border-box;
+          border-radius: 4px;
+          margin-right: 10px;
         }
         img {
-          opacity: 1;
+          background-color: transparent;
+          display: block;
+          position: absolute;
+          left: 5px;
+          top: 8px;
+          opacity: 0;
         }
         // &:after {
-        //   content: "";
-        //   opacity: 1;
+        //   background-color: transparent;
+        //   content: url('../../../../images/Vector.svg');
+        //   display: block;
+        //   position: absolute;
+        //   left: 6px;
+        //   top: 5px;
+        //   width: 6px;
+        //   height: 8px;
+        //   opacity: 0;
+        //   // border-bottom: 3px solid #BC9CFF;
+        //   // border-right: 3px solid #8BA4F9;
+        //   // background-image: url('../../../../images/Vector.svg');
+        //   transform: rotate(45deg);
+        //   transition: border-color 0.3s ease;
         // }
+      }
+      &:checked {
+        + label {
+          &:before {
+            border-color: $purple;
+            background-size: 6px;
+          }
+          img {
+            opacity: 1;
+          }
+          // &:after {
+          //   content: "";
+          //   opacity: 1;
+          // }
+        }
+      }
+    }
+    label {
+      p {
+        display: inline-block;
+        color: $darkShade50;
+      }
+    }
+
+  }
+}
+.expandable-checkbox {
+  // position: relative;
+  .expandable-checkbox__icon {
+    position: absolute;
+    opacity: 0;
+    width: 24px;
+    height: 24px;
+    &:checked {
+      + .expandable-checkbox-list {
+    		transform: scaleY(1);
+    			// transform: scaleY(1);
+    			// animation: showAnimation .5s ease-in-out;
+    			// transition: 2s ease-in-out;
       }
     }
   }
-  label {
-    p {
-      display: inline-block;
-      color: $darkShade50;
-    }
+  .material-icons {
+    position: absolute;
+    color: $darkShade50;
+    cursor: pointer;
   }
-
 }

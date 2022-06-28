@@ -15,7 +15,7 @@ roomNumberAdd1.addEventListener('click', function() {
 
 
 roomNumberDelete1.addEventListener('click', function() {
-  if(roomNumberAmount1.textContent == 0) {
+  if(roomNumberAmount1.textContent == 1) {
     roomNumberAmount1.textContent = 0;
     roomNumberDelete1.style.cssText = `color:rgba(31, 32, 65, 0.25);border: 1px solid rgba(31, 32, 65, 0.25)`;
   }
@@ -36,7 +36,7 @@ roomNumberAdd2.addEventListener('click', function() {
   });
 
 roomNumberDelete2.addEventListener('click', function() {
-    if(roomNumberAmount2.textContent == 0) {
+    if(roomNumberAmount2.textContent == 1) {
       roomNumberAmount2.textContent = 0;
       roomNumberDelete2.style.cssText = `color:rgba(31, 32, 65, 0.25);border: 1px solid rgba(31, 32, 65, 0.25)`;
     }
@@ -58,7 +58,7 @@ roomNumberAdd3.addEventListener('click', function() {
 
 
 roomNumberDelete3.addEventListener('click', function() {
-  if(roomNumberAmount3.textContent == 0) {
+  if(roomNumberAmount3.textContent == 1) {
     roomNumberAmount3.textContent = 0;
     roomNumberDelete3.style.cssText = `color:rgba(31, 32, 65, 0.25);border: 1px solid rgba(31, 32, 65, 0.25)`;
   }
