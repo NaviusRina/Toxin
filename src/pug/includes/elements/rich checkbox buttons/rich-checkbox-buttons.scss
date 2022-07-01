@@ -11,6 +11,7 @@
       align-items: flex-start;
       user-select: none;
       position: relative;
+      cursor: pointer;
       &:before {
         content: "";
         display: inline-block;

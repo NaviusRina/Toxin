@@ -6,6 +6,7 @@
   border-radius: 22px;
   position: relative;
 }
+
 .button {
   width: 320px;
   height: 44px;
@@ -13,6 +14,7 @@
   border-radius: 22px;
   position: relative;
   border: none;
+  cursor: pointer;
   h3 {
     color: #FFFFFF;
     margin: 0 auto;
@@ -56,6 +58,7 @@
   border-image-slice: 1;
   width: 97px;
   height: 42px;
+  cursor: pointer;
   &:before {
   content: '';
   position: absolute;
@@ -66,7 +69,6 @@
   left: -3px;
   border-radius: 22px;
   background: linear-gradient(180deg, $purple, #8BA4F9);
-  cursor: pointer;
   }
   &:hover:before {
     opacity: 0.5;
@@ -80,6 +82,7 @@
 .small-text-button {
   background-color: rgba(255, 255, 255, 0);
   border: none;
+  cursor: pointer;
   h3 {
     color: $purple;
     margin: 0 auto;
@@ -87,5 +90,4 @@
       color: $darkShade50;
     }
   }
-  cursor: pointer;
 }
