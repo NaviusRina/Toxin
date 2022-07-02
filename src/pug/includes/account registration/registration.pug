@@ -1,32 +1,32 @@
-meta(charset="UTF-8")
-link(href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet")
-script(src="https://kit.fontawesome.com/3ef9158f0f.js" crossorigin="anonymous")
-style
-  include ./../../../../dist/main.css
-body
-div.registration-container
-  h1 Регистрация аккаунта
-  div.user-information
-    div.user-name
-      input.long-input(placeholder="Имя")
-    div.user-surname
-      input.long-input(placeholder="Фамилия")
-    div.user-sex
-      input(type="radio" value="Мужчина")
-      input(type="radio" value="Женщина")
-    div.user-birth-date
-      h3 ДАТА РОЖДЕНИЯ
-      input.long-input(placeholder="ДД.ММ.ГГГГ")
-  div.sign-in-data
-    h3 ДАННЫЕ ДЛЯ ВХОДА В СЕРВИС
-    input.long-input(placeholder="Email")
-    input.long-input(placeholder="Пароль")
-    input(type="checkbox" value="Получать спецпредложения")
-  button.long-lilac-button
-    h3 ПЕРЕЙТИ К ОПЛАТЕ
-    div.material-icons arrow_forward
-  div.sign-in-account
-    p Уже есть аккаунт на Toxin
-    button.small-white-button
-      h3 ВОЙТИ
-                 
+html
+  body
+    div.registration-container
+      h1 Регистрация аккаунта
+      div.user-information
+        div.user-name
+          include ../elements/text field/text-field 
+          //имя
+        div.user-surname
+          include ../elements/text field/text-field 
+          //фамилия
+        div.user-sex
+          include ../elements/radio buttons/radio-buttons
+        div.user-birth-date
+          h3 ДАТА РОЖДЕНИЯ
+          include ../elements/dropdown/dropdown
+      div.sign-in-data
+        h3 ДАННЫЕ ДЛЯ ВХОДА В СЕРВИС
+        include ../elements/text field/text-field 
+        //(placeholder="Email")
+        include ../elements/text field/text-field 
+        //(placeholder="Пароль")
+        include ../elements/toggle/toggle
+      div
+        include ../elements/buttons/buttons
+        h3 ПЕРЕЙТИ К ОПЛАТЕ
+      div.sign-in-account
+        p Уже есть аккаунт на Toxin
+        div
+          include ../elements/buttons/small-white-button
+            h3 ВОЙТИ
+                     

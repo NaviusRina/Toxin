@@ -1,101 +1,101 @@
-meta(charset="UTF-8")
-link(href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet")
-script(src="https://kit.fontawesome.com/3ef9158f0f.js" crossorigin="anonymous")
-style
-  include ./../../../../dist/main.css
-body
-  div.footer-container
-    div.top-footer
-      div.footer__description
-        img(src="../../../images/Group.svg" class="logo__image" alt='Toxin')
-        img(src="../../../images/TOXIN.svg" class="logo__name" alt='Toxin')
-        p Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»
-      nav.footer__nav
-        h3
-          | НАВИГАЦИЯ
-        - 
-          var footerNavArray = [
-            {
-                title: 'О нас',
-                url: '/'
-            },
-            {
-                title: 'Новости',
-                url: '/'
-            },
-            {
-                title: 'Служба поддержки',
-                url: '/'
-            },
-            {
-                title: 'Услуги',
-                url: '/'
-            }
-          ]
-        ul.footer__nav-list
-          each item in footerNavArray
-            li.footer__nav-list__item
-              a(href=item.url)= item.title 
-      div.footer__about-us
-        h3 
-          | О НАС
-        - 
-          var footerAboutUsArray = [
-            {
-                title: 'О сервисе',
-                url: '/'
-            },
-            {
-                title: 'Наша команда',
-                url: '/'
-            },
-            {
-                title: 'Вакансии',
-                url: '/'
-            },
-            {
-                title: 'Инвесторы',
-                url: '/'
-            }
-          ]
-        ul.footer__about-us-list
-          each item in footerAboutUsArray
-            li.footer__about-us-list__item
-              a(href=item.url)= item.title 
-      div.footer__support
-        h3
-          | СЛУЖБА ПОДДЕРЖКИ
-        - 
-          var footerSupportArray = [
-            {
-                title: 'Соглашение',
-                url: '/'
-            },
-            {
-                title: 'Сообщества',
-                url: '/'
-            },
-            {
-                title: 'Связь с нами',
-                url: '/'
-            }
-          ]
-        ul.footer__support-list
-          each item in footerSupportArray
-            li.footer__support-list__item
-              a(href=item.url)= item.title 
-      div.footer__subscription
-        h3
-          | ПОДПИСКА
-        p Получайте специальные предложения и новости сервиса
-        div.subscription
-          input.subscription__mail-input(type="email" placeholder="Email")
-          span.material-icons-outlined  
-            | arrow_forward
-    div.bottom-footer
-      p Copyright © 2018 Toxin отель. Все права защищены.
-      div.copyright-bar
-        i(class="fa-brands fa-twitter")
-        i(class="fa-brands fa-facebook-square")
-        i(class="fa-brands fa-instagram")
-                 
+html
+  body
+    div.footer-container
+      div.top-footer
+        div.footer__description
+          img(src="images/Group.svg" class="logo__image" alt='Toxin')
+          img(src="images/TOXIN.svg" class="logo__name" alt='Toxin')
+          p Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»
+        nav.footer__nav
+          h3
+            | НАВИГАЦИЯ
+          - 
+            var footerNavArray = [
+              {
+                  title: 'О нас',
+                  url: '/'
+              },
+              {
+                  title: 'Новости',
+                  url: '/'
+              },
+              {
+                  title: 'Служба поддержки',
+                  url: '/'
+              },
+              {
+                  title: 'Услуги',
+                  url: '/'
+              }
+            ]
+          ul.footer__nav-list
+            each item in footerNavArray
+              li.footer__nav-list__item
+                a(href=item.url)
+                  p= item.title 
+        div.footer__about-us
+          h3 
+            | О НАС
+          - 
+            var footerAboutUsArray = [
+              {
+                  title: 'О сервисе',
+                  url: '/'
+              },
+              {
+                  title: 'Наша команда',
+                  url: '/'
+              },
+              {
+                  title: 'Вакансии',
+                  url: '/'
+              },
+              {
+                  title: 'Инвесторы',
+                  url: '/'
+              }
+            ]
+          ul.footer__about-us-list
+            each item in footerAboutUsArray
+              li.footer__about-us-list__item
+                a(href=item.url)
+                  p= item.title 
+        div.footer__support
+          h3
+            | СЛУЖБА ПОДДЕРЖКИ
+          - 
+            var footerSupportArray = [
+              {
+                  title: 'Соглашение',
+                  url: '/'
+              },
+              {
+                  title: 'Сообщества',
+                  url: '/'
+              },
+              {
+                  title: 'Связь с нами',
+                  url: '/'
+              }
+            ]
+          ul.footer__support-list
+            each item in footerSupportArray
+              li.footer__support-list__item
+                a(href=item.url)
+                  p= item.title 
+        div.footer__subscription
+          h3
+            | ПОДПИСКА
+          p Получайте специальные предложения и новости сервиса
+          div.subscription
+            include ../elements/subscription text field/subscription-text-field
+      div.bottom-footer
+        p Copyright © 2018 Toxin отель. Все права защищены.
+        div.copyright-bar
+          a(href="/")
+            i(class="fa-brands fa-twitter")
+          a(href="/")
+            i(class="fa-brands fa-facebook-square")
+          a(href="/")
+            i(class="fa-brands fa-instagram")
+                   

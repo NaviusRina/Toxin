@@ -1,51 +1,48 @@
-meta(charset="UTF-8")
-link(href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet")
-//- ../../../../material-design-icons.scss
-style
-  include ./../../../../dist/main.css
-body
-  div.container
-    div.logo
-      img(src="../../../images/Group.svg" class="logo__image" alt='Toxin')
-      img(src="../../../images/TOXIN.svg" class="logo__name" alt='Toxin')
-    nav.nav
-      - 
-        var navArray = [
-          {
-              title: 'О нас',
-              url: '/'
-          },
-          {
-              title: 'Услуги',
-              url: '/',
-              icon: 'expand_more'
-          },
-          //- &#xE5CF;
-          {
-              title: 'Вакансии',
-              url: '/'
-          },
-          {
-              title: 'Новости',
-              url: '/'
-          },
-          {
-              title: 'Соглашения',
-              url: '/',
-              icon: 'expand_more'
-          }
-        ]
-      ul.nav-list
-        each item in navArray
-          li.nav-list__item
-            a(href=item.url)= item.title 
-            span.material-icons= item.icon 
-                 
+html
+  body
+    div.container
+      div.logo
+        img(src="images/Group.svg" class="logo__image" alt='Toxin')
+        img(src="images/TOXIN.svg" class="logo__name" alt='Toxin')
+      nav.nav
+        - 
+          var navArray = [
+            {
+                title: 'О нас',
+                url: '/'
+            },
+            {
+                title: 'Услуги',
+                url: '/',
+                icon: 'expand_more'
+            },
+            //- &#xE5CF;
+            {
+                title: 'Вакансии',
+                url: '/'
+            },
+            {
+                title: 'Новости',
+                url: '/'
+            },
+            {
+                title: 'Соглашения',
+                url: '/',
+                icon: 'expand_more'
+            }
+          ]
+        ul.nav-list
+          each item in navArray
+            li.nav-list__item
+              a(href=item.url)
+                p= item.title 
+              span.material-icons= item.icon 
+                   
 
-    div.user-button
-      div.login
-        button.login__button
-          p ВОЙТИ
-      div.registation
-        button.registation__button
-          p ЗАРЕГИСТРИРОВАТЬСЯ
+      div.user-button
+        div.login
+          include ../elements/buttons/small-white-button
+            h3 ВОЙТИ
+        div.registation
+          include ../elements/buttons/buttons
+            h3 ЗАРЕГИСТРИРОВАТЬСЯ

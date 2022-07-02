@@ -4,7 +4,7 @@
 .expandable-checkbox {
   // position: relative;
   .expandable-checkbox__icon {
-    position: absolute;
+    position: relative;
     background-color: rgba(255, 255, 255, 0);
     border: none;
     // opacity: 0;
@@ -13,6 +13,8 @@
     // z-index: -1;
     .material-icons {
       position: absolute;
+      top: 0;
+      left: 0;
       color: $darkShade50;
       cursor: pointer;
     }
@@ -44,16 +46,13 @@
 
 .expandable-checkbox-list {
   // transform: scaleY(0);
-  z-index: 1;
+  // z-index: 1;
   // position: absolute;
-  left: 0;
-  top: 0;
+  // left: 0;
+  // top: 0;
   // opacity: 0;
   display: none;
   margin-top: 24px;
-  .show {
-    display: block;
-  }
   .expandable-checkbox__item {
     margin-bottom: 10px;
     .expandable-checkbox__button {
@@ -125,4 +124,7 @@
     }
 
   }
+}
+.expandable-checkbox__show {
+  display: block;
 }
