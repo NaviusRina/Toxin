@@ -3,13 +3,15 @@ html
     div.signIn-container
       h1 ВОЙТИ
       div.sign-in-data
-        input.long-input(placeholder="Email")
-        input.long-input(placeholder="Пароль")
-      button.long-lilac-button
-        h3 ВОЙТИ
-        div.material-icons arrow_forward
+        include ../elements/text field/text-field
+        //(placeholder="Email")
+        include ../elements/text field/text-field
+        //(placeholder="Пароль")
+      - var BUTTONTEXT = 'ВОЙТИ';
+      include ../elements/buttons/buttons
       div.sign-in-account
         p Уже есть аккаунт на Toxin
-        button.small-white-button
-          h3 СОЗДАТЬ
-      
+        div
+          include ../elements/buttons/small-white-button
+            h3 СОЗДАТЬ
+          

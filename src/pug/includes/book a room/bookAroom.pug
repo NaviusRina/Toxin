@@ -7,23 +7,24 @@ html
       div.checkinto-date
         div.checkinto-date__arrival
           h3 ПРИБЫТИЕ
-          input.small-input(placeholder="19.08.2019")
-          div.material-icons expand_more
+          include ../elements/date dropdown/date-dropdown
+          //(placeholder="19.08.2019")
         div.checkinto-date__departure
           h3 ВЫЕЗД
-          input.small-input(placeholder="23.08.2019")
-          div.material-icons expand_more
+          include ../elements/date dropdown/date-dropdown
+          //(placeholder="23.08.2019")
       div.guests-amount
         h3 ГОСТИ
-        input.long-input(type="" placeholder="3 гостя")
+        include ../elements/dropdown/dropdown
+        //(type="" placeholder="3 гостя")
         div.material-icons expand_more
       div.price__list
         p 9990p x 4 суток 39960р 
         p Сбор за услуги: скидка 2179р 0р
         p Сбор за дополнителные услуги 300р
       h2.price__result Итого 38081
-      button.long-lilac-button
-        h3 ЗАБРОНИРОВАТЬ
-        div.material-icons arrow_forward
-      
+      div.room-book
+        - var BUTTONTEXT = 'ЗАБРОНИРОВАТЬ';
+        include ../elements/buttons/buttons
+        
                  

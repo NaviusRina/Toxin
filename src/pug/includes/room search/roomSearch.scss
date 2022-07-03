@@ -19,42 +19,17 @@
     .checkinto-date__arrival {
       display: inline-block;
       position: relative;
-      .material-icons {
-        color: $darkShade50;
-        bottom: 0;
-        right: 0;
-      }
     }
     .checkinto-date__departure {
       display: inline-block;
       position: relative;
-      .material-icons {
-        color: $darkShade50;
-        bottom: 0;
-        right: 0;
-      }
     }
   }
   .guests-amount {
     position: relative;
     width: 320px;
     height: 44px;
-    .guests-amount__input {
-      @extend %InputStyle;
-      width: inherit;
-      height: inherit;
-    }
-    .material-icons {
-      color: $darkShade50;
-      top: 20px;
-      right: 0;
-    }
   }
   .room-search {
-    .material-icons {
-      color: #FFFFFF;
-      top: 0;
-      right: 0;
-    }
   }
 }

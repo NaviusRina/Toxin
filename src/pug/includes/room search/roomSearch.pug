@@ -5,17 +5,14 @@ html
       div.checkinto-date
         div.checkinto-date__arrival
           h3 ПРИБЫТИЕ
-          input.small-input(placeholder="ДД.ММ.ГГГГ")
-          div.material-icons expand_more
+          include ../elements/date dropdown/date-dropdown
         div.checkinto-date__departure
           h3 ВЫЕЗД
-          input.small-input(placeholder="ДД.ММ.ГГГГ")
-          div.material-icons expand_more
+          include ../elements/date dropdown/date-dropdown
       div.guests-amount
         h3 ГОСТИ
-        input.long-input(type="" placeholder="Сколько гостей")
-        div.material-icons expand_more
-      button.long-lilac-button
-        h3 ПОДОБРАТЬ НОМЕР
-        div.material-icons arrow_forward
+        include ../elements/dropdown/dropdown
+      div.long-lilac-button
+        - var BUTTONTEXT = 'ПОДОБРАТЬ НОМЕР';
+        include ../elements/buttons/buttons
       

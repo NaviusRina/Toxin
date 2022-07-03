@@ -37,18 +37,6 @@
       align-items: center;
       .nav-list__item {
         list-style: none;
-        .material-icons {
-          position: absolute;
-          bottom: 23px;
-          font-family: 'Material Icons';
-          font-weight: normal;
-          font-style: normal;
-          font-size: 24px;
-          line-height: 1;
-          text-transform: none;
-          color: rgba(31, 32, 65, 0.5);
-          cursor: pointer;
-        }
         a {
           color: rgba(31, 32, 65, 0.5);
           text-decoration: none;

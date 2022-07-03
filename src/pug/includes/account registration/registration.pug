@@ -13,7 +13,7 @@ html
           include ../elements/radio buttons/radio-buttons
         div.user-birth-date
           h3 ДАТА РОЖДЕНИЯ
-          include ../elements/dropdown/dropdown
+          include ../elements/date dropdown/date-dropdown
       div.sign-in-data
         h3 ДАННЫЕ ДЛЯ ВХОДА В СЕРВИС
         include ../elements/text field/text-field 
@@ -22,8 +22,8 @@ html
         //(placeholder="Пароль")
         include ../elements/toggle/toggle
       div
+        - var BUTTONTEXT = 'ПЕРЕЙТИ К ОПЛАТЕ';
         include ../elements/buttons/buttons
-        h3 ПЕРЕЙТИ К ОПЛАТЕ
       div.sign-in-account
         p Уже есть аккаунт на Toxin
         div
