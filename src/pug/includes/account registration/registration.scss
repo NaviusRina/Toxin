@@ -9,23 +9,22 @@
   border-radius: 4px;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  padding: 40px 30px 30px;
+  justify-content: space-between;
+  padding: 40px 30px 30px 30px;
   .user-information {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    .user-sex {
+    div {
+      margin-bottom: 10px;
     }
   }
   .sign-in-data {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    div {
+      margin-bottom: 10px;
+    }
   }
   .sign-in-account {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
   }
 }

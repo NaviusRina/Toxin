@@ -16,11 +16,14 @@ html
           include ../elements/date dropdown/date-dropdown
       div.sign-in-data
         h3 ДАННЫЕ ДЛЯ ВХОДА В СЕРВИС
-        include ../elements/text field/text-field 
+        div
+          include ../elements/text field/text-field 
         //(placeholder="Email")
-        include ../elements/text field/text-field 
+        div
+          include ../elements/text field/text-field 
         //(placeholder="Пароль")
-        include ../elements/toggle/toggle
+        div
+          include ../elements/toggle/toggle
       div
         - var BUTTONTEXT = 'ПЕРЕЙТИ К ОПЛАТЕ';
         include ../elements/buttons/buttons
