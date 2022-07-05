@@ -51,10 +51,7 @@
 .small-white-button {
   @extend %SmallButton;
   border: 2px solid transparent;
-  // border-image: linear-gradient(180deg, $purple, #8BA4F9);
   background-color: #FFFFFF;
-  // -moz-border-image: -moz-linear-gradient(180deg, $purple, #8BA4F9);
-  // -webkit-border-image: -webkit-linear-gradient(180deg, $purple, #8BA4F9);
   border-image-slice: 1;
   width: 97px;
   height: 42px;

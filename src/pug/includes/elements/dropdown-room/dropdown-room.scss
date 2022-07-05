@@ -33,6 +33,7 @@
   }
 }
 .dropdown-room {
+  display: none;
   padding: 7px 7px 7px 15px;
   background: #FFFFFF;
   border: 1px solid $darkShade50;
@@ -85,12 +86,8 @@
       }
     }
   }
-  // .dropdown-room__buttons {
-  //   display: flex;
-  //   justify-content: space-between;
-  //   margin-top: 7px;
-  //   .dropdown-room__clear {
-  //     opacity: 0;
-  //   }
-  // }
+
+}
+.dropdown-room__show {
+  display: block;
 }

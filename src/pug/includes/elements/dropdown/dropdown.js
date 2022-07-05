@@ -106,3 +106,10 @@ guestNumberDelete3.addEventListener('click', function() {
 
   });
 // });
+
+let dropdownField = document.querySelector(".dropdown-field");
+let dropdownBox = document.querySelector(".dropdown-box");
+
+dropdownField.addEventListener('click', function() {
+  dropdownBox.classList.toggle("dropdown__show");
+});

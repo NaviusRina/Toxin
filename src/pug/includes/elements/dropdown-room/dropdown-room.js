@@ -89,3 +89,10 @@ roomNumberDelete3.addEventListener('click', function() {
   //
   // });
 // });
+
+let dropdownRoomField = document.querySelector(".dropdown-room-field");
+let dropdownRoom = document.querySelector(".dropdown-room");
+
+dropdownRoomField.addEventListener('click', function() {
+  dropdownRoom.classList.toggle("dropdown-room__show");
+});

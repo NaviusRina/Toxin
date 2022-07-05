@@ -2,15 +2,12 @@
 
 
 .expandable-checkbox {
-  // position: relative;
   .expandable-checkbox__icon {
     position: relative;
     background-color: rgba(255, 255, 255, 0);
     border: none;
-    // opacity: 0;
     width: 24px;
     height: 24px;
-    // z-index: -1;
     .material-icons {
       position: absolute;
       top: 0;
@@ -18,39 +15,10 @@
       color: $darkShade50;
       cursor: pointer;
     }
-    // &:checked {
-    //   + label {
-    //     .material-icons {
-    //       color: pink;
-    //     }
-    //   }
-    //   .expandable-checkbox-list {
-    //     // transform: scaleY(1);
-    //     opacity: 1;
-    //     // display: block;
-    //       // transform: scaleY(1);
-    //       // animation: showAnimation .5s ease-in-out;
-    //       // transition: 2s ease-in-out;
-    //   }
-    // }
   }
-  // label {
-    // user-select: none;
-    // .material-icons {
-    //   position: absolute;
-    //   color: $darkShade50;
-    //   cursor: pointer;
-    // }
-  // }
 }
 
 .expandable-checkbox-list {
-  // transform: scaleY(0);
-  // z-index: 1;
-  // position: absolute;
-  // left: 0;
-  // top: 0;
-  // opacity: 0;
   display: none;
   margin-top: 24px;
   .expandable-checkbox__item {
@@ -83,22 +51,6 @@
           top: 8px;
           opacity: 0;
         }
-        // &:after {
-        //   background-color: transparent;
-        //   content: url('../../../../images/Vector.svg');
-        //   display: block;
-        //   position: absolute;
-        //   left: 6px;
-        //   top: 5px;
-        //   width: 6px;
-        //   height: 8px;
-        //   opacity: 0;
-        //   // border-bottom: 3px solid #BC9CFF;
-        //   // border-right: 3px solid #8BA4F9;
-        //   // background-image: url('../../../../images/Vector.svg');
-        //   transform: rotate(45deg);
-        //   transition: border-color 0.3s ease;
-        // }
       }
       &:checked {
         + label {
@@ -109,10 +61,6 @@
           img {
             opacity: 1;
           }
-          // &:after {
-          //   content: "";
-          //   opacity: 1;
-          // }
         }
       }
     }

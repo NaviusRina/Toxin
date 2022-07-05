@@ -9,14 +9,14 @@ html
           var navArray = [
             {
                 title: 'О нас',
-                url: '/'
+                url: '/',
+                active: ''
             },
             {
                 title: 'Услуги',
                 url: '/',
                 icon: 'expand_more'
             },
-            //- &#xE5CF;
             {
                 title: 'Вакансии',
                 url: '/'
@@ -40,9 +40,9 @@ html
                    
 
       div.user-button
-        div.login
+        div.user-button__login
           include ../elements/buttons/small-white-button
             h3 ВОЙТИ
-        div.registation
+        div.user-button__registration
           - var BUTTONTEXT = 'ЗАРЕГИСТРИРОВАТЬСЯ';
           include ../elements/buttons/buttons

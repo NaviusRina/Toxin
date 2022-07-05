@@ -30,21 +30,34 @@
       }
     }
   .nav {
-    width: 447px;
     .nav-list {
       display: flex;
       justify-content: space-around;
-      align-items: center;
       .nav-list__item {
+        margin-right: 20px;
         list-style: none;
         a {
-          color: rgba(31, 32, 65, 0.5);
+          color: $darkShade50;
           text-decoration: none;
+          display: inline-block;
+          p {
+            color: $darkShade50;
+          }
+        }
+        .material-icons {
+          display: inline-block;
+          margin-right: 20px;
         }
       }
 
     }
   }
   .user-button {
+    .user-button__login {
+      display: inline-block;
+    }
+    .user-button__registration {
+      display: inline-block;
+    }
   }
 }
