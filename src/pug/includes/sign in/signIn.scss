@@ -11,6 +11,18 @@
   border-radius: 4px;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   padding: 40px 30px 30px;
+  .sign-in-data {
+    height: 98px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .sign-in-account {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
 }

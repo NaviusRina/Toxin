@@ -30,22 +30,7 @@
         top: 5px;
         opacity: 0;
       }
-      // &:after {
-      //   background-color: transparent;
-      //   content: "";
-      //   display: block;
-      //   position: absolute;
-      //   left: 5px;
-      //   top: 4px;
-      //   width: 6px;
-      //   height: 8px;
-      //   opacity: 0;
-      //   border-bottom: 3px solid #BC9CFF;
-      //   border-right: 3px solid #8BA4F9;
-      //   // border-image: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
-      //   transform: rotate(45deg);
-      //   transition: border-color 0.3s ease;
-      // }
+
     }
     &:checked {
       + label {
@@ -57,17 +42,13 @@
         img {
           opacity: 1;
         }
-        // &:after {
-        //   content: "";
-        //   opacity: 1;
-        // }
+
       }
     }
   }
   label {
     div {
       p {
-        // display: inline-block;
         color: $darkShade50;
         font-size: 12px;
       }

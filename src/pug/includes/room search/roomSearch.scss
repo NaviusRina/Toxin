@@ -11,8 +11,11 @@
   border-radius: 4px;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   padding: 40px 30px 30px;
+  h3 {
+    margin-bottom: 5px;
+  }
   .checkinto-date {
     display: flex;
     justify-content: space-between;
@@ -30,6 +33,7 @@
     width: 320px;
     height: 44px;
   }
-  .room-search {
+  .roomSearch__button {
+    margin-top: 30px;
   }
 }

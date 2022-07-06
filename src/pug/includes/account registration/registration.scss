@@ -11,6 +11,9 @@
   flex-direction: column;
   justify-content: space-between;
   padding: 40px 30px 30px 30px;
+  h3 {
+    margin-bottom: 5px;
+  }
   .user-information {
     div {
       margin-bottom: 10px;
@@ -20,12 +23,12 @@
     }
 
   }
-  .sign-in-data {
+  .registration__sign-in-data {
     div {
       margin-bottom: 10px;
     }
   }
-  .sign-in-account {
+  .registration__sign-in {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
