@@ -1,6 +1,18 @@
 @import "../../../../scss/ui-kit.scss";
 
 
+// @mixin animation($content) {
+//   animation: $content;
+//   -moz-animation: $content;
+//   -webkit-animation: $content;
+// }
+//
+// @mixin keyframes($name) {
+//   @keyframes #{$name} { @content; }
+//   @-moz-keyframes #{$name} { @content; }
+//   @-webkit-keyframes #{$name} { @content; }
+// }
+
 .expandable-checkbox {
   .expandable-checkbox__icon {
     position: relative;
@@ -17,6 +29,7 @@
 
 .expandable-checkbox-list {
   display: none;
+
   margin-top: 24px;
   .expandable-checkbox__item {
     margin-bottom: 10px;
@@ -70,6 +83,54 @@
 
   }
 }
+
+
+// @keyframes(showAnimation) {
+// 	0% {
+// 		transform: scaleY(0.1);
+// 	}
+// 	40% {
+// 		transform: scaleY(1.04);
+// 	}
+// 	60% {
+// 		transform: scaleY(0.98);
+// 	}
+// 	80% {
+// 		transform: scaleY(1.04);
+// 	}
+// 	100% {
+// 		transform: scaleY(0.98);
+// 	}
+// 	80% {
+// 		transform: scaleY(1.02);
+// 	}
+// 	100% {
+// 		transform: scaleY(1);
+// 	}
+// }
 .expandable-checkbox__show {
   display: block;
+  // z-index: 9999;
+  transition: margin-bottom 1s;
+	// transform: scaleY(1);
+	// animation: showAnimation .5s ease-in-out;
+	// transition: max-height 1s ease-in-out;
 }
+// .show, .hide {
+		// @include transform-origin(50%, 0%);
+	// }
+
+	// .show {
+	// 	display: block;
+	// 	max-height: 9999px;
+	// 	@include transform(scaleY(1));
+	// 	@include animation(showAnimation .5s ease-in-out);
+	// 	@include transition(max-height 1s ease-in-out);
+	// }
+
+// 	.hide {
+// 		max-height: 0;
+// 		@include transform(scaleY(0));
+// 		@include animation(hideAnimation .4s ease-out);
+// 		@include transition(max-height .6s ease-out);
+// 	}
