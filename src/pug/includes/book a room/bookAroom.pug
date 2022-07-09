@@ -2,8 +2,14 @@ html
   body
     div.bookAroom-container
       div.room-info
-        h1.room-info__number №888 люкс
-        p.room-info__price 9990 в сутки
+        h3 №
+        h1#room-info__number 888 
+          //- input
+        h3.pink-text люкс
+        h3#room-info__price 9990
+          //- input
+        h3 ₽
+        p в сутки
       div.checkinto-date
         div.checkinto-date__arrival
           h3 ПРИБЫТИЕ
@@ -18,8 +24,22 @@ html
         include ../elements/dropdown/dropdown
         //(type="" placeholder="3 гостя")
       div.price__list
-        p 9990p x 4 суток 39960р 
+        div
+          div
+            p#room-info__price 9990
+            p x 
+            p 4 
+            p суток 
+          p 39960 
+          p ₽
         p Сбор за услуги: скидка 2179р 0р
+        div
+          div
+            p Сбор за услуги: скидка 
+            p 2179
+            p ₽
+          p 0 
+          p ₽
         p Сбор за дополнителные услуги 300р
       h2.price__result Итого 38081
       div.room-book

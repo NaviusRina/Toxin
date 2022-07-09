@@ -91,8 +91,8 @@ roomNumberDelete3.addEventListener('click', function() {
 // });
 
 let dropdownRoomField = document.querySelector(".dropdown-room-field");
-let dropdownRoom = document.querySelector(".dropdown-room");
+let dropdownRoomContainer = document.querySelector(".dropdown-room-container");
 
 dropdownRoomField.addEventListener('click', function() {
-  dropdownRoom.classList.toggle("dropdown-room__show");
+  dropdownRoomContainer.classList.toggle("dropdown-room__show");
 });
