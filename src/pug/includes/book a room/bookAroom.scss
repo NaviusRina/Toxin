@@ -20,6 +20,9 @@
   .room-info {
     display: flex;
     justify-content: space-between;
+    h3 {
+      display: inline-block;
+    }
     h1 {
       display: inline-block;
     }
@@ -43,12 +46,18 @@
     position: relative;
     width: 320px;
     height: 44px;
+    margin-bottom: 20px;
   }
-  .price__list {
-
+  .price-list {
+    div {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+    }
   }
-  .price__result {
-
+  .price-result {
+    display: flex;
+    justify-content: space-between;
   }
   .room-book  {
   }

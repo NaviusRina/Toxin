@@ -2,14 +2,15 @@ html
   body
     div.bookAroom-container
       div.room-info
-        h3 №
-        h1#room-info__number 888 
-          //- input
-        h3.pink-text люкс
-        h3#room-info__price 9990
-          //- input
-        h3 ₽
-        p в сутки
+        div.room-info__number
+          h3 № 
+          h1 888 
+            //- input(type="text" id="room-info__number")
+          h3 люкс
+        div.room-info__price
+          h3 9 990₽
+            //- input(type="text" id="room-info__price")
+          p в сутки
       div.checkinto-date
         div.checkinto-date__arrival
           h3 ПРИБЫТИЕ
@@ -23,25 +24,29 @@ html
         h3 ГОСТИ
         include ../elements/dropdown/dropdown
         //(type="" placeholder="3 гостя")
-      div.price__list
+      div.price-list
         div
-          div
-            p#room-info__price 9990
-            p x 
-            p 4 
-            p суток 
-          p 39960 
-          p ₽
-        p Сбор за услуги: скидка 2179р 0р
+          div.price-list__calc
+            p 9 990 x 4 суток 
+          div.price-list__value
+            p 39 960₽
         div
-          div
-            p Сбор за услуги: скидка 
-            p 2179
-            p ₽
-          p 0 
-          p ₽
-        p Сбор за дополнителные услуги 300р
-      h2.price__result Итого 38081
+          div.price-list__tax
+            p Сбор за услуги: скидка 2 179₽
+          div.price-list__tax-amount
+            p 0₽ 
+            //- Сбор за услуги: скидка 2179р 0р
+        div
+          div.price-list__service
+            p Сбор за дополнителные услуги
+          div.price-list__service-amount
+            p 300₽
+            //- p Сбор за дополнителные услуги 300р
+
+        
+      div.price-result 
+          h1 Итого 
+          h1 38 081 ₽
       div.room-book
         - var BUTTONTEXT = 'ЗАБРОНИРОВАТЬ';
         include ../elements/buttons/buttons

@@ -30,6 +30,7 @@
       }
     }
   .nav {
+    right: 0;
     .nav-list {
       display: flex;
       justify-content: space-around;
@@ -46,8 +47,8 @@
           }
         }
         .material-icons {
-          right: 0;
-          top: 0;
+          right: -15px;
+          top: -10px;
         }
       }
 
@@ -60,6 +61,10 @@
     }
     .user-button__registration {
       display: inline-block;
+       .material-icons {
+        display: none;
+      }
+
     }
   }
 }

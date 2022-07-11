@@ -15,10 +15,10 @@ html
             {
                 title: 'Услуги',
                 url: '/',
-                icon: 'expand_more'
+                //- icon: 'expand_more'
             },
             {
-                title: 'expand_more',
+                span: 'expand_more',
                 url: '/'
             },
             {
@@ -32,9 +32,10 @@ html
             {
                 title: 'Соглашения',
                 url: '/'
+                //- icon: 'expand_more'
             },
             {
-                title: 'expand_more',
+                span: 'expand_more',
                 url: '/'
             }
           ]
@@ -43,7 +44,7 @@ html
             li.nav-list__item
               a(href=item.url)
                 p= item.title 
-              span.material-icons= item.icon 
+                span.material-icons= item.span
                    
 
       div.user-button

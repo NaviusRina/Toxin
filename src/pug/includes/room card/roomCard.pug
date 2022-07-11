@@ -1,14 +1,23 @@
 html
   body
     div.roomCard-container
-      div
+      div.roomCard-image
         img(src="images/room.png" class="roomCard__image" alt='room')
         //- img(src="images/room(1).png" class="roomCard__image" alt='room')
-      div
-        h2 №888 люкс
-        p 9990 в сутки
-      div
-        div
-          include ../elements/rate button/rate-button
-        p Отзывов
+      div.roomCard-info
+        div.roomCard-amount
+          div
+            h3 №
+            h2 888 
+            h3 люкс
+          div
+            h3 9990 
+            p в сутки
+        div.roomCard-line
+        div.roomCard-range
+          div
+            include ../elements/rate button/rate-button
+          div
+            h3 145
+            p Отзывов
       
