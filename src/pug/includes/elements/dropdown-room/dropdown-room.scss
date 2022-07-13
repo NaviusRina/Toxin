@@ -28,7 +28,7 @@
 .dropdown-room-container {
   max-height: 0;
 	overflow: hidden;
-  transition: 1s ease max-height;
+  transition: .5s ease max-height;
   .dropdown-room {
     padding: 7px 7px 7px 15px;
     background: #FFFFFF;

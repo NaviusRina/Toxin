@@ -26,7 +26,7 @@
 .dropdown-container {
   max-height: 0;
 	overflow: hidden;
-  transition: 1s ease max-height;
+  transition: .5s ease max-height;
   .dropdown-box {
     width: 320px;
     padding: 7px 7px 13px 15px;

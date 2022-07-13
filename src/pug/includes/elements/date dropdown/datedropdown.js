@@ -4,9 +4,6 @@ let button = {
     className: 'addDate',
     onClick: (dp) => {
       dp.show();
-        // let date = new Date('2021-07-26');
-        // dp.selectDate(date);
-        // dp.setViewDate(date);
     }
 }
 
