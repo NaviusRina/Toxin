@@ -8,6 +8,6 @@ let filterbutton = {
 new AirDatepicker('#filter-date-dropdown', {
   range: true,
   multipleDatesSeparator: ' - ',
-  buttons: ['clear', filterbutton],
-  inline: true
+  buttons: ['clear', filterbutton]
+  // inline: true
 });

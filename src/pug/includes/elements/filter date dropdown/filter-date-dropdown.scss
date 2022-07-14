@@ -4,57 +4,10 @@
   position: relative;
   .dropdown__input {
     width: 266px;
+    color: $darkShade75; 
   }
   .material-icons {
     right: 0;
     top: 0;
   }
-}
-
-.air-datepicker {
-  width: var(--adp-width);
-  --adp-width: 320px;
-  width: 320px !important;
-  height: 369px;
-  background: #FFFFFF;
-  border: 1px solid $darkShade25;
-  box-shadow: 0px 10px 20px $darkShade5;
-  border-radius: 4px;
-  .air-datepicker-nav--title {
-    @extend %Montrserrat;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 19px;
-    line-height: 23px;
-    color: #1F2041;
-    i {
-      color: #1F2041;
-    }
-  }
-  .air-datepicker-nav--action {
-
-  }
-  .air-datepicker--content {
-    .air-datepicker-body--day-name {
-      @extend %Montrserrat;
-      font-weight: 700;
-      font-size: 12px;
-      line-height: 15px;
-      color: $purple;
-    }
-    .air-datepicker-cell {
-      @extend %Montrserrat;
-      font-weight: 400;
-      font-size: 12px;
-      line-height: 15px;
-      color: $darkShade50;
-    }
-    .-selected- {
-      width: 39.88px;
-      height: 40px;
-      background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
-      border-radius: 22px;
-    }
-  }
-
 }

@@ -8,6 +8,6 @@ let button = {
 }
 
 new AirDatepicker('#date-dropdown', {
-  buttons: ['clear', button],
-  inline: true
+  buttons: ['clear', button]
+  // inline: true
 });
