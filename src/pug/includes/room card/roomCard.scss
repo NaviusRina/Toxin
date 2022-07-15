@@ -11,11 +11,57 @@
   }
   h3 {
     display: inline-block;
+    font-size: 14px;
+    line-height: 18px;
   }
   p {
     display: inline-block;
   }
   .roomCard-image {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    .roomCard-image__switch {
+      width: 270px;
+      z-index: 10;
+      display: flex;
+      justify-content: space-between;
+      .roomCard-image__left {
+        // position: absolute;
+        width: 42px;
+        height: 151px;
+        background: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 99.99%, rgba(255, 255, 255, 0) 100%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .material-icons {
+          color: #fff;
+        }
+      }
+      .roomCard-image__right {
+        position: absolute;
+        width: 42px;
+        height: 151px;
+        background: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 99.99%, rgba(255, 255, 255, 0) 100%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .material-icons {
+          color: #fff;
+        }
+      }
+      .roomCard-image__slider {
+        width: 42px;
+        .rc-i__s {
+          width: 7.5px;
+          height: 7.5px;
+          border: 1px solid #FFFFFF;
+          border-radius: 50%;
+          // filter: drop-shadow(0px 5px 5px rgba(31, 32, 65, 0.3));
+          margin-right: 4px;
+        }
+      }
+    }
 
   }
   .roomCard-info {
@@ -28,6 +74,8 @@
       }
     }
     .roomCard-line {
+      margin-top: 10px;
+      margin-bottom: 8px;
       width: 230px;
       height: 1px;
       background: rgba(31, 32, 65, 0.1);
@@ -35,8 +83,10 @@
     .roomCard-range {
       display: flex;
       justify-content: space-between;
-      div {
-
+      position: relative;
+      .roomCard-range__rate-button {
+        // position: absolute;
+        // left: -10px;
       }
     }
   }

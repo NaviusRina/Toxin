@@ -3,10 +3,10 @@ html
     div.signIn-container
       h1 ВОЙТИ
       div.sign-in-data
+        - var PLACEHOLDER = 'Email';
         include ../elements/text field/text-field
-        //(placeholder="Email")
+        - var PLACEHOLDER = 'Пароль';
         include ../elements/text field/text-field
-        //(placeholder="Пароль")
       div
         - var BUTTONTEXT = 'ВОЙТИ';
         include ../elements/buttons/buttons

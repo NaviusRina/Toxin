@@ -47,29 +47,29 @@
         position: absolute;
       }
     }
-    & > .rate__clear + label {
-      width: 24px;
-      opacity: 0;
-    }
-    & > .rate__clear + label:before {
-      width: 24px;
-    }
+    // & > .rate__clear + label {
+      // width: 24px;
+      // opacity: 0;
+    // }
+    // & > .rate__clear + label:before {
+      // width: 24px;
+    // }
 
-    &:hover > input + label:before {
-      content: "star_outline";
-      color: transparent;
-      -webkit-background-clip: text;
-      background-clip: text;
-      background-image: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
-    }
-    &:hover > input + label:hover ~ label:before,
-    &:hover > input + label:hover:before {
-      content: "star";
-      color: transparent;
-      -webkit-background-clip: text;
-      background-clip: text;
-      background-image: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
-    }
+    // &:hover > input + label:before {
+    //   content: "star_outline";
+    //   color: transparent;
+    //   -webkit-background-clip: text;
+    //   background-clip: text;
+    //   background-image: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    // }
+    // &:hover > input + label:hover ~ label:before,
+    // &:hover > input + label:hover:before {
+    //   content: "star";
+    //   color: transparent;
+    //   -webkit-background-clip: text;
+    //   background-clip: text;
+    //   background-image: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    // }
 
   }
 

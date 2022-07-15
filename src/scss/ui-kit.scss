@@ -121,3 +121,9 @@ p {
   @extend %InputStyle;
   width: 150px;
 }
+.pink-text {
+  color: $purple;
+}
+.grey-text {
+  color: $darkShade50;
+}

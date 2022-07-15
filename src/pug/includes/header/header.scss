@@ -68,4 +68,16 @@
 
     }
   }
+  .user-authorization {
+    display: none;
+    .user-authorization__line {
+      position: absolute;
+      height: 30px;
+      border-left: 1px solid rgba(31, 32, 65, 0.1)
+    }
+    p {
+      margin-left: 20px;
+      color: $darkShade50;
+    }
+  }
 }

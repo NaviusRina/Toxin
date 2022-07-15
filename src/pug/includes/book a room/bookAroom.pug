@@ -3,50 +3,50 @@ html
     div.bookAroom-container
       div.room-info
         div.room-info__number
-          h3 № 
-          h1 888 
+          h3 № &nbsp;
+          h2 888 
             //- input(type="text" id="room-info__number")
-          h3 люкс
+          h3.pink-text &nbsp; люкс
         div.room-info__price
-          h3 9 990₽
+          h3.grey-text 9 990₽ &nbsp;
             //- input(type="text" id="room-info__price")
           p в сутки
       div.checkinto-date
         div.checkinto-date__arrival
           h3 ПРИБЫТИЕ
           include ../elements/date dropdown/date-dropdown
-          //(placeholder="19.08.2019")
         div.checkinto-date__departure
           h3 ВЫЕЗД
           include ../elements/date dropdown/date-dropdown
-          //(placeholder="23.08.2019")
       div.guests-amount
         h3 ГОСТИ
         include ../elements/dropdown/dropdown
         //(type="" placeholder="3 гостя")
       div.price-list
-        div
+        div.price-list__info
           div.price-list__calc
             p 9 990 x 4 суток 
-          div.price-list__value
-            p 39 960₽
-        div
           div.price-list__tax
             p Сбор за услуги: скидка 2 179₽
-          div.price-list__tax-amount
-            p 0₽ 
-            //- Сбор за услуги: скидка 2179р 0р
-        div
           div.price-list__service
             p Сбор за дополнителные услуги
+        div.price-list__warning
+          div.price-list__warning-elem
+            p i
+          div.price-list__warning-elem
+            p i
+        div.price-list__amount
+          div.price-list__value
+            p 39 960₽          
+          div.price-list__tax-amount
+            p 0₽ 
           div.price-list__service-amount
             p 300₽
-            //- p Сбор за дополнителные услуги 300р
-
         
       div.price-result 
-          h1 Итого 
-          h1 38 081 ₽
+          h2 Итого 
+          div
+          h2 38 081 ₽
       div.room-book
         - var BUTTONTEXT = 'ЗАБРОНИРОВАТЬ';
         include ../elements/buttons/buttons

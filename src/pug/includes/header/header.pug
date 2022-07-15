@@ -1,9 +1,10 @@
 html
   body
     div.container
-      div.logo
-        img(src="images/Group.svg" class="logo__image" alt='Toxin')
-        img(src="images/TOXIN.svg" class="logo__name" alt='Toxin')
+      a(href="#")
+        div.logo
+          img(src="images/Group.svg" class="logo__image" alt='Toxin')
+          img(src="images/TOXIN.svg" class="logo__name" alt='Toxin')
       nav.nav
         - 
           var navArray = [
@@ -15,7 +16,6 @@ html
             {
                 title: 'Услуги',
                 url: '/',
-                //- icon: 'expand_more'
             },
             {
                 span: 'expand_more',
@@ -32,7 +32,6 @@ html
             {
                 title: 'Соглашения',
                 url: '/'
-                //- icon: 'expand_more'
             },
             {
                 span: 'expand_more',
@@ -54,3 +53,8 @@ html
         div.user-button__registration
           - var BUTTONTEXT = 'ЗАРЕГИСТРИРОВАТЬСЯ';
           include ../elements/buttons/buttons
+      div.user-authorization
+        div.user-authorization__line
+        p Юлий Цезарь
+    script
+      include header.js
