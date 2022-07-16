@@ -113,3 +113,22 @@ let dropdownContainer = document.querySelector(".dropdown-container");
 dropdownField.addEventListener('click', function() {
   dropdownContainer.classList.toggle("dropdown__show");
 });
+
+let dropdownInputGuest = document.querySelector('.dropdown__input__guest');
+let dropdownBoxApply = document.querySelector('.dropdown-box__apply');
+
+// dropdownBoxApply.addEventListener('click', function() {
+  // dropdownInputGuest.value = guestNumberAmount.textContent;
+
+// });
+// dropdownBoxApply.forEach(function (e) {
+//   e.addEventListener('click', function() {
+//     // event.preventDefault();
+//     dropdownInputGuest.value = guestNumberAmount.textContent;
+//   });
+// });
+dropdownBoxApply.forEach(item => {
+  item.addEventListener('click', event => {
+    dropdownInputGuest.value = guestNumberAmount.textContent;
+  })
+})

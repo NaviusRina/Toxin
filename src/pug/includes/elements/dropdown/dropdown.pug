@@ -1,7 +1,7 @@
 html
   body
     div.dropdown-field 
-      input(class="dropdown__input" type="text" placeholder="Сколько гостей")
+      input(class="dropdown__input dropdown__input__guest" type="text" placeholder="Сколько гостей")
       span.material-icons expand_more
     div.dropdown-container
       div.dropdown-box
@@ -28,6 +28,6 @@ html
           include ../buttons/small-text-button.pug
             h3.dropdown-box__clear ОЧИСТИТЬ
           include ../buttons/small-text-button.pug
-            h3 ПРИМЕНИТЬ
+            h3.dropdown-box__apply ПРИМЕНИТЬ
     script
       include dropdown.js
