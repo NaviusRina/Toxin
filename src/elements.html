@@ -162,16 +162,18 @@ dropdownField.addEventListener('click', function() {
 let dropdownInputGuest = document.querySelector('.dropdown__input__guest');
 let dropdownBoxApply = document.querySelector('.dropdown-box__apply');
 
-// dropdownBoxApply.addEventListener('click', function() {
+dropdownBoxApply.addEventListener('click', function() {
   // dropdownInputGuest.value = guestNumberAmount.textContent;
-
-// });
-dropdownBoxApply.forEach(function (e) {
-  e.addEventListener('click', function(event) {
-    event.preventDefault();
-    dropdownInputGuest.value = guestNumberAmount.textContent;
-  });
+  dropdownInputGuest.value = guestNumberAmount1.textContent;
+  dropdownInputGuest.value += guestNumberAmount2.textContent;
+  dropdownInputGuest.value += guestNumberAmount3.textContent;
 });
+
+// dropdownBoxApply.forEach(item => {
+//   item.addEventListener('click', event => {
+//     dropdownInputGuest.value = guestNumberAmount.textContent;
+//   })
+// })
 </script></body></html></div><div class="flex-elem__elem"><html><body><div class="dropdown-room-field"><input class="dropdown__input" type="text" placeholder="2 спальни, 2 кровати"><span class="material-icons">expand_more</span></div><div class="dropdown-room-container"><div class="dropdown-room"><ul class="dropdown-room__list"><li class="dropdown-room__list__elem"><h3>СПАЛЬНИ</h3><div class="room-number"><button class="room-number__delete rnd1">-</button><h3 class="room-number__amount rnam1">0</h3><button class="room-number__add rna1">+</button></div></li><li class="dropdown-room__list__elem"><h3>КРОВАТИ</h3><div class="room-number"><button class="room-number__delete rnd2">-</button><h3 class="room-number__amount rnam2">0</h3><button class="room-number__add rna2">+</button></div></li><li class="dropdown-room__list__elem"><h3>ВАННЫЕ КОМНАТЫ</h3><div class="room-number"><button class="room-number__delete rnd3">-</button><h3 class="room-number__amount rnam3">0</h3><button class="room-number__add rna3">+</button></div></li></ul></div></div><script>// let guestNumberAmount = document.querySelectorAll('.guest-number__amount');
 
 // let dropdownRoomClear = document.querySelector('.dropdown-room__clear');

@@ -102,6 +102,7 @@ guestNumberDelete3.addEventListener('click', function() {
     guestNumberDelete1.style.cssText = `color:rgba(31, 32, 65, 0.25);border: 1px solid rgba(31, 32, 65, 0.25)`;
     guestNumberDelete2.style.cssText = `color:rgba(31, 32, 65, 0.25);border: 1px solid rgba(31, 32, 65, 0.25)`;
     guestNumberDelete3.style.cssText = `color:rgba(31, 32, 65, 0.25);border: 1px solid rgba(31, 32, 65, 0.25)`;
+    dropdownInputGuest.value = "Сколько гостей";
     // guestNumberAmount.textContent = 0;
 
   });
@@ -117,18 +118,20 @@ dropdownField.addEventListener('click', function() {
 let dropdownInputGuest = document.querySelector('.dropdown__input__guest');
 let dropdownBoxApply = document.querySelector('.dropdown-box__apply');
 
-// dropdownBoxApply.addEventListener('click', function() {
+dropdownBoxApply.addEventListener('click', function() {
   // dropdownInputGuest.value = guestNumberAmount.textContent;
+  if() {
 
-// });
-// dropdownBoxApply.forEach(function (e) {
-//   e.addEventListener('click', function() {
-//     // event.preventDefault();
+  } else {
+    dropdownInputGuest.value = guestNumberAmount1.textContent;
+    dropdownInputGuest.value += guestNumberAmount2.textContent;
+    dropdownInputGuest.value += guestNumberAmount3.textContent;
+  }
+
+});
+
+// dropdownBoxApply.forEach(item => {
+//   item.addEventListener('click', event => {
 //     dropdownInputGuest.value = guestNumberAmount.textContent;
-//   });
-// });
-dropdownBoxApply.forEach(item => {
-  item.addEventListener('click', event => {
-    dropdownInputGuest.value = guestNumberAmount.textContent;
-  })
-})
+//   })
+// })
