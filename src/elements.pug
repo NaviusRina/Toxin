@@ -1,5 +1,4 @@
-doctype
-html(lang="ru")
+extends pug/pages/landing page
   head
     meta(charset="UTF-8")
     link(href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet")
@@ -8,16 +7,18 @@ html(lang="ru")
     //- link(rel="preconnect" href="https://fonts.googleapis.com")
     //- link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
     //- link(href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" )
-
-    tittle
+    
+    //- tittle
     style 
       include ./../dist/main.css
     //- это структура файла шаблона
   
   body
-    div
-      include pug/includes/header/header
+    //- div
+      //- include pug/includes/header/header
     //- div.flex-elem
+      //- div.flex-elem__elem
+        
       //- div.flex-elem__elem
         //- include pug/includes/elements/bullet list/bullet-list
       //- div.flex-elem__elem
@@ -72,7 +73,7 @@ html(lang="ru")
         //- include pug/includes/room search/roomSearch
       //- div.flex-elem__elem
         //- include pug/includes/sign in/signIn
-    div
-      include pug/includes/footer/footer
+    //- div
+      //- include pug/includes/footer/footer
     script
       include js/index.js
