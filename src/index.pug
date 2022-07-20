@@ -1,15 +1,8 @@
-doctype
-html(lang="ru")
-  head
-    meta(charset="UTF-8")
-    link(href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet")
-    link(rel="icon" href="images/favicon.ico" type="image/ico")
-    link(href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet")
-    script(src="https://kit.fontawesome.com/3ef9158f0f.js" crossorigin="anonymous")
-    //- include pug/layout/main/main
-    style
-    //- include pug/includes/header/header
-    
-  body
-    p 111
-    //- include pug/includes/footer/footer
+extends pug/layout/main.pug
+
+block content
+  div
+    img(src="images/image 3.png" class="landing-page__img" alt='landing-page-img')
+  div
+    include pug/includes/room search/roomSearch.pug
+  

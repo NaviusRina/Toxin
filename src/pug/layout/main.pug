@@ -1,0 +1,11 @@
+doctype
+html(lang="ru")
+  include head.pug
+
+  body(class=pageClass) 
+    include ./../includes/header/header
+    block content
+    include ./../includes/footer/footer
+  
+    block script
+      script(src=pageScript)
