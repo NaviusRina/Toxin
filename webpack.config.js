@@ -12,8 +12,11 @@ module.exports = {
   context: path.resolve(__dirname, 'src'),
   mode: 'development',
   entry: {
-    main: './js/index.js'
+    index: './pug/pages/index.js',
     /*можно добавить еще одну точку входа, то есть еще один путь*/
+    registration: './pug/pages/Registration/registration.js',
+    roomdetails: './pug/pages/Room details/room-details.js',
+    searchroom: './pug/pages/Search room/search-room.js',
   },
   output: {
     filename: '[name].[contenthash].js',//таким образом юудут создаваться отдельные файлы бандл на каждый путь из entry
@@ -38,12 +41,24 @@ module.exports = {
     new HTMLWebpackPlugin({
       // title: 'Toxin',//установит tittle в файле индекс в папке дист? но он не нужен, если есть темплейт
       filename: 'index.html',
-      template: './index.pug'//подключит содержимое файла индекс из папки срси к содержимому индекса из папки дист
+      template: './pug/pages/index.pug',//подключит содержимое файла индекс из папки срси к содержимому индекса из папки дист
+      chunks: ['index']
     }),
-    // new HTMLWebpackPlugin({
-    //   filename: 'elements.html',
-    //   template: './elements.pug',
-    // }),
+    new HTMLWebpackPlugin({
+      filename: 'registration.html',
+      template: './pug/pages/Registration/registration.pug',
+      chunks: ['registration']
+    }),
+    new HTMLWebpackPlugin({
+      filename: 'room-details.html',
+      template: './pug/pages/Room details/room-details.pug',
+      chunks: ['roomdetails']
+    }),
+    new HTMLWebpackPlugin({
+      filename: 'search-room.html',
+      template: './pug/pages/Search room/search-room.pug',
+      chunks: ['searchroom']
+    }),
     new HtmlWebpackPugPlugin(),
     new CleanWebpackPlugin(),//очистка папки дист от лишнего кеша
     new CopyWebpackPlugin({
