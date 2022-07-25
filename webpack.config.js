@@ -12,7 +12,7 @@ module.exports = {
   context: path.resolve(__dirname, 'src'),
   mode: 'development',
   entry: {
-    index: './pug/pages/index.js',
+    index: './pug/pages/Index/index.js',
     /*можно добавить еще одну точку входа, то есть еще один путь*/
     registration: './pug/pages/Registration/registration.js',
     roomdetails: './pug/pages/Room details/room-details.js',
@@ -41,7 +41,7 @@ module.exports = {
     new HTMLWebpackPlugin({
       // title: 'Toxin',//установит tittle в файле индекс в папке дист? но он не нужен, если есть темплейт
       filename: 'index.html',
-      template: './pug/pages/index.pug',//подключит содержимое файла индекс из папки срси к содержимому индекса из папки дист
+      template: './pug/pages/Index/index.pug',//подключит содержимое файла индекс из папки срси к содержимому индекса из папки дист
       chunks: ['index']
     }),
     new HTMLWebpackPlugin({
@@ -106,8 +106,11 @@ module.exports = {
         // use: ['file-loader?name=[path][name].html', 'pug-html-loader?pretty&exports=false']
       },
       {
-        test: /\.(png|jpg|svg|gis)$/,//для файлов графики
-        use: ['file-loader']
+        test: /\.(png|jpg|svg|gif)$/,//для файлов графики
+        use: ['file-loader'],
+        options: {
+          name: 'images/[name].[ext]'
+        }
       },
       {
         test: /\.ttf$/,

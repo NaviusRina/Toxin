@@ -1,4 +1,4 @@
-import './../../scss/style.scss'
+import './../../../scss/style.scss'
 import $ from "jquery";
 
 // import AirDatepicker from 'air-datepicker';
