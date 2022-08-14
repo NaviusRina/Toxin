@@ -107,10 +107,15 @@ module.exports = {
       },
       {
         test: /\.(png|jpg|svg|gif)$/,//для файлов графики
-        use: ['file-loader'],
-        options: {
-          name: 'images/[name].[ext]'
-        }
+        use: [
+          'file-loader',
+          {
+            options: {
+              name: 'images/[name].[ext]'
+            }
+          }
+        ],
+
       },
       {
         test: /\.ttf$/,
