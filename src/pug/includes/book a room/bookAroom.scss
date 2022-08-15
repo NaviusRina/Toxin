@@ -1,4 +1,7 @@
 @import "../../../scss/ui-kit.scss";
+@import "../elements/date dropdown/date-dropdown.scss";
+@import "../elements/buttons/buttons.scss";
+@import "../elements/dropdown/dropdown.scss";
 
 
 
@@ -24,7 +27,7 @@
       display: inline-block;
       font-size: 14px;
     }
-    
+
     h2 {
       display: inline-block;
       font-size: 24px;

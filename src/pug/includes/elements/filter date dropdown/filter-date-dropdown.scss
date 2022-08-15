@@ -1,10 +1,11 @@
 @import "../../../../scss/ui-kit.scss";
+// @import "./../airdatepicker/air-datepicker.css";
 
 .dropdown {
   position: relative;
   .dropdown__input {
     width: 266px;
-    color: $darkShade75; 
+    color: $darkShade75;
   }
   .material-icons {
     right: 0;
