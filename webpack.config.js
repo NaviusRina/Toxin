@@ -35,9 +35,8 @@ module.exports = {
     children: true
   },
   plugins: [//плагины, как, например, хтмл
-    new MiniCssExtractPlugin(
-
-    ),
+    new MiniCssExtractPlugin({
+    }),
     new HTMLWebpackPlugin({
       // title: 'Toxin',//установит tittle в файле индекс в папке дист? но он не нужен, если есть темплейт
       filename: 'index.html',
