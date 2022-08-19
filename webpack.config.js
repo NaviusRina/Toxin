@@ -110,7 +110,7 @@ module.exports = {
           'file-loader',
           {
             options: {
-              name: 'images/[name].[ext]'
+              name: 'assets/image/[name].[ext]',
             }
           }
         ],

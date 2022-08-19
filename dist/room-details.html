@@ -1,6 +1,26 @@
-<head><script defer src="script.b3e84ef37dd1c11bd572.js"></script><script defer src="script.2ee94e3a73ae7f3609bb.js"></script><link href="index.css" rel="stylesheet"></head>Html Webpack Plugin:
+<head><script defer src="script.b3e84ef37dd1c11bd572.js"></script><script defer src="script.81a45917eaf30d5c6c0f.js"></script><link href="index.css" rel="stylesheet"></head>Html Webpack Plugin:
 <pre>
   Error: Child compilation failed:
+  Module build failed (from ../node_modules/pug-html-loader/lib/index.js):
+  TypeError: require is not a function
+      at eval (eval at wrap (E:\ОБУЧЕНИЕ\MetaLamp\Toxin\node_modules\pug-runtime\wrap.js:6:10), <anonymous>:56:1160)
+      at template (eval at wrap (E:\ОБУЧЕНИЕ\MetaLamp\Toxin\node_modules\pug-runtime\wrap.js:6:10), <anonymous>:168:1285  )
+      at Object.module.exports (E:\ОБУЧЕНИЕ\MetaLamp\Toxin\node_modules\pug-html-loader\lib\index.js:33:10)
+  ModuleBuildError: Module build failed (from ../node_modules/pug-html-loader/lib/index.js):
+  TypeError: require is not a function
+      at eval (eval at wrap (E:\ОБУЧЕНИЕ\MetaLamp\Toxin\node_modules\pug-runtime\wrap.js:6:10), <anonymous>:56:1160)
+      at template (eval at wrap (E:\ОБУЧЕНИЕ\MetaLamp\Toxin\node_modules\pug-runtime\wrap.js:6:10), <anonymous>:168:1285  )
+      at Object.module.exports (E:\ОБУЧЕНИЕ\MetaLamp\Toxin\node_modules\pug-html-loader\lib\index.js:33:10)
+      at processResult (E:\ОБУЧЕНИЕ\MetaLamp\Toxin\node_modules\webpack\lib\NormalModule.js:758:19)
+      at E:\ОБУЧЕНИЕ\MetaLamp\Toxin\node_modules\webpack\lib\NormalModule.js:860:5
+      at E:\ОБУЧЕНИЕ\MetaLamp\Toxin\node_modules\loader-runner\lib\LoaderRunner.js:399:11
+      at E:\ОБУЧЕНИЕ\MetaLamp\Toxin\node_modules\loader-runner\lib\LoaderRunner.js:251:18
+      at runSyncOrAsync (E:\ОБУЧЕНИЕ\MetaLamp\Toxin\node_modules\loader-runner\lib\LoaderRunner.js:156:3)
+      at iterateNormalLoaders (E:\ОБУЧЕНИЕ\MetaLamp\Toxin\node_modules\loader-runner\lib\LoaderRunner.js:250:2)
+      at E:\ОБУЧЕНИЕ\MetaLamp\Toxin\node_modules\loader-runner\lib\LoaderRunner.js:223:4
+      at E:\ОБУЧЕНИЕ\MetaLamp\Toxin\node_modules\webpack\lib\NormalModule.js:834:15
+      at Array.eval (eval at create (E:\ОБУЧЕНИЕ\MetaLamp\Toxin\node_modules\tapable\lib\HookCodeFactory.js:33:10), <ano  nymous>:12:1)
+      at runCallbacks (E:\ОБУЧЕНИЕ\MetaLamp\Toxin\node_modules\enhanced-resolve\lib\CachedInputFileSystem.js:27:15)
   Module build failed (from ../node_modules/pug-loader/index.js):
   SyntaxError: Mismatched Bracket: }
       at Function.parseChar (E:\ОБУЧЕНИЕ\MetaLamp\Toxin\node_modules\character-parser\index.js:154:21)
@@ -103,40 +123,52 @@
       at LOADER_EXECUTION (E:\ОБУЧЕНИЕ\MetaLamp\Toxin\node_modules\loader-runner\lib\LoaderRunner.js:132:14)
       at runSyncOrAsync (E:\ОБУЧЕНИЕ\MetaLamp\Toxin\node_modules\loader-runner\lib\LoaderRunner.js:133:4)
       at iterateNormalLoaders (E:\ОБУЧЕНИЕ\MetaLamp\Toxin\node_modules\loader-runner\lib\LoaderRunner.js:250:2)
-  Module build failed (from ../node_modules/pug-loader/index.js):
-  SyntaxError: Mismatched Bracket: }
-      at Function.parseChar (E:\ОБУЧЕНИЕ\MetaLamp\Toxin\node_modules\character-parser\index.js:154:21)
-      at Lexer.attributeValue (E:\ОБУЧЕНИЕ\MetaLamp\Toxin\node_modules\pug-lexer\index.js:1246:31)
-      at Lexer.attribute (E:\ОБУЧЕНИЕ\MetaLamp\Toxin\node_modules\pug-lexer\index.js:1114:30)
-      at Lexer.attrs (E:\ОБУЧЕНИЕ\MetaLamp\Toxin\node_modules\pug-lexer\index.js:1283:20)
-      at Lexer.callLexerFunction (E:\ОБУЧЕНИЕ\MetaLamp\Toxin\node_modules\pug-lexer\index.js:1460:23)
-      at Lexer.advance (E:\ОБУЧЕНИЕ\MetaLamp\Toxin\node_modules\pug-lexer\index.js:1497:15)
-      at Lexer.callLexerFunction (E:\ОБУЧЕНИЕ\MetaLamp\Toxin\node_modules\pug-lexer\index.js:1460:23)
-      at Lexer.getTokens (E:\ОБУЧЕНИЕ\MetaLamp\Toxin\node_modules\pug-lexer\index.js:1516:12)
-      at lex (E:\ОБУЧЕНИЕ\MetaLamp\Toxin\node_modules\pug-lexer\index.js:12:42)
-      at Object.lex (E:\ОБУЧЕНИЕ\MetaLamp\Toxin\node_modules\pug\lib\index.js:100:27)
-  ModuleBuildError: Module build failed (from ../node_modules/pug-loader/index.js):
-  SyntaxError: Mismatched Bracket: }
-      at Function.parseChar (E:\ОБУЧЕНИЕ\MetaLamp\Toxin\node_modules\character-parser\index.js:154:21)
-      at Lexer.attributeValue (E:\ОБУЧЕНИЕ\MetaLamp\Toxin\node_modules\pug-lexer\index.js:1246:31)
-      at Lexer.attribute (E:\ОБУЧЕНИЕ\MetaLamp\Toxin\node_modules\pug-lexer\index.js:1114:30)
-      at Lexer.attrs (E:\ОБУЧЕНИЕ\MetaLamp\Toxin\node_modules\pug-lexer\index.js:1283:20)
-      at Lexer.callLexerFunction (E:\ОБУЧЕНИЕ\MetaLamp\Toxin\node_modules\pug-lexer\index.js:1460:23)
-      at Lexer.advance (E:\ОБУЧЕНИЕ\MetaLamp\Toxin\node_modules\pug-lexer\index.js:1497:15)
-      at Lexer.callLexerFunction (E:\ОБУЧЕНИЕ\MetaLamp\Toxin\node_modules\pug-lexer\index.js:1460:23)
-      at Lexer.getTokens (E:\ОБУЧЕНИЕ\MetaLamp\Toxin\node_modules\pug-lexer\index.js:1516:12)
-      at lex (E:\ОБУЧЕНИЕ\MetaLamp\Toxin\node_modules\pug-lexer\index.js:12:42)
-      at Object.lex (E:\ОБУЧЕНИЕ\MetaLamp\Toxin\node_modules\pug\lib\index.js:100:27)
-      at processResult (E:\ОБУЧЕНИЕ\MetaLamp\Toxin\node_modules\webpack\lib\NormalModule.js:758:19)
-      at E:\ОБУЧЕНИЕ\MetaLamp\Toxin\node_modules\webpack\lib\NormalModule.js:860:5
-      at E:\ОБУЧЕНИЕ\MetaLamp\Toxin\node_modules\loader-runner\lib\LoaderRunner.js:399:11
-      at E:\ОБУЧЕНИЕ\MetaLamp\Toxin\node_modules\loader-runner\lib\LoaderRunner.js:251:18
-      at Object.context.callback (E:\ОБУЧЕНИЕ\MetaLamp\Toxin\node_modules\loader-runner\lib\LoaderRunner.js:124:13)
-      at run (E:\ОБУЧЕНИЕ\MetaLamp\Toxin\node_modules\pug-loader\index.js:156:18)
-      at Object.module.exports (E:\ОБУЧЕНИЕ\MetaLamp\Toxin\node_modules\pug-loader\index.js:133:2)
-      at LOADER_EXECUTION (E:\ОБУЧЕНИЕ\MetaLamp\Toxin\node_modules\loader-runner\lib\LoaderRunner.js:132:14)
-      at runSyncOrAsync (E:\ОБУЧЕНИЕ\MetaLamp\Toxin\node_modules\loader-runner\lib\LoaderRunner.js:133:4)
-      at iterateNormalLoaders (E:\ОБУЧЕНИЕ\MetaLamp\Toxin\node_modules\loader-runner\lib\LoaderRunner.js:250:2)
+  
+  
+  
+  - index.js:33 Object.module.exports
+    [Toxin]/[pug-html-loader]/lib/index.js:33:10
+  
+  - ModuleBuildError: Module build failed (from ../node_modules/pug-html-loader/lib/index.js):
+  
+  - TypeError: require is not a function
+  
+  
+  
+  - index.js:33 Object.module.exports
+    [Toxin]/[pug-html-loader]/lib/index.js:33:10
+  
+  - NormalModule.js:758 processResult
+    [Toxin]/[webpack]/lib/NormalModule.js:758:19
+  
+  - NormalModule.js:860 
+    [Toxin]/[webpack]/lib/NormalModule.js:860:5
+  
+  - LoaderRunner.js:399 
+    [Toxin]/[loader-runner]/lib/LoaderRunner.js:399:11
+  
+  - LoaderRunner.js:251 
+    [Toxin]/[loader-runner]/lib/LoaderRunner.js:251:18
+  
+  - LoaderRunner.js:156 runSyncOrAsync
+    [Toxin]/[loader-runner]/lib/LoaderRunner.js:156:3
+  
+  - LoaderRunner.js:250 iterateNormalLoaders
+    [Toxin]/[loader-runner]/lib/LoaderRunner.js:250:2
+  
+  - LoaderRunner.js:223 
+    [Toxin]/[loader-runner]/lib/LoaderRunner.js:223:4
+  
+  - NormalModule.js:834 
+    [Toxin]/[webpack]/lib/NormalModule.js:834:15
+  
+  
+  - CachedInputFileSystem.js:27 runCallbacks
+    [Toxin]/[enhanced-resolve]/lib/CachedInputFileSystem.js:27:15
+  
+  - Module build failed (from ../node_modules/pug-loader/index.js):
+  
+  - SyntaxError: Mismatched Bracket: }
   
   - index.js:154 Function.parseChar
     [Toxin]/[character-parser]/index.js:154:21
@@ -228,61 +260,5 @@
   
   - LoaderRunner.js:133 runSyncOrAsync
     [Toxin]/[loader-runner]/lib/LoaderRunner.js:133:4
-  
-  - LoaderRunner.js:250 iterateNormalLoaders
-    [Toxin]/[loader-runner]/lib/LoaderRunner.js:250:2
-  
-  - Module build failed (from ../node_modules/pug-loader/index.js):
-  
-  - SyntaxError: Mismatched Bracket: }
-  
-  - index.js:154 Function.parseChar
-    [Toxin]/[character-parser]/index.js:154:21
-  
-  - index.js:1246 Lexer.attributeValue
-    [Toxin]/[pug-lexer]/index.js:1246:31
-  
-  - index.js:1114 Lexer.attribute
-    [Toxin]/[pug-lexer]/index.js:1114:30
-  
-  - index.js:1283 Lexer.attrs
-    [Toxin]/[pug-lexer]/index.js:1283:20
-  
-  - index.js:1460 Lexer.callLexerFunction
-    [Toxin]/[pug-lexer]/index.js:1460:23
-  
-  - index.js:1497 Lexer.advance
-    [Toxin]/[pug-lexer]/index.js:1497:15
-  
-  - index.js:1460 Lexer.callLexerFunction
-    [Toxin]/[pug-lexer]/index.js:1460:23
-  
-  - index.js:1516 Lexer.getTokens
-    [Toxin]/[pug-lexer]/index.js:1516:12
-  
-  - index.js:12 lex
-    [Toxin]/[pug-lexer]/index.js:12:42
-  
-  - index.js:100 Object.lex
-    [Toxin]/[pug]/lib/index.js:100:27
-  
-  - ModuleBuildError: Module build failed (from ../node_modules/pug-loader/index.js):
-  
-  - SyntaxError: Mismatched Bracket: }
-  
-  - index.js:154 Function.parseChar
-    [Toxin]/[character-parser]/index.js:154:21
-  
-  - index.js:1246 Lexer.attributeValue
-    [Toxin]/[pug-lexer]/index.js:1246:31
-  
-  - index.js:1114 Lexer.attribute
-    [Toxin]/[pug-lexer]/index.js:1114:30
-  
-  - index.js:1283 Lexer.attrs
-    [Toxin]/[pug-lexer]/index.js:1283:20
-  
-  - index.js:1460 Lexer.callLexerFunction
-    [Toxin]/[pug-lexer]/index.js:1460:23
   
 </pre>
