@@ -1,3 +1,24 @@
 extends ../../layout/main.pug
 
 block content
+  div
+    img(class="landing-page__img" alt='landing-page-img' src=require("images/image 2.png"))
+    img(class="landing-page__img" alt='landing-page-img' src=require("images/image 4.png"))
+    img(class="landing-page__img" alt='landing-page-img' src=require("images/image5.png"))
+  div
+    div
+      h2 Сведения о номере
+      include ../../includes/elements/description/description.pug
+    div
+      h2 Впечатления от номера
+    div
+      h2 Отзывы посетителей номера
+      include ../../includes/elements/review/review.pug
+      include ../../includes/elements/review/review.pug
+    div
+      h2 Правила
+      include ../../includes/elements/bullet list/bullet-list.pug
+      h2 Отмена
+      p Бесплатная отмена в течение 48 ч. После этого при отмене не позднее чем за 5 дн. до прибытия вы получите полный возврат за вычетом сбора за услуги.
+  div
+    include ../../includes/book a room/bookAroom.pug
