@@ -1,31 +1,31 @@
 extends ../../layout/main.pug
 
-block left
-  div
-    h3 ДАТЫ ПРЕБЫВАНИЯ В ОТЕЛЕ
-    include ../../includes/elements/filter date dropdown/filter-date-dropdown.pug
-  div ГОСТИ
-    h3
-    include ../../includes/elements/dropdown/dropdown.pug
-  div
-    h3 ДИАПАЗОН ЦЕНЫ
-    include ../../includes/elements/range slider/range-slider.pug
-    p Стоимость за сутки пребывания в номере
-  div
-    h3 ПРАВИЛА ДОМА
-    include ../../includes/elements/checkbox buttons/checkbox-buttons.pug
-  div
-    h3 ДОСТУПНОСТЬ
-    include ../../includes/elements/rich checkbox buttons/rich-checkbox-buttons.pug
-  div
-    h3 УДОБСТВА НОМЕРА
-    include ../../includes/elements/dropdown-room/dropdown-room.pug
-  div
-    h3 ДОПОЛНИТЕЛЬНЫЕ УДОБСТВА
-    include ../../includes/elements/expandable checkbox list/expandable-checkbox-list.pug
 block content
-  h1 Номера, которые мы для вас подобрали
-  div
+  div.search-room__search
+    div.search__date
+      h3 ДАТЫ ПРЕБЫВАНИЯ В ОТЕЛЕ
+      include ../../includes/elements/filter date dropdown/filter-date-dropdown.pug
+    div.search__guest
+      h3 ГОСТИ
+      include ../../includes/elements/dropdown/dropdown.pug
+    div.search__ price
+      h3 ДИАПАЗОН ЦЕНЫ
+      include ../../includes/elements/range slider/range-slider.pug
+      p Стоимость за сутки пребывания в номере
+    div.search__order
+      h3 ПРАВИЛА ДОМА
+      include ../../includes/elements/checkbox buttons/checkbox-buttons.pug
+    div.search__reach
+      h3 ДОСТУПНОСТЬ
+      include ../../includes/elements/rich checkbox buttons/rich-checkbox-buttons.pug
+    div.search__comfort
+      h3 УДОБСТВА НОМЕРА
+      include ../../includes/elements/dropdown-room/dropdown-room.pug
+    div.search__more-comfort
+      h3 ДОПОЛНИТЕЛЬНЫЕ УДОБСТВА
+      include ../../includes/elements/expandable checkbox list/expandable-checkbox-list.pug
+    h1 Номера, которые мы для вас подобрали
+  div.search-room__variation
     //цикл
     include ../../includes/room card/roomCard.pug
-  include ../../includes/elements/pagination/pagination.pug
+    include ../../includes/elements/pagination/pagination.pug
