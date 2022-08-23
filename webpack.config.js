@@ -6,6 +6,7 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');//подключени�
 const AirDatepicker = require('air-datepicker');
 const HtmlWebpackPugPlugin = require('html-webpack-pug-plugin');
 const $ = require('jquery');
+const configurePug = require('pug-require');
 
 
 module.exports = {

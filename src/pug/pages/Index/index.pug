@@ -1,8 +1,8 @@
 extends ../../layout/main.pug
-  include ../../../../dist/index.css
+  
 block content
   div.index__background
-    img(class="landing-page__img" alt='landing-page-img' src=require("images/image 3.png"))
+    img.landing-page__img(src=require("images/image 3.png"))
   div.index__room-search
     include ../../includes/room search/roomSearch.pug
   
