@@ -35,11 +35,13 @@
     "pug-loader": "^2.4.0",
     "pug-require": "^2.0.2",
     "sass-loader": "^13.0.2",
-    "text-loader": "^0.0.1"
+    "text-loader": "^0.0.1",
+    "url-loader": "^4.1.1"
   },
   "devDependencies": {
     "@babel/core": "^7.18.10",
     "@babel/preset-env": "^7.18.10",
+    "@webdiscus/pug-loader": "^2.8.2",
     "babel-loader": "^8.2.5",
     "copy-webpack-plugin": "^11.0.0",
     "css-loader": "^6.7.1",

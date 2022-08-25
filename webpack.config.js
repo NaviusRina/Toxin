@@ -35,36 +35,42 @@ module.exports = {
   stats: {
     children: true
   },
+  resolve: {
+    alias: {
+      images: path.resolve(__dirname, './assets/images/'),
+    },
+  },
   plugins: [//плагины, как, например, хтмл
     new MiniCssExtractPlugin({
     }),
+    new HtmlWebpackPugPlugin(),
     new HTMLWebpackPlugin({
       // title: 'Toxin',//установит tittle в файле индекс в папке дист? но он не нужен, если есть темплейт
+      template: './pug/pages/Index/index.pug',//подключит содержимое файла индекс из папки срси к содержимому индекса из папки дист
       filename: 'index.html',
-      template: './pug/pages/Index/index.pug'//подключит содержимое файла индекс из папки срси к содержимому индекса из папки дист
       // chunks: ['index']
     }),
     new HTMLWebpackPlugin({
+      template: './pug/pages/Registration/registration.pug',
       filename: 'registration.html',
-      template: './pug/pages/Registration/registration.pug'
       // chunks: ['registration']
     }),
     new HTMLWebpackPlugin({
+      template: './pug/pages/Room details/room-details.pug',
       filename: 'room-details.html',
-      template: './pug/pages/Room details/room-details.pug'
       // chunks: ['roomdetails']
     }),
     new HTMLWebpackPlugin({
+      template: './pug/pages/Search room/search-room.pug',
       filename: 'search-room.html',
-      template: './pug/pages/Search room/search-room.pug'
       // chunks: ['searchroom']
     }),
-    new HtmlWebpackPugPlugin(),
+
     new CleanWebpackPlugin(),//очистка папки дист от лишнего кеша
     new CopyWebpackPlugin({
       patterns: [
           {
-              from: path.resolve(__dirname, './images/favicon.ico'),
+              from: path.resolve(__dirname, './assets/images/favicon.ico'),
               to: path.resolve(__dirname, 'dist'),
               noErrorOnMissing: true
           }
@@ -102,16 +108,18 @@ module.exports = {
       },
       {
         test: /\.pug$/,//когда вебпак встречает файл pug, необходимо использовать определенный тип лодера(юз)
-        use: ['pug-loader', 'pug-html-loader']
-        // use: ['file-loader?name=[path][name].html', 'pug-html-loader?pretty&exports=false']
+        // use: ['pug-loader', 'pug-html-loader']
+        loader: '@webdiscus/pug-loader',
       },
       {
         test: /\.(png|jpg|svg|gif)$/,//для файлов графики
         use: [
           'file-loader',
+          // 'url-loader',
           {
             options: {
-              name: 'assets/image/[name].[ext]',
+              name: './assets/images/[name].[ext]',
+              esModule: false,
             }
           }
         ],
