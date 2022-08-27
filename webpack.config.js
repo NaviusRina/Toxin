@@ -35,11 +35,6 @@ module.exports = {
   stats: {
     children: true
   },
-  resolve: {
-    alias: {
-      images: path.resolve(__dirname, './assets/images/'),
-    },
-  },
   plugins: [//плагины, как, например, хтмл
     new MiniCssExtractPlugin({
     }),
@@ -70,8 +65,17 @@ module.exports = {
     new CopyWebpackPlugin({
       patterns: [
           {
-              from: path.resolve(__dirname, './assets/images/favicon.ico'),
+              from: path.resolve(__dirname, 'src/assets/images/favicon.ico'),
               to: path.resolve(__dirname, 'dist'),
+              noErrorOnMissing: true
+          },
+          {
+              // from: 'src/assets/images/',
+              from: path.resolve(__dirname, 'src/assets/images/'),
+              to: path.resolve(__dirname, 'dist/assets/images'),
+              // to({ context, absoluteFilename }) {
+                // return Promise.resolve("dist/assets/[name][ext]");
+            // },
               noErrorOnMissing: true
           }
         ]
@@ -112,16 +116,9 @@ module.exports = {
         loader: '@webdiscus/pug-loader',
       },
       {
-        test: /\.(png|jpg|svg|gif)$/,//для файлов графики
+        test: /\.(png|jpg|svg|gif|jpeg)?$/,//для файлов графики
         use: [
-          'file-loader',
-          // 'url-loader',
-          {
-            options: {
-              name: './assets/images/[name].[ext]',
-              esModule: false,
-            }
-          }
+          'file-loader'
         ],
 
       },
