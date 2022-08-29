@@ -4,3 +4,15 @@
 // @import "../../includes/footer/footer.scss";
 // @import "../../includes/account registration/registration.scss";
 // @import "../../includes/sign in/signIn.scss";
+
+.registration__background {
+  .registration-page__img {
+    width: 100%;
+    position: relative;
+  }
+  .registration__form {
+    position: absolute;
+    top: 140px;
+    left: 150px;
+  }
+}
