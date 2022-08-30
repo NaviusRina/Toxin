@@ -1,33 +1,34 @@
 html
   body
     div.roomCard-container
-      div.roomCard-image
-        img(src="assets/images/room.png" class="roomCard__image-img" alt='room')
-        //- img(src="images/room(1).png" class="roomCard__image" alt='room')
-        div.roomCard-image__switch
-          div.roomCard-image__left
-            span.material-icons chevron_left
-          div.roomCard-image__right
-            span.material-icons chevron_right
-        div.roomCard-image__slider
-          - let count = 0;
-            while count < 4
-              span.rc-i__s
-              - count += 1;
-      div.roomCard-info
-        div.roomCard-amount
-          div
-            h3 №
-            h2 888
-            h3.pink-text люкс
-          div
-            h3.grey-text 9990₽
-            p в сутки
-        div.roomCard-line
-        div.roomCard-range
-          div.roomCard-range__rate-button
-            include ../elements/rate button/rate-button
-          div
-            h3.grey-text 145 &nbsp;
-            p Отзывов
+      a(href="room-details.html")
+        div.roomCard-image
+          img(src="assets/images/room.png" class="roomCard__image-img" alt='room')
+          //- img(src="images/room(1).png" class="roomCard__image" alt='room')
+          div.roomCard-image__switch
+            div.roomCard-image__left
+              span.material-icons chevron_left
+            div.roomCard-image__right
+              span.material-icons chevron_right
+          div.roomCard-image__slider
+            - let count = 0;
+              while count < 4
+                span.rc-i__s
+                - count += 1;
+        div.roomCard-info
+          div.roomCard-amount
+            div
+              h3 №
+              h2 888
+              h3.pink-text люкс
+            div
+              h3.grey-text 9990₽
+              p в сутки
+          div.roomCard-line
+          div.roomCard-range
+            div.roomCard-range__rate-button
+              include ../elements/rate button/rate-button
+            div
+              h3.grey-text 145 &nbsp;
+              p Отзывов
       

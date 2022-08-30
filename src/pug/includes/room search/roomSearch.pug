@@ -13,6 +13,7 @@ html
         h3 ГОСТИ
         include ../elements/dropdown/dropdown
       div.roomSearch__button
-        - var BUTTONTEXT = 'ПОДОБРАТЬ НОМЕР';
-        include ../elements/buttons/buttons
+        a(href="search-room.html")
+          - var BUTTONTEXT = 'ПОДОБРАТЬ НОМЕР';
+          include ../elements/buttons/buttons
       

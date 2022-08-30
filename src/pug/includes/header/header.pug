@@ -1,7 +1,7 @@
 html
   body
     div.header-container
-      a(href="#")
+      a(href="index.html")
         div.logo
           img(src="assets/images/Group.svg" class="logo__image" alt='Toxin')
           img(src="./assets/images/TOXIN.svg" class="logo__name" alt='Toxin')
@@ -10,7 +10,7 @@ html
           var navArray = [
             {
                 title: 'О нас',
-                url: '/',
+                url: 'index.html',
                 active: ''
             },
             {
@@ -51,8 +51,9 @@ html
           include ../elements/buttons/small-white-button
             h3 ВОЙТИ
         div.user-button__registration
-          - var BUTTONTEXT = 'ЗАРЕГИСТРИРОВАТЬСЯ';
-          include ../elements/buttons/buttons
+          a(href="registration.html")
+            - var BUTTONTEXT = 'ЗАРЕГИСТРИРОВАТЬСЯ';
+            include ../elements/buttons/buttons
       div.user-authorization
         div.user-authorization__line
         p Юлий Цезарь

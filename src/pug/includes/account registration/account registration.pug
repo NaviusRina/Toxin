@@ -1,35 +1,35 @@
 html
   body
-    div.registration-container
+    div.account-registration-container
       h1 Регистрация аккаунта
       div.user-information
         div.user-name
+          - var PLACEHOLDER = "Имя";
           include ../elements/text field/text-field 
-          //имя
         div.user-surname
+          - var PLACEHOLDER = "Фамилия";
           include ../elements/text field/text-field 
-          //фамилия
         div.user-sex
           include ../elements/radio buttons/radio-buttons
         div.user-birth-date
           h3 ДАТА РОЖДЕНИЯ
           include ../elements/date dropdown/date-dropdown
-      div.registration__sign-in-data
+      div.account-registration__sign-in-data
         h3 ДАННЫЕ ДЛЯ ВХОДА В СЕРВИС
         div
+          - var PLACEHOLDER = "Email";
           include ../elements/text field/text-field 
-        //(placeholder="Email")
         div
+          - var PLACEHOLDER = "Пароль";
           include ../elements/text field/text-field 
-        //(placeholder="Пароль")
         div
           include ../elements/toggle/toggle
       div
         - var BUTTONTEXT = 'ПЕРЕЙТИ К ОПЛАТЕ';
         include ../elements/buttons/buttons
-      div.registration__sign-in
+      div.account-registration__sign-in
         p Уже есть аккаунт на Toxin
-        div
+        div.account-registration__sign-in__button
           include ../elements/buttons/small-white-button
             h3 ВОЙТИ
                      
