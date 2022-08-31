@@ -1,13 +1,20 @@
-// @import "./../../../scss/font.scss";
-// @import "../../../scss/ui-kit.scss";
-// @import "../../includes/header/header.scss";
-// @import "../../includes/footer/footer.scss";
-// @import "../../includes/elements/filter date dropdown/filter-date-dropdown.scss";
-// @import "../../includes/elements/dropdown/dropdown.scss";
-// @import "../../includes/elements/range slider/range-slider.scss";
-// @import "../../includes/elements/checkbox buttons/checkbox-buttons.scss";
-// @import "../../includes/elements/rich checkbox buttons/rich-checkbox-buttons.scss";
-// @import "../../includes/elements/dropdown room/dropdown-room.scss";
-// @import "../../includes/elements/expandable checkbox list/expandable-checkbox-list.scss";
-// @import "../../includes/elements/pagination/pagination.scss";
-// @import "../../includes/room card/roomCard.scss";
+.search-room__container {
+  display: flex;
+  flex-direction: row;
+  padding: 30px 140px;
+  .search-room__search {
+    width: 267px;
+    margin-right: 60px;
+    h3 {
+      margin-bottom: 5px;
+    }
+    div {
+      margin-bottom: 20px
+    }
+  }
+  .search-room__variation {
+    h1 {
+      margin-bottom: 20px;
+    }
+  }
+}
