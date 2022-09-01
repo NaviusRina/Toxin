@@ -28,7 +28,91 @@ block content
     div.search-room__variation
       h1 Номера, которые мы для вас подобрали
       //цикл
-      div.search-room__card
-        include ../../includes/room card/roomCard.pug
+      div.search-room__cards
+        - 
+          var cardArray = [
+            {
+                number: '888',
+                price: '9990₽',
+                image: 'assets/images/room.png',
+                review: '145'
+            },
+            {
+                number: '840',
+                price: '9900₽',
+                image: 'assets/images/room2.png',
+                review: '65'
+            },
+            {
+                number: '980',
+                price: '8500',
+                image: 'assets/images/room3.png',
+                review: '35'
+            },
+            {
+                number: '856',
+                price: '7300',
+                image: 'assets/images/room4.png',
+                review: '19'
+            },
+            {
+                number: '740',
+                price: '6000',
+                image: 'assets/images/room5.png',
+                review: '44'
+            },
+            {
+                number: '982',
+                price: '5800',
+                image: 'assets/images/room6.png',
+                review: '56'
+            },
+            {
+                number: '678',
+                price: '5500',
+                image: 'assets/images/room7.png',
+                review: '45'
+            },
+            {
+                number: '450',
+                price: '5300',
+                image: 'assets/images/room8.png',
+                review: '39'
+            },
+            {
+                number: '350',
+                price: '5000',
+                image: 'assets/images/room9.png',
+                review: '77'
+            },
+            {
+                number: '666',
+                price: '5000',
+                image: 'assets/images/room10.png',
+                review: '25'
+            },
+            {
+                number: '444',
+                price: '5000',
+                image: 'assets/images/room11.png',
+                review: '15'
+            },
+            {
+                number: '352',
+                price: '5000',
+                image: 'assets/images/room12.png',
+                review: '55'
+            },
+          ]
+        each item in cardArray
+          div.search-room__cards__item
+            - var ROOMCARDNUMBER = item.number;
+            - var ROOMCARDPRICE = item.price;
+            - var ROOMCARDIMAGE = item.image;
+            - var ROOMCARDREVIEW = item.review;
+            include ../../includes/room card/roomCard.pug
+        
+        
       div.search-room__page
-        include ../../includes/elements/pagination/pagination.pug
+        div
+          include ../../includes/elements/pagination/pagination.pug

@@ -3,18 +3,38 @@
   flex-direction: row;
   padding: 30px 140px;
   .search-room__search {
-    width: 267px;
+    width: 270px;
     margin-right: 60px;
     h3 {
-      margin-bottom: 5px;
+      margin-bottom: 16px;
     }
     div {
       margin-bottom: 20px
     }
+    .dropdown-field {
+      width: 266px;
+      .dropdown__input {
+        width: 266px;
+
+      }
+    }
   }
   .search-room__variation {
+    .search-room__cards {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      .search-room__cards__item {
+        margin: 20px 12px;
+      }
+    }
     h1 {
       margin-bottom: 20px;
+    }
+    .search-room__page {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
     }
   }
 }

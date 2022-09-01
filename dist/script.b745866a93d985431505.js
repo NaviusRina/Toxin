@@ -510,7 +510,7 @@ eval("$(function () {\n  $(\"#slider-range\").slider({\n    range: true,\n    mi
   \***********************************************************/
 /***/ (() => {
 
-eval("var logID = 'log',\n    log = $('<div id=\"' + logID + '\"></div>');\n$('body').append(log);\n$('[type*=\"radio\"]').change(function () {\n  var me = $(this);\n  log.html(me.attr('value'));\n});\n\n//# sourceURL=webpack:///./pug/includes/elements/rate_button/rate-buttons.js?");
+eval("var logID = 'log',\n    log = $('<div id=\"' + logID + '\"></div>');\n$('body').append(log);\n$('[type*=\"radio\"]').change(function (event) {\n  var me = $(this);\n  log.html(me.attr('value'));\n  event.preventDefault();\n});\n\n//# sourceURL=webpack:///./pug/includes/elements/rate_button/rate-buttons.js?");
 
 /***/ }),
 

@@ -82,6 +82,13 @@
     .roomCard-amount {
       display: flex;
       justify-content: space-between;
+      .roomCard-amount__number {
+        margin-right: 8px;
+        margin-left: 4px;
+      }
+      .roomCard-amount__price {
+        margin-right: 4px;
+      }
       div {
 
       }
@@ -98,6 +105,10 @@
       justify-content: space-between;
       position: relative;
       .roomCard-range__rate-button {
+
+      }
+      .roomCard-range__review {
+        margin-right: 4px;
       }
     }
   }

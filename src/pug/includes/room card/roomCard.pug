@@ -3,7 +3,8 @@ html
     div.roomCard-container
       a(href="room-details.html")
         div.roomCard-image
-          img(src="assets/images/room.png" class="roomCard__image-img" alt='room')
+          div.roomCard-image__img
+            img(src=ROOMCARDIMAGE class="roomCard__image-img" alt='room')
           //- img(src="images/room(1).png" class="roomCard__image" alt='room')
           div.roomCard-image__switch
             div.roomCard-image__left
@@ -19,16 +20,16 @@ html
           div.roomCard-amount
             div
               h3 №
-              h2 888
+              h2.roomCard-amount__number= ROOMCARDNUMBER
               h3.pink-text люкс
             div
-              h3.grey-text 9990₽
+              h3.roomCard-amount__price.grey-text= ROOMCARDPRICE
               p в сутки
           div.roomCard-line
           div.roomCard-range
             div.roomCard-range__rate-button
               include ../elements/rate button/rate-button
             div
-              h3.grey-text 145 &nbsp;
+              h3.roomCard-range__review.grey-text= ROOMCARDREVIEW
               p Отзывов
       
