@@ -1,24 +1,29 @@
 extends ../../layout/main.pug
 
 block content
-  div.room-search__background
-    img.room-search-page__img(src="assets/images/image 2.png") 
-    img.room-search-page__img(src="assets/images/image 4.png") 
-    img.room-search-page__img(src="assets/images/image5.png") 
-  div.room-search__info
-    div.info__about
-      h2 Сведения о номере
-      include ../../includes/elements/description/description.pug
-    div.info__impression
-      h2 Впечатления от номера
-    div.info__review
-      h2 Отзывы посетителей номера
-      include ../../includes/elements/review/review.pug
-      include ../../includes/elements/review/review.pug
-    div.info__regulation
-      h2 Правила
-      include ../../includes/elements/bullet list/bullet-list.pug
-      h2 Отмена
-      p Бесплатная отмена в течение 48 ч. После этого при отмене не позднее чем за 5 дн. до прибытия вы получите полный возврат за вычетом сбора за услуги.
-  div.room-search__book-room
-    include ../../includes/book a room/bookAroom.pug
+  div.room-details
+    div.room-details__background
+      img.room-details-page__img(src="assets/images/image5.png") 
+      img.room-detailsh-page__img(src="assets/images/image 2.png") 
+      img.room-details-page__img(src="assets/images/image 4.png") 
+    div.room-details__info
+      div
+        div.info__about
+          div
+            h2 Сведения о номере
+            include ../../includes/elements/description/description.pug
+          div.info__impression
+            h2 Впечатления от номера
+        div.info__review
+          h2 Отзывы посетителей номера
+          include ../../includes/elements/review/review.pug
+          include ../../includes/elements/review/review.pug
+        div.info__regulation
+          div
+            h2 Правила
+            include ../../includes/elements/bullet list/bullet-list.pug
+          div
+            h2 Отмена
+            p Бесплатная отмена в течение 48 ч. После этого при отмене не позднее чем за 5 дн. до прибытия вы получите полный возврат за вычетом сбора за услуги.
+      div.room-details__book-room
+        include ../../includes/book a room/bookAroom.pug

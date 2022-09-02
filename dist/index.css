@@ -4292,6 +4292,21 @@ p {
 /*!************************************************************************************************************************************************************************************************************!*\
   !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!../node_modules/sass-loader/dist/cjs.js!./pug/pages/Room details/room-details.scss ***!
   \************************************************************************************************************************************************************************************************************/
+.room-details h2 {
+  margin-bottom: 20px; }
+
+.room-details .room-details__info {
+  margin: 70px 140px;
+  display: flex;
+  flex-direction: row; }
+  .room-details .room-details__info .info__about {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30px; }
+  .room-details .room-details__info .info__regulation {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30px; }
 
 /*!**********************************************************************************************************************************************************************************************************!*\
   !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!../node_modules/sass-loader/dist/cjs.js!./pug/pages/Search room/search-room.scss ***!
