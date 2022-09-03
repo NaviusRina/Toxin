@@ -2,6 +2,7 @@
 
 .bullet-elem {
   margin-top: 10px;
+  width: 280px;
   .bullet-elem__ellipse {
     display: inline-block;
     width: 10px;
@@ -9,6 +10,9 @@
     background-color: $darkShade25;
     border-radius: 50%;
     margin: 5px 10px 0 0;
+  }
+  .bullet-elem__ellipse_side {
+    margin-bottom: 24px;
   }
   p {
 

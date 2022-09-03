@@ -1,0 +1,31 @@
+html
+  body
+    div.room-impression
+      div.room-impression__stat
+      div.room-impression__detail
+        - 
+          var detailArray = [
+            {
+              ellipse: '',
+              text: 'Великолепно'
+            },
+            {
+              ellipse: '',
+              text: 'Хорошо'
+            },
+            {
+              ellipse: '',
+              text: 'Удовлетворительно'
+            },
+            {
+              ellipse: '',
+              text: 'Разочарован'
+            }
+          ]
+        div.room-impression__detail__item
+          div.room-impression__detail__ellipse= ellipse
+          p.room-impression__detail__text= text
+            
+        
+        
+      

@@ -1,4 +1,26 @@
 .room-details {
+  .room-details__background {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    .room-details-page__img1 {
+      width: 68%;
+      img {
+        width: 100%;
+      }
+    }
+    .room-detailsh-page__img {
+      width: 32%;
+      display: flex;
+      flex-direction: column;
+      img {
+        width: 100%;
+      }
+      .room-detailsh-page__img__side {
+        margin-top: -3px;
+      }
+    }
+  }
   h2 {
     margin-bottom: 20px;
   }
@@ -7,15 +29,28 @@
     margin: 70px 140px;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     .info__about {
       display: flex;
       flex-direction: row;
+      margin-bottom: 30px;
+      .info__about__description {
+        margin-right: 80px;
+      }
+    }
+    .info__review {
       margin-bottom: 30px;
     }
     .info__regulation {
       display: flex;
       flex-direction: row;
       margin-bottom: 30px;
+      .info__regulation__bullet-list {
+        margin-right: 80px;
+      }
+      .info__regulation__repeal {
+        width: 340px;
+      }
     }
   }
 }

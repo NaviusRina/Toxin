@@ -3,26 +3,41 @@ extends ../../layout/main.pug
 block content
   div.room-details
     div.room-details__background
-      img.room-details-page__img(src="assets/images/image5.png") 
-      img.room-detailsh-page__img(src="assets/images/image 2.png") 
-      img.room-details-page__img(src="assets/images/image 4.png") 
+      div.room-details-page__img1
+        img(src="assets/images/image5.png") 
+      div.room-detailsh-page__img
+        img(src="assets/images/image 2.png") 
+        img.room-detailsh-page__img__side(src="assets/images/image 4.png") 
     div.room-details__info
       div
         div.info__about
-          div
+          div.info__about__description
             h2 Сведения о номере
             include ../../includes/elements/description/description.pug
           div.info__impression
             h2 Впечатления от номера
+            include ../../includes/elements/room impression/impression.pug
         div.info__review
           h2 Отзывы посетителей номера
-          include ../../includes/elements/review/review.pug
-          include ../../includes/elements/review/review.pug
-        div.info__regulation
           div
+            - var REVIEWUSERAVATAR= "assets/images/person1.png";
+            - var LIKENUMBER= "12";
+            - var USERINFONAME= "Мурад Сарафанов";
+            - var USERINFOATTENDANCE= "5 дней назад";
+            - var USERAPPRAISALREVIEW= "Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.";
+            include ../../includes/elements/review/review.pug
+          div
+            - var REVIEWUSERAVATAR= "assets/images/person2.png";
+            - var LIKENUMBER= "2";
+            - var USERINFONAME = "Патрисия Стёклышкова";
+            - var USERINFOATTENDANCE= "Неделю назад";
+            - var USERAPPRAISALREVIEW= "Обслуживание на высоте! Всё аккуратно, чисто. Завтраки в номер советую заказать, каждый день новое блюдо и десерт как комплимент.";
+            include ../../includes/elements/review/review.pug
+        div.info__regulation
+          div.info__regulation__bullet-list
             h2 Правила
             include ../../includes/elements/bullet list/bullet-list.pug
-          div
+          div.info__regulation__repeal
             h2 Отмена
             p Бесплатная отмена в течение 48 ч. После этого при отмене не позднее чем за 5 дн. до прибытия вы получите полный возврат за вычетом сбора за услуги.
       div.room-details__book-room

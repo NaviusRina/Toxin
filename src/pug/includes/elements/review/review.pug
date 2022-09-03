@@ -3,10 +3,10 @@ html
     div.review-user
       div.review-user-info
         div.user-info__avatar
-          img(src="assets/images/image.png" class="review__user-avatar__img" alt='emoticon')
+          img(src= REVIEWUSERAVATAR class="review__user-avatar__img" alt='emoticon')
         include ./../like button/like-button.pug
       div.review-user-appraisal
         div
-          p.user-info__name Мурад Сарафанов
-          p.user-info__attendance 5 дней назад
-        p.user-appraisal__review Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.
+          p.user-info__name= USERINFONAME
+          p.user-info__attendance= USERINFOATTENDANCE
+        p.user-appraisal__review= USERAPPRAISALREVIEW
