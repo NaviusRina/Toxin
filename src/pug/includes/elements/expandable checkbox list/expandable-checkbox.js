@@ -2,7 +2,8 @@ let expandableCheckboxIcon = document.querySelector(".expandable-checkbox__icon"
 let expandableCheckboxList = document.querySelector(".expandable-checkbox-list");
 
 expandableCheckboxIcon.addEventListener('click', function() {
-  expandableCheckboxList.classList.toggle("expandable-checkbox__show");
+  expandableCheckboxList.classList.add("expandable-checkbox__show");
+  expandableCheckboxIcon.classList.add("material-icons__active");
 });
 
 

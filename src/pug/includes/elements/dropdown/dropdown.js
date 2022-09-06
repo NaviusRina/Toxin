@@ -1,6 +1,5 @@
 
 
-// сделать как-то так, когда соображу как
 // let guestNumberAdd = document.querySelectorAll('.guest-number__add');
 // let guestNumberAmount = document.querySelector('.guest-number__amount');
 // guestNumberAdd.forEach(function (entry) {
@@ -10,9 +9,9 @@
 //   });
 // });
 
-//как стыдно-то... я исправлюсь
 
 let dropdownField = document.querySelector(".dropdown-field");
+let dropdownInput = document.querySelector(".dropdown-input");
 let dropdownContainer = document.querySelector(".dropdown-container");
 
 let guestNumberAmount = document.querySelectorAll('.guest-number__amount');
@@ -44,6 +43,7 @@ function ButtonClear() {
 
 dropdownField.addEventListener('click', function() {
   dropdownContainer.classList.toggle("dropdown__show");
+  // dropdownInput.style.cssText = `border-bottom-left-radius:0;border-bottom-right-radius:0`;
   dropdownContainer.classList.remove("dropdown__shift");
 });
 

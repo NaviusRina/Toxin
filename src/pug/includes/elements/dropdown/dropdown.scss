@@ -14,17 +14,14 @@
   width: 320px;
   height: 44px;
   position: relative;
-  .dropdown__input {
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
-  }
   .material-icons {
     right: 0;
     top: 0;
   }
 }
 .dropdown-container {
-  z-index: 10;
+  position: relative;
+  z-index: 1000;
   max-height: 0;
 	overflow: hidden;
   transition: .2s ease max-height;

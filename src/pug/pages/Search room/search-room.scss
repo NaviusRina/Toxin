@@ -3,7 +3,7 @@
   flex-direction: row;
   padding: 30px 140px;
   .search-room__search {
-    width: 270px;
+    width: 280px;
     margin-right: 60px;
     h3 {
       margin-bottom: 16px;
@@ -17,6 +17,20 @@
         width: 266px;
 
       }
+    }
+    .search__date {
+      width: 266px;
+    }
+    .search__price {
+
+      p {
+        margin-top: 13px;
+        font-size: 12px;
+      }
+    }
+    .search__more-comfort {
+      display: flex;
+      flex-direction: row;
     }
   }
   .search-room__variation {
