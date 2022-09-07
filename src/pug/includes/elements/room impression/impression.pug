@@ -9,28 +9,23 @@ html
             {
               ellipse: 'assets/images/Ellipse.png',
               text: 'Великолепно'
-              //- color: 'background: linear-gradient(180deg, #FFE39C 0%, #FFBA9C 100%);'
             },
             {
               ellipse: 'assets/images/Ellipse(1).png',
               text: 'Хорошо'
-              //- color: 'background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);'
             },
             {
               ellipse: 'assets/images/Ellipse(2).png',
               text: 'Удовлетворительно'
-              //- color: 'background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);'
             },
             {
               ellipse: 'assets/images/Ellipse(3).png',
               text: 'Разочарован'
-              //- color: 'background: linear-gradient(180deg, #919191 0%, #3D4975 100%);'
             }
           ]
         each item in detailArray
           div.room-impression__detail__item
             img.room-impression__detail__ellipse(src=item.ellipse)
-            //- = item.ellipse
             p.room-impression__detail__text= item.text
             
         

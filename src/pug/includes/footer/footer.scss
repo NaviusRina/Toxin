@@ -1,11 +1,7 @@
 @import "../../../scss/ui-kit.scss";
-// @import "../elements/subscription text field/subscription-text-field.scss";
 
 %FooterListStyle {
   padding-left: 0px;
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: space-around;
 }
 %FooterListItemStyle {
   list-style: none;
@@ -24,13 +20,11 @@
 
 .footer-container {
   position: absolute;
-  // bottom: 0;
   width: 100%;
   background-color: #FFFFFF;
   box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
   padding: 0 140px;
   box-sizing: border-box;
-  // flex: 0 0 auto;
   .top-footer {
     display: flex;
     justify-content: space-between;

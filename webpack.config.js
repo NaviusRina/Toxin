@@ -2,7 +2,7 @@ const path = require('path');
 const HTMLWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const {CleanWebpackPlugin} = require('clean-webpack-plugin');
-const CopyWebpackPlugin = require('copy-webpack-plugin');//подключение статических файлов, например ico
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 const AirDatepicker = require('air-datepicker');
 const HtmlWebpackPugPlugin = require('html-webpack-pug-plugin');
 const $ = require('jquery');
@@ -14,54 +14,45 @@ module.exports = {
   mode: 'development',
   entry: {
     index: './js/script.js'
-    /*можно добавить еще одну точку входа, то есть еще один путь*/
-    // registration: './pug/pages/Registration/registration.js',
-    // roomdetails: './pug/pages/Room details/room-details.js',
-    // searchroom: './pug/pages/Search room/search-room.js',
   },
   output: {
-    filename: 'script.[contenthash].js',//таким образом юудут создаваться отдельные файлы бандл на каждый путь из entry
+    filename: 'script.[contenthash].js',
     path: path.resolve(__dirname, 'dist'),
     clean: true,
   },
-  optimization: {//оптимизация. даст импорт библиотеки во все файлы жс?
+  optimization: {
     splitChunks: {
       chunks: 'all'
     }
   },
-  devServer: {//отслеживание результатов в реальном времени? работает с командой npm start
+  devServer: {
     port: 4200
   },
   stats: {
     children: true
   },
-  plugins: [//плагины, как, например, хтмл
+  plugins: [
     new MiniCssExtractPlugin({
     }),
     new HtmlWebpackPugPlugin(),
     new HTMLWebpackPlugin({
-      // title: 'Toxin',//установит tittle в файле индекс в папке дист? но он не нужен, если есть темплейт
-      template: './pug/pages/Index/index.pug',//подключит содержимое файла индекс из папки срси к содержимому индекса из папки дист
-      filename: 'index.html',
-      // chunks: ['index']
+      template: './pug/pages/Index/index.pug',
+      filename: 'index.html'
     }),
     new HTMLWebpackPlugin({
       template: './pug/pages/Registration/registration.pug',
-      filename: 'registration.html',
-      // chunks: ['registration']
+      filename: 'registration.html'
     }),
     new HTMLWebpackPlugin({
       template: './pug/pages/Room details/room-details.pug',
-      filename: 'room-details.html',
-      // chunks: ['roomdetails']
+      filename: 'room-details.html'
     }),
     new HTMLWebpackPlugin({
       template: './pug/pages/Search room/search-room.pug',
-      filename: 'search-room.html',
-      // chunks: ['searchroom']
+      filename: 'search-room.html'
     }),
 
-    new CleanWebpackPlugin(),//очистка папки дист от лишнего кеша
+    new CleanWebpackPlugin(),
     new CopyWebpackPlugin({
       patterns: [
           {
@@ -70,12 +61,8 @@ module.exports = {
               noErrorOnMissing: true
           },
           {
-              // from: 'src/assets/images/',
               from: path.resolve(__dirname, 'src/assets/images/'),
               to: path.resolve(__dirname, 'dist/assets/images'),
-              // to({ context, absoluteFilename }) {
-                // return Promise.resolve("dist/assets/[name][ext]");
-            // },
               noErrorOnMissing: true
           }
         ]
@@ -100,7 +87,6 @@ module.exports = {
                   [
                     "postcss-preset-env",
                     {
-                    // Options
                     },
                   ],
                 ],
@@ -111,12 +97,11 @@ module.exports = {
         ],
       },
       {
-        test: /\.pug$/,//когда вебпак встречает файл pug, необходимо использовать определенный тип лодера(юз)
-        // use: ['pug-loader', 'pug-html-loader']
+        test: /\.pug$/,
         loader: '@webdiscus/pug-loader',
       },
       {
-        test: /\.(png|jpg|svg|gif|jpeg)?$/,//для файлов графики
+        test: /\.(png|jpg|svg|gif|jpeg)?$/,
         use: [
           'file-loader'
         ],
