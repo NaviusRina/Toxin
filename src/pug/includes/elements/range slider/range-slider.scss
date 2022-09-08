@@ -1,19 +1,27 @@
 @import "../../../../scss/ui-kit.scss";
 
-p {
-  #amount {
-    width: 266px;
-    outline: none;
-    border: none;
-    color: $darkShade50;
-    @extend %Montrserrat;
-    margin-bottom: 25px;
-    font-size: 12px;
-    line-height: 15px;
-    text-align: right;
-    text-transform: uppercase;
+.range-slider__text {
+  h3 {
+    display: inline-block;
+  }
+  p {
+    display: inline-block;
+    #amount {
+      // display: inline-block;
+      width: 155px;
+      outline: none;
+      border: none;
+      color: $darkShade50;
+      @extend %Montrserrat;
+      margin-bottom: 25px;
+      font-size: 12px;
+      line-height: 15px;
+      text-align: right;
+      text-transform: uppercase;
+    }
   }
 }
+
 #slider-range {
   box-sizing: border-box;
   position: absolute;

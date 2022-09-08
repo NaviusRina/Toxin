@@ -400,10 +400,13 @@
       white-space: nowrap; }
   .bookAroom-container .price-result {
     display: flex;
-    justify-content: space-between; }
+    justify-content: space-between;
+    margin-bottom: 20px; }
     .bookAroom-container .price-result div {
       width: 170px;
       border-bottom: 1px dashed rgba(31, 32, 65, 0.25); }
+    .bookAroom-container .price-result h2 {
+      margin-bottom: 0; }
 
 /*!**************************************************************************************************************************************************************************************************************************!*\
   !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!../node_modules/sass-loader/dist/cjs.js!./pug/includes/elements/airdatepicker/air-datepicker.css ***!
@@ -2322,15 +2325,23 @@ p {
 .grey-text {
   color: rgba(31, 32, 65, 0.5); }
 
-.expandable-checkbox .expandable-checkbox__icon {
+.expandable-checkbox {
   position: relative;
-  background-color: rgba(255, 255, 255, 0);
-  border: none;
-  width: 44px;
-  height: 44px; }
-  .expandable-checkbox .expandable-checkbox__icon .material-icons {
-    top: 0;
-    left: 0; }
+  display: flex; }
+  .expandable-checkbox h3 {
+    margin-top: 15px;
+    margin-right: 13px; }
+  .expandable-checkbox .expandable-checkbox__icon {
+    position: relative;
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    width: 44px;
+    height: 44px; }
+    .expandable-checkbox .expandable-checkbox__icon .material-icons {
+      transform-origin: 50% 50%;
+      position: absolute;
+      top: 0;
+      left: 0; }
 
 .expandable-checkbox-list {
   z-index: 100;
@@ -2945,7 +2956,7 @@ body, * {
   cursor: pointer;
   color: rgba(31, 32, 65, 0.5); }
 
-h1, h2, h3, p, .text-field, .dropdown__input, .masked-text-field, .date-dropdown__input, p #amount {
+h1, h2, h3, p, .text-field, .dropdown__input, .masked-text-field, .date-dropdown__input, .range-slider__text p #amount {
   font-family: 'Montserrat', sans-serif;
   font-style: normal; }
 
@@ -3011,16 +3022,21 @@ p {
 .grey-text {
   color: rgba(31, 32, 65, 0.5); }
 
-p #amount {
-  width: 266px;
-  outline: none;
-  border: none;
-  color: rgba(31, 32, 65, 0.5);
-  margin-bottom: 25px;
-  font-size: 12px;
-  line-height: 15px;
-  text-align: right;
-  text-transform: uppercase; }
+.range-slider__text h3 {
+  display: inline-block; }
+
+.range-slider__text p {
+  display: inline-block; }
+  .range-slider__text p #amount {
+    width: 155px;
+    outline: none;
+    border: none;
+    color: rgba(31, 32, 65, 0.5);
+    margin-bottom: 25px;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: right;
+    text-transform: uppercase; }
 
 #slider-range {
   box-sizing: border-box;
@@ -4490,8 +4506,6 @@ p {
     margin-right: 60px; }
     .search-room__container .search-room__search h3 {
       margin-bottom: 16px; }
-    .search-room__container .search-room__search div {
-      margin-bottom: 20px; }
     .search-room__container .search-room__search .dropdown-field {
       width: 266px; }
       .search-room__container .search-room__search .dropdown-field .dropdown__input {
@@ -4502,8 +4516,9 @@ p {
       margin-top: 13px;
       font-size: 12px; }
     .search-room__container .search-room__search .search__more-comfort {
-      display: flex;
-      flex-direction: row; }
+      display: inline-block; }
+    .search-room__container .search-room__search .search_block {
+      margin-bottom: 20px; }
   .search-room__container .search-room__variation .search-room__cards {
     display: flex;
     flex-direction: row;

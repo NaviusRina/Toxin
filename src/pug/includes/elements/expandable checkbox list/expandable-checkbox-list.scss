@@ -3,6 +3,12 @@
 
 
 .expandable-checkbox {
+  position: relative;
+  display: flex;
+  h3 {
+    margin-top: 15px;
+    margin-right: 13px;
+  }
   .expandable-checkbox__icon {
     position: relative;
     background-color: rgba(255, 255, 255, 0);
@@ -10,6 +16,8 @@
     width: 44px;
     height: 44px;
     .material-icons {
+      transform-origin: 50% 50%;
+      position: absolute;
       top: 0;
       left: 0;
 

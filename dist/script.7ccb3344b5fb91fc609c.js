@@ -601,7 +601,7 @@ eval("let registrationSignInButton = document.querySelector(\".account-registrat
   \************************************************/
 /***/ (() => {
 
-eval("// import './room-details.scss'\n\n//# sourceURL=webpack:///./pug/pages/Room_details/room-details.js?");
+eval("\n\n//# sourceURL=webpack:///./pug/pages/Room_details/room-details.js?");
 
 /***/ }),
 
@@ -611,7 +611,7 @@ eval("// import './room-details.scss'\n\n//# sourceURL=webpack:///./pug/pages/Ro
   \**********************************************/
 /***/ (() => {
 
-eval("// import './search-room.scss'\n\n//# sourceURL=webpack:///./pug/pages/Search_room/search-room.js?");
+eval("\n\n//# sourceURL=webpack:///./pug/pages/Search_room/search-room.js?");
 
 /***/ }),
 

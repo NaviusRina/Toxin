@@ -85,9 +85,13 @@
   .price-result {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 20px;
     div {
       width: 170px;
       border-bottom: 1px dashed rgba(31, 32, 65, 0.25);
+    }
+    h2 {
+      margin-bottom: 0;
     }
   }
   .room-book  {

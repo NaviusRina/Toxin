@@ -5,8 +5,10 @@ html
     script(src="https://code.jquery.com/ui/1.13.1/jquery-ui.js")
     
   body
-    p
-      input(type="text" id="amount")
+    div.range-slider__text
+      h3 ДИАПАЗОН ЦЕНЫ
+      p
+        input(type="text" id="amount")
     div#slider-range
     script 
       include range-slider.js

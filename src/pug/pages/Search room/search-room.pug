@@ -3,27 +3,25 @@ extends ../../layout/main.pug
 block content
   div.search-room__container
     div.search-room__search
-      div.search__date
+      div.search__date.search_block
         h3 ДАТЫ ПРЕБЫВАНИЯ В ОТЕЛЕ
         include ../../includes/elements/filter date dropdown/filter-date-dropdown.pug
-      div.search__guest
+      div.search__guest.search_block
         h3 ГОСТИ
         include ../../includes/elements/dropdown/dropdown.pug
-      div.search__price
-        h3 ДИАПАЗОН ЦЕНЫ
+      div.search__price.search_block
         include ../../includes/elements/range slider/range-slider.pug
         p Стоимость за сутки пребывания в номере
-      div.search__order
+      div.search__order.search_block
         h3 ПРАВИЛА ДОМА
         include ../../includes/elements/checkbox buttons/checkbox-buttons.pug
-      div.search__reach
+      div.search__reach.search_block
         h3 ДОСТУПНОСТЬ
         include ../../includes/elements/rich checkbox buttons/rich-checkbox-buttons.pug
-      div.search__comfort
+      div.search__comfort.search_block
         h3 УДОБСТВА НОМЕРА
         include ../../includes/elements/dropdown-room/dropdown-room.pug
-      div.search__more-comfort
-        h3 ДОПОЛНИТЕЛЬНЫЕ УДОБСТВА
+      div.search__more-comfort.search_block
         include ../../includes/elements/expandable checkbox list/expandable-checkbox-list.pug
     div.search-room__variation
       h1 Номера, которые мы для вас подобрали
