@@ -1,8 +1,8 @@
 html
   body
-    button#like-button
+    button(class=likeButtonClassName)
       span(class="material-icons like") favorite
       span(class="material-icons unlike") favorite_border
-      p.like-number= LIKENUMBER
+      p(class=likeButtonNumber)= LIKENUMBER
     script
       include like-button.js

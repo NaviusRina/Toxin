@@ -1,6 +1,4 @@
 
-
-
 .roomSearch-container {
   width: 380px;
   height: 374px;
@@ -17,18 +15,7 @@
   h3 {
     margin-bottom: 5px;
   }
-  .checkinto-date {
-    display: flex;
-    justify-content: space-between;
-    .checkinto-date__arrival {
-      display: inline-block;
-      position: relative;
-    }
-    .checkinto-date__departure {
-      display: inline-block;
-      position: relative;
-    }
-  }
+
   .guests-amount {
     position: relative;
     width: 320px;

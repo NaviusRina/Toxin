@@ -1,6 +1,6 @@
 @import "../../../../scss/ui-kit.scss";
 
-%GuestButton {
+%RoomButton {
   box-sizing: border-box;
   display: inline-block;
   position: absolute;
@@ -24,6 +24,8 @@
   }
 }
 .dropdown-room-container {
+  position: relative;
+  z-index: 1000;
   max-height: 0;
 	overflow: hidden;
   transition: .2s ease max-height;
@@ -45,7 +47,7 @@
         .room-number {
           max-width: 95px;
           .room-number__delete {
-            @extend %GuestButton;
+            @extend %RoomButton;
             right: 62px;
             font-family: 'Montserrat';
             font-style: normal;
@@ -59,7 +61,7 @@
 
           }
           .room-number__add {
-            @extend %GuestButton;
+            @extend %RoomButton;
             right: 0;
             top: 0;
             font-family: 'Montserrat';
@@ -83,4 +85,7 @@
 .dropdown-room__show {
   display: block;
   max-height: 300px;
+}
+.dropdown-room__shift {
+  display: none;
 }

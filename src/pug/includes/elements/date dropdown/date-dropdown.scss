@@ -2,11 +2,18 @@
 
 .date-dropdown {
   position: relative;
-  .date-dropdown__input {
-    color: $darkShade75;
+  display: flex;
+  justify-content: space-between;
+  .date-dropdown__min, .date-dropdown__max {
+    display: inline-block;
+    position: relative;
+    .date-dropdown__input {
+      color: $darkShade75;
+    }
+    .material-icons {
+      right: 0;
+      bottom: 0;
+    }
   }
-  .material-icons {
-    right: 0;
-    top: 0;
-  }
+
 }

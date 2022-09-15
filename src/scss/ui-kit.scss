@@ -43,6 +43,9 @@ $green: #6FCF97;
 .material-icons {
   @extend %MaterialIcons;
 }
+.material-symbols-outlined {
+  @extend %MaterialIcons;
+}
 //font
 %Montrserrat {
   font-family: 'Montserrat', sans-serif;

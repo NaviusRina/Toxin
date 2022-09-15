@@ -30,18 +30,7 @@
       display: inline-block;
     }
   }
-  .checkinto-date {
-    display: flex;
-    justify-content: space-between;
-    .checkinto-date__arrival {
-      display: inline-block;
-      position: relative;
-    }
-    .checkinto-date__departure {
-      display: inline-block;
-      position: relative;
-    }
-  }
+
   .guests-amount {
     position: relative;
     width: 320px;

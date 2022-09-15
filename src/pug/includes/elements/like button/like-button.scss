@@ -1,6 +1,6 @@
 @import "../../../../scss/ui-kit.scss";
 
-#like-button {
+.like-button__one, .like-button__two {
   box-sizing: border-box;
   position: relative;
   width: 40px;
@@ -45,7 +45,7 @@
     display: flex;
     color: $darkShade25;
   }
-  .like-number {
+  .like-button-number__one, .like-button-number__two {
     @extend %Montrserrat;
     position: absolute;
     font-size: 10px;

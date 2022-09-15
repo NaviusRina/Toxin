@@ -24,6 +24,12 @@ let drp3 = roomNumberAmount3.textContent;
 
 let dropdownInputRoom = document.querySelector(".dropdown__input__room");
 
+dropdownRoomField.addEventListener('click', function() {
+  dropdownRoomContainer.classList.add("dropdown-room__show");
+  dropdownRoomContainer.classList.remove("dropdown-room__shift");
+});
+
+
 dropdownInputRoom.placeholder = drp1 + " спальни, " + drp2 + " кровати, " + drp3 + " ванные комнаты";
 
 //спальни
@@ -99,9 +105,3 @@ roomNumberDelete3.addEventListener('click', function() {
 //     dropdownBoxClear.style.opacity = 0;
 //   }
 // });
-
-
-
-dropdownRoomField.addEventListener('click', function() {
-  dropdownRoomContainer.classList.toggle("dropdown-room__show");
-});

@@ -42,7 +42,7 @@ function ButtonClear() {
 }
 
 dropdownField.addEventListener('click', function() {
-  dropdownContainer.classList.toggle("dropdown__show");
+  dropdownContainer.classList.add("dropdown__show");
   // dropdownInput.style.cssText = `border-bottom-left-radius:0;border-bottom-right-radius:0`;
   dropdownContainer.classList.remove("dropdown__shift");
 });

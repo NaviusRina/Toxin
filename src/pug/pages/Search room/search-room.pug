@@ -103,6 +103,7 @@ block content
           ]
         each item in cardArray
           div.search-room__cards__item
+            - var RATE = item.rating;
             - var ROOMCARDNUMBER = item.number;
             - var ROOMCARDPRICE = item.price;
             - var ROOMCARDIMAGE = item.image;

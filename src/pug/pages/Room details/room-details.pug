@@ -19,14 +19,18 @@ block content
             include ../../includes/elements/room impression/impression.pug
         div.info__review
           h2 Отзывы посетителей номера
-          div
+          div.info__review__one
+            - var likeButtonClassName = "like-button__one";
+            - var likeButtonNumber = "like-button-number__one";
             - var REVIEWUSERAVATAR= "assets/images/person1.png";
             - var LIKENUMBER= "12";
             - var USERINFONAME= "Мурад Сарафанов";
             - var USERINFOATTENDANCE= "5 дней назад";
             - var USERAPPRAISALREVIEW= "Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.";
             include ../../includes/elements/review/review.pug
-          div
+          div.info__review__two
+            - var likeButtonClassName = "like-button__two";
+            - var likeButtonNumber = "like-button-number__two";
             - var REVIEWUSERAVATAR= "assets/images/person2.png";
             - var LIKENUMBER= "2";
             - var USERINFONAME = "Патрисия Стёклышкова";
@@ -42,3 +46,5 @@ block content
             p Бесплатная отмена в течение 48 ч. После этого при отмене не позднее чем за 5 дн. до прибытия вы получите полный возврат за вычетом сбора за услуги.
       div.room-details__book-room
         include ../../includes/book a room/bookAroom.pug
+    script
+      include room-details.js

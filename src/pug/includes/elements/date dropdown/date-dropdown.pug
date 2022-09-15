@@ -4,8 +4,14 @@ html
       include ./../airdatepicker/air-datepicker.css
   body
     div.date-dropdown
-      input(id="date-dropdown" class="date-dropdown__input" type="text" placeholder="ДД.ММ.ГГГГ")
-      span.material-icons expand_more
+      div.date-dropdown__min
+        h3 ПРИБЫТИЕ
+        input(id="date-dropdown-min" class="date-dropdown__input date-dropdown-min" type="text" placeholder="ДД.ММ.ГГГГ")
+        span.material-icons expand_more
+      div.date-dropdown__max
+        h3 ВЫЕЗД
+        input(id="date-dropdown-max" class="date-dropdown__input date-dropdown-max" type="text" placeholder="ДД.ММ.ГГГГ")
+        span.material-icons expand_more
     script
       include ./../airdatepicker/air-datepicker.js
     script
