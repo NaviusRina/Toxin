@@ -3,12 +3,11 @@ html
     style
       include ./../airdatepicker/air-datepicker.css
   body
-    div.dropdown
-      input(id="filter-date-dropdown" class="dropdown_input" type="text" placeholder="ДД.ММ.ГГГГ")
+    div.calendar
+      input(id="calendar__input" class="date-dropdown__input calendar__input" type="text" placeholder="ДД.ММ.ГГГГ")
       span.material-icons expand_more
     script
       include ./../airdatepicker/air-datepicker.js
     script
-      include filter-date-dropdown.js
-    
+      include calendar.js
       

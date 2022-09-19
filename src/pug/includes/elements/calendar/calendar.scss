@@ -1,0 +1,15 @@
+@import "../../../../scss/ui-kit.scss";
+
+.calendar {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  .calendar__input {
+    color: $darkShade75;
+  }
+  .material-icons {
+    right: 0;
+    bottom: 0;
+  }
+
+}

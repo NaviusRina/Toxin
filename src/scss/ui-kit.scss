@@ -108,12 +108,12 @@ p {
     border: 1px solid $darkShade50;
   }
 }
-.dropdown__input {
+.dropdown_input {
   @extend %Montrserrat;
   @extend %InputStyle;
   padding-left: 15px;
   padding-right: 44px;
-  width: 320px;
+  width: 266px;
 }
 .masked-text-field {
   @extend %Montrserrat;

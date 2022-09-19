@@ -2,6 +2,8 @@
 
 // let dropdownRoomClear = document.querySelector('.dropdown-room__clear');
 
+let dropdownRoomField = document.querySelector(".dropdown-room__field");
+let dropdownRoomContainer = document.querySelector(".dropdown-room__container");
 
 let roomNumberAdd1 = document.querySelector('.rna1');
 let roomNumberAmount1 = document.querySelector('.rnam1');
@@ -15,8 +17,7 @@ let roomNumberAdd3 = document.querySelector('.rna3');
 let roomNumberAmount3 = document.querySelector('.rnam3');
 let roomNumberDelete3 = document.querySelector('.rnd3');
 
-let dropdownRoomField = document.querySelector(".dropdown-room-field");
-let dropdownRoomContainer = document.querySelector(".dropdown-room-container");
+
 
 let drp1 = roomNumberAmount1.textContent;
 let drp2 = roomNumberAmount2.textContent;
@@ -25,8 +26,7 @@ let drp3 = roomNumberAmount3.textContent;
 let dropdownInputRoom = document.querySelector(".dropdown__input__room");
 
 dropdownRoomField.addEventListener('click', function() {
-  dropdownRoomContainer.classList.add("dropdown-room__show");
-  dropdownRoomContainer.classList.remove("dropdown-room__shift");
+  dropdownRoomContainer.classList.toggle("dropdown-room__show");
 });
 
 

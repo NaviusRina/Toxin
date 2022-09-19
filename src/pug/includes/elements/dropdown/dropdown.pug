@@ -1,33 +1,33 @@
 html
   body
-    div.dropdown-field 
-      input(class="dropdown__input dropdown__input__guest" type="text" placeholder="Сколько гостей")
+    div.dropdown-guest__field 
+      input(class="dropdown_input dropdown__input__guest" type="text" placeholder="Сколько гостей")
       span.material-icons expand_more
-    div.dropdown-container
-      div.dropdown-box
-        ul.dropdown-box__list
-          li.dropdown-box__list__elem
+    div.dropdown-guest__container
+      div.dropdown-guest
+        ul.dropdown-guest__list
+          li.dropdown-guest__list__elem
             h3 ВЗРОСЛЫЕ
             div.guest-number
               button.guest-number__delete.qnd1 -
               h3.guest-number__amount.qnam1 0
               button.guest-number__add.qna1 +
-          li.dropdown-box__list__elem
+          li.dropdown-guest__list__elem
             h3 ДЕТИ
             div.guest-number
               button.guest-number__delete.qnd2 -
               h3.guest-number__amount.qnam2 0
               button.guest-number__add.qna2 +
-          li.dropdown-box__list__elem
+          li.dropdown-guest__list__elem
             h3 МЛАДЕНЦЫ
             div.guest-number
               button.guest-number__delete.qnd3 -
               h3.guest-number__amount.qnam3 0
               button.guest-number__add.qna3 +
-        div.dropdown-box__buttons
+        div.dropdown-guest__buttons
           include ../buttons/small-text-button.pug
-            h3.dropdown-box__clear ОЧИСТИТЬ
+            h3.dropdown-guest__clear ОЧИСТИТЬ
           include ../buttons/small-text-button.pug
-            h3.dropdown-box__apply ПРИМЕНИТЬ
-    script
-      include dropdown.js
+            h3.dropdown-guest__apply ПРИМЕНИТЬ
+    //- script
+      //- include dropdown.js

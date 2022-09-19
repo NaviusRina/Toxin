@@ -2,20 +2,14 @@ let expandableCheckboxIcon = document.querySelector(".expandable-checkbox__icon"
 let expandableCheckboxList = document.querySelector(".expandable-checkbox-list");
 
 expandableCheckboxIcon.addEventListener('click', function() {
-  expandableCheckboxList.classList.add("expandable-checkbox__show");
-  expandableCheckboxIcon.classList.add("material-icons__active");
+  expandableCheckboxList.classList.toggle("expandable-checkbox__show");
+  expandableCheckboxIcon.classList.toggle("material-icons__active");
+  // if (expandableCheckboxList.classList.contains('expandable-checkbox__show')) {
+  //   expandableCheckboxList.classList.remove('expandable-checkbox__show');
+  //   expandableCheckboxIcon.classList.remove("material-icons__active");
+  // } else {
+  //   expandableCheckboxList.classList.add("expandable-checkbox__show");
+  //   expandableCheckboxIcon.classList.add("material-icons__active");
+  // }
+
 });
-
-
-// window.onclick = function(event) {
-//   if (!event.target.matches('.dropbtn')) {
-//     var dropdowns = document.getElementsByClassName("dropdown-content");
-//     var i;
-//     for (i = 0; i < dropdowns.length; i++) {
-//       var openDropdown = dropdowns[i];
-//       if (openDropdown.classList.contains('show')) {
-//         openDropdown.classList.remove('show');
-//       }
-//     }
-//   }
-// }

@@ -2,7 +2,7 @@ let filterbutton = {
     content: 'Применить',
     className: 'addDate',
     onClick: (dp) => {
-      dp.show();
+      dp.hide();
     }
 }
 new AirDatepicker('#filter-date-dropdown', {

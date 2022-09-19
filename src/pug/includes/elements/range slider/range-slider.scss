@@ -1,27 +1,30 @@
 @import "../../../../scss/ui-kit.scss";
 
-.range-slider__text {
-  h3 {
-    display: inline-block;
-  }
-  p {
-    display: inline-block;
-    #amount {
-      // display: inline-block;
-      width: 140px;
-      outline: none;
-      border: none;
-      color: $darkShade50;
-      @extend %Montrserrat;
-      margin-bottom: 25px;
-      font-size: 12px;
-      line-height: 15px;
-      text-align: right;
-      text-transform: uppercase;
+.range-slider {
+  position: relative;
+  z-index: 2;
+  .range-slider__text {
+    h3 {
+      display: inline-block;
+    }
+    p {
+      display: inline-block;
+      #amount {
+        // display: inline-block;
+        width: 140px;
+        outline: none;
+        border: none;
+        color: $darkShade50;
+        @extend %Montrserrat;
+        margin-bottom: 25px;
+        font-size: 12px;
+        line-height: 15px;
+        text-align: right;
+        text-transform: uppercase;
+      }
     }
   }
 }
-
 #slider-range {
   box-sizing: border-box;
   position: absolute;

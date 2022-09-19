@@ -10,13 +10,13 @@
 // });
 
 
-let dropdownField = document.querySelector(".dropdown-field");
-let dropdownInput = document.querySelector(".dropdown-input");
-let dropdownContainer = document.querySelector(".dropdown-container");
+let dropdownGuestField = document.querySelector(".dropdown-guest__field");
+// let dropdownInputGuest = document.querySelector(".dropdown__input__guest");
+let dropdownGuestContainer = document.querySelector(".dropdown-guest__container");
 
 let guestNumberAmount = document.querySelectorAll('.guest-number__amount');
 
-let dropdownBoxClear = document.querySelector('.dropdown-box__clear');
+let dropdownGuestClear = document.querySelector('.dropdown-guest__clear');
 
 
 let guestNumberAdd1 = document.querySelector('.qna1');
@@ -32,25 +32,25 @@ let guestNumberAmount3 = document.querySelector('.qnam3');
 let guestNumberDelete3 = document.querySelector('.qnd3');
 
 let dropdownInputGuest = document.querySelector('.dropdown__input__guest');
-let dropdownBoxApply = document.querySelector('.dropdown-box__apply');
+let dropdownGuestApply = document.querySelector('.dropdown-guest__apply');
 
 
 function ButtonClear() {
   if(guestNumberAmount1.textContent == 0 & guestNumberAmount2.textContent == 0 & guestNumberAmount3.textContent == 0) {
-    dropdownBoxClear.style.opacity = 0;
+    dropdownGuestClear.style.opacity = 0;
   }
 }
 
-dropdownField.addEventListener('click', function() {
-  dropdownContainer.classList.add("dropdown__show");
+dropdownGuestField.addEventListener('click', function() {
+  dropdownGuestContainer.classList.toggle("dropdown-guest__show");
   // dropdownInput.style.cssText = `border-bottom-left-radius:0;border-bottom-right-radius:0`;
-  dropdownContainer.classList.remove("dropdown__shift");
+  dropdownGuestContainer.classList.remove("dropdown-guest__shift");
 });
 
 //взрослые
 guestNumberAdd1.addEventListener('click', function() {
     guestNumberAmount1.textContent = parseInt(guestNumberAmount1.textContent) + 1;
-    dropdownBoxClear.style.opacity = 1;
+    dropdownGuestClear.style.opacity = 1;
     guestNumberDelete1.style.cssText = `color:rgba(31, 32, 65, 0.5);border: 1px solid rgba(31, 32, 65, 0.5)`;
   });
 
@@ -71,7 +71,7 @@ guestNumberDelete1.addEventListener('click', function() {
 //дети
 guestNumberAdd2.addEventListener('click', function() {
     guestNumberAmount2.textContent = parseInt(guestNumberAmount2.textContent) + 1;
-    dropdownBoxClear.style.opacity = 1;
+    dropdownGuestClear.style.opacity = 1;
     guestNumberDelete2.style.cssText = `color:rgba(31, 32, 65, 0.5);border: 1px solid rgba(31, 32, 65, 0.5)`;
   });
 
@@ -91,7 +91,7 @@ guestNumberDelete2.addEventListener('click', function() {
 //младенцы
 guestNumberAdd3.addEventListener('click', function() {
     guestNumberAmount3.textContent = parseInt(guestNumberAmount3.textContent) + 1;
-    dropdownBoxClear.style.opacity = 1;
+    dropdownGuestClear.style.opacity = 1;
     guestNumberDelete3.style.cssText = `color:rgba(31, 32, 65, 0.5);border: 1px solid rgba(31, 32, 65, 0.5)`;
 });
 
@@ -120,12 +120,12 @@ guestNumberDelete3.addEventListener('click', function() {
 
 //очистить
 // dropdownBoxButtonClear.forEach(function (entry) {
-  dropdownBoxClear.addEventListener('click', function() {
+  dropdownGuestClear.addEventListener('click', function() {
     // event.preventDefault();
     guestNumberAmount1.textContent = 0;
     guestNumberAmount2.textContent = 0;
     guestNumberAmount3.textContent = 0;
-    dropdownBoxClear.style.opacity = 0;
+    dropdownGuestClear.style.opacity = 0;
     guestNumberDelete1.style.cssText = `color:rgba(31, 32, 65, 0.25);border: 1px solid rgba(31, 32, 65, 0.25)`;
     guestNumberDelete2.style.cssText = `color:rgba(31, 32, 65, 0.25);border: 1px solid rgba(31, 32, 65, 0.25)`;
     guestNumberDelete3.style.cssText = `color:rgba(31, 32, 65, 0.25);border: 1px solid rgba(31, 32, 65, 0.25)`;
@@ -137,7 +137,7 @@ guestNumberDelete3.addEventListener('click', function() {
 
 
 //применить
-dropdownBoxApply.addEventListener('click', function() {
+dropdownGuestApply.addEventListener('click', function() {
   // dropdownInputGuest.value = guestNumberAmount.textContent;
     let amount = parseInt(guestNumberAmount1.textContent) + parseInt(guestNumberAmount2.textContent) + parseInt(guestNumberAmount3.textContent);
     if(amount == 0) {
@@ -149,10 +149,10 @@ dropdownBoxApply.addEventListener('click', function() {
     } else {
       dropdownInputGuest.value = amount + " гостей";
     }
-    dropdownContainer.classList.add("dropdown__shift");
+    dropdownGuestContainer.classList.add("dropdown-guest__shift");
 });
 
-// dropdownBoxApply.forEach(item => {
+// dropdownGuestApply.forEach(item => {
 //   item.addEventListener('click', event => {
 //     dropdownInputGuest.value = guestNumberAmount.textContent;
 //   })

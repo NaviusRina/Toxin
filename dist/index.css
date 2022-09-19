@@ -34,6 +34,18 @@
   !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!../node_modules/sass-loader/dist/cjs.js!./pug/includes/elements/buttons/buttons.scss (2) ***!
   \******************************************************************************************************************************************************************************************************************/
 @import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap);
+/*!****************************************************************************************************************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!../node_modules/sass-loader/dist/cjs.js!./pug/includes/elements/calendar/calendar.scss ***!
+  \****************************************************************************************************************************************************************************************************************/
+@import url(https://fonts.googleapis.com/css2?family=Montserrat&display=swap);
+/*!********************************************************************************************************************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!../node_modules/sass-loader/dist/cjs.js!./pug/includes/elements/calendar/calendar.scss (1) ***!
+  \********************************************************************************************************************************************************************************************************************/
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap);
+/*!********************************************************************************************************************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!../node_modules/sass-loader/dist/cjs.js!./pug/includes/elements/calendar/calendar.scss (2) ***!
+  \********************************************************************************************************************************************************************************************************************/
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap);
 /*!********************************************************************************************************************************************************************************************************************************!*\
   !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!../node_modules/sass-loader/dist/cjs.js!./pug/includes/elements/checkbox buttons/checkbox-buttons.scss ***!
   \********************************************************************************************************************************************************************************************************************************/
@@ -362,6 +374,8 @@
     width: 320px;
     height: 44px;
     margin-bottom: 20px; }
+    .bookAroom-container .guests-amount .dropdown_input {
+      width: 320px; }
   .bookAroom-container .price-list {
     display: flex;
     justify-content: space-between; }
@@ -1081,7 +1095,7 @@ body, * {
   cursor: pointer;
   color: rgba(31, 32, 65, 0.5); }
 
-h1, h2, h3, p, .text-field, .dropdown__input, .masked-text-field, .date-dropdown__input, .air-datepicker .air-datepicker-nav .air-datepicker-nav--title, .air-datepicker .air-datepicker--content .air-datepicker-body--day-name, .air-datepicker .air-datepicker--content .air-datepicker-body--cells .air-datepicker-cell, .air-datepicker .air-datepicker--buttons .air-datepicker-buttons .air-datepicker-button span {
+h1, h2, h3, p, .text-field, .dropdown_input, .masked-text-field, .date-dropdown__input, .air-datepicker .air-datepicker-nav .air-datepicker-nav--title, .air-datepicker .air-datepicker--content .air-datepicker-body--day-name, .air-datepicker .air-datepicker--content .air-datepicker-body--cells .air-datepicker-cell, .air-datepicker .air-datepicker--buttons .air-datepicker-buttons .air-datepicker-button span {
   font-family: 'Montserrat', sans-serif;
   font-style: normal; }
 
@@ -1113,7 +1127,7 @@ p {
   letter-spacing: 0.3px;
   color: rgba(31, 32, 65, 0.75); }
 
-.text-field, .dropdown__input, .masked-text-field, .date-dropdown__input {
+.text-field, .dropdown_input, .masked-text-field, .date-dropdown__input {
   background: #FFFFFF;
   border: 1px solid rgba(31, 32, 65, 0.25);
   box-sizing: border-box;
@@ -1130,10 +1144,10 @@ p {
     color: rgba(31, 32, 65, 0.75);
     border: 1px solid rgba(31, 32, 65, 0.5); }
 
-.dropdown__input {
+.dropdown_input {
   padding-left: 15px;
   padding-right: 44px;
-  width: 320px; }
+  width: 266px; }
 
 .masked-text-field {
   width: 320px; }
@@ -1292,7 +1306,7 @@ body, * {
   cursor: pointer;
   color: rgba(31, 32, 65, 0.5); }
 
-h1, h2, h3, p, .text-field, .dropdown__input, .masked-text-field, .date-dropdown__input {
+h1, h2, h3, p, .text-field, .dropdown_input, .masked-text-field, .date-dropdown__input {
   font-family: 'Montserrat', sans-serif;
   font-style: normal; }
 
@@ -1324,7 +1338,7 @@ p {
   letter-spacing: 0.3px;
   color: rgba(31, 32, 65, 0.75); }
 
-.text-field, .dropdown__input, .masked-text-field, .date-dropdown__input {
+.text-field, .dropdown_input, .masked-text-field, .date-dropdown__input {
   background: #FFFFFF;
   border: 1px solid rgba(31, 32, 65, 0.25);
   box-sizing: border-box;
@@ -1341,10 +1355,10 @@ p {
     color: rgba(31, 32, 65, 0.75);
     border: 1px solid rgba(31, 32, 65, 0.5); }
 
-.dropdown__input {
+.dropdown_input {
   padding-left: 15px;
   padding-right: 44px;
-  width: 320px; }
+  width: 266px; }
 
 .masked-text-field {
   width: 320px; }
@@ -1404,7 +1418,7 @@ body, * {
   cursor: pointer;
   color: rgba(31, 32, 65, 0.5); }
 
-h1, h2, h3, p, .text-field, .dropdown__input, .masked-text-field, .date-dropdown__input {
+h1, h2, h3, p, .text-field, .dropdown_input, .masked-text-field, .date-dropdown__input {
   font-family: 'Montserrat', sans-serif;
   font-style: normal; }
 
@@ -1436,7 +1450,7 @@ p {
   letter-spacing: 0.3px;
   color: rgba(31, 32, 65, 0.75); }
 
-.text-field, .dropdown__input, .masked-text-field, .date-dropdown__input {
+.text-field, .dropdown_input, .masked-text-field, .date-dropdown__input {
   background: #FFFFFF;
   border: 1px solid rgba(31, 32, 65, 0.25);
   box-sizing: border-box;
@@ -1453,10 +1467,10 @@ p {
     color: rgba(31, 32, 65, 0.75);
     border: 1px solid rgba(31, 32, 65, 0.5); }
 
-.dropdown__input {
+.dropdown_input {
   padding-left: 15px;
   padding-right: 44px;
-  width: 320px; }
+  width: 266px; }
 
 .masked-text-field {
   width: 320px; }
@@ -1545,9 +1559,9 @@ p {
     .small-text-button h3:hover {
       color: rgba(31, 32, 65, 0.5); }
 
-/*!************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!../node_modules/sass-loader/dist/cjs.js!./pug/includes/elements/checkbox buttons/checkbox-buttons.scss (3) ***!
-  \************************************************************************************************************************************************************************************************************************************/
+/*!********************************************************************************************************************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!../node_modules/sass-loader/dist/cjs.js!./pug/includes/elements/calendar/calendar.scss (3) ***!
+  \********************************************************************************************************************************************************************************************************************/
 body, * {
   margin: 0;
   padding: 0; }
@@ -1575,7 +1589,7 @@ body, * {
   cursor: pointer;
   color: rgba(31, 32, 65, 0.5); }
 
-h1, h2, h3, p, .text-field, .dropdown__input, .masked-text-field, .date-dropdown__input {
+h1, h2, h3, p, .text-field, .dropdown_input, .masked-text-field, .date-dropdown__input {
   font-family: 'Montserrat', sans-serif;
   font-style: normal; }
 
@@ -1607,7 +1621,7 @@ p {
   letter-spacing: 0.3px;
   color: rgba(31, 32, 65, 0.75); }
 
-.text-field, .dropdown__input, .masked-text-field, .date-dropdown__input {
+.text-field, .dropdown_input, .masked-text-field, .date-dropdown__input {
   background: #FFFFFF;
   border: 1px solid rgba(31, 32, 65, 0.25);
   box-sizing: border-box;
@@ -1624,10 +1638,116 @@ p {
     color: rgba(31, 32, 65, 0.75);
     border: 1px solid rgba(31, 32, 65, 0.5); }
 
-.dropdown__input {
+.dropdown_input {
   padding-left: 15px;
   padding-right: 44px;
+  width: 266px; }
+
+.masked-text-field {
   width: 320px; }
+
+.date-dropdown__input {
+  width: 150px; }
+
+.pink-text {
+  color: #BC9CFF; }
+
+.grey-text {
+  color: rgba(31, 32, 65, 0.5); }
+
+.calendar {
+  position: relative;
+  display: flex;
+  justify-content: space-between; }
+  .calendar .calendar__input {
+    color: rgba(31, 32, 65, 0.75); }
+  .calendar .material-icons {
+    right: 0;
+    bottom: 0; }
+
+/*!************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!../node_modules/sass-loader/dist/cjs.js!./pug/includes/elements/checkbox buttons/checkbox-buttons.scss (3) ***!
+  \************************************************************************************************************************************************************************************************************************************/
+body, * {
+  margin: 0;
+  padding: 0; }
+
+.flex-elem {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  flex-wrap: wrap; }
+  .flex-elem .flex-elem__elem {
+    border: 1px solid red; }
+
+.material-icons, .material-symbols-outlined {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  display: flex;
+  position: absolute;
+  height: 44px;
+  width: 44px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: rgba(31, 32, 65, 0.5); }
+
+h1, h2, h3, p, .text-field, .dropdown_input, .masked-text-field, .date-dropdown__input {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal; }
+
+h1 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 0.3px;
+  color: #1F2041; }
+
+h2 {
+  font-size: 19px;
+  font-weight: bold;
+  line-height: 23px;
+  letter-spacing: 0.3px;
+  color: #1F2041; }
+
+h3 {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 15px;
+  letter-spacing: 0.3px;
+  color: #1F2041; }
+
+p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.3px;
+  color: rgba(31, 32, 65, 0.75); }
+
+.text-field, .dropdown_input, .masked-text-field, .date-dropdown__input {
+  background: #FFFFFF;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 0 15px;
+  height: 44px; }
+
+.text-field {
+  width: 320px; }
+  .text-field:hover {
+    color: rgba(31, 32, 65, 0.75);
+    border: 1px solid rgba(31, 32, 65, 0.5); }
+  .text-field:focus {
+    color: rgba(31, 32, 65, 0.75);
+    border: 1px solid rgba(31, 32, 65, 0.5); }
+
+.dropdown_input {
+  padding-left: 15px;
+  padding-right: 44px;
+  width: 266px; }
 
 .masked-text-field {
   width: 320px; }
@@ -1714,7 +1834,7 @@ body, * {
   cursor: pointer;
   color: rgba(31, 32, 65, 0.5); }
 
-h1, h2, h3, p, .text-field, .dropdown__input, .masked-text-field, .date-dropdown__input {
+h1, h2, h3, p, .text-field, .dropdown_input, .masked-text-field, .date-dropdown__input {
   font-family: 'Montserrat', sans-serif;
   font-style: normal; }
 
@@ -1746,7 +1866,7 @@ p {
   letter-spacing: 0.3px;
   color: rgba(31, 32, 65, 0.75); }
 
-.text-field, .dropdown__input, .masked-text-field, .date-dropdown__input {
+.text-field, .dropdown_input, .masked-text-field, .date-dropdown__input {
   background: #FFFFFF;
   border: 1px solid rgba(31, 32, 65, 0.25);
   box-sizing: border-box;
@@ -1763,10 +1883,10 @@ p {
     color: rgba(31, 32, 65, 0.75);
     border: 1px solid rgba(31, 32, 65, 0.5); }
 
-.dropdown__input {
+.dropdown_input {
   padding-left: 15px;
   padding-right: 44px;
-  width: 320px; }
+  width: 266px; }
 
 .masked-text-field {
   width: 320px; }
@@ -1823,7 +1943,7 @@ body, * {
   cursor: pointer;
   color: rgba(31, 32, 65, 0.5); }
 
-h1, h2, h3, p, .text-field, .dropdown__input, .masked-text-field, .date-dropdown__input {
+h1, h2, h3, p, .text-field, .dropdown_input, .masked-text-field, .date-dropdown__input {
   font-family: 'Montserrat', sans-serif;
   font-style: normal; }
 
@@ -1855,7 +1975,7 @@ p {
   letter-spacing: 0.3px;
   color: rgba(31, 32, 65, 0.75); }
 
-.text-field, .dropdown__input, .masked-text-field, .date-dropdown__input {
+.text-field, .dropdown_input, .masked-text-field, .date-dropdown__input {
   background: #FFFFFF;
   border: 1px solid rgba(31, 32, 65, 0.25);
   box-sizing: border-box;
@@ -1872,10 +1992,10 @@ p {
     color: rgba(31, 32, 65, 0.75);
     border: 1px solid rgba(31, 32, 65, 0.5); }
 
-.dropdown__input {
+.dropdown_input {
   padding-left: 15px;
   padding-right: 44px;
-  width: 320px; }
+  width: 266px; }
 
 .masked-text-field {
   width: 320px; }
@@ -1940,7 +2060,7 @@ body, * {
   cursor: pointer;
   color: rgba(31, 32, 65, 0.5); }
 
-h1, h2, h3, p, .text-field, .dropdown__input, .masked-text-field, .date-dropdown__input {
+h1, h2, h3, p, .text-field, .dropdown_input, .masked-text-field, .date-dropdown__input {
   font-family: 'Montserrat', sans-serif;
   font-style: normal; }
 
@@ -1972,7 +2092,7 @@ p {
   letter-spacing: 0.3px;
   color: rgba(31, 32, 65, 0.75); }
 
-.text-field, .dropdown__input, .masked-text-field, .date-dropdown__input {
+.text-field, .dropdown_input, .masked-text-field, .date-dropdown__input {
   background: #FFFFFF;
   border: 1px solid rgba(31, 32, 65, 0.25);
   box-sizing: border-box;
@@ -1989,10 +2109,10 @@ p {
     color: rgba(31, 32, 65, 0.75);
     border: 1px solid rgba(31, 32, 65, 0.5); }
 
-.dropdown__input {
+.dropdown_input {
   padding-left: 15px;
   padding-right: 44px;
-  width: 320px; }
+  width: 266px; }
 
 .masked-text-field {
   width: 320px; }
@@ -2006,7 +2126,7 @@ p {
 .grey-text {
   color: rgba(31, 32, 65, 0.5); }
 
-.dropdown-room-container .dropdown-room .dropdown-room__list .dropdown-room__list__elem .room-number .room-number__delete, .dropdown-room-container .dropdown-room .dropdown-room__list .dropdown-room__list__elem .room-number .room-number__add {
+.dropdown-room__container .dropdown-room .dropdown-room__list .dropdown-room__list__elem .room-number .room-number__delete, .dropdown-room__container .dropdown-room .dropdown-room__list .dropdown-room__list__elem .room-number .room-number__add {
   box-sizing: border-box;
   display: inline-block;
   position: absolute;
@@ -2016,38 +2136,38 @@ p {
   background-color: rgba(255, 255, 255, 0);
   border-radius: 22px; }
 
-.dropdown-room-field {
+.dropdown-room__field {
   width: 266px;
   height: 44px;
   position: relative; }
-  .dropdown-room-field .dropdown__input {
+  .dropdown-room__field .dropdown__input {
     width: inherit; }
-  .dropdown-room-field .material-icons {
+  .dropdown-room__field .material-icons {
     right: 0;
     top: 0; }
 
-.dropdown-room-container {
+.dropdown-room__container {
   position: relative;
-  z-index: 1000;
+  z-index: 1;
   max-height: 0;
   overflow: hidden;
   transition: .2s ease max-height; }
-  .dropdown-room-container .dropdown-room {
+  .dropdown-room__container .dropdown-room {
     padding: 7px 7px 7px 15px;
     background: #FFFFFF;
     border: 1px solid rgba(31, 32, 65, 0.5);
     box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05); }
-    .dropdown-room-container .dropdown-room .dropdown-room__list .dropdown-room__list__elem {
+    .dropdown-room__container .dropdown-room .dropdown-room__list .dropdown-room__list__elem {
       list-style: none;
       margin-bottom: 15px;
       display: flex;
       justify-content: space-between;
       position: relative; }
-      .dropdown-room-container .dropdown-room .dropdown-room__list .dropdown-room__list__elem h3 {
+      .dropdown-room__container .dropdown-room .dropdown-room__list .dropdown-room__list__elem h3 {
         margin-top: 7px; }
-      .dropdown-room-container .dropdown-room .dropdown-room__list .dropdown-room__list__elem .room-number {
+      .dropdown-room__container .dropdown-room .dropdown-room__list .dropdown-room__list__elem .room-number {
         max-width: 95px; }
-        .dropdown-room-container .dropdown-room .dropdown-room__list .dropdown-room__list__elem .room-number .room-number__delete {
+        .dropdown-room__container .dropdown-room .dropdown-room__list .dropdown-room__list__elem .room-number .room-number__delete {
           right: 62px;
           font-family: 'Montserrat';
           font-style: normal;
@@ -2058,7 +2178,7 @@ p {
           color: rgba(31, 32, 65, 0.25);
           border: 1px solid rgba(31, 32, 65, 0.25);
           cursor: pointer; }
-        .dropdown-room-container .dropdown-room .dropdown-room__list .dropdown-room__list__elem .room-number .room-number__add {
+        .dropdown-room__container .dropdown-room .dropdown-room__list .dropdown-room__list__elem .room-number .room-number__add {
           right: 0;
           top: 0;
           font-family: 'Montserrat';
@@ -2070,15 +2190,12 @@ p {
           color: rgba(31, 32, 65, 0.5);
           border: 1px solid rgba(31, 32, 65, 0.5);
           cursor: pointer; }
-        .dropdown-room-container .dropdown-room .dropdown-room__list .dropdown-room__list__elem .room-number .room-number__amount {
+        .dropdown-room__container .dropdown-room .dropdown-room__list .dropdown-room__list__elem .room-number .room-number__amount {
           margin-right: 40px; }
 
 .dropdown-room__show {
-  display: block;
-  max-height: 300px; }
-
-.dropdown-room__shift {
-  display: none; }
+  overflow: visible;
+  display: block; }
 
 /*!********************************************************************************************************************************************************************************************************************!*\
   !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!../node_modules/sass-loader/dist/cjs.js!./pug/includes/elements/dropdown/dropdown.scss (3) ***!
@@ -2110,7 +2227,7 @@ body, * {
   cursor: pointer;
   color: rgba(31, 32, 65, 0.5); }
 
-h1, h2, h3, p, .text-field, .dropdown__input, .masked-text-field, .date-dropdown__input {
+h1, h2, h3, p, .text-field, .dropdown_input, .masked-text-field, .date-dropdown__input {
   font-family: 'Montserrat', sans-serif;
   font-style: normal; }
 
@@ -2142,7 +2259,7 @@ p {
   letter-spacing: 0.3px;
   color: rgba(31, 32, 65, 0.75); }
 
-.text-field, .dropdown__input, .masked-text-field, .date-dropdown__input {
+.text-field, .dropdown_input, .masked-text-field, .date-dropdown__input {
   background: #FFFFFF;
   border: 1px solid rgba(31, 32, 65, 0.25);
   box-sizing: border-box;
@@ -2159,10 +2276,10 @@ p {
     color: rgba(31, 32, 65, 0.75);
     border: 1px solid rgba(31, 32, 65, 0.5); }
 
-.dropdown__input {
+.dropdown_input {
   padding-left: 15px;
   padding-right: 44px;
-  width: 320px; }
+  width: 266px; }
 
 .masked-text-field {
   width: 320px; }
@@ -2176,7 +2293,7 @@ p {
 .grey-text {
   color: rgba(31, 32, 65, 0.5); }
 
-.dropdown-container .dropdown-box .dropdown-box__list .dropdown-box__list__elem .guest-number .guest-number__delete, .dropdown-container .dropdown-box .dropdown-box__list .dropdown-box__list__elem .guest-number .guest-number__add {
+.dropdown-guest__container .dropdown-guest .dropdown-guest__list .dropdown-guest__list__elem .guest-number .guest-number__delete, .dropdown-guest__container .dropdown-guest .dropdown-guest__list .dropdown-guest__list__elem .guest-number .guest-number__add {
   box-sizing: border-box;
   display: inline-block;
   position: absolute;
@@ -2185,22 +2302,20 @@ p {
   background-color: rgba(255, 255, 255, 0);
   border-radius: 22px; }
 
-.dropdown-field {
-  width: 320px;
+.dropdown-guest__field {
   height: 44px;
   position: relative; }
-  .dropdown-field .material-icons {
+  .dropdown-guest__field .material-icons {
     right: 0;
     top: 0; }
 
-.dropdown-container {
+.dropdown-guest__container {
   position: relative;
-  z-index: 1000;
-  max-height: 0;
   overflow: hidden;
+  z-index: 10;
+  max-height: 0;
   transition: .2s ease max-height; }
-  .dropdown-container .dropdown-box {
-    width: 320px;
+  .dropdown-guest__container .dropdown-guest {
     padding: 7px 7px 13px 15px;
     background: #FFFFFF;
     border: 1px solid rgba(31, 32, 65, 0.5);
@@ -2208,17 +2323,17 @@ p {
     border-bottom-left-radius: 4px;
     border-bottom-right-radius: 4px;
     box-sizing: border-box; }
-    .dropdown-container .dropdown-box .dropdown-box__list .dropdown-box__list__elem {
+    .dropdown-guest__container .dropdown-guest .dropdown-guest__list .dropdown-guest__list__elem {
       list-style: none;
       margin-bottom: 15px;
       display: flex;
       justify-content: space-between;
       position: relative; }
-      .dropdown-container .dropdown-box .dropdown-box__list .dropdown-box__list__elem h3 {
+      .dropdown-guest__container .dropdown-guest .dropdown-guest__list .dropdown-guest__list__elem h3 {
         margin-top: 7px; }
-      .dropdown-container .dropdown-box .dropdown-box__list .dropdown-box__list__elem .guest-number {
+      .dropdown-guest__container .dropdown-guest .dropdown-guest__list .dropdown-guest__list__elem .guest-number {
         max-width: 95px; }
-        .dropdown-container .dropdown-box .dropdown-box__list .dropdown-box__list__elem .guest-number .guest-number__delete {
+        .dropdown-guest__container .dropdown-guest .dropdown-guest__list .dropdown-guest__list__elem .guest-number .guest-number__delete {
           right: 62px;
           font-family: 'Montserrat';
           font-style: normal;
@@ -2229,7 +2344,7 @@ p {
           color: rgba(31, 32, 65, 0.25);
           border: 1px solid rgba(31, 32, 65, 0.25);
           cursor: pointer; }
-        .dropdown-container .dropdown-box .dropdown-box__list .dropdown-box__list__elem .guest-number .guest-number__add {
+        .dropdown-guest__container .dropdown-guest .dropdown-guest__list .dropdown-guest__list__elem .guest-number .guest-number__add {
           right: 0;
           top: 0;
           font-family: 'Montserrat';
@@ -2241,20 +2356,20 @@ p {
           color: rgba(31, 32, 65, 0.5);
           border: 1px solid rgba(31, 32, 65, 0.5);
           cursor: pointer; }
-        .dropdown-container .dropdown-box .dropdown-box__list .dropdown-box__list__elem .guest-number .guest-number__amount {
+        .dropdown-guest__container .dropdown-guest .dropdown-guest__list .dropdown-guest__list__elem .guest-number .guest-number__amount {
           margin-right: 40px; }
-    .dropdown-container .dropdown-box .dropdown-box__buttons {
+    .dropdown-guest__container .dropdown-guest .dropdown-guest__buttons {
       display: flex;
       justify-content: space-between;
       margin-top: 19px; }
-      .dropdown-container .dropdown-box .dropdown-box__buttons .dropdown-box__clear {
+      .dropdown-guest__container .dropdown-guest .dropdown-guest__buttons .dropdown-guest__clear {
         opacity: 0; }
 
-.dropdown__show {
-  display: block;
-  max-height: 300px; }
+.dropdown-guest__show {
+  overflow: visible;
+  display: block; }
 
-.dropdown__shift {
+.dropdown-guest__shift {
   display: none; }
 
 /*!****************************************************************************************************************************************************************************************************************************************************!*\
@@ -2287,7 +2402,7 @@ body, * {
   cursor: pointer;
   color: rgba(31, 32, 65, 0.5); }
 
-h1, h2, h3, p, .text-field, .dropdown__input, .masked-text-field, .date-dropdown__input {
+h1, h2, h3, p, .text-field, .dropdown_input, .masked-text-field, .date-dropdown__input {
   font-family: 'Montserrat', sans-serif;
   font-style: normal; }
 
@@ -2319,7 +2434,7 @@ p {
   letter-spacing: 0.3px;
   color: rgba(31, 32, 65, 0.75); }
 
-.text-field, .dropdown__input, .masked-text-field, .date-dropdown__input {
+.text-field, .dropdown_input, .masked-text-field, .date-dropdown__input {
   background: #FFFFFF;
   border: 1px solid rgba(31, 32, 65, 0.25);
   box-sizing: border-box;
@@ -2336,10 +2451,10 @@ p {
     color: rgba(31, 32, 65, 0.75);
     border: 1px solid rgba(31, 32, 65, 0.5); }
 
-.dropdown__input {
+.dropdown_input {
   padding-left: 15px;
   padding-right: 44px;
-  width: 320px; }
+  width: 266px; }
 
 .masked-text-field {
   width: 320px; }
@@ -2460,7 +2575,7 @@ body, * {
   cursor: pointer;
   color: rgba(31, 32, 65, 0.5); }
 
-h1, h2, h3, p, .text-field, .dropdown__input, .masked-text-field, .date-dropdown__input {
+h1, h2, h3, p, .text-field, .dropdown_input, .masked-text-field, .date-dropdown__input {
   font-family: 'Montserrat', sans-serif;
   font-style: normal; }
 
@@ -2492,7 +2607,7 @@ p {
   letter-spacing: 0.3px;
   color: rgba(31, 32, 65, 0.75); }
 
-.text-field, .dropdown__input, .masked-text-field, .date-dropdown__input {
+.text-field, .dropdown_input, .masked-text-field, .date-dropdown__input {
   background: #FFFFFF;
   border: 1px solid rgba(31, 32, 65, 0.25);
   box-sizing: border-box;
@@ -2509,10 +2624,10 @@ p {
     color: rgba(31, 32, 65, 0.75);
     border: 1px solid rgba(31, 32, 65, 0.5); }
 
-.dropdown__input {
+.dropdown_input {
   padding-left: 15px;
   padding-right: 44px;
-  width: 320px; }
+  width: 266px; }
 
 .masked-text-field {
   width: 320px; }
@@ -2565,7 +2680,7 @@ body, * {
   cursor: pointer;
   color: rgba(31, 32, 65, 0.5); }
 
-h1, h2, h3, p, .text-field, .dropdown__input, .masked-text-field, .date-dropdown__input, .like-button__one .like-button-number__one, .like-button__one .like-button-number__two, .like-button__two .like-button-number__one, .like-button__two .like-button-number__two {
+h1, h2, h3, p, .text-field, .dropdown_input, .masked-text-field, .date-dropdown__input, .like-button__one .like-button-number__one, .like-button__one .like-button-number__two, .like-button__two .like-button-number__one, .like-button__two .like-button-number__two {
   font-family: 'Montserrat', sans-serif;
   font-style: normal; }
 
@@ -2597,7 +2712,7 @@ p {
   letter-spacing: 0.3px;
   color: rgba(31, 32, 65, 0.75); }
 
-.text-field, .dropdown__input, .masked-text-field, .date-dropdown__input {
+.text-field, .dropdown_input, .masked-text-field, .date-dropdown__input {
   background: #FFFFFF;
   border: 1px solid rgba(31, 32, 65, 0.25);
   box-sizing: border-box;
@@ -2614,10 +2729,10 @@ p {
     color: rgba(31, 32, 65, 0.75);
     border: 1px solid rgba(31, 32, 65, 0.5); }
 
-.dropdown__input {
+.dropdown_input {
   padding-left: 15px;
   padding-right: 44px;
-  width: 320px; }
+  width: 266px; }
 
 .masked-text-field {
   width: 320px; }
@@ -2711,7 +2826,7 @@ body, * {
   cursor: pointer;
   color: rgba(31, 32, 65, 0.5); }
 
-h1, h2, h3, p, .text-field, .dropdown__input, .masked-text-field, .date-dropdown__input {
+h1, h2, h3, p, .text-field, .dropdown_input, .masked-text-field, .date-dropdown__input {
   font-family: 'Montserrat', sans-serif;
   font-style: normal; }
 
@@ -2743,7 +2858,7 @@ p {
   letter-spacing: 0.3px;
   color: rgba(31, 32, 65, 0.75); }
 
-.text-field, .dropdown__input, .masked-text-field, .date-dropdown__input {
+.text-field, .dropdown_input, .masked-text-field, .date-dropdown__input {
   background: #FFFFFF;
   border: 1px solid rgba(31, 32, 65, 0.25);
   box-sizing: border-box;
@@ -2760,10 +2875,10 @@ p {
     color: rgba(31, 32, 65, 0.75);
     border: 1px solid rgba(31, 32, 65, 0.5); }
 
-.dropdown__input {
+.dropdown_input {
   padding-left: 15px;
   padding-right: 44px;
-  width: 320px; }
+  width: 266px; }
 
 .masked-text-field {
   width: 320px; }
@@ -2845,7 +2960,7 @@ body, * {
   cursor: pointer;
   color: rgba(31, 32, 65, 0.5); }
 
-h1, h2, h3, p, .text-field, .dropdown__input, .masked-text-field, .date-dropdown__input {
+h1, h2, h3, p, .text-field, .dropdown_input, .masked-text-field, .date-dropdown__input {
   font-family: 'Montserrat', sans-serif;
   font-style: normal; }
 
@@ -2877,7 +2992,7 @@ p {
   letter-spacing: 0.3px;
   color: rgba(31, 32, 65, 0.75); }
 
-.text-field, .dropdown__input, .masked-text-field, .date-dropdown__input {
+.text-field, .dropdown_input, .masked-text-field, .date-dropdown__input {
   background: #FFFFFF;
   border: 1px solid rgba(31, 32, 65, 0.25);
   box-sizing: border-box;
@@ -2894,10 +3009,10 @@ p {
     color: rgba(31, 32, 65, 0.75);
     border: 1px solid rgba(31, 32, 65, 0.5); }
 
-.dropdown__input {
+.dropdown_input {
   padding-left: 15px;
   padding-right: 44px;
-  width: 320px; }
+  width: 266px; }
 
 .masked-text-field {
   width: 320px; }
@@ -2984,7 +3099,7 @@ body, * {
   cursor: pointer;
   color: rgba(31, 32, 65, 0.5); }
 
-h1, h2, h3, p, .text-field, .dropdown__input, .masked-text-field, .date-dropdown__input, .range-slider__text p #amount {
+h1, h2, h3, p, .text-field, .dropdown_input, .masked-text-field, .date-dropdown__input, .range-slider .range-slider__text p #amount {
   font-family: 'Montserrat', sans-serif;
   font-style: normal; }
 
@@ -3016,7 +3131,7 @@ p {
   letter-spacing: 0.3px;
   color: rgba(31, 32, 65, 0.75); }
 
-.text-field, .dropdown__input, .masked-text-field, .date-dropdown__input {
+.text-field, .dropdown_input, .masked-text-field, .date-dropdown__input {
   background: #FFFFFF;
   border: 1px solid rgba(31, 32, 65, 0.25);
   box-sizing: border-box;
@@ -3033,10 +3148,10 @@ p {
     color: rgba(31, 32, 65, 0.75);
     border: 1px solid rgba(31, 32, 65, 0.5); }
 
-.dropdown__input {
+.dropdown_input {
   padding-left: 15px;
   padding-right: 44px;
-  width: 320px; }
+  width: 266px; }
 
 .masked-text-field {
   width: 320px; }
@@ -3050,21 +3165,23 @@ p {
 .grey-text {
   color: rgba(31, 32, 65, 0.5); }
 
-.range-slider__text h3 {
-  display: inline-block; }
-
-.range-slider__text p {
-  display: inline-block; }
-  .range-slider__text p #amount {
-    width: 140px;
-    outline: none;
-    border: none;
-    color: rgba(31, 32, 65, 0.5);
-    margin-bottom: 25px;
-    font-size: 12px;
-    line-height: 15px;
-    text-align: right;
-    text-transform: uppercase; }
+.range-slider {
+  position: relative;
+  z-index: 2; }
+  .range-slider .range-slider__text h3 {
+    display: inline-block; }
+  .range-slider .range-slider__text p {
+    display: inline-block; }
+    .range-slider .range-slider__text p #amount {
+      width: 140px;
+      outline: none;
+      border: none;
+      color: rgba(31, 32, 65, 0.5);
+      margin-bottom: 25px;
+      font-size: 12px;
+      line-height: 15px;
+      text-align: right;
+      text-transform: uppercase; }
 
 #slider-range {
   box-sizing: border-box;
@@ -3119,7 +3236,7 @@ body, * {
   cursor: pointer;
   color: rgba(31, 32, 65, 0.5); }
 
-h1, h2, h3, p, .text-field, .dropdown__input, .masked-text-field, .date-dropdown__input {
+h1, h2, h3, p, .text-field, .dropdown_input, .masked-text-field, .date-dropdown__input {
   font-family: 'Montserrat', sans-serif;
   font-style: normal; }
 
@@ -3151,7 +3268,7 @@ p {
   letter-spacing: 0.3px;
   color: rgba(31, 32, 65, 0.75); }
 
-.text-field, .dropdown__input, .masked-text-field, .date-dropdown__input {
+.text-field, .dropdown_input, .masked-text-field, .date-dropdown__input {
   background: #FFFFFF;
   border: 1px solid rgba(31, 32, 65, 0.25);
   box-sizing: border-box;
@@ -3168,10 +3285,10 @@ p {
     color: rgba(31, 32, 65, 0.75);
     border: 1px solid rgba(31, 32, 65, 0.5); }
 
-.dropdown__input {
+.dropdown_input {
   padding-left: 15px;
   padding-right: 44px;
-  width: 320px; }
+  width: 266px; }
 
 .masked-text-field {
   width: 320px; }
@@ -3258,7 +3375,7 @@ body, * {
   cursor: pointer;
   color: rgba(31, 32, 65, 0.5); }
 
-h1, h2, h3, p, .text-field, .dropdown__input, .masked-text-field, .date-dropdown__input {
+h1, h2, h3, p, .text-field, .dropdown_input, .masked-text-field, .date-dropdown__input {
   font-family: 'Montserrat', sans-serif;
   font-style: normal; }
 
@@ -3290,7 +3407,7 @@ p {
   letter-spacing: 0.3px;
   color: rgba(31, 32, 65, 0.75); }
 
-.text-field, .dropdown__input, .masked-text-field, .date-dropdown__input {
+.text-field, .dropdown_input, .masked-text-field, .date-dropdown__input {
   background: #FFFFFF;
   border: 1px solid rgba(31, 32, 65, 0.25);
   box-sizing: border-box;
@@ -3307,10 +3424,10 @@ p {
     color: rgba(31, 32, 65, 0.75);
     border: 1px solid rgba(31, 32, 65, 0.5); }
 
-.dropdown__input {
+.dropdown_input {
   padding-left: 15px;
   padding-right: 44px;
-  width: 320px; }
+  width: 266px; }
 
 .masked-text-field {
   width: 320px; }
@@ -3376,7 +3493,7 @@ body, * {
   cursor: pointer;
   color: rgba(31, 32, 65, 0.5); }
 
-h1, h2, h3, p, .text-field, .dropdown__input, .masked-text-field, .date-dropdown__input {
+h1, h2, h3, p, .text-field, .dropdown_input, .masked-text-field, .date-dropdown__input {
   font-family: 'Montserrat', sans-serif;
   font-style: normal; }
 
@@ -3408,7 +3525,7 @@ p {
   letter-spacing: 0.3px;
   color: rgba(31, 32, 65, 0.75); }
 
-.text-field, .dropdown__input, .masked-text-field, .date-dropdown__input {
+.text-field, .dropdown_input, .masked-text-field, .date-dropdown__input {
   background: #FFFFFF;
   border: 1px solid rgba(31, 32, 65, 0.25);
   box-sizing: border-box;
@@ -3425,10 +3542,10 @@ p {
     color: rgba(31, 32, 65, 0.75);
     border: 1px solid rgba(31, 32, 65, 0.5); }
 
-.dropdown__input {
+.dropdown_input {
   padding-left: 15px;
   padding-right: 44px;
-  width: 320px; }
+  width: 266px; }
 
 .masked-text-field {
   width: 320px; }
@@ -3517,7 +3634,7 @@ body, * {
   cursor: pointer;
   color: rgba(31, 32, 65, 0.5); }
 
-h1, h2, h3, p, .text-field, .dropdown__input, .masked-text-field, .date-dropdown__input {
+h1, h2, h3, p, .text-field, .dropdown_input, .masked-text-field, .date-dropdown__input {
   font-family: 'Montserrat', sans-serif;
   font-style: normal; }
 
@@ -3549,7 +3666,7 @@ p {
   letter-spacing: 0.3px;
   color: rgba(31, 32, 65, 0.75); }
 
-.text-field, .dropdown__input, .masked-text-field, .date-dropdown__input {
+.text-field, .dropdown_input, .masked-text-field, .date-dropdown__input {
   background: #FFFFFF;
   border: 1px solid rgba(31, 32, 65, 0.25);
   box-sizing: border-box;
@@ -3566,10 +3683,10 @@ p {
     color: rgba(31, 32, 65, 0.75);
     border: 1px solid rgba(31, 32, 65, 0.5); }
 
-.dropdown__input {
+.dropdown_input {
   padding-left: 15px;
   padding-right: 44px;
-  width: 320px; }
+  width: 266px; }
 
 .masked-text-field {
   width: 320px; }
@@ -3633,7 +3750,7 @@ body, * {
   cursor: pointer;
   color: rgba(31, 32, 65, 0.5); }
 
-h1, h2, h3, p, .text-field, .dropdown__input, .masked-text-field, .date-dropdown__input {
+h1, h2, h3, p, .text-field, .dropdown_input, .masked-text-field, .date-dropdown__input {
   font-family: 'Montserrat', sans-serif;
   font-style: normal; }
 
@@ -3665,7 +3782,7 @@ p {
   letter-spacing: 0.3px;
   color: rgba(31, 32, 65, 0.75); }
 
-.text-field, .dropdown__input, .masked-text-field, .date-dropdown__input {
+.text-field, .dropdown_input, .masked-text-field, .date-dropdown__input {
   background: #FFFFFF;
   border: 1px solid rgba(31, 32, 65, 0.25);
   box-sizing: border-box;
@@ -3682,10 +3799,10 @@ p {
     color: rgba(31, 32, 65, 0.75);
     border: 1px solid rgba(31, 32, 65, 0.5); }
 
-.dropdown__input {
+.dropdown_input {
   padding-left: 15px;
   padding-right: 44px;
-  width: 320px; }
+  width: 266px; }
 
 .masked-text-field {
   width: 320px; }
@@ -3737,7 +3854,7 @@ body, * {
   cursor: pointer;
   color: rgba(31, 32, 65, 0.5); }
 
-h1, h2, h3, p, .text-field, .dropdown__input, .masked-text-field, .date-dropdown__input {
+h1, h2, h3, p, .text-field, .dropdown_input, .masked-text-field, .date-dropdown__input {
   font-family: 'Montserrat', sans-serif;
   font-style: normal; }
 
@@ -3769,7 +3886,7 @@ p {
   letter-spacing: 0.3px;
   color: rgba(31, 32, 65, 0.75); }
 
-.text-field, .dropdown__input, .masked-text-field, .date-dropdown__input {
+.text-field, .dropdown_input, .masked-text-field, .date-dropdown__input {
   background: #FFFFFF;
   border: 1px solid rgba(31, 32, 65, 0.25);
   box-sizing: border-box;
@@ -3786,10 +3903,10 @@ p {
     color: rgba(31, 32, 65, 0.75);
     border: 1px solid rgba(31, 32, 65, 0.5); }
 
-.dropdown__input {
+.dropdown_input {
   padding-left: 15px;
   padding-right: 44px;
-  width: 320px; }
+  width: 266px; }
 
 .masked-text-field {
   width: 320px; }
@@ -3833,7 +3950,7 @@ body, * {
   cursor: pointer;
   color: rgba(31, 32, 65, 0.5); }
 
-h1, h2, h3, p, .text-field, .dropdown__input, .masked-text-field, .date-dropdown__input {
+h1, h2, h3, p, .text-field, .dropdown_input, .masked-text-field, .date-dropdown__input {
   font-family: 'Montserrat', sans-serif;
   font-style: normal; }
 
@@ -3865,7 +3982,7 @@ p {
   letter-spacing: 0.3px;
   color: rgba(31, 32, 65, 0.75); }
 
-.text-field, .dropdown__input, .masked-text-field, .date-dropdown__input {
+.text-field, .dropdown_input, .masked-text-field, .date-dropdown__input {
   background: #FFFFFF;
   border: 1px solid rgba(31, 32, 65, 0.25);
   box-sizing: border-box;
@@ -3882,10 +3999,10 @@ p {
     color: rgba(31, 32, 65, 0.75);
     border: 1px solid rgba(31, 32, 65, 0.5); }
 
-.dropdown__input {
+.dropdown_input {
   padding-left: 15px;
   padding-right: 44px;
-  width: 320px; }
+  width: 266px; }
 
 .masked-text-field {
   width: 320px; }
@@ -3971,7 +4088,7 @@ body, * {
   cursor: pointer;
   color: rgba(31, 32, 65, 0.5); }
 
-h1, h2, h3, p, .text-field, .dropdown__input, .masked-text-field, .date-dropdown__input, .footer-container .top-footer .footer__nav .footer__nav-list .footer__nav-list__item, .footer-container .top-footer .footer__about-us .footer__about-us-list .footer__about-us-list__item, .footer-container .top-footer .footer__support .footer__support-list .footer__support-list__item {
+h1, h2, h3, p, .text-field, .dropdown_input, .masked-text-field, .date-dropdown__input, .footer-container .top-footer .footer__nav .footer__nav-list .footer__nav-list__item, .footer-container .top-footer .footer__about-us .footer__about-us-list .footer__about-us-list__item, .footer-container .top-footer .footer__support .footer__support-list .footer__support-list__item {
   font-family: 'Montserrat', sans-serif;
   font-style: normal; }
 
@@ -4003,7 +4120,7 @@ p {
   letter-spacing: 0.3px;
   color: rgba(31, 32, 65, 0.75); }
 
-.text-field, .dropdown__input, .masked-text-field, .date-dropdown__input {
+.text-field, .dropdown_input, .masked-text-field, .date-dropdown__input {
   background: #FFFFFF;
   border: 1px solid rgba(31, 32, 65, 0.25);
   box-sizing: border-box;
@@ -4020,10 +4137,10 @@ p {
     color: rgba(31, 32, 65, 0.75);
     border: 1px solid rgba(31, 32, 65, 0.5); }
 
-.dropdown__input {
+.dropdown_input {
   padding-left: 15px;
   padding-right: 44px;
-  width: 320px; }
+  width: 266px; }
 
 .masked-text-field {
   width: 320px; }
@@ -4178,7 +4295,7 @@ body, * {
   cursor: pointer;
   color: rgba(31, 32, 65, 0.5); }
 
-h1, h2, h3, p, .text-field, .dropdown__input, .masked-text-field, .date-dropdown__input {
+h1, h2, h3, p, .text-field, .dropdown_input, .masked-text-field, .date-dropdown__input {
   font-family: 'Montserrat', sans-serif;
   font-style: normal; }
 
@@ -4210,7 +4327,7 @@ p {
   letter-spacing: 0.3px;
   color: rgba(31, 32, 65, 0.75); }
 
-.text-field, .dropdown__input, .masked-text-field, .date-dropdown__input {
+.text-field, .dropdown_input, .masked-text-field, .date-dropdown__input {
   background: #FFFFFF;
   border: 1px solid rgba(31, 32, 65, 0.25);
   box-sizing: border-box;
@@ -4227,10 +4344,10 @@ p {
     color: rgba(31, 32, 65, 0.75);
     border: 1px solid rgba(31, 32, 65, 0.5); }
 
-.dropdown__input {
+.dropdown_input {
   padding-left: 15px;
   padding-right: 44px;
-  width: 320px; }
+  width: 266px; }
 
 .masked-text-field {
   width: 320px; }
@@ -4407,6 +4524,8 @@ p {
     position: relative;
     width: 320px;
     height: 44px; }
+    .roomSearch-container .guests-amount .dropdown_input {
+      width: 320px; }
   .roomSearch-container .roomSearch__button {
     margin-top: 30px; }
 
@@ -4523,26 +4642,26 @@ p {
   padding: 30px 140px; }
   .search-room__container .search-room__search {
     width: 280px;
-    margin-right: 60px;
-    z-index: 1; }
+    margin-right: 60px; }
     .search-room__container .search-room__search h3 {
       margin-bottom: 16px; }
-    .search-room__container .search-room__search .dropdown-field {
-      width: 266px; }
-      .search-room__container .search-room__search .dropdown-field .dropdown__input {
-        width: 266px; }
     .search-room__container .search-room__search .search__date {
       width: 266px; }
     .search-room__container .search-room__search .search__guest {
       position: relative; }
       .search-room__container .search-room__search .search__guest .dropdown-box {
         width: 266px; }
+      .search-room__container .search-room__search .search__guest .dropdown-guest__field {
+        width: 266px; }
+      .search-room__container .search-room__search .search__guest .dropdown-guest__list .dropdown-guest__list__elem {
+        margin-bottom: 0; }
+      .search-room__container .search-room__search .search__guest .dropdown-guest__buttons {
+        margin-top: 0; }
     .search-room__container .search-room__search .search__price p {
       margin-top: 13px;
       font-size: 12px; }
     .search-room__container .search-room__search .search__more-comfort {
-      display: inline-block;
-      z-index: 2; }
+      display: inline-block; }
     .search-room__container .search-room__search .search_block {
       margin-bottom: 20px; }
   .search-room__container .search-room__variation .search-room__cards {
@@ -4593,7 +4712,7 @@ body, * {
   cursor: pointer;
   color: rgba(31, 32, 65, 0.5); }
 
-h1, h2, h3, p, .text-field, .dropdown__input, .masked-text-field, .date-dropdown__input {
+h1, h2, h3, p, .text-field, .dropdown_input, .masked-text-field, .date-dropdown__input {
   font-family: 'Montserrat', sans-serif;
   font-style: normal; }
 
@@ -4625,7 +4744,7 @@ p {
   letter-spacing: 0.3px;
   color: rgba(31, 32, 65, 0.75); }
 
-.text-field, .dropdown__input, .masked-text-field, .date-dropdown__input {
+.text-field, .dropdown_input, .masked-text-field, .date-dropdown__input {
   background: #FFFFFF;
   border: 1px solid rgba(31, 32, 65, 0.25);
   box-sizing: border-box;
@@ -4642,10 +4761,10 @@ p {
     color: rgba(31, 32, 65, 0.75);
     border: 1px solid rgba(31, 32, 65, 0.5); }
 
-.dropdown__input {
+.dropdown_input {
   padding-left: 15px;
   padding-right: 44px;
-  width: 320px; }
+  width: 266px; }
 
 .masked-text-field {
   width: 320px; }

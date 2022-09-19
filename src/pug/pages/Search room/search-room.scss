@@ -6,17 +6,11 @@
   .search-room__search {
     width: 280px;
     margin-right: 60px;
-    z-index: 1;
     h3 {
       margin-bottom: 16px;
     }
-    .dropdown-field {
-      width: 266px;
-      .dropdown__input {
-        width: 266px;
 
-      }
-    }
+
     .search__date {
       width: 266px;
     }
@@ -24,6 +18,21 @@
       position: relative;
       .dropdown-box {
         width: 266px;
+      }
+      .dropdown-guest__field {
+        width: 266px;
+        // .dropdown_input {
+        //   width: 266px;
+        //
+        // }
+      }
+      .dropdown-guest__list {
+        .dropdown-guest__list__elem {
+          margin-bottom: 0;
+        }
+      }
+      .dropdown-guest__buttons {
+        margin-top: 0;
       }
     }
     .search__price {
@@ -34,7 +43,6 @@
     }
     .search__more-comfort {
       display: inline-block;
-      z-index: 2;
     }
     .search_block {
       margin-bottom: 20px

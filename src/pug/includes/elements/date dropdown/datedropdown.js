@@ -5,7 +5,7 @@ let button = {
     content: 'Применить',
     className: 'addDate',
     onClick: (dp) => {
-      dp.show();
+      dp.hide();
     }
 }
 new AirDatepicker('#date-dropdown-min', {
